@@ -1,0 +1,1 @@
+/home/mowmow/workspace/CatchRobo-r08/build/atcan_bridge/ament_cmake_core/atcan_bridgeConfig-version.cmake
