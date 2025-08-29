@@ -5,6 +5,10 @@
 #include <vector>
 #include <thread>
 #include <atomic>
+#include <array>
+#include <algorithm>
+#include <cctype>
+#include <charconv>
 
 // POSIX serial
 #include <fcntl.h>
@@ -14,6 +18,7 @@
 
 namespace atcan {
 
+// ========== utils ==========
 static inline std::string hex_dump(const std::vector<uint8_t>& b) {
   static const char* hexd = "0123456789ABCDEF";
   std::string s; s.reserve(b.size()*3);
@@ -25,62 +30,104 @@ static inline std::string hex_dump(const std::vector<uint8_t>& b) {
   return s;
 }
 
-static inline uint32_t build_addr(uint8_t id8, uint16_t data16, uint8_t mode5, uint8_t res3) {
-  uint32_t base = (uint32_t(id8) << 24) | (uint32_t(data16) << 8) | ((uint32_t(mode5)&0x1F) << 3) | (uint32_t(res3)&0x07);
-  return ((base << 3) | 0x04u);
+// 29bit CAN-ID -> AT生アドレス(32bit)
+static inline uint32_t build_addr(uint32_t can29) {
+  return ((can29 & 0x1FFFFFFFu) << 3) | 0x04u; // 下位3bitのbit2を拡張IDフラグとして立てる
 }
 
-static inline void split_addr(uint32_t raw_addr, uint8_t& id8, uint16_t& data16, uint8_t& mode5, uint8_t& res3) {
-  uint32_t addr = (raw_addr & ~0x00000004u) >> 3;
-  res3  = uint8_t(addr & 0x07u);
-  mode5 = uint8_t((addr >> 3) & 0x1Fu);
-  data16= uint16_t((addr >> 8) & 0xFFFFu);
-  id8   = uint8_t((addr >> 24) & 0xFFu);
+// AT生アドレス(32bit) -> 29bit CAN-ID
+static inline uint32_t split_addr(uint32_t raw_addr) {
+  return ((raw_addr & ~0x00000004u) >> 3) & 0x1FFFFFFFu;
 }
 
-static inline bool parse_candump_frame(const std::string& s, uint8_t& id8, uint16_t& data16, uint8_t& mode5, uint8_t& res3, std::vector<uint8_t>& payload) {
-  auto pos = s.find('#');
+// "EEEEEEEE#DD..." を数値ID+payloadに
+static inline bool parse_candump_frame(const std::string& s,
+                                       uint32_t& canid,
+                                       std::vector<uint8_t>& payload,
+                                       bool allow_fd=false) {
+  // trim
+  const auto l = s.find_first_not_of(" \t\r\n");
+  if (l == std::string::npos) return false;
+  const auto r = s.find_last_not_of(" \t\r\n");
+  const std::string view = s.substr(l, r - l + 1);
+
+  const auto pos = view.find('#');
   if (pos == std::string::npos) return false;
-  std::string id_hex = s.substr(0, pos);
-  std::string data_hex = s.substr(pos+1);
-  if (id_hex.empty()) return false;
-  uint32_t canid = 0;
-  try { canid = std::stoul(id_hex, nullptr, 16); }
-  catch (...) { return false; }
 
-  // parse payload
-  payload.clear();
-  std::string dh;
-  dh.reserve(data_hex.size());
-  for(char c: data_hex){ if(isxdigit((unsigned char)c)) dh.push_back(c); }
-  if (dh.size() % 2 != 0) return false;
-  for(size_t i=0;i<dh.size(); i+=2){
-    uint8_t v = uint8_t(std::stoul(dh.substr(i,2), nullptr, 16));
-    payload.push_back(v);
+  // ID部（0x/0X 接頭辞許容）
+  size_t id_start = 0;
+  if (pos >= 2 && view[0]=='0' && (view[1]=='x' || view[1]=='X')) id_start = 2;
+
+  canid = 0;
+  {
+    const char* first = view.data() + id_start;
+    const char* last  = view.data() + pos;
+    auto rc = std::from_chars(first, last, canid, 16);
+    if (rc.ec != std::errc() || rc.ptr != last) return false;
+    if (canid > 0x1FFFFFFF) return false;
+    canid &= 0x1FFFFFFF;
   }
-  if (payload.size() > 8) return false;
 
-  id8    = uint8_t((canid >> 24) & 0xFFu);
-  data16 = uint16_t((canid >> 8) & 0xFFFFu);
-  mode5  = uint8_t((canid >> 3) & 0x1Fu);
-  res3   = uint8_t(canid & 0x07u);
+  // データ部（16進以外は無視、偶数桁必須）
+  payload.clear();
+  size_t p = pos + 1;
+  while (p < view.size() && std::isspace(static_cast<unsigned char>(view[p]))) ++p;
+
+  std::string compact;
+  compact.reserve(view.size() - p);
+  for (; p < view.size(); ++p) {
+    unsigned char c = static_cast<unsigned char>(view[p]);
+    if (std::isxdigit(c)) compact.push_back(static_cast<char>(std::toupper(c)));
+  }
+  if (compact.size() % 2) return false;
+
+  const size_t max_len = allow_fd ? 64 : 8;
+  const size_t nbytes = compact.size()/2;
+  if (nbytes > max_len) return false;
+
+  payload.resize(nbytes);
+  for (size_t i=0;i<nbytes;++i) {
+    unsigned v=0;
+    auto rc = std::from_chars(compact.data()+2*i, compact.data()+2*i+2, v, 16);
+    if (rc.ec != std::errc()) return false;
+    payload[i] = static_cast<uint8_t>(v);
+  }
   return true;
 }
 
-static inline std::string format_candump_line(uint8_t id8, uint16_t data16, uint8_t mode5, uint8_t res3, const std::vector<uint8_t>& payload) {
-  uint32_t canid = (uint32_t(id8)<<24) | (uint32_t(data16)<<8) | ((uint32_t(mode5)&0x1F)<<3) | (uint32_t(res3)&0x07);
-  static const char* hexd = "0123456789ABCDEF";
-  char idbuf[9]; idbuf[8]=0;
-  for(int i=7;i>=0;--i){ idbuf[i]=hexd[canid & 0xF]; canid >>= 4; }
+// 数値ID+payload -> "EEEEEEEE#DD..."
+static inline std::string format_candump_line(uint32_t can_id,
+                                              const std::vector<uint8_t>& payload) {
+  static const char* H = "0123456789ABCDEF";
+  char idbuf[9]; idbuf[8] = '\0';           // ← 必ずNUL終端！
+  uint32_t v = (can_id & 0x1FFFFFFF);
+  for (int i=7; i>=0; --i) { idbuf[i] = H[v & 0xF]; v >>= 4; }
   std::string s(idbuf);
   s.push_back('#');
-  for(uint8_t b: payload){ s.push_back(hexd[b>>4]); s.push_back(hexd[b&0xF]); }
+  for (uint8_t b : payload) { s.push_back(H[b>>4]); s.push_back(H[b&0xF]); }
   return s;
 }
 
+// ATフレーム組み立て（'AT' + addrBE + len + payload + CRLF）
+static inline std::vector<uint8_t> build_at_frame(uint32_t raw_addr,
+                                                  const std::vector<uint8_t>& payload) {
+  std::vector<uint8_t> frame;
+  frame.reserve(2+4+1+payload.size()+2);
+  frame.push_back('A'); frame.push_back('T');
+  frame.push_back(uint8_t((raw_addr >> 24) & 0xFF));
+  frame.push_back(uint8_t((raw_addr >> 16) & 0xFF));
+  frame.push_back(uint8_t((raw_addr >>  8) & 0xFF));
+  frame.push_back(uint8_t( raw_addr        & 0xFF));
+  frame.push_back(uint8_t(payload.size() & 0xFF));
+  frame.insert(frame.end(), payload.begin(), payload.end());
+  frame.push_back('\r'); frame.push_back('\n');
+  return frame;
+}
+
+// ========== node ==========
 class AtCanBridgeNode : public rclcpp::Node {
 public:
-  AtCanBridgeNode(): Node("atcan_bridge_cpp") {
+  AtCanBridgeNode(): Node("atcan_bridge") {
     port_ = this->declare_parameter<std::string>("port", "/dev/ttyUSB0");
     baud_ = this->declare_parameter<int>("baud", 921600);
     dtr_  = this->declare_parameter<bool>("dtr", true);
@@ -89,8 +136,9 @@ public:
 
     pub_rx_     = this->create_publisher<std_msgs::msg::String>("/atcan/rx", qsz_);
     pub_rx_raw_ = this->create_publisher<std_msgs::msg::String>("/atcan/rx_raw", qsz_);
-    sub_tx_     = this->create_subscription<std_msgs::msg::String>("/atcan/tx", qsz_,
-                      std::bind(&AtCanBridgeNode::on_tx, this, std::placeholders::_1));
+    sub_tx_     = this->create_subscription<std_msgs::msg::String>(
+                    "/atcan/tx", qsz_,
+                    std::bind(&AtCanBridgeNode::on_tx, this, std::placeholders::_1));
 
     open_serial();
     reader_running_.store(true);
@@ -111,7 +159,6 @@ private:
       RCLCPP_FATAL(this->get_logger(), "Serial open failed: %s", port_.c_str());
       throw std::runtime_error("serial open failed");
     }
-    // termios setup
     termios tio{}; ::tcgetattr(fd_, &tio);
     cfmakeraw(&tio);
     tio.c_cflag |= (CLOCAL | CREAD);
@@ -121,21 +168,19 @@ private:
     tio.c_cflag &= ~CSTOPB;
     tio.c_cflag &= ~CSIZE;
     tio.c_cflag |= CS8;
-    // speed
-    speed_t spd = B921600;
-#ifndef B921600
-# error "Your termios headers lack B921600; map to closest or switch to boost::asio."
-#endif
-    // If you need other rates, add mapping from baud_ to speed_t here.
-    (void)spd;
-    // Try to map common baud rates:
+
+    // speed map
     speed_t bs = B921600;
     switch (baud_) {
       case 115200: bs = B115200; break;
       case 230400: bs = B230400; break;
       case 460800: bs = B460800; break;
+#ifdef B500000
       case 500000: bs = B500000; break;
+#endif
+#ifdef B921600
       case 921600: bs = B921600; break;
+#endif
       default:     bs = B921600; break;
     }
     cfsetispeed(&tio, bs);
@@ -148,7 +193,6 @@ private:
       RCLCPP_ERROR(this->get_logger(), "tcsetattr failed");
     }
 
-    // DTR/RTS
 #ifdef TIOCM_DTR
     int flags = 0;
     ioctl(fd_, TIOCMGET, &flags);
@@ -159,7 +203,6 @@ private:
     ioctl(fd_, TIOCMSET, &flags);
 #endif
 
-    // flush
     tcflush(fd_, TCIOFLUSH);
     RCLCPP_INFO(this->get_logger(), "Serial open OK: %s @ %d bps (DTR=%s, RTS=%s)",
                 port_.c_str(), baud_, dtr_?"on":"off", rts_?"on":"off");
@@ -167,26 +210,12 @@ private:
 
   // ===== TX path =====
   void on_tx(const std_msgs::msg::String::SharedPtr msg) {
-    uint8_t id8, mode5, res3; uint16_t data16; std::vector<uint8_t> payload;
-    if (!parse_candump_frame(msg->data, id8, data16, mode5, res3, payload)) {
+    uint32_t can_id; std::vector<uint8_t> payload;
+    if (!parse_candump_frame(msg->data, can_id, payload)) {
       RCLCPP_WARN(this->get_logger(), "TX parse error: '%s'", msg->data.c_str());
       return;
     }
-    // Build AT frame
-    uint32_t raw = build_addr(id8, data16, mode5, res3);
-    std::vector<uint8_t> frame;
-    frame.reserve(2+4+1+payload.size()+2);
-    frame.push_back('A'); frame.push_back('T');
-    // addr BE
-    frame.push_back(uint8_t((raw >> 24) & 0xFF));
-    frame.push_back(uint8_t((raw >> 16) & 0xFF));
-    frame.push_back(uint8_t((raw >> 8)  & 0xFF));
-    frame.push_back(uint8_t( raw        & 0xFF));
-    frame.push_back(uint8_t(payload.size() & 0xFF));
-    frame.insert(frame.end(), payload.begin(), payload.end());
-    frame.push_back('\r'); frame.push_back('\n');
-
-    // write
+    auto frame = build_at_frame(build_addr(can_id), payload);
     if (fd_ >= 0) {
       ssize_t n = ::write(fd_, frame.data(), frame.size());
       if (n < 0) RCLCPP_ERROR(this->get_logger(), "Serial write failed");
@@ -208,7 +237,6 @@ private:
       ssize_t n = (fd_>=0) ? ::read(fd_, tmp, sizeof(tmp)) : -1;
       if (n > 0) {
         buf.insert(buf.end(), tmp, tmp+n);
-        // extract by CRLF
         for(;;){
           auto it = std::search(buf.begin(), buf.end(), CRLF_.begin(), CRLF_.end());
           if (it == buf.end()) break;
@@ -216,15 +244,13 @@ private:
           buf.erase(buf.begin(), it+2);
 
           pub_raw(one);
-          // parse AT -> candump
           if (one.size() >= 2+4+1+2 && one[0]=='A' && one[1]=='T' && one[one.size()-2]=='\r' && one.back()=='\n') {
             uint32_t raw_addr = (uint32_t(one[2])<<24) | (uint32_t(one[3])<<16) | (uint32_t(one[4])<<8) | uint32_t(one[5]);
             uint8_t  len      = one[6];
             if (one.size() == size_t(2+4+1+len+2)) {
               std::vector<uint8_t> payload(one.begin()+7, one.begin()+7+len);
-              uint8_t id8, mode5, res3; uint16_t data16;
-              split_addr(raw_addr, id8, data16, mode5, res3);
-              pub_rx(format_candump_line(id8, data16, mode5, res3, payload));
+              uint32_t can_id = split_addr(raw_addr);
+              pub_rx(format_candump_line(can_id, payload));
             } else {
               RCLCPP_WARN(this->get_logger(), "RX length mismatch (len=%u, frame=%zu)", len, one.size());
             }
@@ -233,7 +259,6 @@ private:
           }
         }
       } else {
-        // idle
         std::this_thread::sleep_for(std::chrono::milliseconds(2));
       }
     }

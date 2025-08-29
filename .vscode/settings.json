@@ -1,0 +1,7 @@
+{
+    "cmake.sourceDirectory": "/home/mowmow/workspace/CatchRobo-r08/src/atcan_bridge",
+    "files.associations": {
+        "functional": "cpp",
+        "cstddef": "cpp"
+    }
+}
