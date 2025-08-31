@@ -20,24 +20,55 @@ public:
 private:
     void bridge_callback(const std_msgs::msg::String::SharedPtr msg)
     {
-        RCLCPP_INFO(this->get_logger(), "Bridge RX: '%s'", msg->data.c_str());
+        std_msgs::msg::String res_msg;
         auto forward_msg = std_msgs::msg::String();
         forward_msg.data = msg->data;
-        pub_master->publish(forward_msg);
+        res_msg = compare(2, forward_msg);
+        pub_master->publish(res_msg);
     }
 
     void master_callback(const std_msgs::msg::UInt16MultiArray::SharedPtr msg)
     {
-        RCLCPP_INFO(this->get_logger(), "Master RX: '%s'", msg->data.c_str());
         auto mode = uint8_t((msg->data)[1] & 0xFF);
+        std_msgs::msg::String can_msg;
+
         switch (mode)
         {
         case 0x01: // MIT mode
-            auto can_msg = build_mit_can(std::vector<uint16_t>(msg->data));
+            can_msg = build_mit_can(std::vector<uint16_t>(msg->data));
+            compare(1, can_msg);
             break;
         case 0x12: // setting mode
             break;
         }
+        pub_bridge->publish(can_msg);
+    }
+
+    static inline std_msgs::msg::String
+    compare(int mode, const std_msgs::msg::String& can_msg) {
+        static std_msgs::msg::String target_msg;
+        static std_msgs::msg::String judge;
+        std_msgs::msg::String result_msg;
+
+        if (mode == 1) {
+            target_msg.data = can_msg.data;
+            judge.data = can_msg.data.substr(0, 1);
+            judge.data += can_msg.data.substr(9, 12);
+            result_msg.data = "Target message set.";
+        } else if (mode == 2) {
+            string received = can_msg.data.substr(4, 5)
+            received += can_msg.data.substr(9, 12);
+            if (received == target_msg.data) {
+                result_msg.data = "goal";
+            } else {
+
+                result_msg.data = "wait";
+                pub_bridge->publish(target_msg);
+            }
+        } else {
+            result_msg.data = "Unknown mode.";
+        }
+        return result_msg;
     }
 
     static inline std_msgs::msg::String
@@ -91,5 +122,5 @@ private:
     rclcpp::Publisher<std_msgs::msg::String>::SharedPtr pub_bridge;
     rclcpp::Subscription<std_msgs::msg::String>::SharedPtr sub_bridge;
     rclcpp::Publisher<std_msgs::msg::String>::SharedPtr pub_master;
-    rclcpp::Subscription<std_msgs::msg::String>::SharedPtr sub_master;        
-}
+    rclcpp::Subscription<std_msgs::msg::UInt16MultiArray>::SharedPtr sub_master;       
+};
