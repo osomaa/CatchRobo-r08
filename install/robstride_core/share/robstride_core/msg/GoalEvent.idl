@@ -1,0 +1,23 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from robstride_core/msg/GoalEvent.msg
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Time.idl"
+
+module robstride_core {
+  module msg {
+    struct GoalEvent {
+      uint8 id;
+
+      @verbatim (language="comment", text=
+        "\"goal\" | \"wait\" | \"timeout\"")
+      string state;
+
+      @verbatim (language="comment", text=
+        "|pos - target|")
+      float error;
+
+      builtin_interfaces::msg::Time stamp;
+    };
+  };
+};

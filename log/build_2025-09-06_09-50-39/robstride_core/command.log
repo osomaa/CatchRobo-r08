@@ -1,0 +1,4 @@
+Invoking command in '/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/build/robstride_core': /usr/bin/cmake /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/src/robstride_core -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core
+Invoked command in '/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/build/robstride_core' returned '0': /usr/bin/cmake /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/src/robstride_core -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core
+Invoking command in '/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/build/robstride_core': /usr/bin/cmake --build /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/build/robstride_core -- -j16 -l16
+Invoked command in '/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/build/robstride_core' returned '2': /usr/bin/cmake --build /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/build/robstride_core -- -j16 -l16

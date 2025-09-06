@@ -1,0 +1,25 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from robstride_core/msg/MitCmd.msg
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Time.idl"
+
+module robstride_core {
+  module msg {
+    struct MitCmd {
+      uint8 id;
+
+      float position;
+
+      float velocity;
+
+      float torque;
+
+      float kp;
+
+      float kd;
+
+      builtin_interfaces::msg::Time stamp;
+    };
+  };
+};

@@ -1,0 +1,28 @@
+[0mCMake Deprecation Warning at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_target_interfaces.cmake:32 (message):
+  Use rosidl_get_typesupport_target() and target_link_libraries() instead of
+  rosidl_target_interfaces()
+Call Stack (most recent call first):
+  CMakeLists.txt:27 (rosidl_target_interfaces)
+
+[0m
+[0mCMake Deprecation Warning at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_target_interfaces.cmake:32 (message):
+  Use rosidl_get_typesupport_target() and target_link_libraries() instead of
+  rosidl_target_interfaces()
+Call Stack (most recent call first):
+  CMakeLists.txt:31 (rosidl_target_interfaces)
+
+[0m
+[33mCMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CATKIN_INSTALL_INTO_PREFIX_ROOT
+
+[0m
+[01m[K/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/src/robstride_core/src/at_bridge_cmd2at.cpp:5:10:[m[K [01;31m[Kfatal error: [m[Kstd_msgs/msg/u_int16_multi_array.hpp: No such file or directory
+    5 | #include [01;31m[K<std_msgs/msg/u_int16_multi_array.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/at_bridge_cmd2at.dir/build.make:76: CMakeFiles/at_bridge_cmd2at.dir/src/at_bridge_cmd2at.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:596: CMakeFiles/at_bridge_cmd2at.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

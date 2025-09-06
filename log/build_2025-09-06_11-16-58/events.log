@@ -1,0 +1,443 @@
+[0.000000] (-) TimerEvent: {}
+[0.000496] (-) JobUnselected: {'identifier': 'atcan_bridge'}
+[0.000569] (robstride_core) JobQueued: {'identifier': 'robstride_core', 'dependencies': OrderedDict()}
+[0.000621] (robstride_core) JobStarted: {'identifier': 'robstride_core'}
+[0.066971] (robstride_core) JobProgress: {'identifier': 'robstride_core', 'progress': 'cmake'}
+[0.067533] (robstride_core) Command: {'cmd': ['/usr/bin/cmake', '/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/src/robstride_core', '-DCATKIN_INSTALL_INTO_PREFIX_ROOT=0', '-DCMAKE_INSTALL_PREFIX=/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core'], 'cwd': '/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/build/robstride_core', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('HOSTNAME', '5bb858d40e38'), ('ROS_PACKAGE_PATH', '/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/share'), ('GIT_ASKPASS', '/root/.vscode-server/bin/6f17636121051a53c88d3e605c491d22af2ba755/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/root/.vscode-server/bin/6f17636121051a53c88d3e605c491d22af2ba755/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/src'), ('TERM_PROGRAM_VERSION', '1.103.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-6cdbda1e-cf1c-408b-b7d3-b3ca3ba11b21.sock'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'appmenu-gtk-module'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/6f17636121051a53c88d3e605c491d22af2ba755/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/6f17636121051a53c88d3e605c491d22af2ba755/node'), ('LC_CTYPE', 'C.UTF-8'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('UBUNTU_MENUPROXY', '1'), ('DEBUGINFOD_URLS', ''), ('COLCON_PREFIX_PATH', '/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-a07c0d75-c16f-4128-bbf7-3202b60800fe.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/lib/pkgconfig'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/root/.vscode-server/bin/6f17636121051a53c88d3e605c491d22af2ba755/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/.X11-unix/X14","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':14'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-68773fdb97.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X14'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PASSWD', 'ubuntu'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/build/robstride_core'), ('XDG_DATA_DIRS', '/usr/share/gnome:/root/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core')]), 'shell': False}
+[0.099126] (-) TimerEvent: {}
+[0.158207] (robstride_core) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.199259] (-) TimerEvent: {}
+[0.209244] (robstride_core) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.219696] (robstride_core) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.286343] (robstride_core) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.291755] (robstride_core) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.292400] (robstride_core) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.292963] (robstride_core) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.296325] (robstride_core) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.299342] (-) TimerEvent: {}
+[0.365686] (robstride_core) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.371681] (robstride_core) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.371974] (robstride_core) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.372362] (robstride_core) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.380460] (robstride_core) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.399439] (-) TimerEvent: {}
+[0.499762] (-) TimerEvent: {}
+[0.529749] (robstride_core) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[0.599883] (-) TimerEvent: {}
+[0.637009] (robstride_core) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.642065] (robstride_core) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.652822] (robstride_core) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.700003] (-) TimerEvent: {}
+[0.727749] (robstride_core) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.774543] (robstride_core) StdoutLine: {'line': b'-- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)\n'}
+[0.799877] (robstride_core) StdoutLine: {'line': b'-- Found rclcpp: 16.0.6 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.800080] (-) TimerEvent: {}
+[0.877154] (robstride_core) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.881826] (robstride_core) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.4 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.900179] (-) TimerEvent: {}
+[1.000460] (-) TimerEvent: {}
+[1.001045] (robstride_core) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.039249] (robstride_core) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.100149] (robstride_core) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.100550] (-) TimerEvent: {}
+[1.114756] (robstride_core) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.178058] (robstride_core) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.178363] (robstride_core) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.200673] (-) TimerEvent: {}
+[1.241033] (robstride_core) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.241909] (robstride_core) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.300780] (-) TimerEvent: {}
+[1.401130] (-) TimerEvent: {}
+[1.501446] (-) TimerEvent: {}
+[1.601766] (-) TimerEvent: {}
+[1.603316] (robstride_core) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.701865] (-) TimerEvent: {}
+[1.771682] (robstride_core) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.801971] (-) TimerEvent: {}
+[1.902315] (-) TimerEvent: {}
+[1.973144] (robstride_core) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.992096] (robstride_core) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[1.994885] (robstride_core) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[2.002399] (-) TimerEvent: {}
+[2.017366] (robstride_core) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[2.017654] (robstride_core) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.017746] (robstride_core) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[2.017822] (robstride_core) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[2.035814] (robstride_core) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[2.068122] (robstride_core) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_target_interfaces.cmake:32 (message):\n'}
+[2.068359] (robstride_core) StderrLine: {'line': b'  Use rosidl_get_typesupport_target() and target_link_libraries() instead of\n'}
+[2.068432] (robstride_core) StderrLine: {'line': b'  rosidl_target_interfaces()\n'}
+[2.068494] (robstride_core) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[2.068559] (robstride_core) StderrLine: {'line': b'  CMakeLists.txt:27 (rosidl_target_interfaces)\n'}
+[2.068736] (robstride_core) StderrLine: {'line': b'\n'}
+[2.068910] (robstride_core) StderrLine: {'line': b'\x1b[0m\n'}
+[2.069199] (robstride_core) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_target_interfaces.cmake:32 (message):\n'}
+[2.069280] (robstride_core) StderrLine: {'line': b'  Use rosidl_get_typesupport_target() and target_link_libraries() instead of\n'}
+[2.069344] (robstride_core) StderrLine: {'line': b'  rosidl_target_interfaces()\n'}
+[2.069403] (robstride_core) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[2.069460] (robstride_core) StderrLine: {'line': b'  CMakeLists.txt:31 (rosidl_target_interfaces)\n'}
+[2.069515] (robstride_core) StderrLine: {'line': b'\n'}
+[2.069569] (robstride_core) StderrLine: {'line': b'\x1b[0m\n'}
+[2.082511] (robstride_core) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.102507] (-) TimerEvent: {}
+[2.146905] (robstride_core) StdoutLine: {'line': b'-- Generating done\n'}
+[2.149671] (robstride_core) StderrLine: {'line': b'\x1b[33mCMake Warning:\n'}
+[2.149783] (robstride_core) StderrLine: {'line': b'  Manually-specified variables were not used by the project:\n'}
+[2.149871] (robstride_core) StderrLine: {'line': b'\n'}
+[2.149945] (robstride_core) StderrLine: {'line': b'    CATKIN_INSTALL_INTO_PREFIX_ROOT\n'}
+[2.150016] (robstride_core) StderrLine: {'line': b'\n'}
+[2.150216] (robstride_core) StderrLine: {'line': b'\x1b[0m\n'}
+[2.150481] (robstride_core) StdoutLine: {'line': b'-- Build files have been written to: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/build/robstride_core\n'}
+[2.160046] (robstride_core) CommandEnded: {'returncode': 0}
+[2.160785] (robstride_core) JobProgress: {'identifier': 'robstride_core', 'progress': 'build'}
+[2.162075] (robstride_core) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/build/robstride_core', '--', '-j16', '-l16'], 'cwd': '/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/build/robstride_core', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('HOSTNAME', '5bb858d40e38'), ('ROS_PACKAGE_PATH', '/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/share'), ('GIT_ASKPASS', '/root/.vscode-server/bin/6f17636121051a53c88d3e605c491d22af2ba755/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/root/.vscode-server/bin/6f17636121051a53c88d3e605c491d22af2ba755/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/src'), ('TERM_PROGRAM_VERSION', '1.103.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-6cdbda1e-cf1c-408b-b7d3-b3ca3ba11b21.sock'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'appmenu-gtk-module'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/6f17636121051a53c88d3e605c491d22af2ba755/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/6f17636121051a53c88d3e605c491d22af2ba755/node'), ('LC_CTYPE', 'C.UTF-8'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('UBUNTU_MENUPROXY', '1'), ('DEBUGINFOD_URLS', ''), ('COLCON_PREFIX_PATH', '/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-a07c0d75-c16f-4128-bbf7-3202b60800fe.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/lib/pkgconfig'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/root/.vscode-server/bin/6f17636121051a53c88d3e605c491d22af2ba755/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/.X11-unix/X14","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':14'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-68773fdb97.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X14'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PASSWD', 'ubuntu'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/build/robstride_core'), ('XDG_DATA_DIRS', '/usr/share/gnome:/root/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core')]), 'shell': False}
+[2.194507] (robstride_core) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[2.201780] (robstride_core) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[2.202598] (-) TimerEvent: {}
+[2.208442] (robstride_core) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_copy_robstride_core\n'}
+[2.302718] (-) TimerEvent: {}
+[2.403105] (-) TimerEvent: {}
+[2.439471] (robstride_core) StdoutLine: {'line': b'running egg_info\n'}
+[2.439914] (robstride_core) StdoutLine: {'line': b'creating robstride_core.egg-info\n'}
+[2.440695] (robstride_core) StdoutLine: {'line': b'writing robstride_core.egg-info/PKG-INFO\n'}
+[2.440910] (robstride_core) StdoutLine: {'line': b'writing dependency_links to robstride_core.egg-info/dependency_links.txt\n'}
+[2.441178] (robstride_core) StdoutLine: {'line': b'writing top-level names to robstride_core.egg-info/top_level.txt\n'}
+[2.441393] (robstride_core) StdoutLine: {'line': b"writing manifest file 'robstride_core.egg-info/SOURCES.txt'\n"}
+[2.443061] (robstride_core) StdoutLine: {'line': b"reading manifest file 'robstride_core.egg-info/SOURCES.txt'\n"}
+[2.443595] (robstride_core) StdoutLine: {'line': b"writing manifest file 'robstride_core.egg-info/SOURCES.txt'\n"}
+[2.464873] (robstride_core) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_build_robstride_core_egg\n'}
+[2.503235] (-) TimerEvent: {}
+[2.506446] (robstride_core) StdoutLine: {'line': b'[  4%] Built target robstride_core__cpp\n'}
+[2.515529] (robstride_core) StdoutLine: {'line': b'[  9%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.515789] (robstride_core) StdoutLine: {'line': b'[  9%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.516432] (robstride_core) StdoutLine: {'line': b'[ 11%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.528373] (robstride_core) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding C object CMakeFiles/robstride_core__rosidl_generator_c.dir/rosidl_generator_c/robstride_core/msg/detail/goal_event__functions.c.o\x1b[0m\n'}
+[2.528661] (robstride_core) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding C object CMakeFiles/robstride_core__rosidl_generator_c.dir/rosidl_generator_c/robstride_core/msg/detail/mit_cmd__functions.c.o\x1b[0m\n'}
+[2.572285] (robstride_core) StdoutLine: {'line': b'[ 18%] \x1b[32m\x1b[1mLinking C shared library librobstride_core__rosidl_generator_c.so\x1b[0m\n'}
+[2.601238] (robstride_core) StdoutLine: {'line': b'[ 18%] Built target robstride_core__rosidl_generator_c\n'}
+[2.603315] (-) TimerEvent: {}
+[2.609288] (robstride_core) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[2.609536] (robstride_core) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.609617] (robstride_core) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.703445] (-) TimerEvent: {}
+[2.790986] (robstride_core) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/robstride_core__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robstride_core/msg/mit_cmd__type_support.cpp.o\x1b[0m\n'}
+[2.791257] (robstride_core) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/robstride_core__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robstride_core/msg/goal_event__type_support.cpp.o\x1b[0m\n'}
+[2.803592] (-) TimerEvent: {}
+[2.824703] (robstride_core) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/robstride_core__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robstride_core/msg/detail/mit_cmd__type_support.cpp.o\x1b[0m\n'}
+[2.824941] (robstride_core) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/robstride_core__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robstride_core/msg/detail/goal_event__type_support.cpp.o\x1b[0m\n'}
+[2.835927] (robstride_core) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/robstride_core__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robstride_core/msg/detail/dds_fastrtps/mit_cmd__type_support.cpp.o\x1b[0m\n'}
+[2.836161] (robstride_core) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/robstride_core__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robstride_core/msg/detail/dds_fastrtps/goal_event__type_support.cpp.o\x1b[0m\n'}
+[2.903721] (-) TimerEvent: {}
+[2.906121] (robstride_core) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/robstride_core__rosidl_typesupport_c.dir/rosidl_typesupport_c/robstride_core/msg/goal_event__type_support.cpp.o\x1b[0m\n'}
+[2.906424] (robstride_core) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/robstride_core__rosidl_typesupport_c.dir/rosidl_typesupport_c/robstride_core/msg/mit_cmd__type_support.cpp.o\x1b[0m\n'}
+[2.940332] (robstride_core) StdoutLine: {'line': b'[ 46%] \x1b[32m\x1b[1mLinking CXX shared library librobstride_core__rosidl_typesupport_c.so\x1b[0m\n'}
+[2.942102] (robstride_core) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding C object CMakeFiles/robstride_core__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robstride_core/msg/detail/mit_cmd__type_support.c.o\x1b[0m\n'}
+[2.942767] (robstride_core) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding C object CMakeFiles/robstride_core__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robstride_core/msg/detail/goal_event__type_support.c.o\x1b[0m\n'}
+[2.948725] (robstride_core) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/robstride_core__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robstride_core/msg/detail/goal_event__type_support_c.cpp.o\x1b[0m\n'}
+[2.949364] (robstride_core) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/robstride_core__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robstride_core/msg/detail/mit_cmd__type_support_c.cpp.o\x1b[0m\n'}
+[2.986553] (robstride_core) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking C shared library librobstride_core__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[2.993957] (robstride_core) StdoutLine: {'line': b'[ 58%] Built target robstride_core__rosidl_typesupport_c\n'}
+[3.003874] (-) TimerEvent: {}
+[3.020838] (robstride_core) StdoutLine: {'line': b'[ 58%] Built target robstride_core__rosidl_typesupport_introspection_c\n'}
+[3.087612] (robstride_core) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking CXX shared library librobstride_core__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[3.104009] (-) TimerEvent: {}
+[3.125554] (robstride_core) StdoutLine: {'line': b'[ 60%] Built target robstride_core__rosidl_typesupport_cpp\n'}
+[3.204131] (-) TimerEvent: {}
+[3.207228] (robstride_core) StdoutLine: {'line': b'[ 62%] \x1b[32m\x1b[1mLinking CXX shared library librobstride_core__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[3.235787] (robstride_core) StdoutLine: {'line': b'[ 65%] \x1b[32m\x1b[1mLinking CXX shared library librobstride_core__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[3.261870] (robstride_core) StdoutLine: {'line': b'[ 65%] Built target robstride_core__rosidl_typesupport_introspection_cpp\n'}
+[3.268187] (robstride_core) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library librobstride_core__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[3.289864] (robstride_core) StdoutLine: {'line': b'[ 67%] Built target robstride_core__rosidl_typesupport_fastrtps_cpp\n'}
+[3.304258] (-) TimerEvent: {}
+[3.322625] (robstride_core) StdoutLine: {'line': b'[ 67%] Built target robstride_core__rosidl_typesupport_fastrtps_c\n'}
+[3.339064] (robstride_core) StdoutLine: {'line': b'[ 67%] Built target robstride_core\n'}
+[3.354501] (robstride_core) StdoutLine: {'line': b'[ 69%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[3.354768] (robstride_core) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/at_bridge_cmd2at.dir/src/at_bridge_cmd2at.cpp.o\x1b[0m\n'}
+[3.354860] (robstride_core) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/control_node.dir/src/control.cpp.o\x1b[0m\n'}
+[3.404369] (-) TimerEvent: {}
+[3.504691] (-) TimerEvent: {}
+[3.605030] (-) TimerEvent: {}
+[3.705359] (-) TimerEvent: {}
+[3.772712] (robstride_core) StdoutLine: {'line': b'[ 74%] Built target robstride_core__py\n'}
+[3.788979] (robstride_core) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding C object CMakeFiles/robstride_core__rosidl_generator_py.dir/rosidl_generator_py/robstride_core/msg/_mit_cmd_s.c.o\x1b[0m\n'}
+[3.789249] (robstride_core) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding C object CMakeFiles/robstride_core__rosidl_generator_py.dir/rosidl_generator_py/robstride_core/msg/_goal_event_s.c.o\x1b[0m\n'}
+[3.805485] (-) TimerEvent: {}
+[3.901531] (robstride_core) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/robstride_core/librobstride_core__rosidl_generator_py.so\x1b[0m\n'}
+[3.905572] (-) TimerEvent: {}
+[3.934328] (robstride_core) StdoutLine: {'line': b'[ 81%] Built target robstride_core__rosidl_generator_py\n'}
+[3.951541] (robstride_core) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding C object CMakeFiles/robstride_core__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/robstride_core/_robstride_core_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[3.951840] (robstride_core) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding C object CMakeFiles/robstride_core__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/robstride_core/_robstride_core_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[3.952282] (robstride_core) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/robstride_core__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/robstride_core/_robstride_core_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[4.005699] (-) TimerEvent: {}
+[4.041057] (robstride_core) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/robstride_core/robstride_core_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.041307] (robstride_core) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/robstride_core/robstride_core_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.047275] (robstride_core) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/robstride_core/robstride_core_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.069812] (robstride_core) StdoutLine: {'line': b'[ 95%] Built target robstride_core__rosidl_typesupport_introspection_c__pyext\n'}
+[4.070090] (robstride_core) StdoutLine: {'line': b'[ 95%] Built target robstride_core__rosidl_typesupport_fastrtps_c__pyext\n'}
+[4.083243] (robstride_core) StdoutLine: {'line': b'[ 95%] Built target robstride_core__rosidl_typesupport_c__pyext\n'}
+[4.105824] (-) TimerEvent: {}
+[4.206183] (-) TimerEvent: {}
+[4.306556] (-) TimerEvent: {}
+[4.406945] (-) TimerEvent: {}
+[4.507306] (-) TimerEvent: {}
+[4.607718] (-) TimerEvent: {}
+[4.708155] (-) TimerEvent: {}
+[4.808656] (-) TimerEvent: {}
+[4.909010] (-) TimerEvent: {}
+[5.009342] (-) TimerEvent: {}
+[5.109689] (-) TimerEvent: {}
+[5.210040] (-) TimerEvent: {}
+[5.310364] (-) TimerEvent: {}
+[5.410737] (-) TimerEvent: {}
+[5.511097] (-) TimerEvent: {}
+[5.611432] (-) TimerEvent: {}
+[5.711803] (-) TimerEvent: {}
+[5.812131] (-) TimerEvent: {}
+[5.912495] (-) TimerEvent: {}
+[6.012905] (-) TimerEvent: {}
+[6.113308] (-) TimerEvent: {}
+[6.213628] (-) TimerEvent: {}
+[6.313986] (-) TimerEvent: {}
+[6.414310] (-) TimerEvent: {}
+[6.514684] (-) TimerEvent: {}
+[6.615058] (-) TimerEvent: {}
+[6.715466] (-) TimerEvent: {}
+[6.815853] (-) TimerEvent: {}
+[6.916279] (-) TimerEvent: {}
+[7.016622] (-) TimerEvent: {}
+[7.117005] (-) TimerEvent: {}
+[7.217355] (-) TimerEvent: {}
+[7.317721] (-) TimerEvent: {}
+[7.418098] (-) TimerEvent: {}
+[7.518501] (-) TimerEvent: {}
+[7.618867] (-) TimerEvent: {}
+[7.719228] (-) TimerEvent: {}
+[7.819616] (-) TimerEvent: {}
+[7.919990] (-) TimerEvent: {}
+[8.020384] (-) TimerEvent: {}
+[8.120755] (-) TimerEvent: {}
+[8.221140] (-) TimerEvent: {}
+[8.321527] (-) TimerEvent: {}
+[8.421878] (-) TimerEvent: {}
+[8.522263] (-) TimerEvent: {}
+[8.622641] (-) TimerEvent: {}
+[8.723077] (-) TimerEvent: {}
+[8.823457] (-) TimerEvent: {}
+[8.923845] (-) TimerEvent: {}
+[9.024188] (-) TimerEvent: {}
+[9.124537] (-) TimerEvent: {}
+[9.224931] (-) TimerEvent: {}
+[9.325294] (-) TimerEvent: {}
+[9.425665] (-) TimerEvent: {}
+[9.526014] (-) TimerEvent: {}
+[9.626346] (-) TimerEvent: {}
+[9.726672] (-) TimerEvent: {}
+[9.827037] (-) TimerEvent: {}
+[9.927408] (-) TimerEvent: {}
+[10.027756] (-) TimerEvent: {}
+[10.128115] (-) TimerEvent: {}
+[10.228445] (-) TimerEvent: {}
+[10.328794] (-) TimerEvent: {}
+[10.429148] (-) TimerEvent: {}
+[10.529469] (-) TimerEvent: {}
+[10.629801] (-) TimerEvent: {}
+[10.730153] (-) TimerEvent: {}
+[10.785225] (robstride_core) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking CXX executable at_bridge_cmd2at\x1b[0m\n'}
+[10.830324] (-) TimerEvent: {}
+[10.930733] (-) TimerEvent: {}
+[11.031084] (-) TimerEvent: {}
+[11.063627] (robstride_core) StdoutLine: {'line': b'[ 97%] Built target at_bridge_cmd2at\n'}
+[11.131211] (-) TimerEvent: {}
+[11.231567] (-) TimerEvent: {}
+[11.331899] (-) TimerEvent: {}
+[11.432289] (-) TimerEvent: {}
+[11.532629] (-) TimerEvent: {}
+[11.633013] (-) TimerEvent: {}
+[11.733390] (-) TimerEvent: {}
+[11.833757] (-) TimerEvent: {}
+[11.934124] (-) TimerEvent: {}
+[12.034517] (-) TimerEvent: {}
+[12.134874] (-) TimerEvent: {}
+[12.235266] (-) TimerEvent: {}
+[12.335635] (-) TimerEvent: {}
+[12.436001] (-) TimerEvent: {}
+[12.536366] (-) TimerEvent: {}
+[12.636741] (-) TimerEvent: {}
+[12.737098] (-) TimerEvent: {}
+[12.837571] (-) TimerEvent: {}
+[12.938113] (-) TimerEvent: {}
+[13.038514] (-) TimerEvent: {}
+[13.071344] (robstride_core) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable control_node\x1b[0m\n'}
+[13.138603] (-) TimerEvent: {}
+[13.238937] (-) TimerEvent: {}
+[13.339346] (-) TimerEvent: {}
+[13.439876] (-) TimerEvent: {}
+[13.480109] (robstride_core) StdoutLine: {'line': b'[100%] Built target control_node\n'}
+[13.493077] (robstride_core) CommandEnded: {'returncode': 0}
+[13.539990] (-) TimerEvent: {}
+[13.640282] (-) TimerEvent: {}
+[13.673240] (robstride_core) JobProgress: {'identifier': 'robstride_core', 'progress': 'install'}
+[13.680160] (robstride_core) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/build/robstride_core'], 'cwd': '/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/build/robstride_core', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('HOSTNAME', '5bb858d40e38'), ('ROS_PACKAGE_PATH', '/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/share'), ('GIT_ASKPASS', '/root/.vscode-server/bin/6f17636121051a53c88d3e605c491d22af2ba755/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/root/.vscode-server/bin/6f17636121051a53c88d3e605c491d22af2ba755/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/src'), ('TERM_PROGRAM_VERSION', '1.103.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-6cdbda1e-cf1c-408b-b7d3-b3ca3ba11b21.sock'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'appmenu-gtk-module'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/6f17636121051a53c88d3e605c491d22af2ba755/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/6f17636121051a53c88d3e605c491d22af2ba755/node'), ('LC_CTYPE', 'C.UTF-8'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('UBUNTU_MENUPROXY', '1'), ('DEBUGINFOD_URLS', ''), ('COLCON_PREFIX_PATH', '/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-a07c0d75-c16f-4128-bbf7-3202b60800fe.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/lib/pkgconfig'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/root/.vscode-server/bin/6f17636121051a53c88d3e605c491d22af2ba755/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/.X11-unix/X14","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':14'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-68773fdb97.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X14'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PASSWD', 'ubuntu'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/build/robstride_core'), ('XDG_DATA_DIRS', '/usr/share/gnome:/root/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core')]), 'shell': False}
+[13.687103] (robstride_core) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[13.688920] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/share/ament_index/resource_index/rosidl_interfaces/robstride_core\n'}
+[13.689178] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/include/robstride_core/robstride_core\n'}
+[13.690300] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/include/robstride_core/robstride_core/msg\n'}
+[13.690753] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/include/robstride_core/robstride_core/msg/mit_cmd.h\n'}
+[13.690967] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/include/robstride_core/robstride_core/msg/goal_event.h\n'}
+[13.691155] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/include/robstride_core/robstride_core/msg/detail\n'}
+[13.691642] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/include/robstride_core/robstride_core/msg/detail/mit_cmd__functions.c\n'}
+[13.691870] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/include/robstride_core/robstride_core/msg/detail/goal_event__type_support.h\n'}
+[13.692070] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/include/robstride_core/robstride_core/msg/detail/mit_cmd__functions.h\n'}
+[13.692291] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/include/robstride_core/robstride_core/msg/detail/goal_event__struct.h\n'}
+[13.692495] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/include/robstride_core/robstride_core/msg/detail/mit_cmd__struct.h\n'}
+[13.692709] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/include/robstride_core/robstride_core/msg/detail/mit_cmd__type_support.h\n'}
+[13.692977] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/include/robstride_core/robstride_core/msg/detail/goal_event__functions.h\n'}
+[13.693165] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/include/robstride_core/robstride_core/msg/detail/goal_event__functions.c\n'}
+[13.693401] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/include/robstride_core/robstride_core/msg/rosidl_generator_c__visibility_control.h\n'}
+[13.694315] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/share/robstride_core/environment/library_path.sh\n'}
+[13.694529] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/share/robstride_core/environment/library_path.dsv\n'}
+[13.695122] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/lib/librobstride_core__rosidl_generator_c.so\n'}
+[13.695565] (robstride_core) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/lib/librobstride_core__rosidl_generator_c.so" to ""\n'}
+[13.695724] (robstride_core) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/include/robstride_core/robstride_core\n'}
+[13.696003] (robstride_core) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/include/robstride_core/robstride_core/msg\n'}
+[13.696185] (robstride_core) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/include/robstride_core/robstride_core/msg/detail\n'}
+[13.696360] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/include/robstride_core/robstride_core/msg/detail/goal_event__rosidl_typesupport_fastrtps_c.h\n'}
+[13.696639] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/include/robstride_core/robstride_core/msg/detail/mit_cmd__rosidl_typesupport_fastrtps_c.h\n'}
+[13.696723] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/include/robstride_core/robstride_core/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[13.696790] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/lib/librobstride_core__rosidl_typesupport_fastrtps_c.so\n'}
+[13.697013] (robstride_core) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/lib/librobstride_core__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[13.697243] (robstride_core) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/include/robstride_core/robstride_core\n'}
+[13.697409] (robstride_core) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/include/robstride_core/robstride_core/msg\n'}
+[13.697564] (robstride_core) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/include/robstride_core/robstride_core/msg/detail\n'}
+[13.697742] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/include/robstride_core/robstride_core/msg/detail/goal_event__type_support.c\n'}
+[13.698242] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/include/robstride_core/robstride_core/msg/detail/goal_event__rosidl_typesupport_introspection_c.h\n'}
+[13.698463] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/include/robstride_core/robstride_core/msg/detail/mit_cmd__rosidl_typesupport_introspection_c.h\n'}
+[13.698645] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/include/robstride_core/robstride_core/msg/detail/mit_cmd__type_support.c\n'}
+[13.698819] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/include/robstride_core/robstride_core/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[13.699099] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/lib/librobstride_core__rosidl_typesupport_introspection_c.so\n'}
+[13.699188] (robstride_core) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/lib/librobstride_core__rosidl_typesupport_introspection_c.so" to ""\n'}
+[13.699291] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/lib/librobstride_core__rosidl_typesupport_c.so\n'}
+[13.699579] (robstride_core) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/lib/librobstride_core__rosidl_typesupport_c.so" to ""\n'}
+[13.699659] (robstride_core) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/include/robstride_core/robstride_core\n'}
+[13.699723] (robstride_core) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/include/robstride_core/robstride_core/msg\n'}
+[13.699857] (robstride_core) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/include/robstride_core/robstride_core/msg/detail\n'}
+[13.699932] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/include/robstride_core/robstride_core/msg/detail/mit_cmd__builder.hpp\n'}
+[13.700082] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/include/robstride_core/robstride_core/msg/detail/mit_cmd__struct.hpp\n'}
+[13.700370] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/include/robstride_core/robstride_core/msg/detail/goal_event__builder.hpp\n'}
+[13.700456] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/include/robstride_core/robstride_core/msg/detail/goal_event__struct.hpp\n'}
+[13.700521] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/include/robstride_core/robstride_core/msg/detail/mit_cmd__traits.hpp\n'}
+[13.700668] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/include/robstride_core/robstride_core/msg/detail/goal_event__traits.hpp\n'}
+[13.700787] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/include/robstride_core/robstride_core/msg/mit_cmd.hpp\n'}
+[13.700982] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/include/robstride_core/robstride_core/msg/goal_event.hpp\n'}
+[13.701182] (robstride_core) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/include/robstride_core/robstride_core\n'}
+[13.701437] (robstride_core) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/include/robstride_core/robstride_core/msg\n'}
+[13.701571] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/include/robstride_core/robstride_core/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[13.701694] (robstride_core) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/include/robstride_core/robstride_core/msg/detail\n'}
+[13.701759] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/include/robstride_core/robstride_core/msg/detail/goal_event__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[13.701971] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/include/robstride_core/robstride_core/msg/detail/dds_fastrtps\n'}
+[13.702168] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/include/robstride_core/robstride_core/msg/detail/mit_cmd__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[13.702300] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/lib/librobstride_core__rosidl_typesupport_fastrtps_cpp.so\n'}
+[13.702793] (robstride_core) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/lib/librobstride_core__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[13.703108] (robstride_core) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/include/robstride_core/robstride_core\n'}
+[13.703188] (robstride_core) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/include/robstride_core/robstride_core/msg\n'}
+[13.703252] (robstride_core) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/include/robstride_core/robstride_core/msg/detail\n'}
+[13.703403] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/include/robstride_core/robstride_core/msg/detail/goal_event__rosidl_typesupport_introspection_cpp.hpp\n'}
+[13.703705] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/include/robstride_core/robstride_core/msg/detail/goal_event__type_support.cpp\n'}
+[13.703804] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/include/robstride_core/robstride_core/msg/detail/mit_cmd__rosidl_typesupport_introspection_cpp.hpp\n'}
+[13.703869] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/include/robstride_core/robstride_core/msg/detail/mit_cmd__type_support.cpp\n'}
+[13.704008] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/lib/librobstride_core__rosidl_typesupport_introspection_cpp.so\n'}
+[13.704409] (robstride_core) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/lib/librobstride_core__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[13.704617] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/lib/librobstride_core__rosidl_typesupport_cpp.so\n'}
+[13.704928] (robstride_core) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/lib/librobstride_core__rosidl_typesupport_cpp.so" to ""\n'}
+[13.705070] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/share/robstride_core/environment/pythonpath.sh\n'}
+[13.705285] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/share/robstride_core/environment/pythonpath.dsv\n'}
+[13.705474] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/local/lib/python3.10/dist-packages/robstride_core-0.0.1-py3.10.egg-info\n'}
+[13.706800] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/local/lib/python3.10/dist-packages/robstride_core-0.0.1-py3.10.egg-info/dependency_links.txt\n'}
+[13.707002] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/local/lib/python3.10/dist-packages/robstride_core-0.0.1-py3.10.egg-info/SOURCES.txt\n'}
+[13.707210] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/local/lib/python3.10/dist-packages/robstride_core-0.0.1-py3.10.egg-info/top_level.txt\n'}
+[13.707399] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/local/lib/python3.10/dist-packages/robstride_core-0.0.1-py3.10.egg-info/PKG-INFO\n'}
+[13.707617] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/local/lib/python3.10/dist-packages/robstride_core\n'}
+[13.708032] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/local/lib/python3.10/dist-packages/robstride_core/msg\n'}
+[13.708449] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/local/lib/python3.10/dist-packages/robstride_core/msg/__init__.py\n'}
+[13.708649] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/local/lib/python3.10/dist-packages/robstride_core/msg/_goal_event_s.c\n'}
+[13.708874] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/local/lib/python3.10/dist-packages/robstride_core/msg/_goal_event.py\n'}
+[13.709070] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/local/lib/python3.10/dist-packages/robstride_core/msg/_mit_cmd_s.c\n'}
+[13.709254] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/local/lib/python3.10/dist-packages/robstride_core/msg/_mit_cmd.py\n'}
+[13.709454] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/local/lib/python3.10/dist-packages/robstride_core/__init__.py\n'}
+[13.709633] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/local/lib/python3.10/dist-packages/robstride_core/_robstride_core_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[13.709836] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/local/lib/python3.10/dist-packages/robstride_core/robstride_core_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[13.710082] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/local/lib/python3.10/dist-packages/robstride_core/_robstride_core_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[13.710285] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/local/lib/python3.10/dist-packages/robstride_core/robstride_core_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[13.710490] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/local/lib/python3.10/dist-packages/robstride_core/robstride_core_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[13.710710] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/local/lib/python3.10/dist-packages/robstride_core/_robstride_core_s.ep.rosidl_typesupport_c.c\n'}
+[13.710911] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/local/lib/python3.10/dist-packages/robstride_core/librobstride_core__rosidl_generator_py.so\n'}
+[13.740385] (-) TimerEvent: {}
+[13.740819] (robstride_core) StdoutLine: {'line': b"Listing '/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/local/lib/python3.10/dist-packages/robstride_core'...\n"}
+[13.741012] (robstride_core) StdoutLine: {'line': b"Compiling '/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/local/lib/python3.10/dist-packages/robstride_core/__init__.py'...\n"}
+[13.741103] (robstride_core) StdoutLine: {'line': b"Listing '/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/local/lib/python3.10/dist-packages/robstride_core/msg'...\n"}
+[13.741188] (robstride_core) StdoutLine: {'line': b"Compiling '/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/local/lib/python3.10/dist-packages/robstride_core/msg/__init__.py'...\n"}
+[13.741277] (robstride_core) StdoutLine: {'line': b"Compiling '/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/local/lib/python3.10/dist-packages/robstride_core/msg/_goal_event.py'...\n"}
+[13.741348] (robstride_core) StdoutLine: {'line': b"Compiling '/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/local/lib/python3.10/dist-packages/robstride_core/msg/_mit_cmd.py'...\n"}
+[13.744722] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/local/lib/python3.10/dist-packages/robstride_core/robstride_core_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[13.745147] (robstride_core) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/local/lib/python3.10/dist-packages/robstride_core/robstride_core_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[13.745394] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/local/lib/python3.10/dist-packages/robstride_core/robstride_core_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[13.745803] (robstride_core) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/local/lib/python3.10/dist-packages/robstride_core/robstride_core_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[13.746089] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/local/lib/python3.10/dist-packages/robstride_core/robstride_core_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[13.746500] (robstride_core) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/local/lib/python3.10/dist-packages/robstride_core/robstride_core_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[13.746756] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/lib/librobstride_core__rosidl_generator_py.so\n'}
+[13.747048] (robstride_core) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/lib/librobstride_core__rosidl_generator_py.so" to ""\n'}
+[13.747751] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/share/robstride_core/msg/MitCmd.idl\n'}
+[13.747919] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/share/robstride_core/msg/GoalEvent.idl\n'}
+[13.748167] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/share/robstride_core/msg/MitCmd.msg\n'}
+[13.748387] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/share/robstride_core/msg/GoalEvent.msg\n'}
+[13.749036] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/lib/robstride_core/at_bridge_cmd2at\n'}
+[13.754607] (robstride_core) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/lib/robstride_core/at_bridge_cmd2at" to ""\n'}
+[13.754779] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/lib/robstride_core/control_node\n'}
+[13.762401] (robstride_core) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/lib/robstride_core/control_node" to ""\n'}
+[13.762611] (robstride_core) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/include\n'}
+[13.762963] (robstride_core) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/include/robstride_core\n'}
+[13.763066] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/include/robstride_core/at_wire.hpp\n'}
+[13.763514] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/share/ament_index/resource_index/package_run_dependencies/robstride_core\n'}
+[13.764207] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/share/ament_index/resource_index/parent_prefix_path/robstride_core\n'}
+[13.764474] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/share/robstride_core/environment/ament_prefix_path.sh\n'}
+[13.764675] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/share/robstride_core/environment/ament_prefix_path.dsv\n'}
+[13.764883] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/share/robstride_core/environment/path.sh\n'}
+[13.765088] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/share/robstride_core/environment/path.dsv\n'}
+[13.765326] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/share/robstride_core/local_setup.bash\n'}
+[13.765559] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/share/robstride_core/local_setup.sh\n'}
+[13.765759] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/share/robstride_core/local_setup.zsh\n'}
+[13.765997] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/share/robstride_core/local_setup.dsv\n'}
+[13.766224] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/share/robstride_core/package.dsv\n'}
+[13.766793] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/share/ament_index/resource_index/packages/robstride_core\n'}
+[13.767424] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/share/robstride_core/cmake/export_robstride_core__rosidl_generator_cExport.cmake\n'}
+[13.767679] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/share/robstride_core/cmake/export_robstride_core__rosidl_generator_cExport-noconfig.cmake\n'}
+[13.767908] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/share/robstride_core/cmake/export_robstride_core__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[13.768147] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/share/robstride_core/cmake/export_robstride_core__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[13.768392] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/share/robstride_core/cmake/robstride_core__rosidl_typesupport_introspection_cExport.cmake\n'}
+[13.768614] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/share/robstride_core/cmake/robstride_core__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[13.768843] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/share/robstride_core/cmake/robstride_core__rosidl_typesupport_cExport.cmake\n'}
+[13.769097] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/share/robstride_core/cmake/robstride_core__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[13.769331] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/share/robstride_core/cmake/export_robstride_core__rosidl_generator_cppExport.cmake\n'}
+[13.769567] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/share/robstride_core/cmake/export_robstride_core__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[13.769795] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/share/robstride_core/cmake/export_robstride_core__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[13.770027] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/share/robstride_core/cmake/robstride_core__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[13.770259] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/share/robstride_core/cmake/robstride_core__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[13.770493] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/share/robstride_core/cmake/robstride_core__rosidl_typesupport_cppExport.cmake\n'}
+[13.770734] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/share/robstride_core/cmake/robstride_core__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[13.770970] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/share/robstride_core/cmake/export_robstride_core__rosidl_generator_pyExport.cmake\n'}
+[13.771218] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/share/robstride_core/cmake/export_robstride_core__rosidl_generator_pyExport-noconfig.cmake\n'}
+[13.771424] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/share/robstride_core/cmake/rosidl_cmake-extras.cmake\n'}
+[13.771658] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/share/robstride_core/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[13.771906] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/share/robstride_core/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[13.772126] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/share/robstride_core/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[13.772338] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/share/robstride_core/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[13.772581] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/share/robstride_core/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[13.772788] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/share/robstride_core/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[13.773060] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/share/robstride_core/cmake/robstride_coreConfig.cmake\n'}
+[13.773256] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/share/robstride_core/cmake/robstride_coreConfig-version.cmake\n'}
+[13.773471] (robstride_core) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/share/robstride_core/package.xml\n'}
+[13.775686] (robstride_core) CommandEnded: {'returncode': 0}
+[13.840493] (-) TimerEvent: {}
+[13.940829] (-) TimerEvent: {}
+[14.016789] (robstride_core) JobEnded: {'identifier': 'robstride_core', 'rc': 0}
+[14.017816] (-) EventReactorShutdown: {}

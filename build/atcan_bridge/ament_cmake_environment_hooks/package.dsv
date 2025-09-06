@@ -1,4 +1,0 @@
-source;share/atcan_bridge/local_setup.bash
-source;share/atcan_bridge/local_setup.dsv
-source;share/atcan_bridge/local_setup.sh
-source;share/atcan_bridge/local_setup.zsh

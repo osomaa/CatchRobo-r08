@@ -1,0 +1,4 @@
+msg/GoalEvent.idl
+msg/GoalEvent.msg
+msg/MitCmd.idl
+msg/MitCmd.msg
