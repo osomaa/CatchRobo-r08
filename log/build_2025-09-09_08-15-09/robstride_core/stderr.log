@@ -1,0 +1,11 @@
+[31mCMake Error at CMakeLists.txt:28 (rosidl_target_interfaces):
+  rosidl_target_interfaces Function invoked with incorrect arguments for
+  function named: rosidl_target_interfaces
+
+[0m
+[31mCMake Error at CMakeLists.txt:32 (rosidl_target_interfaces):
+  rosidl_target_interfaces Function invoked with incorrect arguments for
+  function named: rosidl_target_interfaces
+
+[0m
+gmake: *** [Makefile:1045: cmake_check_build_system] Error 1

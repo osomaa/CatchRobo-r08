@@ -71,6 +71,7 @@
 /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/share/robstride_core/msg/GoalEvent.msg
 /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/lib/robstride_core/at_bridge_cmd2at
 /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/lib/robstride_core/control_node
+/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/lib/robstride_core/csv_sequencer_node
 /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/include/robstride_core/at_wire.hpp
 /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/share/ament_index/resource_index/package_run_dependencies/robstride_core
 /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/share/ament_index/resource_index/parent_prefix_path/robstride_core

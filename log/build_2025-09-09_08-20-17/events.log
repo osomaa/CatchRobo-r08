@@ -1,0 +1,192 @@
+[0.000000] (-) TimerEvent: {}
+[0.000551] (-) JobUnselected: {'identifier': 'atcan_bridge'}
+[0.000665] (robstride_core) JobQueued: {'identifier': 'robstride_core', 'dependencies': OrderedDict()}
+[0.000914] (robstride_core) JobStarted: {'identifier': 'robstride_core'}
+[0.064316] (robstride_core) JobProgress: {'identifier': 'robstride_core', 'progress': 'cmake'}
+[0.065135] (robstride_core) JobProgress: {'identifier': 'robstride_core', 'progress': 'build'}
+[0.065783] (robstride_core) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/build/robstride_core', '--', '-j16', '-l16'], 'cwd': '/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/build/robstride_core', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('HOSTNAME', '5bb858d40e38'), ('ROS_PACKAGE_PATH', '/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/share'), ('GIT_ASKPASS', '/root/.vscode-server/bin/6f17636121051a53c88d3e605c491d22af2ba755/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/root/.vscode-server/bin/6f17636121051a53c88d3e605c491d22af2ba755/bin/helpers/browser.sh'), ('HOME', '/root'), ('TERM_PROGRAM_VERSION', '1.103.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-ffd5465f-0886-4f43-8a70-ef70f9e85814.sock'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'appmenu-gtk-module'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/6f17636121051a53c88d3e605c491d22af2ba755/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/6f17636121051a53c88d3e605c491d22af2ba755/node'), ('LC_CTYPE', 'C.UTF-8'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('UBUNTU_MENUPROXY', '1'), ('DEBUGINFOD_URLS', ''), ('COLCON_PREFIX_PATH', '/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-0214b10c-ef16-4a1a-86a9-95aa29188f67.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/lib/x86_64-linux-gnu/pkgconfig:/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/lib/pkgconfig'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/root/.vscode-server/bin/6f17636121051a53c88d3e605c491d22af2ba755/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/.X11-unix/X15","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':15'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-68773fdb97.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X15'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PASSWD', 'ubuntu'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/build/robstride_core'), ('XDG_DATA_DIRS', '/usr/share/gnome:/root/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/install/robstride_core')]), 'shell': False}
+[0.099529] (-) TimerEvent: {}
+[0.119793] (robstride_core) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.199641] (-) TimerEvent: {}
+[0.266080] (robstride_core) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.268773] (robstride_core) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.272579] (robstride_core) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.299700] (-) TimerEvent: {}
+[0.330590] (robstride_core) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.362128] (robstride_core) StdoutLine: {'line': b'-- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)\n'}
+[0.381201] (robstride_core) StdoutLine: {'line': b'-- Found rclcpp: 16.0.6 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.399753] (-) TimerEvent: {}
+[0.434281] (robstride_core) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.436560] (robstride_core) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.4 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.499809] (-) TimerEvent: {}
+[0.596579] (robstride_core) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.599893] (-) TimerEvent: {}
+[0.700122] (-) TimerEvent: {}
+[0.731236] (robstride_core) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.800225] (-) TimerEvent: {}
+[0.900509] (-) TimerEvent: {}
+[0.967902] (robstride_core) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.000616] (-) TimerEvent: {}
+[1.100990] (-) TimerEvent: {}
+[1.110852] (robstride_core) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.201084] (-) TimerEvent: {}
+[1.296162] (robstride_core) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.301143] (-) TimerEvent: {}
+[1.315303] (robstride_core) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.335121] (robstride_core) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.335318] (robstride_core) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.335387] (robstride_core) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.355204] (robstride_core) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.401225] (-) TimerEvent: {}
+[1.426832] (robstride_core) StdoutLine: {'line': b'-- Generating done\n'}
+[1.431752] (robstride_core) StdoutLine: {'line': b'-- Build files have been written to: /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/build/robstride_core\n'}
+[1.460790] (robstride_core) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robstride_core__rosidl_generator_c\x1b[0m\n'}
+[1.467491] (robstride_core) StdoutLine: {'line': b'[  2%] Built target robstride_core__cpp\n'}
+[1.467755] (robstride_core) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object CMakeFiles/csv_sequencer_node.dir/src/csv_sequencer_node.cpp.o\x1b[0m\n'}
+[1.475456] (robstride_core) StdoutLine: {'line': b'[ 13%] Built target robstride_core__rosidl_generator_c\n'}
+[1.476084] (robstride_core) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robstride_core__rosidl_typesupport_cpp\x1b[0m\n'}
+[1.476229] (robstride_core) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robstride_core__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[1.476505] (robstride_core) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robstride_core__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[1.480429] (robstride_core) StdoutLine: {'line': b'[ 13%] Built target ament_cmake_python_copy_robstride_core\n'}
+[1.484480] (robstride_core) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robstride_core__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[1.484978] (robstride_core) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robstride_core__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[1.485839] (robstride_core) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robstride_core__rosidl_typesupport_c\x1b[0m\n'}
+[1.495187] (robstride_core) StdoutLine: {'line': b'[ 22%] Built target robstride_core__rosidl_typesupport_introspection_c\n'}
+[1.495885] (robstride_core) StdoutLine: {'line': b'[ 31%] Built target robstride_core__rosidl_typesupport_cpp\n'}
+[1.496270] (robstride_core) StdoutLine: {'line': b'[ 40%] Built target robstride_core__rosidl_typesupport_introspection_cpp\n'}
+[1.496822] (robstride_core) StdoutLine: {'line': b'[ 48%] Built target robstride_core__rosidl_typesupport_fastrtps_cpp\n'}
+[1.498157] (robstride_core) StdoutLine: {'line': b'[ 57%] Built target robstride_core__rosidl_typesupport_c\n'}
+[1.499294] (robstride_core) StdoutLine: {'line': b'[ 66%] Built target robstride_core__rosidl_typesupport_fastrtps_c\n'}
+[1.501263] (-) TimerEvent: {}
+[1.504717] (robstride_core) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target at_bridge_cmd2at\x1b[0m\n'}
+[1.505007] (robstride_core) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target control_node\x1b[0m\n'}
+[1.516490] (robstride_core) StdoutLine: {'line': b'[ 66%] Built target robstride_core\n'}
+[1.534326] (robstride_core) StdoutLine: {'line': b'[ 68%] Built target robstride_core__py\n'}
+[1.540086] (robstride_core) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/control_node.dir/src/control.cpp.o\x1b[0m\n'}
+[1.540418] (robstride_core) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/at_bridge_cmd2at.dir/src/at_bridge_cmd2at.cpp.o\x1b[0m\n'}
+[1.542776] (robstride_core) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robstride_core__rosidl_generator_py\x1b[0m\n'}
+[1.558951] (robstride_core) StdoutLine: {'line': b'[ 80%] Built target robstride_core__rosidl_generator_py\n'}
+[1.567268] (robstride_core) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robstride_core__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[1.568697] (robstride_core) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robstride_core__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[1.569554] (robstride_core) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robstride_core__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[1.580449] (robstride_core) StdoutLine: {'line': b'[ 84%] Built target robstride_core__rosidl_typesupport_c__pyext\n'}
+[1.581031] (robstride_core) StdoutLine: {'line': b'[ 88%] Built target robstride_core__rosidl_typesupport_fastrtps_c__pyext\n'}
+[1.582611] (robstride_core) StdoutLine: {'line': b'[ 93%] Built target robstride_core__rosidl_typesupport_introspection_c__pyext\n'}
+[1.601317] (-) TimerEvent: {}
+[1.701517] (-) TimerEvent: {}
+[1.727904] (robstride_core) StdoutLine: {'line': b'running egg_info\n'}
+[1.728516] (robstride_core) StdoutLine: {'line': b'writing robstride_core.egg-info/PKG-INFO\n'}
+[1.728754] (robstride_core) StdoutLine: {'line': b'writing dependency_links to robstride_core.egg-info/dependency_links.txt\n'}
+[1.728931] (robstride_core) StdoutLine: {'line': b'writing top-level names to robstride_core.egg-info/top_level.txt\n'}
+[1.731535] (robstride_core) StdoutLine: {'line': b"reading manifest file 'robstride_core.egg-info/SOURCES.txt'\n"}
+[1.732270] (robstride_core) StdoutLine: {'line': b"writing manifest file 'robstride_core.egg-info/SOURCES.txt'\n"}
+[1.753598] (robstride_core) StdoutLine: {'line': b'[ 93%] Built target ament_cmake_python_build_robstride_core_egg\n'}
+[1.801634] (-) TimerEvent: {}
+[1.901952] (-) TimerEvent: {}
+[2.002228] (-) TimerEvent: {}
+[2.102561] (-) TimerEvent: {}
+[2.202909] (-) TimerEvent: {}
+[2.303253] (-) TimerEvent: {}
+[2.403628] (-) TimerEvent: {}
+[2.503984] (-) TimerEvent: {}
+[2.604306] (-) TimerEvent: {}
+[2.704677] (-) TimerEvent: {}
+[2.805142] (-) TimerEvent: {}
+[2.905713] (-) TimerEvent: {}
+[3.006256] (-) TimerEvent: {}
+[3.106691] (-) TimerEvent: {}
+[3.207037] (-) TimerEvent: {}
+[3.307348] (-) TimerEvent: {}
+[3.407834] (-) TimerEvent: {}
+[3.508234] (-) TimerEvent: {}
+[3.608600] (-) TimerEvent: {}
+[3.708979] (-) TimerEvent: {}
+[3.748554] (robstride_core) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/src/robstride_core/src/control.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid ControlNode::on_observe(std_msgs::msg::UInt16MultiArray_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.748966] (robstride_core) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/src/robstride_core/src/control.cpp:85:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass rclcpp::Time\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kto_msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.749108] (robstride_core) StderrLine: {'line': b'   85 |       ev.stamp = now().\x1b[01;31m\x1b[Kto_msg\x1b[m\x1b[K();\n'}
+[3.749219] (robstride_core) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[3.809041] (-) TimerEvent: {}
+[3.909331] (-) TimerEvent: {}
+[4.009638] (-) TimerEvent: {}
+[4.109989] (-) TimerEvent: {}
+[4.210320] (-) TimerEvent: {}
+[4.310650] (-) TimerEvent: {}
+[4.411010] (-) TimerEvent: {}
+[4.511327] (-) TimerEvent: {}
+[4.611663] (-) TimerEvent: {}
+[4.711996] (-) TimerEvent: {}
+[4.812344] (-) TimerEvent: {}
+[4.912653] (-) TimerEvent: {}
+[5.013006] (-) TimerEvent: {}
+[5.113340] (-) TimerEvent: {}
+[5.213660] (-) TimerEvent: {}
+[5.314014] (-) TimerEvent: {}
+[5.414339] (-) TimerEvent: {}
+[5.514670] (-) TimerEvent: {}
+[5.614982] (-) TimerEvent: {}
+[5.715341] (-) TimerEvent: {}
+[5.815676] (-) TimerEvent: {}
+[5.916074] (-) TimerEvent: {}
+[6.016428] (-) TimerEvent: {}
+[6.116768] (-) TimerEvent: {}
+[6.217120] (-) TimerEvent: {}
+[6.317448] (-) TimerEvent: {}
+[6.417741] (-) TimerEvent: {}
+[6.518057] (-) TimerEvent: {}
+[6.534688] (robstride_core) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/control_node.dir/build.make:76: CMakeFiles/control_node.dir/src/control.cpp.o] Error 1\n'}
+[6.534981] (robstride_core) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:624: CMakeFiles/control_node.dir/all] Error 2\n'}
+[6.535128] (robstride_core) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[6.618148] (-) TimerEvent: {}
+[6.718452] (-) TimerEvent: {}
+[6.818775] (-) TimerEvent: {}
+[6.919119] (-) TimerEvent: {}
+[7.019451] (-) TimerEvent: {}
+[7.119762] (-) TimerEvent: {}
+[7.220042] (-) TimerEvent: {}
+[7.320361] (-) TimerEvent: {}
+[7.420743] (-) TimerEvent: {}
+[7.521093] (-) TimerEvent: {}
+[7.621393] (-) TimerEvent: {}
+[7.721680] (-) TimerEvent: {}
+[7.822001] (-) TimerEvent: {}
+[7.922350] (-) TimerEvent: {}
+[8.022736] (-) TimerEvent: {}
+[8.123019] (-) TimerEvent: {}
+[8.223329] (-) TimerEvent: {}
+[8.323699] (-) TimerEvent: {}
+[8.424033] (-) TimerEvent: {}
+[8.524348] (-) TimerEvent: {}
+[8.611479] (robstride_core) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking CXX executable at_bridge_cmd2at\x1b[0m\n'}
+[8.624436] (-) TimerEvent: {}
+[8.724739] (-) TimerEvent: {}
+[8.825082] (-) TimerEvent: {}
+[8.925402] (-) TimerEvent: {}
+[8.943214] (robstride_core) StdoutLine: {'line': b'[ 95%] Built target at_bridge_cmd2at\n'}
+[9.025478] (-) TimerEvent: {}
+[9.125795] (-) TimerEvent: {}
+[9.226086] (-) TimerEvent: {}
+[9.326417] (-) TimerEvent: {}
+[9.426752] (-) TimerEvent: {}
+[9.527076] (-) TimerEvent: {}
+[9.627408] (-) TimerEvent: {}
+[9.727744] (-) TimerEvent: {}
+[9.828065] (-) TimerEvent: {}
+[9.928360] (-) TimerEvent: {}
+[10.028740] (-) TimerEvent: {}
+[10.129064] (-) TimerEvent: {}
+[10.229369] (-) TimerEvent: {}
+[10.329679] (-) TimerEvent: {}
+[10.430001] (-) TimerEvent: {}
+[10.530361] (-) TimerEvent: {}
+[10.609024] (robstride_core) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking CXX executable csv_sequencer_node\x1b[0m\n'}
+[10.630442] (-) TimerEvent: {}
+[10.730805] (-) TimerEvent: {}
+[10.831158] (-) TimerEvent: {}
+[10.931478] (-) TimerEvent: {}
+[10.950989] (robstride_core) StdoutLine: {'line': b'[ 97%] Built target csv_sequencer_node\n'}
+[10.951935] (robstride_core) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[10.954716] (robstride_core) CommandEnded: {'returncode': 2}
+[11.031547] (-) TimerEvent: {}
+[11.131862] (-) TimerEvent: {}
+[11.183311] (robstride_core) JobEnded: {'identifier': 'robstride_core', 'rc': 2}
+[11.194171] (-) EventReactorShutdown: {}

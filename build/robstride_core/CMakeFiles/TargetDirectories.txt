@@ -17,6 +17,7 @@
 /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/build/robstride_core/CMakeFiles/robstride_core__rosidl_typesupport_c__pyext.dir
 /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/build/robstride_core/CMakeFiles/at_bridge_cmd2at.dir
 /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/build/robstride_core/CMakeFiles/control_node.dir
+/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/build/robstride_core/CMakeFiles/csv_sequencer_node.dir
 /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/build/robstride_core/CMakeFiles/test.dir
 /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/build/robstride_core/CMakeFiles/edit_cache.dir
 /home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/build/robstride_core/CMakeFiles/rebuild_cache.dir

@@ -13,6 +13,7 @@
 
   <depend>rclcpp</depend>
   <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
 
   <!-- ★ ここを追加（インターフェースを含むパッケージだと宣言） -->
   <member_of_group>rosidl_interface_packages</member_of_group>

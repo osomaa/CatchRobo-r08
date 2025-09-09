@@ -2,6 +2,8 @@
 #include <std_msgs/msg/u_int16_multi_array.hpp>
 #include "robstride_core/msg/goal_event.hpp"
 #include "robstride_core/msg/mit_cmd.hpp"
+#include <builtin_interfaces/msg/time.hpp>
+#include <rclcpp/time.hpp>
 
 #include <unordered_map>
 #include <cstdint>
@@ -82,7 +84,7 @@ private:
     if (state != st.last_state) {
       robstride_core::msg::GoalEvent ev;
       ev.id = id; ev.state = state; ev.error = static_cast<float>(err);
-      ev.stamp = now().to_msg();
+      ev.stamp = this->get_clock()->now();
       pub_goal_->publish(ev);
       st.last_state = state;
     }

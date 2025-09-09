@@ -419,6 +419,19 @@ control_node/fast:
 .PHONY : control_node/fast
 
 #=============================================================================
+# Target rules for targets named csv_sequencer_node
+
+# Build rule for target.
+csv_sequencer_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 csv_sequencer_node
+.PHONY : csv_sequencer_node
+
+# fast build rule for target.
+csv_sequencer_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/csv_sequencer_node.dir/build.make CMakeFiles/csv_sequencer_node.dir/build
+.PHONY : csv_sequencer_node/fast
+
+#=============================================================================
 # Target rules for targets named robstride_core__py
 
 # Build rule for target.
@@ -935,6 +948,30 @@ src/control.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/control_node.dir/build.make CMakeFiles/control_node.dir/src/control.cpp.s
 .PHONY : src/control.cpp.s
 
+src/csv_sequencer_node.o: src/csv_sequencer_node.cpp.o
+.PHONY : src/csv_sequencer_node.o
+
+# target to build an object file
+src/csv_sequencer_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/csv_sequencer_node.dir/build.make CMakeFiles/csv_sequencer_node.dir/src/csv_sequencer_node.cpp.o
+.PHONY : src/csv_sequencer_node.cpp.o
+
+src/csv_sequencer_node.i: src/csv_sequencer_node.cpp.i
+.PHONY : src/csv_sequencer_node.i
+
+# target to preprocess a source file
+src/csv_sequencer_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/csv_sequencer_node.dir/build.make CMakeFiles/csv_sequencer_node.dir/src/csv_sequencer_node.cpp.i
+.PHONY : src/csv_sequencer_node.cpp.i
+
+src/csv_sequencer_node.s: src/csv_sequencer_node.cpp.s
+.PHONY : src/csv_sequencer_node.s
+
+# target to generate assembly for a file
+src/csv_sequencer_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/csv_sequencer_node.dir/build.make CMakeFiles/csv_sequencer_node.dir/src/csv_sequencer_node.cpp.s
+.PHONY : src/csv_sequencer_node.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -957,6 +994,7 @@ help:
 	@echo "... uninstall"
 	@echo "... at_bridge_cmd2at"
 	@echo "... control_node"
+	@echo "... csv_sequencer_node"
 	@echo "... robstride_core__rosidl_generator_c"
 	@echo "... robstride_core__rosidl_generator_py"
 	@echo "... robstride_core__rosidl_typesupport_c"
@@ -1031,6 +1069,9 @@ help:
 	@echo "... src/control.o"
 	@echo "... src/control.i"
 	@echo "... src/control.s"
+	@echo "... src/csv_sequencer_node.o"
+	@echo "... src/csv_sequencer_node.i"
+	@echo "... src/csv_sequencer_node.s"
 .PHONY : help
 
 
