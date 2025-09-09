@@ -6,6 +6,7 @@ find_package(rosidl_default_generators REQUIRED)
 find_package(builtin_interfaces REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
 
 # ---------- interfaces ----------
 set(IDL_FILES
@@ -30,7 +31,10 @@ add_executable(control_node src/control.cpp)
 ament_target_dependencies(control_node rclcpp std_msgs)
 rosidl_target_interfaces(control_node ${cpp_typesupport_target})
 
-install(TARGETS at_bridge_cmd2at control_node
+add_executable(csv_sequencer_node src/csv_sequencer_node.cpp)
+ament_target_dependencies(csv_sequencer_node rclcpp std_msgs geometry_msgs)
+
+install(TARGETS at_bridge_cmd2at control_node csv_sequencer_node
   DESTINATION lib/${PROJECT_NAME})
 
 install(DIRECTORY include/

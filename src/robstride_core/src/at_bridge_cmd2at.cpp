@@ -41,7 +41,7 @@ public:
     pub_obs_   = create_publisher<std_msgs::msg::UInt16MultiArray>("/robstride/obs", 50);
     pub_raw_   = create_publisher<std_msgs::msg::String>("/atcan/rx_raw", 10);  // debug
     sub_mit_   = create_subscription<robstride_core::msg::MitCmd>(
-                  "/robstride/cmd/mit", rclcpp::QoS(100).best_effort(),
+                  "/robstride/cmd/mit", rclcpp::QoS(100).reliable(),
                   std::bind(&AtBridgeNode::on_mit, this, std::placeholders::_1));
 
     open_serial();
@@ -75,7 +75,8 @@ private:
     tio.c_cflag &= ~PARENB; tio.c_cflag &= ~CSTOPB;
     tio.c_cflag &= ~CSIZE;  tio.c_cflag |= CS8;
 
-    speed_t bs = B921600;
+    // portable default (fall back to 115200 if B921600 is not defined)
+    speed_t bs = B115200;
     switch (baud_) {
       case 115200: bs = B115200; break;
       case 230400: bs = B230400; break;
@@ -86,7 +87,7 @@ private:
 #ifdef B921600
       case 921600: bs = B921600; break;
 #endif
-      default:     bs = B921600; break;
+      default:     /* keep bs as-is */ break;
     }
     cfsetispeed(&tio, bs);
     cfsetospeed(&tio, bs);

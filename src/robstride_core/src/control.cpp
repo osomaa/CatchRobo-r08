@@ -82,7 +82,7 @@ private:
     if (state != st.last_state) {
       robstride_core::msg::GoalEvent ev;
       ev.id = id; ev.state = state; ev.error = static_cast<float>(err);
-      ev.stamp = now();
+      ev.stamp = now().to_msg();
       pub_goal_->publish(ev);
       st.last_state = state;
     }
