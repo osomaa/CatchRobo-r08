@@ -1,7 +1,0 @@
-[01m[K/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/src/robstride_core/src/control.cpp:[m[K In member function ‘[01m[Kvoid ControlNode::on_observe(std_msgs::msg::UInt16MultiArray_<std::allocator<void> >::SharedPtr)[m[K’:
-[01m[K/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/src/robstride_core/src/control.cpp:87:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::Time[m[K’ has no member named ‘[01m[Kto_msg[m[K’
-   87 |       ev.stamp = now().[01;31m[Kto_msg[m[K();
-      |                        [01;31m[K^~~~~~[m[K
-gmake[2]: *** [CMakeFiles/control_node.dir/build.make:76: CMakeFiles/control_node.dir/src/control.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:624: CMakeFiles/control_node.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

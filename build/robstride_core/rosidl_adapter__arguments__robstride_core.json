@@ -1,7 +1,0 @@
-{
-  "package_name": "robstride_core",
-  "non_idl_tuples": [
-    "/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/src/robstride_core:msg/MitCmd.msg",
-    "/home/ubuntu/Desktop/ros2_ws/CatchRobo-r08/src/robstride_core:msg/GoalEvent.msg"
-  ]
-}
