@@ -40,8 +40,8 @@ speed_t map_baud(int baud) {
 } // namespace
 
 bool open_serial(int& fd_out,
-                 const std::string& port,
-                 int baud,
+                 const std::string& port = "/dev/ttyUSB0",
+                 int baud = 921600,
                  bool dtr_on,
                  bool rts_on,
                  std::string* err)
@@ -102,11 +102,10 @@ bool open_serial(int& fd_out,
 #ifdef TIOCM_RTS
     if (rts_on) mflags |= TIOCM_RTS; else mflags &= ~TIOCM_RTS;
 #endif
-    (void)::ioctl(fd, TIOCMSET, &mflags); // 失敗しても致命ではないので続行
+    (void)::ioctl(fd, TIOCMSET, &mflags); 
   }
 #endif
 
-  // 7) 入出力バッファをクリア（起動時のゴミを捨てる）
   ::tcflush(fd, TCIOFLUSH);
 
   fd_out = fd;
@@ -114,8 +113,10 @@ bool open_serial(int& fd_out,
 }
 
 void close_serial(int& fd) {
-  if (fd >= 0) {
-    ::close(fd);
-    fd = -1;
-  }
+  if (fd >= 0) { ::close(fd); fd = -1; }
+}
+
+inline bool send_frame(int fd, const std::vector<uint8_t>& frame) {
+  ssize_t n = ::write(fd, frame.data(), frame.size());
+  return n == static_cast<ssize_t>(frame.size());
 }
