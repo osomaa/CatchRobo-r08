@@ -52,11 +52,9 @@ void split_addr (uint32_t addr, uint8_t& mode5, uint16_t& data16, uint8_t& id8) 
     data16 = (addr >> 11) & 0xFFFF;
     id8 = (addr >> 3) & 0xFF;
 }
-void split_payload (uint64_t payload, uint16_t& com1, uint16_t& com2, uint16_t& com3, uint16_t& com4) {
-    com1 = (payload >> 28) & 0xFFFF;
-    com2 = (payload >> 12) & 0xFFFF;
-    com3 = (payload >> 16) & 0xFFFF;
-    com4 = (payload >> 0) & 0xFFFF;
+void analysis_payload (uint64_t payload, float& val) {
+    uint32_t val_int = (payload & 0xFF) << 24 | ((payload >> 8) & 0xFF) << 16 | ((payload >> 16) & 0xFF) << 8 | ((payload >> 24) & 0xFF);
+    memcpy(&val, &val_int, sizeof(float));
 }
 std::vector<uint8_t> at2cmd (const std::vector<uint8_t>& frame) {
     uint32_t addr;
@@ -66,8 +64,8 @@ std::vector<uint8_t> at2cmd (const std::vector<uint8_t>& frame) {
     uint16_t data16;
     uint8_t id8;
     split_addr(addr, mode5, data16, id8);
-    uint16_t com1, com2, com3, com4;
-    split_payload(payload, com1, com2, com3, com4);
+    float val;
+    analysis_payload(payload, val);
     return cmd2at(mode5, data16, id8, com1, com2, com3, com4);
 }
 
