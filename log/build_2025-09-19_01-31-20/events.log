@@ -1,0 +1,67 @@
+[0.000000] (-) TimerEvent: {}
+[0.001995] (-) JobUnselected: {'identifier': 'robstride_core'}
+[0.002543] (motor_control) JobQueued: {'identifier': 'motor_control', 'dependencies': OrderedDict()}
+[0.002742] (motor_control) JobStarted: {'identifier': 'motor_control'}
+[0.026472] (motor_control) JobProgress: {'identifier': 'motor_control', 'progress': 'cmake'}
+[0.028470] (motor_control) Command: {'cmd': ['/usr/bin/cmake', '/home/mowmow/workspace/CatchRobo-r08/src/motor_control', '-DCMAKE_INSTALL_PREFIX=/home/mowmow/workspace/CatchRobo-r08/install/motor_control'], 'cwd': '/home/mowmow/workspace/CatchRobo-r08/build/motor_control', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mowmow'), ('SSH_CLIENT', 'fe80::8e72:b820:569b:a338%wlan0 51049 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/mowmow/.vscode-server/cli/servers/Stable-0f0d87fa9e96c856c5212fc86db137ac0d783365/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('BROWSER', '/home/mowmow/.vscode-server/cli/servers/Stable-0f0d87fa9e96c856c5212fc86db137ac0d783365/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/mowmow'), ('TERM_PROGRAM_VERSION', '1.104.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-53ea4c0f-e1b7-4e26-904d-e259db4e8ab2.sock'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/mowmow/.vscode-server/cli/servers/Stable-0f0d87fa9e96c856c5212fc86db137ac0d783365/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/mowmow/.vscode-server/cli/servers/Stable-0f0d87fa9e96c856c5212fc86db137ac0d783365/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/mowmow/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-arm64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('LOGNAME', 'mowmow'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '5'), ('PATH', '/home/mowmow/.vscode-server/cli/servers/Stable-0f0d87fa9e96c856c5212fc86db137ac0d783365/server/bin/remote-cli:/home/mowmow/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/mowmow/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/mowmow/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-arm64/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/mowmow/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-1673549a75aa95a5.txt'), ('LANG', 'en_US.UTF-8'), ('PYTHONSTARTUP', '/home/mowmow/.vscode-server/data/User/workspaceStorage/51fb453f87a3dd25071c1a5c8a553644/ms-python.python/pythonrc.py'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-84bb2b580e.sock'), ('TERM_PROGRAM', 'vscode'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/mowmow/workspace/CatchRobo-r08/build/motor_control'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', 'fe80::8e72:b820:569b:a338%wlan0 51049 fe80::da3a:ddff:fe27:2394%wlan0 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('COLCON', '1')]), 'shell': False}
+[0.098696] (-) TimerEvent: {}
+[0.199414] (-) TimerEvent: {}
+[0.300177] (-) TimerEvent: {}
+[0.401337] (-) TimerEvent: {}
+[0.502153] (-) TimerEvent: {}
+[0.508158] (motor_control) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.602471] (-) TimerEvent: {}
+[0.703273] (-) TimerEvent: {}
+[0.783454] (motor_control) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.803498] (-) TimerEvent: {}
+[0.824401] (motor_control) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.903695] (-) TimerEvent: {}
+[1.004447] (-) TimerEvent: {}
+[1.105361] (-) TimerEvent: {}
+[1.206931] (-) TimerEvent: {}
+[1.292535] (motor_control) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.307216] (-) TimerEvent: {}
+[1.373908] (motor_control) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.378116] (motor_control) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.382998] (motor_control) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.407510] (-) TimerEvent: {}
+[1.425661] (motor_control) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.507833] (-) TimerEvent: {}
+[1.610106] (-) TimerEvent: {}
+[1.714584] (-) TimerEvent: {}
+[1.817618] (-) TimerEvent: {}
+[1.919073] (-) TimerEvent: {}
+[2.020830] (-) TimerEvent: {}
+[2.123028] (-) TimerEvent: {}
+[2.224407] (-) TimerEvent: {}
+[2.284107] (motor_control) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.310183] (motor_control) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.311205] (motor_control) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.312714] (motor_control) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.324541] (-) TimerEvent: {}
+[2.425354] (-) TimerEvent: {}
+[2.471621] (motor_control) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:10 (find_package):\n'}
+[2.473904] (motor_control) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[2.475335] (motor_control) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[2.476435] (motor_control) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[2.485876] (motor_control) StderrLine: {'line': b'\n'}
+[2.487242] (motor_control) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[2.488419] (motor_control) StderrLine: {'line': b'  any of the following names:\n'}
+[2.490302] (motor_control) StderrLine: {'line': b'\n'}
+[2.491614] (motor_control) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[2.492762] (motor_control) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[2.493888] (motor_control) StderrLine: {'line': b'\n'}
+[2.495238] (motor_control) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[2.496362] (motor_control) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[2.497580] (motor_control) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[2.500307] (motor_control) StderrLine: {'line': b'  has been installed.\n'}
+[2.503486] (motor_control) StderrLine: {'line': b'\n'}
+[2.505755] (motor_control) StderrLine: {'line': b'\x1b[0m\n'}
+[2.507011] (motor_control) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[2.520517] (motor_control) StdoutLine: {'line': b'See also "/home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles/CMakeOutput.log".\n'}
+[2.521790] (motor_control) CommandEnded: {'returncode': 1}
+[2.527787] (-) TimerEvent: {}
+[2.630278] (-) TimerEvent: {}
+[2.717103] (motor_control) JobEnded: {'identifier': 'motor_control', 'rc': 1}
+[2.730883] (-) TimerEvent: {}
+[2.732674] (-) EventReactorShutdown: {}

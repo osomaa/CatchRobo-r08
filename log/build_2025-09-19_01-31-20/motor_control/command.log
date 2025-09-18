@@ -1,0 +1,2 @@
+Invoking command in '/home/mowmow/workspace/CatchRobo-r08/build/motor_control': /usr/bin/cmake /home/mowmow/workspace/CatchRobo-r08/src/motor_control -DCMAKE_INSTALL_PREFIX=/home/mowmow/workspace/CatchRobo-r08/install/motor_control
+Invoked command in '/home/mowmow/workspace/CatchRobo-r08/build/motor_control' returned '1': /usr/bin/cmake /home/mowmow/workspace/CatchRobo-r08/src/motor_control -DCMAKE_INSTALL_PREFIX=/home/mowmow/workspace/CatchRobo-r08/install/motor_control

@@ -1,0 +1,335 @@
+[0.072s] Invoking command in '/home/mowmow/workspace/CatchRobo-r08/build/motor_control': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/mowmow/workspace/CatchRobo-r08/src/motor_control -DCMAKE_INSTALL_PREFIX=/home/mowmow/workspace/CatchRobo-r08/install/motor_control
+[0.137s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.856s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.355s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.374s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.425s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.677s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.870s] -- Found builtin_interfaces: 1.2.2 (/opt/ros/humble/share/builtin_interfaces/cmake)
+[1.942s] -- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+[2.169s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.187s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.628s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.759s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.983s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.043s] -- Looking for pthread.h
+[3.378s] -- Looking for pthread.h - found
+[3.379s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.739s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[3.744s] -- Found Threads: TRUE  
+[5.227s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[6.266s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[7.577s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[7.683s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[7.699s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[7.814s] -- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[7.816s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[7.816s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[7.817s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[7.910s] -- Found PythonExtra: .so  
+[8.198s] -- Configuring done
+[8.507s] -- Generating done
+[8.608s] -- Build files have been written to: /home/mowmow/workspace/CatchRobo-r08/build/motor_control
+[8.650s] Invoked command in '/home/mowmow/workspace/CatchRobo-r08/build/motor_control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/mowmow/workspace/CatchRobo-r08/src/motor_control -DCMAKE_INSTALL_PREFIX=/home/mowmow/workspace/CatchRobo-r08/install/motor_control
+[8.661s] Invoking command in '/home/mowmow/workspace/CatchRobo-r08/build/motor_control': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mowmow/workspace/CatchRobo-r08/build/motor_control -- -j4 -l4
+[8.909s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[8.925s] [  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[9.106s] [  3%] Built target ament_cmake_python_copy_motor_control
+[11.752s] running egg_info
+[11.756s] creating motor_control.egg-info
+[11.756s] writing motor_control.egg-info/PKG-INFO
+[11.758s] writing dependency_links to motor_control.egg-info/dependency_links.txt
+[11.759s] writing top-level names to motor_control.egg-info/top_level.txt
+[11.760s] writing manifest file 'motor_control.egg-info/SOURCES.txt'
+[11.770s] reading manifest file 'motor_control.egg-info/SOURCES.txt'
+[11.773s] writing manifest file 'motor_control.egg-info/SOURCES.txt'
+[11.949s] [  3%] Built target ament_cmake_python_build_motor_control_egg
+[12.495s] [  3%] Built target motor_control__cpp
+[12.548s] [  5%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[12.560s] [  7%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[12.562s] [  9%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[12.571s] [ 11%] [32mBuilding C object CMakeFiles/motor_control__rosidl_generator_c.dir/rosidl_generator_c/motor_control/msg/detail/return_at__functions.c.o[0m
+[12.938s] [ 13%] [32mBuilding C object CMakeFiles/motor_control__rosidl_generator_c.dir/rosidl_generator_c/motor_control/msg/detail/send_at__functions.c.o[0m
+[13.253s] [ 15%] [32mBuilding C object CMakeFiles/motor_control__rosidl_generator_c.dir/rosidl_generator_c/motor_control/msg/detail/send_array__functions.c.o[0m
+[13.659s] [ 16%] [32m[1mLinking C shared library libmotor_control__rosidl_generator_c.so[0m
+[13.928s] [ 16%] Built target motor_control__rosidl_generator_c
+[13.982s] [ 18%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[14.477s] [ 20%] [32mBuilding CXX object CMakeFiles/motor_control__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/motor_control/msg/return_at__type_support.cpp.o[0m
+[14.752s] [ 22%] [32mBuilding CXX object CMakeFiles/motor_control__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/motor_control/msg/detail/dds_fastrtps/return_at__type_support.cpp.o[0m
+[14.937s] [ 24%] [32mBuilding CXX object CMakeFiles/motor_control__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/motor_control/msg/detail/return_at__type_support.cpp.o[0m
+[16.518s] [ 26%] [32mBuilding CXX object CMakeFiles/motor_control__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/motor_control/msg/send_at__type_support.cpp.o[0m
+[16.956s] [ 28%] [32mBuilding CXX object CMakeFiles/motor_control__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/motor_control/msg/detail/return_at__type_support_c.cpp.o[0m
+[18.346s] [ 30%] [32mBuilding CXX object CMakeFiles/motor_control__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/motor_control/msg/send_array__type_support.cpp.o[0m
+[18.618s] [ 32%] [32mBuilding CXX object CMakeFiles/motor_control__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/motor_control/msg/detail/send_at__type_support.cpp.o[0m
+[18.749s] [ 33%] [32mBuilding CXX object CMakeFiles/motor_control__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/motor_control/msg/detail/dds_fastrtps/send_at__type_support.cpp.o[0m
+[20.199s] [ 35%] [32mBuilding CXX object CMakeFiles/motor_control__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/motor_control/msg/detail/send_at__type_support_c.cpp.o[0m
+[20.702s] [ 37%] [32m[1mLinking CXX shared library libmotor_control__rosidl_typesupport_cpp.so[0m
+[21.195s] [ 37%] Built target motor_control__rosidl_typesupport_cpp
+[21.294s] [ 39%] [32mBuilding CXX object CMakeFiles/motor_control__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/motor_control/msg/detail/send_array__type_support_c.cpp.o[0m
+[22.116s] [ 41%] [32mBuilding CXX object CMakeFiles/motor_control__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/motor_control/msg/detail/send_array__type_support.cpp.o[0m
+[22.567s] [ 43%] [32mBuilding CXX object CMakeFiles/motor_control__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/motor_control/msg/detail/dds_fastrtps/send_array__type_support.cpp.o[0m
+[22.649s] [ 45%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[24.581s] [ 47%] [32m[1mLinking CXX shared library libmotor_control__rosidl_typesupport_fastrtps_c.so[0m
+[25.213s] [ 47%] Built target motor_control__rosidl_typesupport_fastrtps_c
+[25.307s] [ 49%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[25.391s] [ 50%] [32mBuilding C object CMakeFiles/motor_control__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/motor_control/msg/detail/return_at__type_support.c.o[0m
+[25.657s] [ 52%] [32mBuilding C object CMakeFiles/motor_control__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/motor_control/msg/detail/send_at__type_support.c.o[0m
+[25.801s] [ 54%] [32m[1mLinking CXX shared library libmotor_control__rosidl_typesupport_introspection_cpp.so[0m
+[25.922s] [ 56%] [32mBuilding C object CMakeFiles/motor_control__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/motor_control/msg/detail/send_array__type_support.c.o[0m
+[26.188s] [ 58%] [32m[1mLinking C shared library libmotor_control__rosidl_typesupport_introspection_c.so[0m
+[26.198s] [ 58%] Built target motor_control__rosidl_typesupport_introspection_cpp
+[26.314s] [ 60%] [32mBuilding CXX object CMakeFiles/communication_node.dir/src/communication_node.cpp.o[0m
+[26.428s] [ 60%] Built target motor_control__rosidl_typesupport_introspection_c
+[26.559s] [ 62%] [32m[1mLinking CXX shared library libmotor_control__rosidl_typesupport_fastrtps_cpp.so[0m
+[26.626s] [ 64%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/control_node.cpp.o[0m
+[26.994s] [ 64%] Built target motor_control__rosidl_typesupport_fastrtps_cpp
+[27.112s] [ 66%] [32mBuilding CXX object CMakeFiles/observe_node.dir/src/observe_node.cpp.o[0m
+[27.268s] [ 67%] [32mBuilding CXX object CMakeFiles/motor_control__rosidl_typesupport_c.dir/rosidl_typesupport_c/motor_control/msg/return_at__type_support.cpp.o[0m
+[27.536s] [ 69%] [32mBuilding CXX object CMakeFiles/motor_control__rosidl_typesupport_c.dir/rosidl_typesupport_c/motor_control/msg/send_at__type_support.cpp.o[0m
+[27.694s] [ 71%] [32mBuilding CXX object CMakeFiles/motor_control__rosidl_typesupport_c.dir/rosidl_typesupport_c/motor_control/msg/send_array__type_support.cpp.o[0m
+[27.931s] [ 73%] [32m[1mLinking CXX shared library libmotor_control__rosidl_typesupport_c.so[0m
+[28.176s] [ 73%] Built target motor_control__rosidl_typesupport_c
+[28.272s] [ 73%] Built target motor_control
+[28.374s] [ 75%] [34m[1mGenerating Python code for ROS interfaces[0m
+[32.448s] [ 75%] Built target motor_control__py
+[32.586s] [ 77%] [32mBuilding C object CMakeFiles/motor_control__rosidl_generator_py.dir/rosidl_generator_py/motor_control/msg/_return_at_s.c.o[0m
+[33.446s] [ 79%] [32mBuilding C object CMakeFiles/motor_control__rosidl_generator_py.dir/rosidl_generator_py/motor_control/msg/_send_at_s.c.o[0m
+[34.275s] [ 81%] [32mBuilding C object CMakeFiles/motor_control__rosidl_generator_py.dir/rosidl_generator_py/motor_control/msg/_send_array_s.c.o[0m
+[35.022s] [ 83%] [32m[1mLinking C shared library rosidl_generator_py/motor_control/libmotor_control__rosidl_generator_py.so[0m
+[35.395s] [ 83%] Built target motor_control__rosidl_generator_py
+[35.504s] [ 84%] [32mBuilding C object CMakeFiles/motor_control__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/motor_control/_motor_control_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[36.321s] [ 86%] [32m[1mLinking C shared library rosidl_generator_py/motor_control/motor_control_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so[0m
+[36.600s] [ 86%] Built target motor_control__rosidl_typesupport_fastrtps_c__pyext
+[36.737s] [ 88%] [32mBuilding C object CMakeFiles/motor_control__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/motor_control/_motor_control_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[37.617s] [ 90%] [32m[1mLinking C shared library rosidl_generator_py/motor_control/motor_control_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so[0m
+[37.891s] [ 90%] Built target motor_control__rosidl_typesupport_introspection_c__pyext
+[38.043s] [ 92%] [32mBuilding C object CMakeFiles/motor_control__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/motor_control/_motor_control_s.ep.rosidl_typesupport_c.c.o[0m
+[38.875s] [ 94%] [32m[1mLinking C shared library rosidl_generator_py/motor_control/motor_control_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so[0m
+[39.129s] [ 94%] Built target motor_control__rosidl_typesupport_c__pyext
+[42.319s] In file included from [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/communication_node.cpp:8[m[K:
+[42.320s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/include/motor_control/transform.hpp:[m[K In function ‘[01m[Kvoid at2cmd(const std::vector<unsigned char, std::allocator<unsigned char> >&, uint8_t&, uint16_t&, uint8_t&, float&)[m[K’:
+[42.321s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/include/motor_control/transform.hpp:66:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kpayload_size[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[42.329s]    66 |     uint8_t [01;35m[Kpayload_size[m[K = split_frame(frame, addr, payload);
+[42.330s]       |             [01;35m[K^~~~~~~~~~~~[m[K
+[42.655s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/communication_node.cpp:[m[K In member function ‘[01m[Kvoid CommunicationNode::reader_loop()[m[K’:
+[42.656s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/communication_node.cpp:62:14:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kit_begin[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[42.657s]    62 |         auto [01;35m[Kit_begin[m[K = buf.begin();
+[42.664s]       |              [01;35m[K^~~~~~~~[m[K
+[42.665s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/communication_node.cpp:63:14:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kit_end[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[42.671s]    63 |         auto [01;35m[Kit_end[m[K = buf.begin() + n;
+[42.678s]       |              [01;35m[K^~~~~~[m[K
+[43.105s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/control_node.cpp:[m[K In member function ‘[01m[Kbool ControlNode::make_batch(motor_control::msg::SendArray&)[m[K’:
+[43.105s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/control_node.cpp:67:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kpomp[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[43.106s]    67 |     bool [01;35m[Kpomp[m[K = to_int(trim_copy(cell)).value_or(0) != 0;
+[43.106s]       |          [01;35m[K^~~~[m[K
+[43.825s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:63:67:[m[K [01;35m[Kwarning: [m[Kconverting to ‘[01m[Kmotor_control::msg::ReturnAt_<std::allocator<void> >[m[K’ from initializer list would use explicit constructor ‘[01m[Kmotor_control::msg::ReturnAt_<ContainerAllocator>::ReturnAt_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+[43.826s]    63 |     std::array<motor_control::msg::ReturnAt, kjoints> last_state_{[01;35m[K}[m[K;
+[43.827s]       |                                                                   [01;35m[K^[m[K
+[43.828s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:63:67:[m[K [01;36m[Knote: [m[Kin C++11 and above a default constructor can be explicit
+[43.829s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:63:67:[m[K [01;35m[Kwarning: [m[Kconverting to ‘[01m[Kmotor_control::msg::ReturnAt_<std::allocator<void> >[m[K’ from initializer list would use explicit constructor ‘[01m[Kmotor_control::msg::ReturnAt_<ContainerAllocator>::ReturnAt_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+[43.837s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:63:67:[m[K [01;36m[Knote: [m[Kin C++11 and above a default constructor can be explicit
+[43.840s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:63:67:[m[K [01;35m[Kwarning: [m[Kconverting to ‘[01m[Kmotor_control::msg::ReturnAt_<std::allocator<void> >[m[K’ from initializer list would use explicit constructor ‘[01m[Kmotor_control::msg::ReturnAt_<ContainerAllocator>::ReturnAt_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+[43.841s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:63:67:[m[K [01;36m[Knote: [m[Kin C++11 and above a default constructor can be explicit
+[43.847s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:63:67:[m[K [01;35m[Kwarning: [m[Kconverting to ‘[01m[Kmotor_control::msg::ReturnAt_<std::allocator<void> >[m[K’ from initializer list would use explicit constructor ‘[01m[Kmotor_control::msg::ReturnAt_<ContainerAllocator>::ReturnAt_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+[43.857s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:63:67:[m[K [01;36m[Knote: [m[Kin C++11 and above a default constructor can be explicit
+[43.863s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:63:67:[m[K [01;35m[Kwarning: [m[Kconverting to ‘[01m[Kmotor_control::msg::ReturnAt_<std::allocator<void> >[m[K’ from initializer list would use explicit constructor ‘[01m[Kmotor_control::msg::ReturnAt_<ContainerAllocator>::ReturnAt_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+[43.868s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:63:67:[m[K [01;36m[Knote: [m[Kin C++11 and above a default constructor can be explicit
+[43.877s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:63:67:[m[K [01;35m[Kwarning: [m[Kconverting to ‘[01m[Kmotor_control::msg::ReturnAt_<std::allocator<void> >[m[K’ from initializer list would use explicit constructor ‘[01m[Kmotor_control::msg::ReturnAt_<ContainerAllocator>::ReturnAt_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+[43.883s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:63:67:[m[K [01;36m[Knote: [m[Kin C++11 and above a default constructor can be explicit
+[73.729s] [ 96%] [32m[1mLinking CXX executable control_node[0m
+[76.077s] [ 96%] Built target control_node
+[77.363s] [ 98%] [32m[1mLinking CXX executable communication_node[0m
+[79.497s] [ 98%] Built target communication_node
+[98.327s] [100%] [32m[1mLinking CXX executable observe_node[0m
+[101.895s] [100%] Built target observe_node
+[102.006s] Invoked command in '/home/mowmow/workspace/CatchRobo-r08/build/motor_control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mowmow/workspace/CatchRobo-r08/build/motor_control -- -j4 -l4
+[102.094s] Invoking command in '/home/mowmow/workspace/CatchRobo-r08/build/motor_control': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mowmow/workspace/CatchRobo-r08/build/motor_control
+[102.171s] -- Install configuration: ""
+[102.174s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/ament_index/resource_index/rosidl_interfaces/motor_control
+[102.177s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control
+[102.180s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg
+[102.183s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/return_at.h
+[102.186s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/send_array.h
+[102.192s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/send_at.h
+[102.193s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/rosidl_generator_c__visibility_control.h
+[102.195s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail
+[102.197s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/return_at__functions.c
+[102.227s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/return_at__struct.h
+[102.238s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/send_at__type_support.h
+[102.246s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/send_at__functions.c
+[102.254s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/send_array__functions.h
+[102.259s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/send_array__type_support.h
+[102.260s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/send_array__functions.c
+[102.262s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/send_at__struct.h
+[102.263s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/send_array__struct.h
+[102.264s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/return_at__type_support.h
+[102.280s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/return_at__functions.h
+[102.286s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/send_at__functions.h
+[102.288s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/environment/library_path.sh
+[102.289s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/environment/library_path.dsv
+[102.290s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/lib/libmotor_control__rosidl_generator_c.so
+[102.297s] -- Set runtime path of "/home/mowmow/workspace/CatchRobo-r08/install/motor_control/lib/libmotor_control__rosidl_generator_c.so" to ""
+[102.298s] -- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control
+[102.299s] -- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg
+[102.307s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[102.308s] -- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail
+[102.313s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/send_array__rosidl_typesupport_fastrtps_c.h
+[102.318s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/send_at__rosidl_typesupport_fastrtps_c.h
+[102.320s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/return_at__rosidl_typesupport_fastrtps_c.h
+[102.321s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/lib/libmotor_control__rosidl_typesupport_fastrtps_c.so
+[102.323s] -- Set runtime path of "/home/mowmow/workspace/CatchRobo-r08/install/motor_control/lib/libmotor_control__rosidl_typesupport_fastrtps_c.so" to ""
+[102.324s] -- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control
+[102.325s] -- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg
+[102.327s] -- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail
+[102.329s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/send_at__type_support.c
+[102.333s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/send_at__rosidl_typesupport_introspection_c.h
+[102.334s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/send_array__type_support.c
+[102.340s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/return_at__rosidl_typesupport_introspection_c.h
+[102.343s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/return_at__type_support.c
+[102.345s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/send_array__rosidl_typesupport_introspection_c.h
+[102.346s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[102.347s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/lib/libmotor_control__rosidl_typesupport_introspection_c.so
+[102.353s] -- Set runtime path of "/home/mowmow/workspace/CatchRobo-r08/install/motor_control/lib/libmotor_control__rosidl_typesupport_introspection_c.so" to ""
+[102.354s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/lib/libmotor_control__rosidl_typesupport_c.so
+[102.362s] -- Set runtime path of "/home/mowmow/workspace/CatchRobo-r08/install/motor_control/lib/libmotor_control__rosidl_typesupport_c.so" to ""
+[102.364s] -- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control
+[102.366s] -- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg
+[102.367s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/return_at.hpp
+[102.369s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/send_at.hpp
+[102.375s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/send_array.hpp
+[102.378s] -- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail
+[102.384s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/return_at__type_support.hpp
+[102.390s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/send_array__type_support.hpp
+[102.394s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/return_at__struct.hpp
+[102.398s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/send_at__traits.hpp
+[102.403s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/return_at__builder.hpp
+[102.406s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/send_array__traits.hpp
+[102.410s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/send_at__builder.hpp
+[102.413s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/return_at__traits.hpp
+[102.416s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/send_at__struct.hpp
+[102.422s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/send_at__type_support.hpp
+[102.426s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/send_array__builder.hpp
+[102.429s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/send_array__struct.hpp
+[102.435s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/rosidl_generator_cpp__visibility_control.hpp
+[102.438s] -- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control
+[102.442s] -- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg
+[102.445s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[102.450s] -- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail
+[102.453s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/dds_fastrtps
+[102.455s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/return_at__rosidl_typesupport_fastrtps_cpp.hpp
+[102.459s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/send_array__rosidl_typesupport_fastrtps_cpp.hpp
+[102.462s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/send_at__rosidl_typesupport_fastrtps_cpp.hpp
+[102.467s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/lib/libmotor_control__rosidl_typesupport_fastrtps_cpp.so
+[102.477s] -- Set runtime path of "/home/mowmow/workspace/CatchRobo-r08/install/motor_control/lib/libmotor_control__rosidl_typesupport_fastrtps_cpp.so" to ""
+[102.479s] -- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control
+[102.483s] -- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg
+[102.484s] -- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail
+[102.485s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/return_at__rosidl_typesupport_introspection_cpp.hpp
+[102.491s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/send_at__rosidl_typesupport_introspection_cpp.hpp
+[102.492s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/send_array__rosidl_typesupport_introspection_cpp.hpp
+[102.496s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/return_at__type_support.cpp
+[102.501s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/send_at__type_support.cpp
+[102.505s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/send_array__type_support.cpp
+[102.509s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/lib/libmotor_control__rosidl_typesupport_introspection_cpp.so
+[102.517s] -- Set runtime path of "/home/mowmow/workspace/CatchRobo-r08/install/motor_control/lib/libmotor_control__rosidl_typesupport_introspection_cpp.so" to ""
+[102.519s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/lib/libmotor_control__rosidl_typesupport_cpp.so
+[102.529s] -- Set runtime path of "/home/mowmow/workspace/CatchRobo-r08/install/motor_control/lib/libmotor_control__rosidl_typesupport_cpp.so" to ""
+[102.530s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/environment/pythonpath.sh
+[102.535s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/environment/pythonpath.dsv
+[102.539s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control-0.0.1-py3.10.egg-info
+[102.542s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control-0.0.1-py3.10.egg-info/PKG-INFO
+[102.546s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control-0.0.1-py3.10.egg-info/top_level.txt
+[102.549s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control-0.0.1-py3.10.egg-info/SOURCES.txt
+[102.553s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control-0.0.1-py3.10.egg-info/dependency_links.txt
+[102.556s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control
+[102.558s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control/_motor_control_s.ep.rosidl_typesupport_c.c
+[102.562s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control/_motor_control_s.ep.rosidl_typesupport_introspection_c.c
+[102.567s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control/libmotor_control__rosidl_generator_py.so
+[102.572s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control/__init__.py
+[102.575s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control/motor_control_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[102.581s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control/motor_control_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[102.585s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control/msg
+[102.587s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control/msg/_return_at_s.c
+[102.590s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control/msg/_send_array_s.c
+[102.593s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control/msg/__init__.py
+[102.597s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control/msg/_send_array.py
+[102.600s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control/msg/_send_at_s.c
+[102.603s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control/msg/_return_at.py
+[102.606s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control/msg/_send_at.py
+[102.610s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control/motor_control_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[102.614s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control/_motor_control_s.ep.rosidl_typesupport_fastrtps_c.c
+[102.923s] Listing '/home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control'...
+[102.924s] Compiling '/home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control/__init__.py'...
+[102.926s] Listing '/home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control/msg'...
+[102.927s] Compiling '/home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control/msg/__init__.py'...
+[102.928s] Compiling '/home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control/msg/_return_at.py'...
+[102.929s] Compiling '/home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control/msg/_send_array.py'...
+[102.930s] Compiling '/home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control/msg/_send_at.py'...
+[102.951s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control/motor_control_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[102.954s] -- Set runtime path of "/home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control/motor_control_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so" to ""
+[102.956s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control/motor_control_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[102.960s] -- Set runtime path of "/home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control/motor_control_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so" to ""
+[102.962s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control/motor_control_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[102.966s] -- Set runtime path of "/home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control/motor_control_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so" to ""
+[102.966s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/lib/libmotor_control__rosidl_generator_py.so
+[102.969s] -- Set runtime path of "/home/mowmow/workspace/CatchRobo-r08/install/motor_control/lib/libmotor_control__rosidl_generator_py.so" to ""
+[102.970s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/msg/ReturnAt.idl
+[102.971s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/msg/SendAt.idl
+[102.972s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/msg/SendArray.idl
+[102.974s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/msg/ReturnAt.msg
+[102.975s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/msg/SendAt.msg
+[102.976s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/msg/SendArray.msg
+[102.977s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/lib/motor_control/communication_node
+[103.031s] -- Set runtime path of "/home/mowmow/workspace/CatchRobo-r08/install/motor_control/lib/motor_control/communication_node" to ""
+[103.031s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/lib/motor_control/control_node
+[103.107s] -- Set runtime path of "/home/mowmow/workspace/CatchRobo-r08/install/motor_control/lib/motor_control/control_node" to ""
+[103.109s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/lib/motor_control/observe_node
+[103.246s] -- Set runtime path of "/home/mowmow/workspace/CatchRobo-r08/install/motor_control/lib/motor_control/observe_node" to ""
+[103.248s] -- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include
+[103.249s] -- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control
+[103.250s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/transform.hpp
+[103.258s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/serial_utils.hpp
+[103.259s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/config
+[103.260s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/config/program.csv
+[103.261s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/launch
+[103.263s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/launch/bringup.launch.py
+[103.268s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/ament_index/resource_index/package_run_dependencies/motor_control
+[103.274s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/ament_index/resource_index/parent_prefix_path/motor_control
+[103.278s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/environment/ament_prefix_path.sh
+[103.284s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/environment/ament_prefix_path.dsv
+[103.288s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/environment/path.sh
+[103.292s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/environment/path.dsv
+[103.296s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/local_setup.bash
+[103.300s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/local_setup.sh
+[103.304s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/local_setup.zsh
+[103.310s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/local_setup.dsv
+[103.313s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/package.dsv
+[103.318s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/ament_index/resource_index/packages/motor_control
+[103.323s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/cmake/export_motor_control__rosidl_generator_cExport.cmake
+[103.327s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/cmake/export_motor_control__rosidl_generator_cExport-noconfig.cmake
+[103.332s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/cmake/export_motor_control__rosidl_typesupport_fastrtps_cExport.cmake
+[103.336s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/cmake/export_motor_control__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[103.349s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/cmake/motor_control__rosidl_typesupport_introspection_cExport.cmake
+[103.351s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/cmake/motor_control__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[103.358s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/cmake/motor_control__rosidl_typesupport_cExport.cmake
+[103.361s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/cmake/motor_control__rosidl_typesupport_cExport-noconfig.cmake
+[103.366s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/cmake/export_motor_control__rosidl_generator_cppExport.cmake
+[103.368s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/cmake/export_motor_control__rosidl_typesupport_fastrtps_cppExport.cmake
+[103.371s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/cmake/export_motor_control__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[103.376s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/cmake/motor_control__rosidl_typesupport_introspection_cppExport.cmake
+[103.381s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/cmake/motor_control__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[103.385s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/cmake/motor_control__rosidl_typesupport_cppExport.cmake
+[103.389s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/cmake/motor_control__rosidl_typesupport_cppExport-noconfig.cmake
+[103.394s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/cmake/export_motor_control__rosidl_generator_pyExport.cmake
+[103.398s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/cmake/export_motor_control__rosidl_generator_pyExport-noconfig.cmake
+[103.403s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/cmake/rosidl_cmake-extras.cmake
+[103.407s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/cmake/ament_cmake_export_dependencies-extras.cmake
+[103.412s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/cmake/ament_cmake_export_include_directories-extras.cmake
+[103.416s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/cmake/ament_cmake_export_libraries-extras.cmake
+[103.419s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/cmake/ament_cmake_export_targets-extras.cmake
+[103.423s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[103.428s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[103.431s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/cmake/motor_controlConfig.cmake
+[103.434s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/cmake/motor_controlConfig-version.cmake
+[103.437s] -- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/package.xml
+[103.456s] Invoked command in '/home/mowmow/workspace/CatchRobo-r08/build/motor_control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mowmow/workspace/CatchRobo-r08/build/motor_control

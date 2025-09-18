@@ -1,0 +1,52 @@
+[0.050s] Invoking command in '/home/mowmow/workspace/CatchRobo-r08/build/motor_control': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mowmow/workspace/CatchRobo-r08/build/motor_control -- -j4 -l4
+[0.263s] [  1%] Built target motor_control__cpp
+[0.285s] [ 11%] Built target motor_control__rosidl_generator_c
+[0.330s] [ 11%] Built target ament_cmake_python_copy_motor_control
+[0.405s] [ 20%] Built target motor_control__rosidl_typesupport_cpp
+[0.420s] [ 30%] Built target motor_control__rosidl_typesupport_introspection_cpp
+[0.431s] [ 39%] Built target motor_control__rosidl_typesupport_fastrtps_cpp
+[0.487s] [ 49%] Built target motor_control__rosidl_typesupport_fastrtps_c
+[0.593s] [35m[1mConsolidate compiler generated dependencies of target communication_node[0m
+[0.608s] [ 58%] Built target motor_control__rosidl_typesupport_c
+[0.657s] [ 67%] Built target motor_control__rosidl_typesupport_introspection_c
+[0.770s] [35m[1mConsolidate compiler generated dependencies of target observe_node[0m
+[0.786s] [ 71%] Built target control_node
+[0.795s] [ 73%] [32mBuilding CXX object CMakeFiles/communication_node.dir/src/communication_node.cpp.o[0m
+[1.030s] [ 77%] Built target observe_node
+[1.044s] [ 77%] Built target motor_control
+[1.152s] [ 79%] Built target motor_control__py
+[1.355s] [ 86%] Built target motor_control__rosidl_generator_py
+[1.461s] [ 90%] Built target motor_control__rosidl_typesupport_introspection_c__pyext
+[1.474s] [ 94%] Built target motor_control__rosidl_typesupport_fastrtps_c__pyext
+[1.569s] [ 98%] Built target motor_control__rosidl_typesupport_c__pyext
+[2.089s] running egg_info
+[2.092s] writing motor_control.egg-info/PKG-INFO
+[2.094s] writing dependency_links to motor_control.egg-info/dependency_links.txt
+[2.095s] writing top-level names to motor_control.egg-info/top_level.txt
+[2.105s] reading manifest file 'motor_control.egg-info/SOURCES.txt'
+[2.108s] writing manifest file 'motor_control.egg-info/SOURCES.txt'
+[2.242s] [ 98%] Built target ament_cmake_python_build_motor_control_egg
+[10.848s] In file included from [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/communication_node.cpp:8[m[K:
+[10.849s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/include/motor_control/transform.hpp:[m[K In function ‘[01m[Kvoid at2cmd(const std::vector<unsigned char, std::allocator<unsigned char> >&, uint8_t&, uint16_t&, uint8_t&, float&)[m[K’:
+[10.849s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/include/motor_control/transform.hpp:66:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kpayload_size[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[10.850s]    66 |     uint8_t [01;35m[Kpayload_size[m[K = split_frame(frame, addr, payload);
+[10.850s]       |             [01;35m[K^~~~~~~~~~~~[m[K
+[11.083s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/communication_node.cpp:[m[K In member function ‘[01m[Kvoid CommunicationNode::init_motor()[m[K’:
+[11.084s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/communication_node.cpp:46:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kfloat32_t[m[K’ was not declared in this scope; did you mean ‘[01m[Kfloat_t[m[K’?
+[11.084s]    46 |     [01;31m[Kfloat32_t[m[K vel = 1.0f;
+[11.085s]       |     [01;31m[K^~~~~~~~~[m[K
+[11.085s]       |     [32m[Kfloat_t[m[K
+[11.086s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/communication_node.cpp:47:15:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kacc[m[K’
+[11.086s]    47 |     float32_t [01;31m[Kacc[m[K = 2.0f;
+[11.087s]       |               [01;31m[K^~~[m[K
+[11.103s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/communication_node.cpp:50:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kvel[m[K’ was not declared in this scope
+[11.103s]    50 |     std::memcpy(&vel_b, &[01;31m[Kvel[m[K, sizeof(float32_t));
+[11.104s]       |                          [01;31m[K^~~[m[K
+[11.121s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/communication_node.cpp:51:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kacc[m[K’ was not declared in this scope; did you mean ‘[01m[Kacct[m[K’?
+[11.122s]    51 |     std::memcpy(&acc_b, &[01;31m[Kacc[m[K, sizeof(float32_t));
+[11.122s]       |                          [01;31m[K^~~[m[K
+[11.122s]       |                          [32m[Kacct[m[K
+[20.047s] gmake[2]: *** [CMakeFiles/communication_node.dir/build.make:76: CMakeFiles/communication_node.dir/src/communication_node.cpp.o] Error 1
+[20.049s] gmake[1]: *** [CMakeFiles/Makefile2:597: CMakeFiles/communication_node.dir/all] Error 2
+[20.049s] gmake: *** [Makefile:146: all] Error 2
+[20.056s] Invoked command in '/home/mowmow/workspace/CatchRobo-r08/build/motor_control' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mowmow/workspace/CatchRobo-r08/build/motor_control -- -j4 -l4

@@ -1,0 +1,11 @@
+[01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/control_node.cpp:[m[K In constructor ‘[01m[KControlNode::ControlNode()[m[K’:
+[01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/control_node.cpp:16:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kament_index_cpp[m[K’ has not been declared
+   16 |     const std::string pkg = [01;31m[Kament_index_cpp[m[K::get_package_share_directory("motor_control");
+      |                             [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/control_node.cpp:[m[K In member function ‘[01m[Kbool ControlNode::make_batch(motor_control::msg::SendArray&)[m[K’:
+[01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/control_node.cpp:69:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kpomp[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   69 |     bool [01;35m[Kpomp[m[K = to_int(trim_copy(cell)).value_or(0) != 0;
+      |          [01;35m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/control_node.dir/build.make:76: CMakeFiles/control_node.dir/src/control_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:624: CMakeFiles/control_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

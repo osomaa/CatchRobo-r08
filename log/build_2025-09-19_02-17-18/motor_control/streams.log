@@ -1,0 +1,88 @@
+[0.054s] Invoking command in '/home/mowmow/workspace/CatchRobo-r08/build/motor_control': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mowmow/workspace/CatchRobo-r08/build/motor_control -- -j4 -l4
+[0.272s] [  1%] Built target motor_control__cpp
+[0.299s] [ 11%] Built target motor_control__rosidl_generator_c
+[0.337s] [ 11%] Built target ament_cmake_python_copy_motor_control
+[0.417s] [ 20%] Built target motor_control__rosidl_typesupport_cpp
+[0.435s] [ 30%] Built target motor_control__rosidl_typesupport_introspection_cpp
+[0.454s] [ 39%] Built target motor_control__rosidl_typesupport_fastrtps_cpp
+[0.493s] [ 49%] Built target motor_control__rosidl_typesupport_fastrtps_c
+[0.560s] [ 58%] Built target motor_control__rosidl_typesupport_introspection_c
+[0.569s] [35m[1mConsolidate compiler generated dependencies of target communication_node[0m
+[0.612s] [ 67%] Built target motor_control__rosidl_typesupport_c
+[0.696s] [35m[1mConsolidate compiler generated dependencies of target observe_node[0m
+[0.741s] [ 71%] Built target control_node
+[0.785s] [ 73%] [32mBuilding CXX object CMakeFiles/communication_node.dir/src/communication_node.cpp.o[0m
+[0.848s] [ 75%] [32mBuilding CXX object CMakeFiles/observe_node.dir/src/observe_node.cpp.o[0m
+[0.861s] [ 75%] Built target motor_control
+[0.956s] [ 77%] Built target motor_control__py
+[1.058s] [ 84%] Built target motor_control__rosidl_generator_py
+[1.168s] [ 88%] Built target motor_control__rosidl_typesupport_fastrtps_c__pyext
+[1.282s] [ 92%] Built target motor_control__rosidl_typesupport_introspection_c__pyext
+[1.382s] [ 96%] Built target motor_control__rosidl_typesupport_c__pyext
+[2.020s] running egg_info
+[2.024s] writing motor_control.egg-info/PKG-INFO
+[2.027s] writing dependency_links to motor_control.egg-info/dependency_links.txt
+[2.028s] writing top-level names to motor_control.egg-info/top_level.txt
+[2.041s] reading manifest file 'motor_control.egg-info/SOURCES.txt'
+[2.047s] writing manifest file 'motor_control.egg-info/SOURCES.txt'
+[2.197s] [ 96%] Built target ament_cmake_python_build_motor_control_egg
+[12.020s] In file included from [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/communication_node.cpp:8[m[K:
+[12.020s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/include/motor_control/transform.hpp:[m[K In function ‘[01m[Kvoid at2cmd(const std::vector<unsigned char, std::allocator<unsigned char> >&, uint8_t&, uint16_t&, uint8_t&, float&)[m[K’:
+[12.021s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/include/motor_control/transform.hpp:66:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kpayload_size[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[12.022s]    66 |     uint8_t [01;35m[Kpayload_size[m[K = split_frame(frame, addr, payload);
+[12.022s]       |             [01;35m[K^~~~~~~~~~~~[m[K
+[12.304s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/communication_node.cpp:[m[K In member function ‘[01m[Kvoid CommunicationNode::init_motor()[m[K’:
+[12.305s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/communication_node.cpp:46:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kfloat32_t[m[K’ was not declared in this scope; did you mean ‘[01m[Kfloat_t[m[K’?
+[12.305s]    46 |     [01;31m[Kfloat32_t[m[K vel = 1.0f;
+[12.306s]       |     [01;31m[K^~~~~~~~~[m[K
+[12.307s]       |     [32m[Kfloat_t[m[K
+[12.314s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/communication_node.cpp:47:15:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kacc[m[K’
+[12.315s]    47 |     float32_t [01;31m[Kacc[m[K = 2.0f;
+[12.316s]       |               [01;31m[K^~~[m[K
+[12.329s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/communication_node.cpp:48:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kvel_b[m[K’ was not declared in this scope
+[12.329s]    48 |     std::memcpy(&[01;31m[Kvel_b[m[K, &vel, sizeof(float32_t));
+[12.330s]       |                  [01;31m[K^~~~~[m[K
+[12.352s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/communication_node.cpp:48:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kvel[m[K’ was not declared in this scope
+[12.353s]    48 |     std::memcpy(&vel_b, &[01;31m[Kvel[m[K, sizeof(float32_t));
+[12.354s]       |                          [01;31m[K^~~[m[K
+[12.377s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/communication_node.cpp:49:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kacc_b[m[K’ was not declared in this scope
+[12.378s]    49 |     std::memcpy(&[01;31m[Kacc_b[m[K, &acc, sizeof(float32_t));
+[12.381s]       |                  [01;31m[K^~~~~[m[K
+[12.401s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/communication_node.cpp:49:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kacc[m[K’ was not declared in this scope; did you mean ‘[01m[Kacct[m[K’?
+[12.403s]    49 |     std::memcpy(&acc_b, &[01;31m[Kacc[m[K, sizeof(float32_t));
+[12.407s]       |                          [01;31m[K^~~[m[K
+[12.411s]       |                          [32m[Kacct[m[K
+[12.587s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:63:67:[m[K [01;35m[Kwarning: [m[Kconverting to ‘[01m[Kmotor_control::msg::ReturnAt_<std::allocator<void> >[m[K’ from initializer list would use explicit constructor ‘[01m[Kmotor_control::msg::ReturnAt_<ContainerAllocator>::ReturnAt_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+[12.588s]    63 |     std::array<motor_control::msg::ReturnAt, kjoints> last_state_{[01;35m[K}[m[K;
+[12.589s]       |                                                                   [01;35m[K^[m[K
+[12.589s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:63:67:[m[K [01;36m[Knote: [m[Kin C++11 and above a default constructor can be explicit
+[12.590s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:63:67:[m[K [01;35m[Kwarning: [m[Kconverting to ‘[01m[Kmotor_control::msg::ReturnAt_<std::allocator<void> >[m[K’ from initializer list would use explicit constructor ‘[01m[Kmotor_control::msg::ReturnAt_<ContainerAllocator>::ReturnAt_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+[12.591s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:63:67:[m[K [01;36m[Knote: [m[Kin C++11 and above a default constructor can be explicit
+[12.592s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:63:67:[m[K [01;35m[Kwarning: [m[Kconverting to ‘[01m[Kmotor_control::msg::ReturnAt_<std::allocator<void> >[m[K’ from initializer list would use explicit constructor ‘[01m[Kmotor_control::msg::ReturnAt_<ContainerAllocator>::ReturnAt_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+[12.593s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:63:67:[m[K [01;36m[Knote: [m[Kin C++11 and above a default constructor can be explicit
+[12.594s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:63:67:[m[K [01;35m[Kwarning: [m[Kconverting to ‘[01m[Kmotor_control::msg::ReturnAt_<std::allocator<void> >[m[K’ from initializer list would use explicit constructor ‘[01m[Kmotor_control::msg::ReturnAt_<ContainerAllocator>::ReturnAt_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+[12.594s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:63:67:[m[K [01;36m[Knote: [m[Kin C++11 and above a default constructor can be explicit
+[12.595s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:63:67:[m[K [01;35m[Kwarning: [m[Kconverting to ‘[01m[Kmotor_control::msg::ReturnAt_<std::allocator<void> >[m[K’ from initializer list would use explicit constructor ‘[01m[Kmotor_control::msg::ReturnAt_<ContainerAllocator>::ReturnAt_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+[12.596s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:63:67:[m[K [01;36m[Knote: [m[Kin C++11 and above a default constructor can be explicit
+[12.597s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:63:67:[m[K [01;35m[Kwarning: [m[Kconverting to ‘[01m[Kmotor_control::msg::ReturnAt_<std::allocator<void> >[m[K’ from initializer list would use explicit constructor ‘[01m[Kmotor_control::msg::ReturnAt_<ContainerAllocator>::ReturnAt_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+[12.597s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:63:67:[m[K [01;36m[Knote: [m[Kin C++11 and above a default constructor can be explicit
+[12.701s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:[m[K In member function ‘[01m[Kbool ObserveNode::is_different(const SendArray&, const std::array<motor_control::msg::ReturnAt_<std::allocator<void> >, 6>&)[m[K’:
+[12.701s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:49:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst struct motor_control::msg::SendAt_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kvelocity[m[K’
+[12.702s]    49 |             if (std::abs(c.[01;31m[Kvelocity[m[K - s.velocity) > 0.01f) return true;
+[12.703s]       |                            [01;31m[K^~~~~~~~[m[K
+[12.705s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:49:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst struct motor_control::msg::ReturnAt_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kvelocity[m[K’
+[12.706s]    49 |             if (std::abs(c.velocity - s.[01;31m[Kvelocity[m[K) > 0.01f) return true;
+[12.706s]       |                                         [01;31m[K^~~~~~~~[m[K
+[12.707s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:50:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst struct motor_control::msg::SendAt_<std::allocator<void> >[m[K’ has no member named ‘[01m[Ktorque[m[K’
+[12.708s]    50 |             if (std::abs(c.[01;31m[Ktorque[m[K - s.torque) > 0.01f) return true;
+[12.709s]       |                            [01;31m[K^~~~~~[m[K
+[12.709s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:50:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst struct motor_control::msg::ReturnAt_<std::allocator<void> >[m[K’ has no member named ‘[01m[Ktorque[m[K’
+[12.710s]    50 |             if (std::abs(c.torque - s.[01;31m[Ktorque[m[K) > 0.01f) return true;
+[12.711s]       |                                       [01;31m[K^~~~~~[m[K
+[22.604s] gmake[2]: *** [CMakeFiles/communication_node.dir/build.make:76: CMakeFiles/communication_node.dir/src/communication_node.cpp.o] Error 1
+[22.607s] gmake[1]: *** [CMakeFiles/Makefile2:597: CMakeFiles/communication_node.dir/all] Error 2
+[22.608s] gmake[1]: *** Waiting for unfinished jobs....
+[26.618s] gmake[2]: *** [CMakeFiles/observe_node.dir/build.make:76: CMakeFiles/observe_node.dir/src/observe_node.cpp.o] Error 1
+[26.619s] gmake[1]: *** [CMakeFiles/Makefile2:651: CMakeFiles/observe_node.dir/all] Error 2
+[26.620s] gmake: *** [Makefile:146: all] Error 2
+[26.627s] Invoked command in '/home/mowmow/workspace/CatchRobo-r08/build/motor_control' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mowmow/workspace/CatchRobo-r08/build/motor_control -- -j4 -l4
