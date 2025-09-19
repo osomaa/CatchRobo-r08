@@ -1,0 +1,35 @@
+In file included from [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/communication_node.cpp:8[m[K:
+[01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/include/motor_control/transform.hpp:[m[K In function ‘[01m[Kvoid at2cmd(const std::vector<unsigned char, std::allocator<unsigned char> >&, uint8_t&, uint16_t&, uint8_t&, float&)[m[K’:
+[01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/include/motor_control/transform.hpp:66:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kpayload_size[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   66 |     uint8_t [01;35m[Kpayload_size[m[K = split_frame(frame, addr, payload);
+      |             [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/communication_node.cpp:[m[K In member function ‘[01m[Kvoid CommunicationNode::on_cmd(motor_control::msg::SendAt_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/communication_node.cpp:70:20:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K;[m[K’ token
+   70 |     uint32_t pos_b=[01;31m[K;[m[K
+      |                    [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/communication_node.cpp:1[m[K:
+[01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/communication_node.cpp:74:31:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Kunsigned char*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   74 |     RCLCPP_INFO(get_logger(), [01;35m[K"send frame: %d bytes"[m[K, [32m[Kframe.data()[m[K);
+      |                               [01;35m[K^~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~[m[K
+      |                                                                 [32m[K|[m[K
+      |                                                                 [32m[Kunsigned char*[m[K
+[01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/communication_node.cpp:74:45:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   74 |     RCLCPP_INFO(get_logger(), "send frame: [01;36m[K%d[m[K bytes", frame.data());
+      |                                            [01;36m[K~^[m[K
+      |                                             [01;36m[K|[m[K
+      |                                             [01;36m[Kint[m[K
+      |                                            [32m[K%hhn[m[K
+gmake[2]: *** [CMakeFiles/communication_node.dir/build.make:76: CMakeFiles/communication_node.dir/src/communication_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:597: CMakeFiles/communication_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

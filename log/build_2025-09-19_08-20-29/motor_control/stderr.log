@@ -1,0 +1,12 @@
+In file included from [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/communication_node.cpp:8[m[K:
+[01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/include/motor_control/transform.hpp:[m[K In function ‘[01m[Kvoid at2cmd(const std::vector<unsigned char, std::allocator<unsigned char> >&, uint8_t&, uint16_t&, uint8_t&, float&)[m[K’:
+[01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/include/motor_control/transform.hpp:66:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kpayload_size[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   66 |     uint8_t [01;35m[Kpayload_size[m[K = split_frame(frame, addr, payload);
+      |             [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/communication_node.cpp:[m[K In member function ‘[01m[Kvoid CommunicationNode::reader_loop()[m[K’:
+[01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/communication_node.cpp:106:14:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kit_begin[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+  106 |         auto [01;35m[Kit_begin[m[K = buf.begin();
+      |              [01;35m[K^~~~~~~~[m[K
+[01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/communication_node.cpp:107:14:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kit_end[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+  107 |         auto [01;35m[Kit_end[m[K = buf.begin() + n;
+      |              [01;35m[K^~~~~~[m[K

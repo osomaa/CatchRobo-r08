@@ -1,0 +1,127 @@
+[0.053s] Invoking command in '/home/mowmow/workspace/CatchRobo-r08/build/motor_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mowmow/workspace/CatchRobo-r08/build/motor_control -- -j4 -l4
+[0.283s] [  1%] Built target motor_control__cpp
+[0.453s] [ 11%] Built target motor_control__rosidl_generator_c
+[0.484s] [ 11%] Built target ament_cmake_python_copy_motor_control
+[0.667s] [ 20%] Built target motor_control__rosidl_typesupport_cpp
+[0.737s] [ 30%] Built target motor_control__rosidl_typesupport_fastrtps_cpp
+[0.859s] [ 39%] Built target motor_control__rosidl_typesupport_introspection_cpp
+[0.960s] [ 49%] Built target motor_control__rosidl_typesupport_fastrtps_c
+[1.108s] [ 60%] Built target motor_control__rosidl_typesupport_c
+[1.119s] [ 67%] Built target motor_control__rosidl_typesupport_introspection_c
+[1.490s] [ 69%] [32mBuilding CXX object CMakeFiles/communication_node.dir/src/communication_node.cpp.o[0m
+[1.670s] [ 73%] Built target observe_node
+[1.737s] [ 77%] Built target control_node
+[2.039s] [ 77%] Built target motor_control
+[2.329s] [ 79%] Built target motor_control__py
+[2.677s] [ 86%] Built target motor_control__rosidl_generator_py
+[3.187s] [ 90%] Built target motor_control__rosidl_typesupport_fastrtps_c__pyext
+[3.251s] [ 94%] Built target motor_control__rosidl_typesupport_introspection_c__pyext
+[3.565s] [ 98%] Built target motor_control__rosidl_typesupport_c__pyext
+[4.007s] running egg_info
+[4.010s] writing motor_control.egg-info/PKG-INFO
+[4.014s] writing dependency_links to motor_control.egg-info/dependency_links.txt
+[4.014s] writing top-level names to motor_control.egg-info/top_level.txt
+[4.025s] reading manifest file 'motor_control.egg-info/SOURCES.txt'
+[4.028s] writing manifest file 'motor_control.egg-info/SOURCES.txt'
+[4.180s] [ 98%] Built target ament_cmake_python_build_motor_control_egg
+[13.482s] In file included from [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/communication_node.cpp:8[m[K:
+[13.483s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/include/motor_control/transform.hpp:[m[K In function ‘[01m[Kvoid analysis_payload(uint64_t, float&)[m[K’:
+[13.483s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/include/motor_control/transform.hpp:63:14:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kindex_le[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[13.484s]    63 |     uint16_t [01;35m[Kindex_le[m[K;
+[13.484s]       |              [01;35m[K^~~~~~~~[m[K
+[13.485s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/include/motor_control/transform.hpp:64:14:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Ksub_le[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[13.485s]    64 |     uint16_t [01;35m[Ksub_le[m[K;
+[13.486s]       |              [01;35m[K^~~~~~[m[K
+[13.486s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/include/motor_control/transform.hpp:[m[K In function ‘[01m[Kvoid at2cmd(const std::vector<unsigned char, std::allocator<unsigned char> >&, uint8_t&, uint16_t&, uint8_t&, float&)[m[K’:
+[13.487s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/include/motor_control/transform.hpp:82:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kpayload_size[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[13.489s]    82 |     uint8_t [01;35m[Kpayload_size[m[K = split_frame(frame, addr, payload);
+[13.490s]       |             [01;35m[K^~~~~~~~~~~~[m[K
+[14.177s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/communication_node.cpp:[m[K In member function ‘[01m[Kvoid CommunicationNode::reader_loop()[m[K’:
+[14.184s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/communication_node.cpp:113:62:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K.[m[K’ token
+[14.186s]   113 |         auto it = std::search(rx.begin(), rx.end(), {'A','T'}[01;31m[K.[m[Kbegin(), {'A','T'}.end());
+[14.187s]       |                                                              [01;31m[K^[m[K
+[14.188s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/communication_node.cpp:113:30:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+[14.190s]   113 |         auto it = std::search[01;36m[K([m[Krx.begin(), rx.end(), {'A','T'}.begin(), {'A','T'}.end());
+[14.191s]       |                              [01;36m[K^[m[K
+[14.192s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/communication_node.cpp:113:81:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K.[m[K’ token
+[14.193s]   113 |         auto it = std::search(rx.begin(), rx.end(), {'A','T'}.begin(), {'A','T'}[01;31m[K.[m[Kend());
+[14.194s]       |                                                                                 [01;31m[K^[m[K
+[14.196s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/communication_node.cpp:113:30:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+[14.197s]   113 |         auto it = std::search[01;36m[K([m[Krx.begin(), rx.end(), {'A','T'}.begin(), {'A','T'}.end());
+[14.199s]       |                              [01;36m[K^[m[K
+[14.201s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/communication_node.cpp:113:30:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Ksearch(std::vector<unsigned char, std::allocator<unsigned char> >::iterator, std::vector<unsigned char, std::allocator<unsigned char> >::iterator, <brace-enclosed initializer list>, <brace-enclosed initializer list>)[m[K’
+[14.203s]   113 |         auto it = [01;31m[Kstd::search(rx.begin(), rx.end(), {'A','T'}.begin(), {'A','T'}.[m[Kend());
+[14.206s]       |                   [01;31m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[14.207s] In file included from [01m[K/usr/include/c++/11/algorithm:62[m[K,
+[14.208s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+[14.215s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[14.217s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[14.218s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[14.219s]                  from [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/communication_node.cpp:1[m[K:
+[14.220s] [01m[K/usr/include/c++/11/bits/stl_algo.h:4124:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _FIter1, class _FIter2> _FIter1 std::search(_FIter1, _FIter1, _FIter2, _FIter2)[m[K’
+[14.222s]  4124 |     [01;36m[Ksearch[m[K(_ForwardIterator1 __first1, _ForwardIterator1 __last1,
+[14.223s]       |     [01;36m[K^~~~~~[m[K
+[14.224s] [01m[K/usr/include/c++/11/bits/stl_algo.h:4124:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[14.226s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/communication_node.cpp:113:30:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[K_FIter2[m[K’
+[14.227s]   113 |         auto it = [01;36m[Kstd::search(rx.begin(), rx.end(), {'A','T'}.begin(), {'A','T'}.[m[Kend());
+[14.228s]       |                   [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[14.230s] In file included from [01m[K/usr/include/c++/11/algorithm:62[m[K,
+[14.231s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+[14.232s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[14.234s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[14.235s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[14.237s]                  from [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/communication_node.cpp:1[m[K:
+[14.238s] [01m[K/usr/include/c++/11/bits/stl_algo.h:4165:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _FIter1, class _FIter2, class _BinaryPredicate> _FIter1 std::search(_FIter1, _FIter1, _FIter2, _FIter2, _BinaryPredicate)[m[K’
+[14.239s]  4165 |     [01;36m[Ksearch[m[K(_ForwardIterator1 __first1, _ForwardIterator1 __last1,
+[14.240s]       |     [01;36m[K^~~~~~[m[K
+[14.248s] [01m[K/usr/include/c++/11/bits/stl_algo.h:4165:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[14.249s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/communication_node.cpp:113:30:[m[K [01;36m[Knote: [m[K  candidate expects 5 arguments, 4 provided
+[14.250s]   113 |         auto it = [01;36m[Kstd::search(rx.begin(), rx.end(), {'A','T'}.begin(), {'A','T'}.[m[Kend());
+[14.251s]       |                   [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[14.252s] In file included from [01m[K/usr/include/c++/11/algorithm:62[m[K,
+[14.253s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+[14.254s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[14.255s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[14.257s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[14.258s]                  from [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/communication_node.cpp:1[m[K:
+[14.259s] [01m[K/usr/include/c++/11/bits/stl_algo.h:4260:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _ForwardIterator, class _Searcher> _ForwardIterator std::search(_ForwardIterator, _ForwardIterator, const _Searcher&)[m[K’
+[14.260s]  4260 |     [01;36m[Ksearch[m[K(_ForwardIterator __first, _ForwardIterator __last,
+[14.261s]       |     [01;36m[K^~~~~~[m[K
+[14.262s] [01m[K/usr/include/c++/11/bits/stl_algo.h:4260:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[14.263s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/communication_node.cpp:113:30:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 4 provided
+[14.264s]   113 |         auto it = [01;36m[Kstd::search(rx.begin(), rx.end(), {'A','T'}.begin(), {'A','T'}.[m[Kend());
+[14.266s]       |                   [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[14.267s] In file included from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+[14.268s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+[14.269s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[14.270s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[14.271s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[14.274s]                  from [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/communication_node.cpp:1[m[K:
+[14.276s] [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:112:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _ExecutionPolicy, class _ForwardIterator1, class _ForwardIterator2, class _BinaryPredicate> __pstl::__internal::__enable_if_execution_policy<_ExecutionPolicy, _ForwardIterator> std::search(_ExecutionPolicy&&, _ForwardIterator1, _ForwardIterator1, _ForwardIterator2, _ForwardIterator2, _BinaryPredicate)[m[K’
+[14.277s]   112 | [01;36m[Ksearch[m[K(_ExecutionPolicy&& __exec, _ForwardIterator1 __first, _ForwardIterator1 __last, _ForwardIterator2 __s_first,
+[14.280s]       | [01;36m[K^~~~~~[m[K
+[14.281s] [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:112:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[14.282s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/communication_node.cpp:113:30:[m[K [01;36m[Knote: [m[K  candidate expects 6 arguments, 4 provided
+[14.284s]   113 |         auto it = [01;36m[Kstd::search(rx.begin(), rx.end(), {'A','T'}.begin(), {'A','T'}.[m[Kend());
+[14.285s]       |                   [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[14.286s] In file included from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+[14.287s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+[14.289s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[14.291s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[14.292s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[14.293s]                  from [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/communication_node.cpp:1[m[K:
+[14.294s] [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:117:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _ExecutionPolicy, class _ForwardIterator1, class _ForwardIterator2> __pstl::__internal::__enable_if_execution_policy<_ExecutionPolicy, _ForwardIterator> std::search(_ExecutionPolicy&&, _ForwardIterator1, _ForwardIterator1, _ForwardIterator2, _ForwardIterator2)[m[K’
+[14.296s]   117 | [01;36m[Ksearch[m[K(_ExecutionPolicy&& __exec, _ForwardIterator1 __first, _ForwardIterator1 __last, _ForwardIterator2 __s_first,
+[14.297s]       | [01;36m[K^~~~~~[m[K
+[14.298s] [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:117:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[14.299s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/communication_node.cpp:113:30:[m[K [01;36m[Knote: [m[K  candidate expects 5 arguments, 4 provided
+[14.300s]   113 |         auto it = [01;36m[Kstd::search(rx.begin(), rx.end(), {'A','T'}.begin(), {'A','T'}.[m[Kend());
+[14.301s]       |                   [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[14.302s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/communication_node.cpp:146:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kat2com[m[K’ was not declared in this scope; did you mean ‘[01m[Kat2cmd[m[K’?
+[14.303s]   146 |         [01;31m[Kat2com[m[K(frame, mode5, data16, id8, val);
+[14.304s]       |         [01;31m[K^~~~~~[m[K
+[14.306s]       |         [32m[Kat2cmd[m[K
+[24.905s] gmake[2]: *** [CMakeFiles/communication_node.dir/build.make:76: CMakeFiles/communication_node.dir/src/communication_node.cpp.o] Error 1
+[24.908s] gmake[1]: *** [CMakeFiles/Makefile2:597: CMakeFiles/communication_node.dir/all] Error 2
+[24.912s] gmake: *** [Makefile:146: all] Error 2
+[24.927s] Invoked command in '/home/mowmow/workspace/CatchRobo-r08/build/motor_control' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mowmow/workspace/CatchRobo-r08/build/motor_control -- -j4 -l4

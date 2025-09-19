@@ -27,9 +27,10 @@ public:
       throw std::runtime_error("failed to open csv");
     }
 
+    auto q_event = rclcpp::QoS(rclcpp::KeepLast(1)).reliable();
     pub_cmd_batch_ = this->create_publisher<motor_control::msg::SendArray>("motor/cmd_batch", rclcpp::QoS(10));
     sub_done_ = this->create_subscription<std_msgs::msg::Bool>(
-      "motor/observe/done", rclcpp::QoS(10),
+      "motor/observe/done", q_event,
       std::bind(&ControlNode::on_done, this, std::placeholders::_1));
 
     RCLCPP_INFO(get_logger(), "control_node ready. CSV=%s", input_csv_path_.c_str());
@@ -49,66 +50,64 @@ private:
   static std::optional<float> to_float(const std::string& s) {
     try { return std::stof(s); } catch (...) { return std::nullopt; }
   }
+  bool finished_ = false;
 
-  // 1行分を読み取り、batchに積む。終端ならfalse
-  bool make_batch(motor_control::msg::SendArray& batch) {
-    batch.cmds.clear();
+// make_batch を堅牢化
+bool make_batch(motor_control::msg::SendArray& batch) {
+  batch.cmds.clear();
+  if (!ifs_.good()) return false;
 
-    std::string line;
-    std::getline(ifs_, line);
+  std::string line;
+  // 空行/コメントをスキップ
+  while (std::getline(ifs_, line)) {
+    auto t = trim_copy(line);
+    if (t.empty() || t[0] == '#' || t[0] == ';') continue;
+
     std::istringstream ss(line);
     std::string cell;
 
-    std::getline(ss, cell, ',');
-    bool pomp = to_int(trim_copy(cell)).value_or(0) != 0;
-    // 期待: id, position (, ... 拡張余地)
+    // 先頭セル（あなたのCSVは ',' 区切りでOK）
+    std::getline(ss, cell, ','); // 例: フラグを読み捨て
+    size_t added = 0;
+
     while (true) {
       motor_control::msg::SendAt cmd;
-      // id
+
       if (!std::getline(ss, cell, ',')) break;
-        auto id_opt = to_int(trim_copy(cell));
-      if (!id_opt) {
-        RCLCPP_WARN(get_logger(), "Invalid id in line: %s", line.c_str());
-        continue;
-      }
+      auto id_opt = to_int(trim_copy(cell));
+      if (!id_opt) { std::string dummy; std::getline(ss, dummy, ','); continue; }
       cmd.id = static_cast<uint8_t>(*id_opt);
 
-      if (!std::getline(ss, cell, ',')) {
-        RCLCPP_WARN(get_logger(), "Missing position in line: %s", line.c_str());
-        continue;
-      }
+      if (!std::getline(ss, cell, ',')) break;
       auto pos_opt = to_float(trim_copy(cell));
-      if (!pos_opt) {
-        RCLCPP_WARN(get_logger(), "Invalid position in line: %s", line.c_str());
-        continue;
-      }
+      if (!pos_opt) continue;
       cmd.position = *pos_opt;
+
       batch.cmds.push_back(cmd);
+      ++added;
     }
-
-    if (batch.cmds.empty()) {
-      return false;
-    }
-    return true;
+    return added > 0;
   }
+  return false; // 本当のEOF
+}
 
-  void on_done(const std_msgs::msg::Bool::SharedPtr msg) {
-    // true=次バッチ要求、false=再送要求（と勝手に解釈）
-    if (msg->data) {
-      if (!make_batch(cmd_batch_)) {
-        RCLCPP_INFO(get_logger(), "CSV reached EOF. No more commands.");
-        // 必要ならここで完了通知を出す or ノード終了
-        // rclcpp::shutdown();
-        return;
-      }
-      pub_cmd_batch_->publish(cmd_batch_);
-      RCLCPP_INFO(get_logger(), "Published new batch: %zu cmds", cmd_batch_.cmds.size());
-    } else {
-      // 直前のバッチを再送（セミコロン忘れ修正）
-      pub_cmd_batch_->publish(cmd_batch_);
-      RCLCPP_DEBUG(get_logger(), "Republished last batch: %zu cmds", cmd_batch_.cmds.size());
+void on_done(const std_msgs::msg::Bool::SharedPtr msg) {
+  //RCLCPP_INFO(get_logger(), "[on_done] data=%d", (int)msg->data);
+  if (finished_) return;
+
+  if (msg->data) {
+    if (!make_batch(cmd_batch_)) {
+      RCLCPP_INFO(get_logger(), "CSV reached EOF. No more commands.");
+      finished_ = true;                       // ← 以後は無視
+      return;
     }
+    pub_cmd_batch_->publish(cmd_batch_);
+    RCLCPP_INFO(get_logger(), "Published new batch: %zu cmds", cmd_batch_.cmds.size());
+  } else {
+    if (!cmd_batch_.cmds.empty())
+      pub_cmd_batch_->publish(cmd_batch_);
   }
+}
 
   std::string input_csv_path_;
   std::ifstream ifs_;

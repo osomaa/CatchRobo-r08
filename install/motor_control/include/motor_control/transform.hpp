@@ -45,20 +45,36 @@ inline std::vector<uint8_t> cmd2at (uint8_t mode5, uint16_t data16, uint8_t id8,
 }
 
 inline uint8_t split_frame (std::vector<uint8_t> frame, uint32_t& addr, uint64_t& payload) {
-    addr = (uint32_t(frame[2]) << 24) | (uint32_t(frame[3]) << 16) | (uint32_t(frame[4]) << 8) | uint32_t(frame[5]);
+    addr = (uint32_t(frame[2]) << 24) | (uint32_t(frame[3]) << 16) | (uint32_t(frame[4]) << 8) | (uint32_t(frame[5]));
     uint8_t payload_size = frame[6];
     payload = (uint64_t(frame[7]) << 56) | (uint64_t(frame[8]) << 48) | (uint64_t(frame[9]) << 40) | (uint64_t(frame[10]) << 32) |
               (uint64_t(frame[11]) << 24) | (uint64_t(frame[12]) << 16) | (uint64_t(frame[13]) << 8) | uint64_t(frame[14]);
     return payload_size;
 }
 inline void split_addr (uint32_t addr, uint8_t& mode5, uint16_t& data16, uint8_t& id8) {
-    mode5 = (addr >> 27) & 0x1F;
-    data16 = (addr >> 11) & 0xFFFF;
-    id8 = (addr >> 3) & 0xFF;
+  uint32_t base = addr >> 3;
+  mode5 = (base >> 24) & 0x1F;
+  data16 = (base >> 8) & 0xFFFF;
+  id8 = (base) & 0xFF;
 }
-inline void analysis_payload (uint64_t payload, float& val) {
-    uint32_t val_int = (payload & 0xFF) << 24 | ((payload >> 8) & 0xFF) << 16 | ((payload >> 16) & 0xFF) << 8 | ((payload >> 24) & 0xFF);
-    memcpy(&val, &val_int, sizeof(float));
+inline void analysis_payload(uint64_t payload, float& value) {
+    // payload は b7..b14 を BE で詰めた形：
+    //  (payload>>56)=b7, >>48=b8, >>40=b9, >>32=b10, >>24=b11, >>16=b12, >>8=b13, &=b14
+    uint16_t index_le;
+    uint16_t sub_le;
+    // index(LE) = b7 + (b8<<8)
+    index_le = uint16_t(((payload >> 56) & 0xFF) | (((payload >> 48) & 0xFF) << 8));
+
+    // sub(LE) = b9 + (b10<<8)  ※多くのケースで 0x0000 固定
+    sub_le   = uint16_t(((payload >> 40) & 0xFF) | (((payload >> 32) & 0xFF) << 8));
+
+    uint32_t u =
+        uint32_t(((payload >> 24) & 0xFF)) |
+        (uint32_t(((payload >> 16) & 0xFF)) << 8) |
+        (uint32_t(((payload >>  8) & 0xFF)) << 16) |
+        (uint32_t(( payload        & 0xFF)) << 24);
+
+    std::memcpy(&value, &u, sizeof(float));
 }
 inline void at2cmd (const std::vector<uint8_t>& frame, uint8_t& mode5, uint16_t& data16, uint8_t& id8, float& val) {
     uint32_t addr;

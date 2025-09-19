@@ -1,0 +1,45 @@
+[0.038s] Invoking command in '/home/mowmow/workspace/CatchRobo-r08/build/motor_control': /usr/bin/cmake --build /home/mowmow/workspace/CatchRobo-r08/build/motor_control -- -j4 -l4
+[0.239s] [  1%] Built target motor_control__cpp
+[0.249s] [ 11%] Built target motor_control__rosidl_generator_c
+[0.305s] [ 11%] Built target ament_cmake_python_copy_motor_control
+[0.339s] [ 20%] Built target motor_control__rosidl_typesupport_cpp
+[0.360s] [ 33%] Built target motor_control__rosidl_typesupport_introspection_cpp
+[0.366s] [ 39%] Built target motor_control__rosidl_typesupport_fastrtps_cpp
+[0.418s] [ 49%] Built target motor_control__rosidl_typesupport_fastrtps_c
+[0.438s] [ 58%] Built target motor_control__rosidl_typesupport_introspection_c
+[0.454s] [ 67%] Built target motor_control__rosidl_typesupport_c
+[0.511s] [35m[1mConsolidate compiler generated dependencies of target observe_node[0m
+[0.542s] [ 71%] Built target communication_node
+[0.598s] [ 75%] Built target control_node
+[0.618s] [ 77%] [32mBuilding CXX object CMakeFiles/observe_node.dir/src/observe_node.cpp.o[0m
+[0.638s] [ 77%] Built target motor_control
+[0.723s] [ 79%] Built target motor_control__py
+[0.820s] [ 86%] Built target motor_control__rosidl_generator_py
+[0.957s] [ 90%] Built target motor_control__rosidl_typesupport_fastrtps_c__pyext
+[1.066s] [ 94%] Built target motor_control__rosidl_typesupport_c__pyext
+[1.080s] [ 98%] Built target motor_control__rosidl_typesupport_introspection_c__pyext
+[1.582s] running egg_info
+[1.586s] writing motor_control.egg-info/PKG-INFO
+[1.589s] writing dependency_links to motor_control.egg-info/dependency_links.txt
+[1.589s] writing top-level names to motor_control.egg-info/top_level.txt
+[1.598s] reading manifest file 'motor_control.egg-info/SOURCES.txt'
+[1.604s] writing manifest file 'motor_control.egg-info/SOURCES.txt'
+[1.746s] [ 98%] Built target ament_cmake_python_build_motor_control_egg
+[11.355s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:74:65:[m[K [01;35m[Kwarning: [m[Kconverting to ‘[01m[Kmotor_control::msg::ReturnAt_<std::allocator<void> >[m[K’ from initializer list would use explicit constructor ‘[01m[Kmotor_control::msg::ReturnAt_<ContainerAllocator>::ReturnAt_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+[11.355s]    74 |   std::array<motor_control::msg::ReturnAt, kjoints> last_state_{[01;35m[K}[m[K;
+[11.356s]       |                                                                 [01;35m[K^[m[K
+[11.356s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:74:65:[m[K [01;36m[Knote: [m[Kin C++11 and above a default constructor can be explicit
+[11.357s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:74:65:[m[K [01;35m[Kwarning: [m[Kconverting to ‘[01m[Kmotor_control::msg::ReturnAt_<std::allocator<void> >[m[K’ from initializer list would use explicit constructor ‘[01m[Kmotor_control::msg::ReturnAt_<ContainerAllocator>::ReturnAt_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+[11.357s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:74:65:[m[K [01;36m[Knote: [m[Kin C++11 and above a default constructor can be explicit
+[11.358s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:74:65:[m[K [01;35m[Kwarning: [m[Kconverting to ‘[01m[Kmotor_control::msg::ReturnAt_<std::allocator<void> >[m[K’ from initializer list would use explicit constructor ‘[01m[Kmotor_control::msg::ReturnAt_<ContainerAllocator>::ReturnAt_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+[11.358s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:74:65:[m[K [01;36m[Knote: [m[Kin C++11 and above a default constructor can be explicit
+[11.359s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:74:65:[m[K [01;35m[Kwarning: [m[Kconverting to ‘[01m[Kmotor_control::msg::ReturnAt_<std::allocator<void> >[m[K’ from initializer list would use explicit constructor ‘[01m[Kmotor_control::msg::ReturnAt_<ContainerAllocator>::ReturnAt_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+[11.359s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:74:65:[m[K [01;36m[Knote: [m[Kin C++11 and above a default constructor can be explicit
+[11.359s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:74:65:[m[K [01;35m[Kwarning: [m[Kconverting to ‘[01m[Kmotor_control::msg::ReturnAt_<std::allocator<void> >[m[K’ from initializer list would use explicit constructor ‘[01m[Kmotor_control::msg::ReturnAt_<ContainerAllocator>::ReturnAt_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+[11.360s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:74:65:[m[K [01;36m[Knote: [m[Kin C++11 and above a default constructor can be explicit
+[11.360s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:74:65:[m[K [01;35m[Kwarning: [m[Kconverting to ‘[01m[Kmotor_control::msg::ReturnAt_<std::allocator<void> >[m[K’ from initializer list would use explicit constructor ‘[01m[Kmotor_control::msg::ReturnAt_<ContainerAllocator>::ReturnAt_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+[11.361s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:74:65:[m[K [01;36m[Knote: [m[Kin C++11 and above a default constructor can be explicit
+[13.139s] gmake[2]: *** [CMakeFiles/observe_node.dir/build.make:76: CMakeFiles/observe_node.dir/src/observe_node.cpp.o] Interrupt
+[13.141s] gmake[1]: *** [CMakeFiles/Makefile2:651: CMakeFiles/observe_node.dir/all] Interrupt
+[13.142s] gmake: *** [Makefile:146: all] Interrupt
+[13.200s] Invoked command in '/home/mowmow/workspace/CatchRobo-r08/build/motor_control' returned '-2': /usr/bin/cmake --build /home/mowmow/workspace/CatchRobo-r08/build/motor_control -- -j4 -l4

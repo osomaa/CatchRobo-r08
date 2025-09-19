@@ -1,0 +1,55 @@
+[0.050s] Invoking command in '/home/mowmow/workspace/CatchRobo-r08/build/motor_control': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mowmow/workspace/CatchRobo-r08/build/motor_control -- -j4 -l4
+[0.281s] [  1%] Built target motor_control__cpp
+[0.292s] [ 11%] Built target motor_control__rosidl_generator_c
+[0.427s] [ 11%] Built target ament_cmake_python_copy_motor_control
+[0.503s] [ 20%] Built target motor_control__rosidl_typesupport_cpp
+[0.571s] [ 30%] Built target motor_control__rosidl_typesupport_fastrtps_cpp
+[0.608s] [ 39%] Built target motor_control__rosidl_typesupport_introspection_cpp
+[0.759s] [ 49%] Built target motor_control__rosidl_typesupport_fastrtps_c
+[0.817s] [ 58%] Built target motor_control__rosidl_typesupport_introspection_c
+[0.887s] [ 67%] Built target motor_control__rosidl_typesupport_c
+[0.935s] [35m[1mConsolidate compiler generated dependencies of target communication_node[0m
+[1.064s] [ 71%] Built target observe_node
+[1.198s] [ 75%] Built target control_node
+[1.267s] [ 77%] [32mBuilding CXX object CMakeFiles/communication_node.dir/src/communication_node.cpp.o[0m
+[1.365s] [ 77%] Built target motor_control
+[1.537s] [ 79%] Built target motor_control__py
+[1.805s] [ 86%] Built target motor_control__rosidl_generator_py
+[2.056s] [ 90%] Built target motor_control__rosidl_typesupport_fastrtps_c__pyext
+[2.075s] [ 94%] Built target motor_control__rosidl_typesupport_introspection_c__pyext
+[2.425s] [ 98%] Built target motor_control__rosidl_typesupport_c__pyext
+[3.491s] running egg_info
+[3.498s] writing motor_control.egg-info/PKG-INFO
+[3.499s] writing dependency_links to motor_control.egg-info/dependency_links.txt
+[3.500s] writing top-level names to motor_control.egg-info/top_level.txt
+[3.511s] reading manifest file 'motor_control.egg-info/SOURCES.txt'
+[3.519s] writing manifest file 'motor_control.egg-info/SOURCES.txt'
+[3.722s] [ 98%] Built target ament_cmake_python_build_motor_control_egg
+[14.511s] In file included from [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/communication_node.cpp:8[m[K:
+[14.511s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/include/motor_control/transform.hpp:[m[K In function ‘[01m[Kvoid at2cmd(const std::vector<unsigned char, std::allocator<unsigned char> >&, uint8_t&, uint16_t&, uint8_t&, float&)[m[K’:
+[14.512s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/include/motor_control/transform.hpp:66:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kpayload_size[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[14.512s]    66 |     uint8_t [01;35m[Kpayload_size[m[K = split_frame(frame, addr, payload);
+[14.513s]       |             [01;35m[K^~~~~~~~~~~~[m[K
+[14.742s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/communication_node.cpp:[m[K In member function ‘[01m[Kvoid CommunicationNode::on_cmd(motor_control::msg::SendAt_<std::allocator<void> >::SharedPtr)[m[K’:
+[14.742s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/communication_node.cpp:70:20:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K;[m[K’ token
+[14.743s]    70 |     uint32_t pos_b=[01;31m[K;[m[K
+[14.744s]       |                    [01;31m[K^[m[K
+[14.744s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[14.744s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[14.745s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[14.745s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[14.746s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[14.746s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[14.747s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[14.747s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[14.747s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[14.748s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[14.748s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[14.749s]                  from [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/communication_node.cpp:1[m[K:
+[14.749s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/communication_node.cpp:74:5:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+[14.749s]    74 |     [01;31m[KRCLCPP_INFO[m[K(get_logger(), );
+[14.750s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[23.989s] gmake[2]: *** [CMakeFiles/communication_node.dir/build.make:76: CMakeFiles/communication_node.dir/src/communication_node.cpp.o] Error 1
+[23.990s] gmake[1]: *** [CMakeFiles/Makefile2:597: CMakeFiles/communication_node.dir/all] Error 2
+[23.991s] gmake: *** [Makefile:146: all] Error 2
+[23.999s] Invoked command in '/home/mowmow/workspace/CatchRobo-r08/build/motor_control' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mowmow/workspace/CatchRobo-r08/build/motor_control -- -j4 -l4

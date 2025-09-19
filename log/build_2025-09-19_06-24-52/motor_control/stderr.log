@@ -1,0 +1,9 @@
+In file included from [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/communication_node.cpp:8[m[K:
+[01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/include/motor_control/transform.hpp:[m[K In function ‘[01m[Kvoid at2cmd(const std::vector<unsigned char, std::allocator<unsigned char> >&, uint8_t&, uint16_t&, uint8_t&, float&)[m[K’:
+[01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/include/motor_control/transform.hpp:69:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kprint[m[K’ was not declared in this scope; did you mean ‘[01m[Krint[m[K’?
+   69 |     [01;31m[Kprint[m[K(payload_size, addr, payload);
+      |     [01;31m[K^~~~~[m[K
+      |     [32m[Krint[m[K
+gmake[2]: *** [CMakeFiles/communication_node.dir/build.make:76: CMakeFiles/communication_node.dir/src/communication_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:597: CMakeFiles/communication_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,234 @@
+[0.053s] Invoking command in '/home/mowmow/workspace/CatchRobo-r08/build/motor_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mowmow/workspace/CatchRobo-r08/build/motor_control -- -j4 -l4
+[0.286s] [  1%] Built target motor_control__cpp
+[0.316s] [ 11%] Built target motor_control__rosidl_generator_c
+[0.346s] [ 11%] Built target ament_cmake_python_copy_motor_control
+[0.416s] [ 24%] Built target motor_control__rosidl_typesupport_cpp
+[0.420s] [ 30%] Built target motor_control__rosidl_typesupport_fastrtps_cpp
+[0.443s] [ 39%] Built target motor_control__rosidl_typesupport_introspection_cpp
+[0.480s] [ 49%] Built target motor_control__rosidl_typesupport_fastrtps_c
+[0.579s] [ 58%] Built target motor_control__rosidl_typesupport_introspection_c
+[0.616s] [ 67%] Built target motor_control__rosidl_typesupport_c
+[0.666s] [ 71%] Built target communication_node
+[0.788s] [ 73%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/control_node.cpp.o[0m
+[0.855s] [ 77%] Built target observe_node
+[0.924s] [ 77%] Built target motor_control
+[1.041s] [ 79%] Built target motor_control__py
+[1.166s] [ 86%] Built target motor_control__rosidl_generator_py
+[1.347s] [ 90%] Built target motor_control__rosidl_typesupport_fastrtps_c__pyext
+[1.378s] [ 94%] Built target motor_control__rosidl_typesupport_introspection_c__pyext
+[1.480s] [ 98%] Built target motor_control__rosidl_typesupport_c__pyext
+[2.185s] running egg_info
+[2.190s] writing motor_control.egg-info/PKG-INFO
+[2.194s] writing dependency_links to motor_control.egg-info/dependency_links.txt
+[2.197s] writing top-level names to motor_control.egg-info/top_level.txt
+[2.210s] reading manifest file 'motor_control.egg-info/SOURCES.txt'
+[2.215s] writing manifest file 'motor_control.egg-info/SOURCES.txt'
+[2.383s] [ 98%] Built target ament_cmake_python_build_motor_control_egg
+[11.677s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/control_node.cpp:16:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kpub_cmd_batch_[m[K’ does not name a type
+[11.678s]    16 | [01;31m[Kpub_cmd_batch_[m[K = this->create_publisher<motor_control::msg::SendArray>(
+[11.678s]       | [01;31m[K^~~~~~~~~~~~~~[m[K
+[11.682s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/control_node.cpp:18:1:[m[K [01;31m[Kerror: [m[K‘[01m[Ksub_done_[m[K’ does not name a type
+[11.683s]    18 | [01;31m[Ksub_done_[m[K = this->create_subscription<std_msgs::msg::Bool>(
+[11.683s]       | [01;31m[K^~~~~~~~~[m[K
+[11.694s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/control_node.cpp:[m[K In function ‘[01m[Kbool make_batch(motor_control::msg::SendArray&)[m[K’:
+[11.694s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/control_node.cpp:28:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kifs_[m[K’ was not declared in this scope
+[11.695s]    28 |   if (![01;31m[Kifs_[m[K.good()) return false;
+[11.695s]       |        [01;31m[K^~~~[m[K
+[11.706s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/control_node.cpp:32:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kifs_[m[K’ was not declared in this scope
+[11.706s]    32 |   while (std::getline([01;31m[Kifs_[m[K, line)) {
+[11.707s]       |                       [01;31m[K^~~~[m[K
+[11.719s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/control_node.cpp:33:14:[m[K [01;31m[Kerror: [m[K‘[01m[Ktrim_copy[m[K’ was not declared in this scope
+[11.720s]    33 |     auto t = [01;31m[Ktrim_copy[m[K(line);
+[11.720s]       |              [01;31m[K^~~~~~~~~[m[K
+[11.732s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/control_node.cpp:47:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kto_int[m[K’ was not declared in this scope; did you mean ‘[01m[Ku_int[m[K’?
+[11.733s]    47 |       auto id_opt = [01;31m[Kto_int[m[K(trim_copy(cell));
+[11.733s]       |                     [01;31m[K^~~~~~[m[K
+[11.734s]       |                     [32m[Ku_int[m[K
+[11.745s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/control_node.cpp:52:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kto_float[m[K’ was not declared in this scope; did you mean ‘[01m[Kfloat[m[K’?
+[11.746s]    52 |       auto pos_opt = [01;31m[Kto_float[m[K(trim_copy(cell));
+[11.746s]       |                      [01;31m[K^~~~~~~~[m[K
+[11.747s]       |                      [32m[Kfloat[m[K
+[11.758s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[11.759s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[11.759s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[11.760s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[11.760s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[11.761s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[11.761s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[11.762s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[11.762s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[11.763s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[11.763s]                  from [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/control_node.cpp:1[m[K:
+[11.764s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/control_node.cpp:[m[K In function ‘[01m[Kvoid on_done(std_msgs::msg::Bool_<std::allocator<void> >::SharedPtr)[m[K’:
+[11.765s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/control_node.cpp:65:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_logger[m[K’ was not declared in this scope; did you mean ‘[01m[Krclcpp::get_logger[m[K’?
+[11.765s]    65 |   RCLCPP_INFO([01;31m[Kget_logger[m[K(), "[on_done] data=%d", (int)msg->data);
+[11.766s]       |               [01;31m[K^~~~~~~~~~[m[K
+[11.766s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:23[m[K,
+[11.767s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[11.768s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[11.768s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[11.768s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[11.769s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[11.769s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[11.769s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[11.770s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[11.770s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[11.771s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[11.771s]                  from [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/control_node.cpp:1[m[K:
+[11.772s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logger.hpp:106:17:[m[K [01;36m[Knote: [m[K‘[01m[Krclcpp::get_logger[m[K’ declared here
+[11.772s]   106 |   friend Logger [01;36m[Krclcpp[m[K::get_logger(const std::string & name);
+[11.773s]       |                 [01;36m[K^~~~~~[m[K
+[11.773s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[11.774s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[11.774s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[11.775s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[11.779s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[11.780s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[11.780s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[11.781s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[11.781s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[11.782s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[11.782s]                  from [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/control_node.cpp:1[m[K:
+[11.783s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/control_node.cpp:65:3:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[11.784s]    65 |   [01;31m[KRCLCPP_INFO[m[K(get_logger(), "[on_done] data=%d", (int)msg->data);
+[11.784s]       |   [01;31m[K^~~~~~~~~~~[m[K
+[11.785s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/control_node.cpp:65:3:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[11.785s]    65 |   [01;31m[KRCLCPP_INFO[m[K(get_logger(), "[on_done] data=%d", (int)msg->data);
+[11.786s]       |   [01;31m[K^~~~~~~~~~~[m[K
+[11.787s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/control_node.cpp:65:3:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[11.787s]    65 |   [01;31m[KRCLCPP_INFO[m[K(get_logger(), "[on_done] data=%d", (int)msg->data);
+[11.788s]       |   [01;31m[K^~~~~~~~~~~[m[K
+[11.788s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/control_node.cpp:69:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmd_batch_[m[K’ was not declared in this scope
+[11.789s]    69 |     if (!make_batch([01;31m[Kcmd_batch_[m[K)) {
+[11.789s]       |                     [01;31m[K^~~~~~~~~~[m[K
+[11.789s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[11.789s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[11.790s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[11.790s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[11.790s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[11.791s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[11.791s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[11.791s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[11.792s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[11.792s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[11.792s]                  from [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/control_node.cpp:1[m[K:
+[11.793s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/control_node.cpp:70:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_logger[m[K’ was not declared in this scope; did you mean ‘[01m[Krclcpp::get_logger[m[K’?
+[11.793s]    70 |       RCLCPP_INFO([01;31m[Kget_logger[m[K(), "CSV reached EOF. No more commands.");
+[11.794s]       |                   [01;31m[K^~~~~~~~~~[m[K
+[11.794s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:23[m[K,
+[11.794s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[11.795s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[11.795s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[11.796s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[11.796s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[11.796s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[11.797s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[11.798s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[11.798s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[11.799s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[11.799s]                  from [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/control_node.cpp:1[m[K:
+[11.800s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logger.hpp:106:17:[m[K [01;36m[Knote: [m[K‘[01m[Krclcpp::get_logger[m[K’ declared here
+[11.800s]   106 |   friend Logger [01;36m[Krclcpp[m[K::get_logger(const std::string & name);
+[11.801s]       |                 [01;36m[K^~~~~~[m[K
+[11.802s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[11.802s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[11.803s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[11.804s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[11.804s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[11.805s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[11.806s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[11.806s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[11.807s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[11.807s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[11.808s]                  from [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/control_node.cpp:1[m[K:
+[11.808s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/control_node.cpp:70:7:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[11.809s]    70 |       [01;31m[KRCLCPP_INFO[m[K(get_logger(), "CSV reached EOF. No more commands.");
+[11.809s]       |       [01;31m[K^~~~~~~~~~~[m[K
+[11.809s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/control_node.cpp:70:7:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[11.810s]    70 |       [01;31m[KRCLCPP_INFO[m[K(get_logger(), "CSV reached EOF. No more commands.");
+[11.810s]       |       [01;31m[K^~~~~~~~~~~[m[K
+[11.810s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/control_node.cpp:70:7:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[11.811s]    70 |       [01;31m[KRCLCPP_INFO[m[K(get_logger(), "CSV reached EOF. No more commands.");
+[11.811s]       |       [01;31m[K^~~~~~~~~~~[m[K
+[11.812s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/control_node.cpp:74:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpub_cmd_batch_[m[K’ was not declared in this scope
+[11.812s]    74 |     [01;31m[Kpub_cmd_batch_[m[K->publish(cmd_batch_);
+[11.813s]       |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[11.815s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/control_node.cpp:74:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmd_batch_[m[K’ was not declared in this scope
+[11.815s]    74 |     pub_cmd_batch_->publish([01;31m[Kcmd_batch_[m[K);
+[11.817s]       |                             [01;31m[K^~~~~~~~~~[m[K
+[11.818s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[11.818s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[11.819s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[11.820s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[11.820s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[11.821s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[11.821s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[11.822s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[11.824s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[11.824s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[11.825s]                  from [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/control_node.cpp:1[m[K:
+[11.826s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/control_node.cpp:75:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_logger[m[K’ was not declared in this scope; did you mean ‘[01m[Krclcpp::get_logger[m[K’?
+[11.826s]    75 |     RCLCPP_INFO([01;31m[Kget_logger[m[K(), "Published new batch: %zu cmds", cmd_batch_.cmds.size());
+[11.827s]       |                 [01;31m[K^~~~~~~~~~[m[K
+[11.827s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:23[m[K,
+[11.828s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[11.830s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[11.831s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[11.831s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[11.832s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[11.832s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[11.833s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[11.834s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[11.834s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[11.835s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[11.836s]                  from [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/control_node.cpp:1[m[K:
+[11.836s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logger.hpp:106:17:[m[K [01;36m[Knote: [m[K‘[01m[Krclcpp::get_logger[m[K’ declared here
+[11.837s]   106 |   friend Logger [01;36m[Krclcpp[m[K::get_logger(const std::string & name);
+[11.837s]       |                 [01;36m[K^~~~~~[m[K
+[11.838s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[11.838s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[11.839s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[11.839s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[11.840s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[11.841s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[11.841s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[11.842s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[11.843s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[11.843s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[11.844s]                  from [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/control_node.cpp:1[m[K:
+[11.844s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/control_node.cpp:75:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[11.845s]    75 |     [01;31m[KRCLCPP_INFO[m[K(get_logger(), "Published new batch: %zu cmds", cmd_batch_.cmds.size());
+[11.845s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[11.846s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/control_node.cpp:75:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[11.846s]    75 |     [01;31m[KRCLCPP_INFO[m[K(get_logger(), "Published new batch: %zu cmds", cmd_batch_.cmds.size());
+[11.846s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[11.847s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/control_node.cpp:75:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[11.847s]    75 |     [01;31m[KRCLCPP_INFO[m[K(get_logger(), "Published new batch: %zu cmds", cmd_batch_.cmds.size());
+[11.847s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[11.848s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/control_node.cpp:77:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmd_batch_[m[K’ was not declared in this scope
+[11.848s]    77 |     if (![01;31m[Kcmd_batch_[m[K.cmds.empty())
+[11.848s]       |          [01;31m[K^~~~~~~~~~[m[K
+[11.855s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/control_node.cpp:78:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kpub_cmd_batch_[m[K’ was not declared in this scope
+[11.856s]    78 |       [01;31m[Kpub_cmd_batch_[m[K->publish(cmd_batch_);
+[11.856s]       |       [01;31m[K^~~~~~~~~~~~~~[m[K
+[11.871s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/control_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[11.872s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/control_node.cpp:85:32:[m[K [01;31m[Kerror: [m[K‘[01m[KControlNode[m[K’ was not declared in this scope
+[11.873s]    85 |   auto node = std::make_shared<[01;31m[KControlNode[m[K>();
+[11.873s]       |                                [01;31m[K^~~~~~~~~~~[m[K
+[11.874s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/control_node.cpp:85:44:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_shared<<expression error> >()[m[K’
+[11.875s]    85 |   auto node = [01;31m[Kstd::make_shared<ControlNode>()[m[K;
+[11.875s]       |               [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[11.875s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[11.876s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[11.876s]                  from [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/control_node.cpp:1[m[K:
+[11.877s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+[11.877s]   875 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+[11.878s]       |     [01;36m[K^~~~~~~~~~~[m[K
+[11.878s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[11.879s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/control_node.cpp:85:44:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[11.879s]    85 |   auto node = [01;31m[Kstd::make_shared<ControlNode>()[m[K;
+[11.879s]       |               [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[13.452s] gmake[2]: *** [CMakeFiles/control_node.dir/build.make:76: CMakeFiles/control_node.dir/src/control_node.cpp.o] Error 1
+[13.454s] gmake[1]: *** [CMakeFiles/Makefile2:624: CMakeFiles/control_node.dir/all] Error 2
+[13.458s] gmake: *** [Makefile:146: all] Error 2
+[13.461s] Invoked command in '/home/mowmow/workspace/CatchRobo-r08/build/motor_control' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mowmow/workspace/CatchRobo-r08/build/motor_control -- -j4 -l4

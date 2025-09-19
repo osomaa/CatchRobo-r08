@@ -1,0 +1,265 @@
+[0.000000] (-) TimerEvent: {}
+[0.001661] (-) JobUnselected: {'identifier': 'robstride_core'}
+[0.002321] (motor_control) JobQueued: {'identifier': 'motor_control', 'dependencies': OrderedDict()}
+[0.002833] (motor_control) JobStarted: {'identifier': 'motor_control'}
+[0.037235] (motor_control) JobProgress: {'identifier': 'motor_control', 'progress': 'cmake'}
+[0.040662] (motor_control) JobProgress: {'identifier': 'motor_control', 'progress': 'build'}
+[0.044004] (motor_control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mowmow/workspace/CatchRobo-r08/build/motor_control', '--', '-j4', '-l4'], 'cwd': '/home/mowmow/workspace/CatchRobo-r08/build/motor_control', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mowmow'), ('SSH_CLIENT', 'fe80::8e72:b820:569b:a338%wlan0 51153 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/mowmow/.vscode-server/cli/servers/Stable-0f0d87fa9e96c856c5212fc86db137ac0d783365/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/mowmow/workspace/CatchRobo-r08/install/motor_control/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/mowmow/.vscode-server/cli/servers/Stable-0f0d87fa9e96c856c5212fc86db137ac0d783365/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/mowmow'), ('TERM_PROGRAM_VERSION', '1.104.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-a75716f7-ae08-4a85-a4e6-79866ab27e97.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/mowmow/.vscode-server/cli/servers/Stable-0f0d87fa9e96c856c5212fc86db137ac0d783365/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/mowmow/.vscode-server/cli/servers/Stable-0f0d87fa9e96c856c5212fc86db137ac0d783365/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/mowmow/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-arm64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/mowmow/workspace/CatchRobo-r08/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mowmow'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '13'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/mowmow/.vscode-server/cli/servers/Stable-0f0d87fa9e96c856c5212fc86db137ac0d783365/server/bin/remote-cli:/home/mowmow/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/mowmow/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-arm64/bundled/scripts/noConfigScripts:/home/mowmow/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/mowmow/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-1673549a75aa95a5.txt'), ('LANG', 'en_US.UTF-8'), ('PYTHONSTARTUP', '/home/mowmow/.vscode-server/data/User/workspaceStorage/51fb453f87a3dd25071c1a5c8a553644-1/ms-python.python/pythonrc.py'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-84bb2b580e.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/mowmow/workspace/CatchRobo-r08/install/motor_control:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/mowmow/workspace/CatchRobo-r08/build/motor_control'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', 'fe80::8e72:b820:569b:a338%wlan0 51153 fe80::da3a:ddff:fe27:2394%wlan0 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/mowmow/workspace/CatchRobo-r08/install/motor_control:/opt/ros/humble')]), 'shell': False}
+[0.099010] (-) TimerEvent: {}
+[0.199799] (-) TimerEvent: {}
+[0.284087] (motor_control) StdoutLine: {'line': b'[  1%] Built target motor_control__cpp\n'}
+[0.297421] (motor_control) StdoutLine: {'line': b'[ 11%] Built target motor_control__rosidl_generator_c\n'}
+[0.299994] (-) TimerEvent: {}
+[0.370876] (motor_control) StdoutLine: {'line': b'[ 11%] Built target ament_cmake_python_copy_motor_control\n'}
+[0.400199] (-) TimerEvent: {}
+[0.435343] (motor_control) StdoutLine: {'line': b'[ 20%] Built target motor_control__rosidl_typesupport_cpp\n'}
+[0.444701] (motor_control) StdoutLine: {'line': b'[ 30%] Built target motor_control__rosidl_typesupport_fastrtps_cpp\n'}
+[0.450737] (motor_control) StdoutLine: {'line': b'[ 39%] Built target motor_control__rosidl_typesupport_introspection_cpp\n'}
+[0.497216] (motor_control) StdoutLine: {'line': b'[ 49%] Built target motor_control__rosidl_typesupport_fastrtps_c\n'}
+[0.500571] (-) TimerEvent: {}
+[0.557885] (motor_control) StdoutLine: {'line': b'[ 58%] Built target motor_control__rosidl_typesupport_introspection_c\n'}
+[0.561005] (motor_control) StdoutLine: {'line': b'[ 67%] Built target motor_control__rosidl_typesupport_c\n'}
+[0.563598] (motor_control) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target communication_node\x1b[0m\n'}
+[0.600833] (-) TimerEvent: {}
+[0.687449] (motor_control) StdoutLine: {'line': b'[ 71%] Built target control_node\n'}
+[0.701155] (-) TimerEvent: {}
+[0.742993] (motor_control) StdoutLine: {'line': b'[ 75%] Built target observe_node\n'}
+[0.779581] (motor_control) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/communication_node.dir/src/communication_node.cpp.o\x1b[0m\n'}
+[0.801445] (-) TimerEvent: {}
+[0.807302] (motor_control) StdoutLine: {'line': b'[ 77%] Built target motor_control\n'}
+[0.901691] (-) TimerEvent: {}
+[0.920337] (motor_control) StdoutLine: {'line': b'[ 79%] Built target motor_control__py\n'}
+[1.001877] (-) TimerEvent: {}
+[1.104091] (-) TimerEvent: {}
+[1.138549] (motor_control) StdoutLine: {'line': b'[ 86%] Built target motor_control__rosidl_generator_py\n'}
+[1.204300] (-) TimerEvent: {}
+[1.306284] (-) TimerEvent: {}
+[1.338089] (motor_control) StdoutLine: {'line': b'[ 90%] Built target motor_control__rosidl_typesupport_introspection_c__pyext\n'}
+[1.385235] (motor_control) StdoutLine: {'line': b'[ 94%] Built target motor_control__rosidl_typesupport_fastrtps_c__pyext\n'}
+[1.406497] (-) TimerEvent: {}
+[1.459910] (motor_control) StdoutLine: {'line': b'[ 98%] Built target motor_control__rosidl_typesupport_c__pyext\n'}
+[1.506707] (-) TimerEvent: {}
+[1.608581] (-) TimerEvent: {}
+[1.709435] (-) TimerEvent: {}
+[1.810642] (-) TimerEvent: {}
+[1.912753] (-) TimerEvent: {}
+[2.014467] (-) TimerEvent: {}
+[2.059251] (motor_control) StdoutLine: {'line': b'running egg_info\n'}
+[2.064718] (motor_control) StdoutLine: {'line': b'writing motor_control.egg-info/PKG-INFO\n'}
+[2.065375] (motor_control) StdoutLine: {'line': b'writing dependency_links to motor_control.egg-info/dependency_links.txt\n'}
+[2.070606] (motor_control) StdoutLine: {'line': b'writing top-level names to motor_control.egg-info/top_level.txt\n'}
+[2.078138] (motor_control) StdoutLine: {'line': b"reading manifest file 'motor_control.egg-info/SOURCES.txt'\n"}
+[2.081419] (motor_control) StdoutLine: {'line': b"writing manifest file 'motor_control.egg-info/SOURCES.txt'\n"}
+[2.114755] (-) TimerEvent: {}
+[2.218083] (-) TimerEvent: {}
+[2.230622] (motor_control) StdoutLine: {'line': b'[ 98%] Built target ament_cmake_python_build_motor_control_egg\n'}
+[2.318346] (-) TimerEvent: {}
+[2.419342] (-) TimerEvent: {}
+[2.520168] (-) TimerEvent: {}
+[2.621046] (-) TimerEvent: {}
+[2.721978] (-) TimerEvent: {}
+[2.822923] (-) TimerEvent: {}
+[2.923929] (-) TimerEvent: {}
+[3.024820] (-) TimerEvent: {}
+[3.125723] (-) TimerEvent: {}
+[3.228297] (-) TimerEvent: {}
+[3.329979] (-) TimerEvent: {}
+[3.432241] (-) TimerEvent: {}
+[3.533873] (-) TimerEvent: {}
+[3.636218] (-) TimerEvent: {}
+[3.738380] (-) TimerEvent: {}
+[3.839805] (-) TimerEvent: {}
+[3.940886] (-) TimerEvent: {}
+[4.042042] (-) TimerEvent: {}
+[4.143051] (-) TimerEvent: {}
+[4.244418] (-) TimerEvent: {}
+[4.345426] (-) TimerEvent: {}
+[4.446840] (-) TimerEvent: {}
+[4.548166] (-) TimerEvent: {}
+[4.649850] (-) TimerEvent: {}
+[4.750737] (-) TimerEvent: {}
+[4.852122] (-) TimerEvent: {}
+[4.953906] (-) TimerEvent: {}
+[5.054894] (-) TimerEvent: {}
+[5.155810] (-) TimerEvent: {}
+[5.256747] (-) TimerEvent: {}
+[5.357774] (-) TimerEvent: {}
+[5.458860] (-) TimerEvent: {}
+[5.560129] (-) TimerEvent: {}
+[5.661151] (-) TimerEvent: {}
+[5.762013] (-) TimerEvent: {}
+[5.862831] (-) TimerEvent: {}
+[5.963734] (-) TimerEvent: {}
+[6.064550] (-) TimerEvent: {}
+[6.165364] (-) TimerEvent: {}
+[6.266208] (-) TimerEvent: {}
+[6.367017] (-) TimerEvent: {}
+[6.467875] (-) TimerEvent: {}
+[6.568717] (-) TimerEvent: {}
+[6.669574] (-) TimerEvent: {}
+[6.770371] (-) TimerEvent: {}
+[6.871186] (-) TimerEvent: {}
+[6.972030] (-) TimerEvent: {}
+[7.072848] (-) TimerEvent: {}
+[7.173797] (-) TimerEvent: {}
+[7.274614] (-) TimerEvent: {}
+[7.375407] (-) TimerEvent: {}
+[7.476217] (-) TimerEvent: {}
+[7.577087] (-) TimerEvent: {}
+[7.677974] (-) TimerEvent: {}
+[7.778837] (-) TimerEvent: {}
+[7.879658] (-) TimerEvent: {}
+[7.980462] (-) TimerEvent: {}
+[8.081339] (-) TimerEvent: {}
+[8.182186] (-) TimerEvent: {}
+[8.282999] (-) TimerEvent: {}
+[8.383823] (-) TimerEvent: {}
+[8.484624] (-) TimerEvent: {}
+[8.585448] (-) TimerEvent: {}
+[8.686890] (-) TimerEvent: {}
+[8.787798] (-) TimerEvent: {}
+[8.888685] (-) TimerEvent: {}
+[8.989617] (-) TimerEvent: {}
+[9.090438] (-) TimerEvent: {}
+[9.191344] (-) TimerEvent: {}
+[9.292194] (-) TimerEvent: {}
+[9.393003] (-) TimerEvent: {}
+[9.494256] (-) TimerEvent: {}
+[9.595094] (-) TimerEvent: {}
+[9.696019] (-) TimerEvent: {}
+[9.796887] (-) TimerEvent: {}
+[9.897811] (-) TimerEvent: {}
+[9.998697] (-) TimerEvent: {}
+[10.099599] (-) TimerEvent: {}
+[10.200518] (-) TimerEvent: {}
+[10.301400] (-) TimerEvent: {}
+[10.402265] (-) TimerEvent: {}
+[10.503181] (-) TimerEvent: {}
+[10.604031] (-) TimerEvent: {}
+[10.704858] (-) TimerEvent: {}
+[10.805689] (-) TimerEvent: {}
+[10.906539] (-) TimerEvent: {}
+[11.007365] (-) TimerEvent: {}
+[11.108213] (-) TimerEvent: {}
+[11.209052] (-) TimerEvent: {}
+[11.310004] (-) TimerEvent: {}
+[11.365093] (motor_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/communication_node.cpp:8\x1b[m\x1b[K:\n'}
+[11.365948] (motor_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/include/motor_control/transform.hpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid at2cmd(const std::vector<unsigned char, std::allocator<unsigned char> >&, uint8_t&, uint16_t&, uint8_t&, float&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[11.366542] (motor_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/include/motor_control/transform.hpp:69:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kprint\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krint\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[11.367001] (motor_control) StderrLine: {'line': b'   69 |     \x1b[01;31m\x1b[Kprint\x1b[m\x1b[K(payload_size, addr, payload);\n'}
+[11.367407] (motor_control) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[11.367849] (motor_control) StderrLine: {'line': b'      |     \x1b[32m\x1b[Krint\x1b[m\x1b[K\n'}
+[11.410183] (-) TimerEvent: {}
+[11.511058] (-) TimerEvent: {}
+[11.611860] (-) TimerEvent: {}
+[11.712672] (-) TimerEvent: {}
+[11.813538] (-) TimerEvent: {}
+[11.914363] (-) TimerEvent: {}
+[12.015187] (-) TimerEvent: {}
+[12.116038] (-) TimerEvent: {}
+[12.216852] (-) TimerEvent: {}
+[12.317700] (-) TimerEvent: {}
+[12.418490] (-) TimerEvent: {}
+[12.519302] (-) TimerEvent: {}
+[12.620129] (-) TimerEvent: {}
+[12.720968] (-) TimerEvent: {}
+[12.821794] (-) TimerEvent: {}
+[12.922604] (-) TimerEvent: {}
+[13.023426] (-) TimerEvent: {}
+[13.124304] (-) TimerEvent: {}
+[13.225144] (-) TimerEvent: {}
+[13.325954] (-) TimerEvent: {}
+[13.426811] (-) TimerEvent: {}
+[13.527636] (-) TimerEvent: {}
+[13.628452] (-) TimerEvent: {}
+[13.729291] (-) TimerEvent: {}
+[13.830128] (-) TimerEvent: {}
+[13.930926] (-) TimerEvent: {}
+[14.031772] (-) TimerEvent: {}
+[14.132618] (-) TimerEvent: {}
+[14.233528] (-) TimerEvent: {}
+[14.334328] (-) TimerEvent: {}
+[14.435130] (-) TimerEvent: {}
+[14.535976] (-) TimerEvent: {}
+[14.636852] (-) TimerEvent: {}
+[14.737816] (-) TimerEvent: {}
+[14.839292] (-) TimerEvent: {}
+[14.940143] (-) TimerEvent: {}
+[15.040969] (-) TimerEvent: {}
+[15.141889] (-) TimerEvent: {}
+[15.242758] (-) TimerEvent: {}
+[15.343640] (-) TimerEvent: {}
+[15.444582] (-) TimerEvent: {}
+[15.545472] (-) TimerEvent: {}
+[15.646342] (-) TimerEvent: {}
+[15.747168] (-) TimerEvent: {}
+[15.847961] (-) TimerEvent: {}
+[15.948847] (-) TimerEvent: {}
+[16.049765] (-) TimerEvent: {}
+[16.150633] (-) TimerEvent: {}
+[16.251504] (-) TimerEvent: {}
+[16.352473] (-) TimerEvent: {}
+[16.453592] (-) TimerEvent: {}
+[16.554481] (-) TimerEvent: {}
+[16.655373] (-) TimerEvent: {}
+[16.756294] (-) TimerEvent: {}
+[16.857217] (-) TimerEvent: {}
+[16.958147] (-) TimerEvent: {}
+[17.059133] (-) TimerEvent: {}
+[17.160100] (-) TimerEvent: {}
+[17.261147] (-) TimerEvent: {}
+[17.362107] (-) TimerEvent: {}
+[17.463005] (-) TimerEvent: {}
+[17.563899] (-) TimerEvent: {}
+[17.664790] (-) TimerEvent: {}
+[17.765707] (-) TimerEvent: {}
+[17.866592] (-) TimerEvent: {}
+[17.967465] (-) TimerEvent: {}
+[18.068342] (-) TimerEvent: {}
+[18.169231] (-) TimerEvent: {}
+[18.270109] (-) TimerEvent: {}
+[18.370978] (-) TimerEvent: {}
+[18.471863] (-) TimerEvent: {}
+[18.572721] (-) TimerEvent: {}
+[18.673645] (-) TimerEvent: {}
+[18.775077] (-) TimerEvent: {}
+[18.875962] (-) TimerEvent: {}
+[18.976871] (-) TimerEvent: {}
+[19.077702] (-) TimerEvent: {}
+[19.178559] (-) TimerEvent: {}
+[19.279438] (-) TimerEvent: {}
+[19.380351] (-) TimerEvent: {}
+[19.481139] (-) TimerEvent: {}
+[19.581924] (-) TimerEvent: {}
+[19.682695] (-) TimerEvent: {}
+[19.783527] (-) TimerEvent: {}
+[19.884338] (-) TimerEvent: {}
+[19.985180] (-) TimerEvent: {}
+[20.086052] (-) TimerEvent: {}
+[20.187109] (-) TimerEvent: {}
+[20.288040] (-) TimerEvent: {}
+[20.388947] (-) TimerEvent: {}
+[20.489916] (-) TimerEvent: {}
+[20.590938] (-) TimerEvent: {}
+[20.692146] (-) TimerEvent: {}
+[20.793246] (-) TimerEvent: {}
+[20.894301] (-) TimerEvent: {}
+[20.995332] (-) TimerEvent: {}
+[21.096473] (-) TimerEvent: {}
+[21.197709] (-) TimerEvent: {}
+[21.298890] (-) TimerEvent: {}
+[21.400020] (-) TimerEvent: {}
+[21.501145] (-) TimerEvent: {}
+[21.602375] (-) TimerEvent: {}
+[21.703222] (-) TimerEvent: {}
+[21.804420] (-) TimerEvent: {}
+[21.903499] (motor_control) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/communication_node.dir/build.make:76: CMakeFiles/communication_node.dir/src/communication_node.cpp.o] Error 1\n'}
+[21.905167] (motor_control) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:597: CMakeFiles/communication_node.dir/all] Error 2\n'}
+[21.906408] (-) TimerEvent: {}
+[21.907642] (motor_control) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[21.914302] (motor_control) CommandEnded: {'returncode': 2}
+[22.006685] (-) TimerEvent: {}
+[22.107777] (-) TimerEvent: {}
+[22.175138] (motor_control) JobEnded: {'identifier': 'motor_control', 'rc': 2}
+[22.362258] (-) TimerEvent: {}
+[22.363044] (-) EventReactorShutdown: {}
