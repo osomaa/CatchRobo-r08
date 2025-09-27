@@ -1,0 +1,10 @@
+[0.044s] Invoking command in '/home/mowmow/workspace/CatchRobo-r08/build/motor_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mowmow/workspace/CatchRobo-r08/build/motor_control -- -j4 -l4
+[0.270s] [  1%] Built target motor_control__cpp
+[0.280s] [ 11%] Built target motor_control__rosidl_generator_c
+[0.359s] [ 11%] Built target ament_cmake_python_copy_motor_control
+[0.384s] gmake[1]: *** [CMakeFiles/Makefile2:352: CMakeFiles/motor_control__rosidl_typesupport_fastrtps_cpp.dir/all] Interrupt
+[0.385s] gmake[1]: *** [CMakeFiles/Makefile2:378: CMakeFiles/motor_control__rosidl_typesupport_introspection_cpp.dir/all] Interrupt
+[0.385s] gmake[1]: *** [CMakeFiles/Makefile2:246: CMakeFiles/motor_control__rosidl_typesupport_fastrtps_c.dir/all] Interrupt
+[0.386s] gmake[1]: *** [CMakeFiles/Makefile2:404: CMakeFiles/motor_control__rosidl_typesupport_cpp.dir/all] Interrupt
+[0.387s] gmake: *** [Makefile:146: all] Interrupt
+[0.392s] Invoked command in '/home/mowmow/workspace/CatchRobo-r08/build/motor_control' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mowmow/workspace/CatchRobo-r08/build/motor_control -- -j4 -l4

@@ -1,0 +1,115 @@
+[01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:[m[K In constructor ‘[01m[KGpioNode::GpioNode()[m[K’:
+[01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:14:43:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KGpioNode::declare_parameter(const char [9], <brace-enclosed initializer list>)[m[K’
+   14 |         out_pins = [01;31m[Kthis->declare_parameter("out_pins", {12, 13, 16, 19, 20, 21})[m[K; // BCM番号で指定
+      |                    [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1321[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:195:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)[m[K’
+  195 | [01;36m[KNode[m[K::declare_parameter(
+      | [01;36m[K^~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:195:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:14:43:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KParameterT[m[K’
+   14 |         out_pins = [01;36m[Kthis->declare_parameter("out_pins", {12, 13, 16, 19, 20, 21})[m[K; // BCM番号で指定
+      |                    [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)[m[K’
+  434 |   [01;36m[Kdeclare_parameter[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:14:43:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KParameterT[m[K’
+   14 |         out_pins = [01;36m[Kthis->declare_parameter("out_pins", {12, 13, 16, 19, 20, 21})[m[K; // BCM番号で指定
+      |                    [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)[m[K’
+  366 |   [01;36m[Kdeclare_parameter[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:368:36:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kconst rclcpp::ParameterValue&[m[K’
+  368 |     [01;36m[Kconst rclcpp::ParameterValue & default_value[m[K,
+      |     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)[m[K’
+  391 |   [01;36m[Kdeclare_parameter[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:393:27:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Krclcpp::ParameterType[m[K’
+  393 |     [01;36m[Krclcpp::ParameterType type[m[K,
+      |     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:15:42:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KGpioNode::declare_parameter(const char [8], <brace-enclosed initializer list>)[m[K’
+   15 |         in_pins = [01;31m[Kthis->declare_parameter("in_pins", {24, 25})[m[K; // BCM番号で指定
+      |                   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1321[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:195:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)[m[K’
+  195 | [01;36m[KNode[m[K::declare_parameter(
+      | [01;36m[K^~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:195:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:15:42:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KParameterT[m[K’
+   15 |         in_pins = [01;36m[Kthis->declare_parameter("in_pins", {24, 25})[m[K; // BCM番号で指定
+      |                   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)[m[K’
+  434 |   [01;36m[Kdeclare_parameter[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:15:42:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KParameterT[m[K’
+   15 |         in_pins = [01;36m[Kthis->declare_parameter("in_pins", {24, 25})[m[K; // BCM番号で指定
+      |                   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)[m[K’
+  366 |   [01;36m[Kdeclare_parameter[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:368:36:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kconst rclcpp::ParameterValue&[m[K’
+  368 |     [01;36m[Kconst rclcpp::ParameterValue & default_value[m[K,
+      |     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)[m[K’
+  391 |   [01;36m[Kdeclare_parameter[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:393:27:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Krclcpp::ParameterType[m[K’
+  393 |     [01;36m[Krclcpp::ParameterType type[m[K,
+      |     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:27:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kpins[m[K’ was not declared in this scope
+   27 |         line_outs.reserve([01;31m[Kpins[m[K.size());
+      |                           [01;31m[K^~~~[m[K
+[01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:46:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kworker_[m[K’ was not declared in this scope
+   46 |         [01;31m[Kworker_[m[K = std::thread(&GpioNode::reader_loop, this);
+      |         [01;31m[K^~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:1[m[K:
+[01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:[m[K In member function ‘[01m[Kvoid GpioNode::on_cmd(motor_control::msg::GpioCmd_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:60:62:[m[K [01;31m[Kerror: [m[K‘[01m[Kpins[m[K’ was not declared in this scope
+   60 |         RCLCPP_INFO(this->get_logger(), "Set GPIO %d to %d", [01;31m[Kpins[m[K[msg->pin_index], value);
+      |                                                              [01;31m[K^~~~[m[K
+[01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:[m[K In member function ‘[01m[Kvoid GpioNode::reader_loop()[m[K’:
+[01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:65:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kgpiod_line_event_wait_multiple[m[K’ was not declared in this scope; did you mean ‘[01m[Kgpiod_line_event_read_multiple[m[K’?
+   65 |             int ret = [01;31m[Kgpiod_line_event_wait_multiple[m[K(line_ins.data(), line_ins.size(), &timeout);
+      |                       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                       [32m[Kgpiod_line_event_read_multiple[m[K
+gmake[2]: *** [CMakeFiles/gpio_node.dir/build.make:76: CMakeFiles/gpio_node.dir/src/gpio_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:680: CMakeFiles/gpio_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

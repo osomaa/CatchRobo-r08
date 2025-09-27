@@ -1,0 +1,19 @@
+[  1%] Built target motor_control__cpp
+[ 11%] Built target motor_control__rosidl_generator_c
+[ 11%] Built target ament_cmake_python_copy_motor_control
+[ 20%] Built target motor_control__rosidl_typesupport_fastrtps_cpp
+[ 30%] Built target motor_control__rosidl_typesupport_introspection_cpp
+[ 39%] Built target motor_control__rosidl_typesupport_cpp
+[ 49%] Built target motor_control__rosidl_typesupport_fastrtps_c
+[ 68%] Built target motor_control__rosidl_typesupport_introspection_c
+[ 68%] Built target motor_control__rosidl_typesupport_c
+[ 71%] Built target communication_node
+[ 74%] Built target control_node
+[ 77%] Built target observe_node
+[ 79%] Built target motor_control
+[ 80%] Built target gpio_node
+[ 82%] Built target motor_control__py
+[ 90%] Built target motor_control__rosidl_generator_py
+[ 93%] Built target motor_control__rosidl_typesupport_fastrtps_c__pyext
+[ 96%] Built target motor_control__rosidl_typesupport_introspection_c__pyext
+[100%] Built target motor_control__rosidl_typesupport_c__pyext

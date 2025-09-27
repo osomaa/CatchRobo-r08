@@ -1,0 +1,338 @@
+[0.000000] (-) TimerEvent: {}
+[0.001803] (motor_control) JobQueued: {'identifier': 'motor_control', 'dependencies': OrderedDict()}
+[0.002460] (motor_control) JobStarted: {'identifier': 'motor_control'}
+[0.036961] (motor_control) JobProgress: {'identifier': 'motor_control', 'progress': 'cmake'}
+[0.040718] (motor_control) JobProgress: {'identifier': 'motor_control', 'progress': 'build'}
+[0.044327] (motor_control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mowmow/workspace/CatchRobo-r08/build/motor_control', '--', '-j4', '-l4'], 'cwd': '/home/mowmow/workspace/CatchRobo-r08/build/motor_control', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mowmow'), ('SSH_CLIENT', '192.168.3.4 55435 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/mowmow/.vscode-server/cli/servers/Stable-0f0d87fa9e96c856c5212fc86db137ac0d783365/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/mowmow/workspace/CatchRobo-r08/install/motor_control/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/mowmow/.vscode-server/cli/servers/Stable-0f0d87fa9e96c856c5212fc86db137ac0d783365/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/mowmow'), ('TERM_PROGRAM_VERSION', '1.104.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-ecbeb87c-8f37-486a-af65-24e82e5d2207.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/mowmow/.vscode-server/cli/servers/Stable-0f0d87fa9e96c856c5212fc86db137ac0d783365/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/mowmow/.vscode-server/cli/servers/Stable-0f0d87fa9e96c856c5212fc86db137ac0d783365/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/mowmow/workspace/CatchRobo-r08/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mowmow'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/mowmow/.vscode-server/cli/servers/Stable-0f0d87fa9e96c856c5212fc86db137ac0d783365/server/bin/remote-cli:/home/mowmow/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/mowmow/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-84bb2b580e.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/mowmow/workspace/CatchRobo-r08/install/motor_control:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/mowmow/workspace/CatchRobo-r08/build/motor_control'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.3.4 55435 192.168.3.6 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/mowmow/workspace/CatchRobo-r08/install/motor_control:/opt/ros/humble')]), 'shell': False}
+[0.099251] (-) TimerEvent: {}
+[0.200094] (-) TimerEvent: {}
+[0.285828] (motor_control) StdoutLine: {'line': b'[  1%] Built target motor_control__cpp\n'}
+[0.300387] (-) TimerEvent: {}
+[0.308870] (motor_control) StdoutLine: {'line': b'[ 11%] Built target motor_control__rosidl_generator_c\n'}
+[0.366668] (motor_control) StdoutLine: {'line': b'[ 11%] Built target ament_cmake_python_copy_motor_control\n'}
+[0.400649] (-) TimerEvent: {}
+[0.429942] (motor_control) StdoutLine: {'line': b'[ 20%] Built target motor_control__rosidl_typesupport_cpp\n'}
+[0.444783] (motor_control) StdoutLine: {'line': b'[ 30%] Built target motor_control__rosidl_typesupport_fastrtps_cpp\n'}
+[0.500977] (-) TimerEvent: {}
+[0.510390] (motor_control) StdoutLine: {'line': b'[ 39%] Built target motor_control__rosidl_typesupport_introspection_cpp\n'}
+[0.534327] (motor_control) StdoutLine: {'line': b'[ 49%] Built target motor_control__rosidl_typesupport_fastrtps_c\n'}
+[0.586712] (motor_control) StdoutLine: {'line': b'[ 58%] Built target motor_control__rosidl_typesupport_introspection_c\n'}
+[0.601220] (-) TimerEvent: {}
+[0.641956] (motor_control) StdoutLine: {'line': b'[ 68%] Built target motor_control__rosidl_typesupport_c\n'}
+[0.701474] (-) TimerEvent: {}
+[0.803579] (-) TimerEvent: {}
+[0.834448] (motor_control) StdoutLine: {'line': b'[ 71%] Built target control_node\n'}
+[0.882322] (motor_control) StdoutLine: {'line': b'[ 74%] Built target communication_node\n'}
+[0.899694] (motor_control) StdoutLine: {'line': b'[ 77%] Built target observe_node\n'}
+[0.903808] (-) TimerEvent: {}
+[0.943537] (motor_control) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target gpio_node\x1b[0m\n'}
+[1.004151] (-) TimerEvent: {}
+[1.016073] (motor_control) StdoutLine: {'line': b'[ 77%] Built target motor_control\n'}
+[1.104395] (-) TimerEvent: {}
+[1.123664] (motor_control) StdoutLine: {'line': b'[ 79%] Built target motor_control__py\n'}
+[1.179280] (motor_control) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/gpio_node.dir/src/gpio_node.cpp.o\x1b[0m\n'}
+[1.204610] (-) TimerEvent: {}
+[1.301340] (motor_control) StdoutLine: {'line': b'[ 88%] Built target motor_control__rosidl_generator_py\n'}
+[1.304896] (-) TimerEvent: {}
+[1.406453] (-) TimerEvent: {}
+[1.419833] (motor_control) StdoutLine: {'line': b'[ 92%] Built target motor_control__rosidl_typesupport_fastrtps_c__pyext\n'}
+[1.506727] (-) TimerEvent: {}
+[1.538951] (motor_control) StdoutLine: {'line': b'[ 95%] Built target motor_control__rosidl_typesupport_introspection_c__pyext\n'}
+[1.576761] (motor_control) StdoutLine: {'line': b'[ 98%] Built target motor_control__rosidl_typesupport_c__pyext\n'}
+[1.606921] (-) TimerEvent: {}
+[1.708829] (-) TimerEvent: {}
+[1.810774] (-) TimerEvent: {}
+[1.912597] (-) TimerEvent: {}
+[2.014773] (-) TimerEvent: {}
+[2.116647] (-) TimerEvent: {}
+[2.118973] (motor_control) StdoutLine: {'line': b'running egg_info\n'}
+[2.122488] (motor_control) StdoutLine: {'line': b'writing motor_control.egg-info/PKG-INFO\n'}
+[2.125473] (motor_control) StdoutLine: {'line': b'writing dependency_links to motor_control.egg-info/dependency_links.txt\n'}
+[2.128059] (motor_control) StdoutLine: {'line': b'writing top-level names to motor_control.egg-info/top_level.txt\n'}
+[2.138335] (motor_control) StdoutLine: {'line': b"reading manifest file 'motor_control.egg-info/SOURCES.txt'\n"}
+[2.142123] (motor_control) StdoutLine: {'line': b"writing manifest file 'motor_control.egg-info/SOURCES.txt'\n"}
+[2.217122] (-) TimerEvent: {}
+[2.298958] (motor_control) StdoutLine: {'line': b'[ 98%] Built target ament_cmake_python_build_motor_control_egg\n'}
+[2.317272] (-) TimerEvent: {}
+[2.418147] (-) TimerEvent: {}
+[2.519082] (-) TimerEvent: {}
+[2.619977] (-) TimerEvent: {}
+[2.720950] (-) TimerEvent: {}
+[2.821814] (-) TimerEvent: {}
+[2.922657] (-) TimerEvent: {}
+[3.023510] (-) TimerEvent: {}
+[3.124497] (-) TimerEvent: {}
+[3.225499] (-) TimerEvent: {}
+[3.326590] (-) TimerEvent: {}
+[3.427944] (-) TimerEvent: {}
+[3.529612] (-) TimerEvent: {}
+[3.631482] (-) TimerEvent: {}
+[3.733167] (-) TimerEvent: {}
+[3.835077] (-) TimerEvent: {}
+[3.936510] (-) TimerEvent: {}
+[4.037662] (-) TimerEvent: {}
+[4.138626] (-) TimerEvent: {}
+[4.240443] (-) TimerEvent: {}
+[4.343230] (-) TimerEvent: {}
+[4.446479] (-) TimerEvent: {}
+[4.548348] (-) TimerEvent: {}
+[4.650045] (-) TimerEvent: {}
+[4.751216] (-) TimerEvent: {}
+[4.852550] (-) TimerEvent: {}
+[4.953578] (-) TimerEvent: {}
+[5.054598] (-) TimerEvent: {}
+[5.155532] (-) TimerEvent: {}
+[5.257056] (-) TimerEvent: {}
+[5.358706] (-) TimerEvent: {}
+[5.460409] (-) TimerEvent: {}
+[5.562231] (-) TimerEvent: {}
+[5.665129] (-) TimerEvent: {}
+[5.767909] (-) TimerEvent: {}
+[5.869187] (-) TimerEvent: {}
+[5.970435] (-) TimerEvent: {}
+[6.071848] (-) TimerEvent: {}
+[6.173578] (-) TimerEvent: {}
+[6.275062] (-) TimerEvent: {}
+[6.376273] (-) TimerEvent: {}
+[6.477620] (-) TimerEvent: {}
+[6.579051] (-) TimerEvent: {}
+[6.680292] (-) TimerEvent: {}
+[6.781364] (-) TimerEvent: {}
+[6.882313] (-) TimerEvent: {}
+[6.983199] (-) TimerEvent: {}
+[7.084037] (-) TimerEvent: {}
+[7.184878] (-) TimerEvent: {}
+[7.285742] (-) TimerEvent: {}
+[7.386627] (-) TimerEvent: {}
+[7.487476] (-) TimerEvent: {}
+[7.588311] (-) TimerEvent: {}
+[7.689129] (-) TimerEvent: {}
+[7.789972] (-) TimerEvent: {}
+[7.890800] (-) TimerEvent: {}
+[7.991605] (-) TimerEvent: {}
+[8.092439] (-) TimerEvent: {}
+[8.193886] (-) TimerEvent: {}
+[8.295483] (-) TimerEvent: {}
+[8.396358] (-) TimerEvent: {}
+[8.497210] (-) TimerEvent: {}
+[8.598005] (-) TimerEvent: {}
+[8.698810] (-) TimerEvent: {}
+[8.799593] (-) TimerEvent: {}
+[8.900443] (-) TimerEvent: {}
+[9.001293] (-) TimerEvent: {}
+[9.102200] (-) TimerEvent: {}
+[9.203116] (-) TimerEvent: {}
+[9.303942] (-) TimerEvent: {}
+[9.404802] (-) TimerEvent: {}
+[9.505618] (-) TimerEvent: {}
+[9.606457] (-) TimerEvent: {}
+[9.707291] (-) TimerEvent: {}
+[9.808129] (-) TimerEvent: {}
+[9.909006] (-) TimerEvent: {}
+[10.009873] (-) TimerEvent: {}
+[10.110703] (-) TimerEvent: {}
+[10.211505] (-) TimerEvent: {}
+[10.312309] (-) TimerEvent: {}
+[10.413123] (-) TimerEvent: {}
+[10.513928] (-) TimerEvent: {}
+[10.614811] (-) TimerEvent: {}
+[10.715632] (-) TimerEvent: {}
+[10.816458] (-) TimerEvent: {}
+[10.917315] (-) TimerEvent: {}
+[11.018175] (-) TimerEvent: {}
+[11.119099] (-) TimerEvent: {}
+[11.219947] (-) TimerEvent: {}
+[11.320902] (-) TimerEvent: {}
+[11.421810] (-) TimerEvent: {}
+[11.522741] (-) TimerEvent: {}
+[11.623589] (-) TimerEvent: {}
+[11.724461] (-) TimerEvent: {}
+[11.825353] (-) TimerEvent: {}
+[11.926153] (-) TimerEvent: {}
+[12.027320] (-) TimerEvent: {}
+[12.119827] (motor_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KGpioNode::GpioNode()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.121049] (motor_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:14:114:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator=\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<int>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<long int, std::allocator<long int> >\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[12.121588] (motor_control) StderrLine: {'line': b'   14 |  this->declare_parameter<std::vector<int>>("out_pins", std::vector<int>{12, 13, 16, 19, 20, 21}\x1b[01;31m\x1b[K)\x1b[m\x1b[K; // BCM\xe7\x95\xaa\xe5\x8f\xb7\xe3\x81\xa7\xe6\x8c\x87\xe5\xae\x9a\n'}
+[12.122050] (motor_control) StderrLine: {'line': b'      |                                                                                                \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[12.122441] (motor_control) StderrLine: {'line': b'\n'}
+[12.123137] (motor_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/vector:72\x1b[m\x1b[K,\n'}
+[12.123506] (motor_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/functional:62\x1b[m\x1b[K,\n'}
+[12.123876] (motor_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13\x1b[m\x1b[K,\n'}
+[12.124283] (motor_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:74\x1b[m\x1b[K,\n'}
+[12.124694] (motor_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18\x1b[m\x1b[K,\n'}
+[12.125102] (motor_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[12.125536] (motor_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[12.125975] (motor_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[12.127590] (-) TimerEvent: {}
+[12.128459] (motor_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:1\x1b[m\x1b[K:\n'}
+[12.129107] (motor_control) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/vector.tcc:198:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(const std::vector<_Tp, _Alloc>&) [with _Tp = int; _Alloc = std::allocator<int>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.129597] (motor_control) StderrLine: {'line': b'  198 |     \x1b[01;36m\x1b[Kvector<_Tp, _Alloc>\x1b[m\x1b[K::\n'}
+[12.130016] (motor_control) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.130430] (motor_control) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/vector.tcc:199:42:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<long int, std::allocator<long int> >\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst std::vector<int>&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.131094] (motor_control) StderrLine: {'line': b'  199 |     operator=(\x1b[01;36m\x1b[Kconst vector<_Tp, _Alloc>& __x\x1b[m\x1b[K)\n'}
+[12.131557] (motor_control) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[12.131997] (motor_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/vector:67\x1b[m\x1b[K,\n'}
+[12.132441] (motor_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/functional:62\x1b[m\x1b[K,\n'}
+[12.132863] (motor_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13\x1b[m\x1b[K,\n'}
+[12.133255] (motor_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:74\x1b[m\x1b[K,\n'}
+[12.134619] (motor_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18\x1b[m\x1b[K,\n'}
+[12.135229] (motor_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[12.136297] (motor_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[12.136914] (motor_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[12.137354] (motor_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:1\x1b[m\x1b[K:\n'}
+[12.137847] (motor_control) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:709:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::vector<_Tp, _Alloc>&&) [with _Tp = int; _Alloc = std::allocator<int>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.138290] (motor_control) StderrLine: {'line': b'  709 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(vector&& __x) noexcept(_Alloc_traits::_S_nothrow_move())\n'}
+[12.138773] (motor_control) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.139193] (motor_control) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:709:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<long int, std::allocator<long int> >\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<int>&&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.139609] (motor_control) StderrLine: {'line': b'  709 |       operator=(\x1b[01;36m\x1b[Kvector&& __x\x1b[m\x1b[K) noexcept(_Alloc_traits::_S_nothrow_move())\n'}
+[12.140012] (motor_control) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[12.140412] (motor_control) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:730:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::initializer_list<_Tp>) [with _Tp = int; _Alloc = std::allocator<int>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.140786] (motor_control) StderrLine: {'line': b'  730 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(initializer_list<value_type> __l)\n'}
+[12.141257] (motor_control) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.141650] (motor_control) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:730:46:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<long int, std::allocator<long int> >\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::initializer_list<int>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.142052] (motor_control) StderrLine: {'line': b'  730 |       operator=(\x1b[01;36m\x1b[Kinitializer_list<value_type> __l\x1b[m\x1b[K)\n'}
+[12.142452] (motor_control) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[12.142966] (motor_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:15:96:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator=\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<int>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<long int, std::allocator<long int> >\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[12.143413] (motor_control) StderrLine: {'line': b'   15 |         in_pins = this->declare_parameter<std::vector<int>>("in_pins", std::vector<int>{24, 25}\x1b[01;31m\x1b[K)\x1b[m\x1b[K; // BCM\xe7\x95\xaa\xe5\x8f\xb7\xe3\x81\xa7\xe6\x8c\x87\xe5\xae\x9a\n'}
+[12.143844] (motor_control) StderrLine: {'line': b'      |                                                                                                \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[12.144272] (motor_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/vector:72\x1b[m\x1b[K,\n'}
+[12.144746] (motor_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/functional:62\x1b[m\x1b[K,\n'}
+[12.145160] (motor_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13\x1b[m\x1b[K,\n'}
+[12.145575] (motor_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:74\x1b[m\x1b[K,\n'}
+[12.145993] (motor_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18\x1b[m\x1b[K,\n'}
+[12.146415] (motor_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[12.146894] (motor_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[12.147368] (motor_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[12.147792] (motor_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:1\x1b[m\x1b[K:\n'}
+[12.148211] (motor_control) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/vector.tcc:198:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(const std::vector<_Tp, _Alloc>&) [with _Tp = int; _Alloc = std::allocator<int>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.148630] (motor_control) StderrLine: {'line': b'  198 |     \x1b[01;36m\x1b[Kvector<_Tp, _Alloc>\x1b[m\x1b[K::\n'}
+[12.149032] (motor_control) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.149431] (motor_control) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/vector.tcc:199:42:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<long int, std::allocator<long int> >\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst std::vector<int>&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.149861] (motor_control) StderrLine: {'line': b'  199 |     operator=(\x1b[01;36m\x1b[Kconst vector<_Tp, _Alloc>& __x\x1b[m\x1b[K)\n'}
+[12.150280] (motor_control) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[12.150773] (motor_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/vector:67\x1b[m\x1b[K,\n'}
+[12.151293] (motor_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/functional:62\x1b[m\x1b[K,\n'}
+[12.151725] (motor_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13\x1b[m\x1b[K,\n'}
+[12.152147] (motor_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:74\x1b[m\x1b[K,\n'}
+[12.152585] (motor_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18\x1b[m\x1b[K,\n'}
+[12.153001] (motor_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[12.153993] (motor_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[12.154844] (motor_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[12.155540] (motor_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:1\x1b[m\x1b[K:\n'}
+[12.156027] (motor_control) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:709:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::vector<_Tp, _Alloc>&&) [with _Tp = int; _Alloc = std::allocator<int>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.157246] (motor_control) StderrLine: {'line': b'  709 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(vector&& __x) noexcept(_Alloc_traits::_S_nothrow_move())\n'}
+[12.157723] (motor_control) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.158158] (motor_control) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:709:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<long int, std::allocator<long int> >\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<int>&&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.158769] (motor_control) StderrLine: {'line': b'  709 |       operator=(\x1b[01;36m\x1b[Kvector&& __x\x1b[m\x1b[K) noexcept(_Alloc_traits::_S_nothrow_move())\n'}
+[12.159288] (motor_control) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[12.159818] (motor_control) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:730:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::initializer_list<_Tp>) [with _Tp = int; _Alloc = std::allocator<int>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.160845] (motor_control) StderrLine: {'line': b'  730 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(initializer_list<value_type> __l)\n'}
+[12.161512] (motor_control) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.162185] (motor_control) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:730:46:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<long int, std::allocator<long int> >\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::initializer_list<int>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.162874] (motor_control) StderrLine: {'line': b'  730 |       operator=(\x1b[01;36m\x1b[Kinitializer_list<value_type> __l\x1b[m\x1b[K)\n'}
+[12.163854] (motor_control) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[12.186565] (motor_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid GpioNode::reader_loop()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.187851] (motor_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:81:46:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kdistance(gpiod_line**, __gnu_cxx::__normal_iterator<gpiod_line**, std::vector<gpiod_line*> >)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.188664] (motor_control) StderrLine: {'line': b'   81 |                 int pin_index = \x1b[01;31m\x1b[Kstd::distance(line_ins.data(), std::find(line_ins.begin(), line_ins.end(), line))\x1b[m\x1b[K;\n'}
+[12.189143] (motor_control) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.189554] (motor_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:66\x1b[m\x1b[K,\n'}
+[12.189979] (motor_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:63\x1b[m\x1b[K,\n'}
+[12.190380] (motor_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[12.190885] (motor_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:1\x1b[m\x1b[K:\n'}
+[12.191299] (motor_control) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_iterator_base_funcs.h:138:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _InputIterator> constexpr typename std::iterator_traits< <template-parameter-1-1> >::difference_type std::distance(_InputIterator, _InputIterator)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.191794] (motor_control) StderrLine: {'line': b'  138 |     \x1b[01;36m\x1b[Kdistance\x1b[m\x1b[K(_InputIterator __first, _InputIterator __last)\n'}
+[12.192228] (motor_control) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.192656] (motor_control) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_iterator_base_funcs.h:138:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.193086] (motor_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:81:46:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  deduced conflicting types for parameter \xe2\x80\x98\x1b[01m\x1b[K_InputIterator\x1b[m\x1b[K\xe2\x80\x99 (\xe2\x80\x98\x1b[01m\x1b[Kgpiod_line**\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[K__gnu_cxx::__normal_iterator<gpiod_line**, std::vector<gpiod_line*> >\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[12.193587] (motor_control) StderrLine: {'line': b'   81 |                 int pin_index = \x1b[01;36m\x1b[Kstd::distance(line_ins.data(), std::find(line_ins.begin(), line_ins.end(), line))\x1b[m\x1b[K;\n'}
+[12.194026] (motor_control) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.227812] (-) TimerEvent: {}
+[12.328729] (-) TimerEvent: {}
+[12.429611] (-) TimerEvent: {}
+[12.530467] (-) TimerEvent: {}
+[12.631308] (-) TimerEvent: {}
+[12.732134] (-) TimerEvent: {}
+[12.832961] (-) TimerEvent: {}
+[12.933818] (-) TimerEvent: {}
+[13.034711] (-) TimerEvent: {}
+[13.136070] (-) TimerEvent: {}
+[13.237351] (-) TimerEvent: {}
+[13.338185] (-) TimerEvent: {}
+[13.439005] (-) TimerEvent: {}
+[13.539817] (-) TimerEvent: {}
+[13.640595] (-) TimerEvent: {}
+[13.741398] (-) TimerEvent: {}
+[13.842211] (-) TimerEvent: {}
+[13.943062] (-) TimerEvent: {}
+[14.043883] (-) TimerEvent: {}
+[14.144684] (-) TimerEvent: {}
+[14.245572] (-) TimerEvent: {}
+[14.347548] (-) TimerEvent: {}
+[14.448432] (-) TimerEvent: {}
+[14.549295] (-) TimerEvent: {}
+[14.650167] (-) TimerEvent: {}
+[14.750980] (-) TimerEvent: {}
+[14.851766] (-) TimerEvent: {}
+[14.952553] (-) TimerEvent: {}
+[15.053336] (-) TimerEvent: {}
+[15.154175] (-) TimerEvent: {}
+[15.255008] (-) TimerEvent: {}
+[15.355887] (-) TimerEvent: {}
+[15.456672] (-) TimerEvent: {}
+[15.557481] (-) TimerEvent: {}
+[15.658297] (-) TimerEvent: {}
+[15.759170] (-) TimerEvent: {}
+[15.860036] (-) TimerEvent: {}
+[15.961008] (-) TimerEvent: {}
+[16.061959] (-) TimerEvent: {}
+[16.162899] (-) TimerEvent: {}
+[16.263689] (-) TimerEvent: {}
+[16.364490] (-) TimerEvent: {}
+[16.465291] (-) TimerEvent: {}
+[16.566102] (-) TimerEvent: {}
+[16.666910] (-) TimerEvent: {}
+[16.767700] (-) TimerEvent: {}
+[16.868492] (-) TimerEvent: {}
+[16.969294] (-) TimerEvent: {}
+[17.070157] (-) TimerEvent: {}
+[17.171190] (-) TimerEvent: {}
+[17.272012] (-) TimerEvent: {}
+[17.372852] (-) TimerEvent: {}
+[17.473674] (-) TimerEvent: {}
+[17.574491] (-) TimerEvent: {}
+[17.675338] (-) TimerEvent: {}
+[17.776148] (-) TimerEvent: {}
+[17.877030] (-) TimerEvent: {}
+[17.977886] (-) TimerEvent: {}
+[18.078776] (-) TimerEvent: {}
+[18.179680] (-) TimerEvent: {}
+[18.280505] (-) TimerEvent: {}
+[18.381399] (-) TimerEvent: {}
+[18.482292] (-) TimerEvent: {}
+[18.583141] (-) TimerEvent: {}
+[18.683992] (-) TimerEvent: {}
+[18.784861] (-) TimerEvent: {}
+[18.885717] (-) TimerEvent: {}
+[18.986607] (-) TimerEvent: {}
+[19.087449] (-) TimerEvent: {}
+[19.188294] (-) TimerEvent: {}
+[19.289130] (-) TimerEvent: {}
+[19.389977] (-) TimerEvent: {}
+[19.490860] (-) TimerEvent: {}
+[19.591607] (-) TimerEvent: {}
+[19.692396] (-) TimerEvent: {}
+[19.793176] (-) TimerEvent: {}
+[19.894051] (-) TimerEvent: {}
+[19.994945] (-) TimerEvent: {}
+[20.095793] (-) TimerEvent: {}
+[20.196654] (-) TimerEvent: {}
+[20.297516] (-) TimerEvent: {}
+[20.398410] (-) TimerEvent: {}
+[20.499268] (-) TimerEvent: {}
+[20.600204] (-) TimerEvent: {}
+[20.618002] (motor_control) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/gpio_node.dir/build.make:76: CMakeFiles/gpio_node.dir/src/gpio_node.cpp.o] Error 1\n'}
+[20.619078] (motor_control) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:680: CMakeFiles/gpio_node.dir/all] Error 2\n'}
+[20.620741] (motor_control) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[20.627329] (motor_control) CommandEnded: {'returncode': 2}
+[20.668390] (motor_control) JobEnded: {'identifier': 'motor_control', 'rc': 2}
+[20.682476] (-) EventReactorShutdown: {}

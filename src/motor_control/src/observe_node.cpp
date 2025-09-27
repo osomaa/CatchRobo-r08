@@ -2,6 +2,7 @@
 #include <motor_control/msg/send_at.hpp>        // ← 念のため明示
 #include <motor_control/msg/return_at.hpp>
 #include <motor_control/msg/send_array.hpp>
+#include <motor_control/msg/gpio_cmd.hpp>
 #include <std_msgs/msg/bool.hpp>
 #include <array>
 #include <mutex>
@@ -19,7 +20,6 @@ public:
       "motor/state", 10,
       std::bind(&ObserveNode::on_state, this, std::placeholders::_1));
     pub_done_ = create_publisher<std_msgs::msg::Bool>("motor/observe/done", 10);
-
     // 明示初期化（全要素デフォルト値に）
     last_state_.fill(motor_control::msg::ReturnAt{});
 
@@ -58,7 +58,7 @@ private:
     have_state_[idx] = true;
   }
 
-  static bool almost_equal(float a, float b, float eps = 0.01f) {
+  static bool almost_equal(float a, float b, float eps = 0.04f) {
     return std::fabs(a - b) <= eps;
   }
 

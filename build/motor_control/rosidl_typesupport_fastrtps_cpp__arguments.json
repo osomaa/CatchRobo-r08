@@ -5,7 +5,8 @@
   "idl_tuples": [
     "/home/mowmow/workspace/CatchRobo-r08/build/motor_control/rosidl_adapter/motor_control:msg/ReturnAt.idl",
     "/home/mowmow/workspace/CatchRobo-r08/build/motor_control/rosidl_adapter/motor_control:msg/SendAt.idl",
-    "/home/mowmow/workspace/CatchRobo-r08/build/motor_control/rosidl_adapter/motor_control:msg/SendArray.idl"
+    "/home/mowmow/workspace/CatchRobo-r08/build/motor_control/rosidl_adapter/motor_control:msg/SendArray.idl",
+    "/home/mowmow/workspace/CatchRobo-r08/build/motor_control/rosidl_adapter/motor_control:msg/GpioCmd.idl"
   ],
   "ros_interface_dependencies": [
     "builtin_interfaces:/opt/ros/humble/share/builtin_interfaces/msg/Duration.idl",
@@ -53,6 +54,7 @@
     "/home/mowmow/workspace/CatchRobo-r08/build/motor_control/rosidl_adapter/motor_control/msg/ReturnAt.idl",
     "/home/mowmow/workspace/CatchRobo-r08/build/motor_control/rosidl_adapter/motor_control/msg/SendAt.idl",
     "/home/mowmow/workspace/CatchRobo-r08/build/motor_control/rosidl_adapter/motor_control/msg/SendArray.idl",
+    "/home/mowmow/workspace/CatchRobo-r08/build/motor_control/rosidl_adapter/motor_control/msg/GpioCmd.idl",
     "/opt/ros/humble/share/builtin_interfaces/msg/Duration.idl",
     "/opt/ros/humble/share/builtin_interfaces/msg/Time.idl",
     "/opt/ros/humble/share/std_msgs/msg/Bool.idl",

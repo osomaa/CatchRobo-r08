@@ -81,6 +81,11 @@ CMakeFiles/motor_control__cpp: rosidl_generator_cpp/motor_control/msg/detail/sen
 CMakeFiles/motor_control__cpp: rosidl_generator_cpp/motor_control/msg/detail/send_array__struct.hpp
 CMakeFiles/motor_control__cpp: rosidl_generator_cpp/motor_control/msg/detail/send_array__traits.hpp
 CMakeFiles/motor_control__cpp: rosidl_generator_cpp/motor_control/msg/detail/send_array__type_support.hpp
+CMakeFiles/motor_control__cpp: rosidl_generator_cpp/motor_control/msg/gpio_cmd.hpp
+CMakeFiles/motor_control__cpp: rosidl_generator_cpp/motor_control/msg/detail/gpio_cmd__builder.hpp
+CMakeFiles/motor_control__cpp: rosidl_generator_cpp/motor_control/msg/detail/gpio_cmd__struct.hpp
+CMakeFiles/motor_control__cpp: rosidl_generator_cpp/motor_control/msg/detail/gpio_cmd__traits.hpp
+CMakeFiles/motor_control__cpp: rosidl_generator_cpp/motor_control/msg/detail/gpio_cmd__type_support.hpp
 CMakeFiles/motor_control__cpp: rosidl_generator_cpp/motor_control/msg/rosidl_generator_cpp__visibility_control.hpp
 
 rosidl_generator_cpp/motor_control/msg/return_at.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
@@ -101,6 +106,7 @@ rosidl_generator_cpp/motor_control/msg/return_at.hpp: /opt/ros/humble/share/rosi
 rosidl_generator_cpp/motor_control/msg/return_at.hpp: rosidl_adapter/motor_control/msg/ReturnAt.idl
 rosidl_generator_cpp/motor_control/msg/return_at.hpp: rosidl_adapter/motor_control/msg/SendAt.idl
 rosidl_generator_cpp/motor_control/msg/return_at.hpp: rosidl_adapter/motor_control/msg/SendArray.idl
+rosidl_generator_cpp/motor_control/msg/return_at.hpp: rosidl_adapter/motor_control/msg/GpioCmd.idl
 rosidl_generator_cpp/motor_control/msg/return_at.hpp: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_cpp/motor_control/msg/return_at.hpp: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
 rosidl_generator_cpp/motor_control/msg/return_at.hpp: /opt/ros/humble/share/std_msgs/msg/Bool.idl
@@ -178,7 +184,26 @@ rosidl_generator_cpp/motor_control/msg/detail/send_array__traits.hpp: rosidl_gen
 rosidl_generator_cpp/motor_control/msg/detail/send_array__type_support.hpp: rosidl_generator_cpp/motor_control/msg/return_at.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/motor_control/msg/detail/send_array__type_support.hpp
 
+rosidl_generator_cpp/motor_control/msg/gpio_cmd.hpp: rosidl_generator_cpp/motor_control/msg/return_at.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/motor_control/msg/gpio_cmd.hpp
+
+rosidl_generator_cpp/motor_control/msg/detail/gpio_cmd__builder.hpp: rosidl_generator_cpp/motor_control/msg/return_at.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/motor_control/msg/detail/gpio_cmd__builder.hpp
+
+rosidl_generator_cpp/motor_control/msg/detail/gpio_cmd__struct.hpp: rosidl_generator_cpp/motor_control/msg/return_at.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/motor_control/msg/detail/gpio_cmd__struct.hpp
+
+rosidl_generator_cpp/motor_control/msg/detail/gpio_cmd__traits.hpp: rosidl_generator_cpp/motor_control/msg/return_at.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/motor_control/msg/detail/gpio_cmd__traits.hpp
+
+rosidl_generator_cpp/motor_control/msg/detail/gpio_cmd__type_support.hpp: rosidl_generator_cpp/motor_control/msg/return_at.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/motor_control/msg/detail/gpio_cmd__type_support.hpp
+
 motor_control__cpp: CMakeFiles/motor_control__cpp
+motor_control__cpp: rosidl_generator_cpp/motor_control/msg/detail/gpio_cmd__builder.hpp
+motor_control__cpp: rosidl_generator_cpp/motor_control/msg/detail/gpio_cmd__struct.hpp
+motor_control__cpp: rosidl_generator_cpp/motor_control/msg/detail/gpio_cmd__traits.hpp
+motor_control__cpp: rosidl_generator_cpp/motor_control/msg/detail/gpio_cmd__type_support.hpp
 motor_control__cpp: rosidl_generator_cpp/motor_control/msg/detail/return_at__builder.hpp
 motor_control__cpp: rosidl_generator_cpp/motor_control/msg/detail/return_at__struct.hpp
 motor_control__cpp: rosidl_generator_cpp/motor_control/msg/detail/return_at__traits.hpp
@@ -191,6 +216,7 @@ motor_control__cpp: rosidl_generator_cpp/motor_control/msg/detail/send_at__build
 motor_control__cpp: rosidl_generator_cpp/motor_control/msg/detail/send_at__struct.hpp
 motor_control__cpp: rosidl_generator_cpp/motor_control/msg/detail/send_at__traits.hpp
 motor_control__cpp: rosidl_generator_cpp/motor_control/msg/detail/send_at__type_support.hpp
+motor_control__cpp: rosidl_generator_cpp/motor_control/msg/gpio_cmd.hpp
 motor_control__cpp: rosidl_generator_cpp/motor_control/msg/return_at.hpp
 motor_control__cpp: rosidl_generator_cpp/motor_control/msg/send_array.hpp
 motor_control__cpp: rosidl_generator_cpp/motor_control/msg/send_at.hpp

@@ -210,4 +210,7 @@ CMakeFiles/motor_control__rosidl_typesupport_introspection_c__pyext.dir/rosidl_g
  /home/mowmow/workspace/CatchRobo-r08/build/motor_control/rosidl_generator_c/motor_control/msg/detail/send_at__functions.h \
  /home/mowmow/workspace/CatchRobo-r08/build/motor_control/rosidl_generator_c/motor_control/msg/detail/send_array__type_support.h \
  /home/mowmow/workspace/CatchRobo-r08/build/motor_control/rosidl_generator_c/motor_control/msg/detail/send_array__struct.h \
- /home/mowmow/workspace/CatchRobo-r08/build/motor_control/rosidl_generator_c/motor_control/msg/detail/send_array__functions.h
+ /home/mowmow/workspace/CatchRobo-r08/build/motor_control/rosidl_generator_c/motor_control/msg/detail/send_array__functions.h \
+ /home/mowmow/workspace/CatchRobo-r08/build/motor_control/rosidl_generator_c/motor_control/msg/detail/gpio_cmd__type_support.h \
+ /home/mowmow/workspace/CatchRobo-r08/build/motor_control/rosidl_generator_c/motor_control/msg/detail/gpio_cmd__struct.h \
+ /home/mowmow/workspace/CatchRobo-r08/build/motor_control/rosidl_generator_c/motor_control/msg/detail/gpio_cmd__functions.h

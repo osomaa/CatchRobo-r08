@@ -250,8 +250,13 @@ CMakeFiles/motor_control__rosidl_typesupport_introspection_c__pyext.dir/rosidl_g
   rosidl_generator_c/motor_control/msg/detail/send_at__functions.h \
   rosidl_generator_c/motor_control/msg/detail/send_array__type_support.h \
   rosidl_generator_c/motor_control/msg/detail/send_array__struct.h \
-  rosidl_generator_c/motor_control/msg/detail/send_array__functions.h
+  rosidl_generator_c/motor_control/msg/detail/send_array__functions.h \
+  rosidl_generator_c/motor_control/msg/detail/gpio_cmd__type_support.h \
+  rosidl_generator_c/motor_control/msg/detail/gpio_cmd__struct.h \
+  rosidl_generator_c/motor_control/msg/detail/gpio_cmd__functions.h
 
+
+rosidl_generator_c/motor_control/msg/detail/gpio_cmd__type_support.h:
 
 rosidl_generator_c/motor_control/msg/detail/send_array__type_support.h:
 
@@ -307,6 +312,8 @@ rosidl_generator_c/motor_control/msg/detail/return_at__struct.h:
 
 /usr/include/python3.10/pystate.h:
 
+rosidl_generator_c/motor_control/msg/detail/gpio_cmd__functions.h:
+
 /usr/include/python3.10/cpython/initconfig.h:
 
 /usr/include/python3.10/cpython/traceback.h:
@@ -352,6 +359,8 @@ rosidl_generator_c/motor_control/msg/detail/return_at__struct.h:
 /usr/include/aarch64-linux-gnu/bits/cpu-set.h:
 
 /usr/include/python3.10/bytesobject.h:
+
+rosidl_generator_c/motor_control/msg/detail/gpio_cmd__struct.h:
 
 /usr/include/python3.10/cpython/pystate.h:
 

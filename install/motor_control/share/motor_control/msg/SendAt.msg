@@ -1,2 +1,2 @@
-uint8  id
+uint8 id
 float32 position

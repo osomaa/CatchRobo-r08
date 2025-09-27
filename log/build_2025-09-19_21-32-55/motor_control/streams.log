@@ -1,0 +1,284 @@
+[0.053s] Invoking command in '/home/mowmow/workspace/CatchRobo-r08/build/motor_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mowmow/workspace/CatchRobo-r08/build/motor_control -- -j4 -l4
+[0.285s] [  1%] Built target motor_control__cpp
+[0.307s] [ 11%] Built target motor_control__rosidl_generator_c
+[0.366s] [ 11%] Built target ament_cmake_python_copy_motor_control
+[0.472s] [ 20%] Built target motor_control__rosidl_typesupport_cpp
+[0.490s] [ 30%] Built target motor_control__rosidl_typesupport_introspection_cpp
+[0.513s] [ 39%] Built target motor_control__rosidl_typesupport_fastrtps_cpp
+[0.559s] [ 49%] Built target motor_control__rosidl_typesupport_fastrtps_c
+[0.607s] [ 58%] Built target motor_control__rosidl_typesupport_introspection_c
+[0.690s] [ 68%] Built target motor_control__rosidl_typesupport_c
+[0.788s] [ 71%] Built target communication_node
+[0.912s] [35m[1mConsolidate compiler generated dependencies of target gpio_node[0m
+[0.972s] [ 74%] Built target control_node
+[0.998s] [ 77%] Built target observe_node
+[1.106s] [ 79%] [32mBuilding CXX object CMakeFiles/gpio_node.dir/src/gpio_node.cpp.o[0m
+[1.122s] [ 79%] Built target motor_control
+[1.253s] [ 80%] Built target motor_control__py
+[1.399s] [ 88%] Built target motor_control__rosidl_generator_py
+[1.619s] [ 92%] Built target motor_control__rosidl_typesupport_fastrtps_c__pyext
+[1.685s] [ 95%] Built target motor_control__rosidl_typesupport_introspection_c__pyext
+[1.735s] [ 98%] Built target motor_control__rosidl_typesupport_c__pyext
+[2.417s] running egg_info
+[2.421s] writing motor_control.egg-info/PKG-INFO
+[2.425s] writing dependency_links to motor_control.egg-info/dependency_links.txt
+[2.426s] writing top-level names to motor_control.egg-info/top_level.txt
+[2.436s] reading manifest file 'motor_control.egg-info/SOURCES.txt'
+[2.439s] writing manifest file 'motor_control.egg-info/SOURCES.txt'
+[2.607s] [ 98%] Built target ament_cmake_python_build_motor_control_egg
+[12.308s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:[m[K In constructor ‘[01m[KGpioNode::GpioNode()[m[K’:
+[12.309s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:14:97:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kstd::vector<int>::vector(const char [9], <brace-enclosed initializer list>)[m[K’
+[12.310s]    14 |         out_pins = this->declare_parameter<std::vector<int>("out_pins", {12, 13, 16, 19, 20, 21}[01;31m[K)[m[K; // BCM番号で指定
+[12.310s]       |                                                                                                 [01;31m[K^[m[K
+[12.311s] In file included from [01m[K/usr/include/c++/11/vector:67[m[K,
+[12.311s]                  from [01m[K/usr/include/c++/11/functional:62[m[K,
+[12.311s]                  from [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13[m[K,
+[12.312s]                  from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+[12.318s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+[12.318s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[12.319s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[12.320s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[12.320s]                  from [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:1[m[K:
+[12.321s] [01m[K/usr/include/c++/11/bits/stl_vector.h:653:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>::vector(_InputIterator, _InputIterator, const allocator_type&) [with _InputIterator = const char*; <template-parameter-2-2> = void; _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<int>][m[K’
+[12.321s]   653 |         [01;36m[Kvector[m[K(_InputIterator __first, _InputIterator __last,
+[12.322s]       |         [01;36m[K^~~~~~[m[K
+[12.322s] [01m[K/usr/include/c++/11/bits/stl_vector.h:653:55:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kconst char*[m[K’
+[12.323s]   653 |         vector(_InputIterator __first, [01;36m[K_InputIterator __last[m[K,
+[12.323s]       |                                        [01;36m[K~~~~~~~~~~~~~~~^~~~~~[m[K
+[12.324s] [01m[K/usr/include/c++/11/bits/stl_vector.h:625:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>::vector(std::initializer_list<_Tp>, const allocator_type&) [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<int>][m[K’
+[12.324s]   625 |       [01;36m[Kvector[m[K(initializer_list<value_type> __l,
+[12.325s]       |       [01;36m[K^~~~~~[m[K
+[12.326s] [01m[K/usr/include/c++/11/bits/stl_vector.h:625:43:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst char [9][m[K’ to ‘[01m[Kstd::initializer_list<int>[m[K’
+[12.326s]   625 |       vector([01;36m[Kinitializer_list<value_type> __l[m[K,
+[12.327s]       |              [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[12.328s] [01m[K/usr/include/c++/11/bits/stl_vector.h:607:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>::vector(std::vector<_Tp, _Alloc>&&, const allocator_type&) [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<int>][m[K’
+[12.328s]   607 |       [01;36m[Kvector[m[K(vector&& __rv, const allocator_type& __m)
+[12.329s]       |       [01;36m[K^~~~~~[m[K
+[12.330s] [01m[K/usr/include/c++/11/bits/stl_vector.h:607:23:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst char [9][m[K’ to ‘[01m[Kstd::vector<int>&&[m[K’
+[12.330s]   607 |       vector([01;36m[Kvector&& __rv[m[K, const allocator_type& __m)
+[12.331s]       |              [01;36m[K~~~~~~~~~^~~~[m[K
+[12.331s] [01m[K/usr/include/c++/11/bits/stl_vector.h:589:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>::vector(std::vector<_Tp, _Alloc>&&, const allocator_type&, std::false_type) [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<int>; std::false_type = std::integral_constant<bool, false>][m[K’
+[12.332s]   589 |       [01;36m[Kvector[m[K(vector&& __rv, const allocator_type& __m, false_type)
+[12.332s]       |       [01;36m[K^~~~~~[m[K
+[12.333s] [01m[K/usr/include/c++/11/bits/stl_vector.h:589:7:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 2 provided
+[12.333s] [01m[K/usr/include/c++/11/bits/stl_vector.h:585:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>::vector(std::vector<_Tp, _Alloc>&&, const allocator_type&, std::true_type) [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<int>; std::true_type = std::integral_constant<bool, true>][m[K’
+[12.334s]   585 |       [01;36m[Kvector[m[K(vector&& __rv, const allocator_type& __m, true_type) noexcept
+[12.334s]       |       [01;36m[K^~~~~~[m[K
+[12.335s] [01m[K/usr/include/c++/11/bits/stl_vector.h:585:7:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 2 provided
+[12.336s] [01m[K/usr/include/c++/11/bits/stl_vector.h:575:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>::vector(const std::vector<_Tp, _Alloc>&, const allocator_type&) [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<int>][m[K’
+[12.336s]   575 |       [01;36m[Kvector[m[K(const vector& __x, const allocator_type& __a)
+[12.337s]       |       [01;36m[K^~~~~~[m[K
+[12.337s] [01m[K/usr/include/c++/11/bits/stl_vector.h:575:28:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst char [9][m[K’ to ‘[01m[Kconst std::vector<int>&[m[K’
+[12.338s]   575 |       vector([01;36m[Kconst vector& __x[m[K, const allocator_type& __a)
+[12.339s]       |              [01;36m[K~~~~~~~~~~~~~~^~~[m[K
+[12.340s] [01m[K/usr/include/c++/11/bits/stl_vector.h:572:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>::vector(std::vector<_Tp, _Alloc>&&) [with _Tp = int; _Alloc = std::allocator<int>][m[K’
+[12.341s]   572 |       [01;36m[Kvector[m[K(vector&&) noexcept = default;
+[12.342s]       |       [01;36m[K^~~~~~[m[K
+[12.342s] [01m[K/usr/include/c++/11/bits/stl_vector.h:572:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[12.343s] [01m[K/usr/include/c++/11/bits/stl_vector.h:553:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>::vector(const std::vector<_Tp, _Alloc>&) [with _Tp = int; _Alloc = std::allocator<int>][m[K’
+[12.343s]   553 |       [01;36m[Kvector[m[K(const vector& __x)
+[12.344s]       |       [01;36m[K^~~~~~[m[K
+[12.345s] [01m[K/usr/include/c++/11/bits/stl_vector.h:553:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[12.345s] [01m[K/usr/include/c++/11/bits/stl_vector.h:522:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>::vector(std::vector<_Tp, _Alloc>::size_type, const value_type&, const allocator_type&) [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::size_type = long unsigned int; std::vector<_Tp, _Alloc>::value_type = int; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<int>][m[K’
+[12.346s]   522 |       [01;36m[Kvector[m[K(size_type __n, const value_type& __value,
+[12.346s]       |       [01;36m[K^~~~~~[m[K
+[12.347s] [01m[K/usr/include/c++/11/bits/stl_vector.h:522:47:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kconst value_type&[m[K’ {aka ‘[01m[Kconst int&[m[K’}
+[12.347s]   522 |       vector(size_type __n, [01;36m[Kconst value_type& __value[m[K,
+[12.348s]       |                             [01;36m[K~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[12.348s] [01m[K/usr/include/c++/11/bits/stl_vector.h:510:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>::vector(std::vector<_Tp, _Alloc>::size_type, const allocator_type&) [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::size_type = long unsigned int; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<int>][m[K’
+[12.349s]   510 |       [01;36m[Kvector[m[K(size_type __n, const allocator_type& __a = allocator_type())
+[12.349s]       |       [01;36m[K^~~~~~[m[K
+[12.350s] [01m[K/usr/include/c++/11/bits/stl_vector.h:510:51:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kconst allocator_type&[m[K’ {aka ‘[01m[Kconst std::allocator<int>&[m[K’}
+[12.351s]   510 |       vector(size_type __n, [01;36m[Kconst allocator_type& __a = allocator_type()[m[K)
+[12.351s]       |                             [01;36m[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.352s] [01m[K/usr/include/c++/11/bits/stl_vector.h:497:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>::vector(const allocator_type&) [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<int>][m[K’
+[12.352s]   497 |       [01;36m[Kvector[m[K(const allocator_type& __a) _GLIBCXX_NOEXCEPT
+[12.353s]       |       [01;36m[K^~~~~~[m[K
+[12.353s] [01m[K/usr/include/c++/11/bits/stl_vector.h:497:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[12.354s] [01m[K/usr/include/c++/11/bits/stl_vector.h:487:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>::vector() [with _Tp = int; _Alloc = std::allocator<int>][m[K’
+[12.354s]   487 |       [01;36m[Kvector[m[K() = default;
+[12.355s]       |       [01;36m[K^~~~~~[m[K
+[12.355s] [01m[K/usr/include/c++/11/bits/stl_vector.h:487:7:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 2 provided
+[12.355s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:14:26:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+[12.356s]    14 |         out_pins = this->[01;31m[Kdeclare_parameter<std::vector<int>("out_pins", {12, 13, 16, 19, 20, 21})[m[K; // BCM番号で指定
+[12.356s]       |                          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.357s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:14:26:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kstd::vector<int>[m[K’ and ‘[01m[K<unresolved overloaded function type>[m[K’)
+[12.357s] In file included from [01m[K/usr/include/c++/11/vector:72[m[K,
+[12.357s]                  from [01m[K/usr/include/c++/11/functional:62[m[K,
+[12.358s]                  from [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13[m[K,
+[12.358s]                  from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+[12.359s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+[12.359s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[12.360s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[12.360s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[12.360s]                  from [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:1[m[K:
+[12.361s] [01m[K/usr/include/c++/11/bits/vector.tcc:198:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(const std::vector<_Tp, _Alloc>&) [with _Tp = int; _Alloc = std::allocator<int>][m[K’
+[12.361s]   198 |     [01;36m[Kvector<_Tp, _Alloc>[m[K::
+[12.362s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[12.362s] [01m[K/usr/include/c++/11/bits/vector.tcc:199:42:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[Kconst std::vector<int>&[m[K’
+[12.363s]   199 |     operator=([01;36m[Kconst vector<_Tp, _Alloc>& __x[m[K)
+[12.363s]       |               [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[12.363s] In file included from [01m[K/usr/include/c++/11/vector:67[m[K,
+[12.364s]                  from [01m[K/usr/include/c++/11/functional:62[m[K,
+[12.364s]                  from [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13[m[K,
+[12.365s]                  from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+[12.365s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+[12.366s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[12.366s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[12.367s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[12.367s]                  from [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:1[m[K:
+[12.368s] [01m[K/usr/include/c++/11/bits/stl_vector.h:709:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::vector<_Tp, _Alloc>&&) [with _Tp = int; _Alloc = std::allocator<int>][m[K’
+[12.368s]   709 |       [01;36m[Koperator[m[K=(vector&& __x) noexcept(_Alloc_traits::_S_nothrow_move())
+[12.369s]       |       [01;36m[K^~~~~~~~[m[K
+[12.369s] [01m[K/usr/include/c++/11/bits/stl_vector.h:709:26:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[Kstd::vector<int>&&[m[K’
+[12.370s]   709 |       operator=([01;36m[Kvector&& __x[m[K) noexcept(_Alloc_traits::_S_nothrow_move())
+[12.370s]       |                 [01;36m[K~~~~~~~~~^~~[m[K
+[12.371s] [01m[K/usr/include/c++/11/bits/stl_vector.h:730:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::initializer_list<_Tp>) [with _Tp = int; _Alloc = std::allocator<int>][m[K’
+[12.372s]   730 |       [01;36m[Koperator[m[K=(initializer_list<value_type> __l)
+[12.372s]       |       [01;36m[K^~~~~~~~[m[K
+[12.373s] [01m[K/usr/include/c++/11/bits/stl_vector.h:730:46:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[Kstd::initializer_list<int>[m[K’
+[12.373s]   730 |       operator=([01;36m[Kinitializer_list<value_type> __l[m[K)
+[12.374s]       |                 [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[12.374s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:15:79:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kstd::vector<int>::vector(const char [8], <brace-enclosed initializer list>)[m[K’
+[12.375s]    15 |         in_pins = this->declare_parameter<std::vector<int>("in_pins", {24, 25}[01;31m[K)[m[K; // BCM番号で指定
+[12.375s]       |                                                                               [01;31m[K^[m[K
+[12.375s] In file included from [01m[K/usr/include/c++/11/vector:67[m[K,
+[12.376s]                  from [01m[K/usr/include/c++/11/functional:62[m[K,
+[12.376s]                  from [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13[m[K,
+[12.377s]                  from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+[12.377s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+[12.378s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[12.378s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[12.379s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[12.379s]                  from [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:1[m[K:
+[12.379s] [01m[K/usr/include/c++/11/bits/stl_vector.h:653:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>::vector(_InputIterator, _InputIterator, const allocator_type&) [with _InputIterator = const char*; <template-parameter-2-2> = void; _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<int>][m[K’
+[12.380s]   653 |         [01;36m[Kvector[m[K(_InputIterator __first, _InputIterator __last,
+[12.380s]       |         [01;36m[K^~~~~~[m[K
+[12.381s] [01m[K/usr/include/c++/11/bits/stl_vector.h:653:55:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kconst char*[m[K’
+[12.381s]   653 |         vector(_InputIterator __first, [01;36m[K_InputIterator __last[m[K,
+[12.382s]       |                                        [01;36m[K~~~~~~~~~~~~~~~^~~~~~[m[K
+[12.382s] [01m[K/usr/include/c++/11/bits/stl_vector.h:625:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>::vector(std::initializer_list<_Tp>, const allocator_type&) [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<int>][m[K’
+[12.383s]   625 |       [01;36m[Kvector[m[K(initializer_list<value_type> __l,
+[12.383s]       |       [01;36m[K^~~~~~[m[K
+[12.383s] [01m[K/usr/include/c++/11/bits/stl_vector.h:625:43:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst char [8][m[K’ to ‘[01m[Kstd::initializer_list<int>[m[K’
+[12.384s]   625 |       vector([01;36m[Kinitializer_list<value_type> __l[m[K,
+[12.384s]       |              [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[12.385s] [01m[K/usr/include/c++/11/bits/stl_vector.h:607:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>::vector(std::vector<_Tp, _Alloc>&&, const allocator_type&) [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<int>][m[K’
+[12.385s]   607 |       [01;36m[Kvector[m[K(vector&& __rv, const allocator_type& __m)
+[12.385s]       |       [01;36m[K^~~~~~[m[K
+[12.386s] [01m[K/usr/include/c++/11/bits/stl_vector.h:607:23:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst char [8][m[K’ to ‘[01m[Kstd::vector<int>&&[m[K’
+[12.386s]   607 |       vector([01;36m[Kvector&& __rv[m[K, const allocator_type& __m)
+[12.387s]       |              [01;36m[K~~~~~~~~~^~~~[m[K
+[12.387s] [01m[K/usr/include/c++/11/bits/stl_vector.h:589:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>::vector(std::vector<_Tp, _Alloc>&&, const allocator_type&, std::false_type) [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<int>; std::false_type = std::integral_constant<bool, false>][m[K’
+[12.388s]   589 |       [01;36m[Kvector[m[K(vector&& __rv, const allocator_type& __m, false_type)
+[12.388s]       |       [01;36m[K^~~~~~[m[K
+[12.388s] [01m[K/usr/include/c++/11/bits/stl_vector.h:589:7:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 2 provided
+[12.389s] [01m[K/usr/include/c++/11/bits/stl_vector.h:585:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>::vector(std::vector<_Tp, _Alloc>&&, const allocator_type&, std::true_type) [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<int>; std::true_type = std::integral_constant<bool, true>][m[K’
+[12.389s]   585 |       [01;36m[Kvector[m[K(vector&& __rv, const allocator_type& __m, true_type) noexcept
+[12.390s]       |       [01;36m[K^~~~~~[m[K
+[12.390s] [01m[K/usr/include/c++/11/bits/stl_vector.h:585:7:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 2 provided
+[12.391s] [01m[K/usr/include/c++/11/bits/stl_vector.h:575:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>::vector(const std::vector<_Tp, _Alloc>&, const allocator_type&) [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<int>][m[K’
+[12.391s]   575 |       [01;36m[Kvector[m[K(const vector& __x, const allocator_type& __a)
+[12.392s]       |       [01;36m[K^~~~~~[m[K
+[12.392s] [01m[K/usr/include/c++/11/bits/stl_vector.h:575:28:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst char [8][m[K’ to ‘[01m[Kconst std::vector<int>&[m[K’
+[12.393s]   575 |       vector([01;36m[Kconst vector& __x[m[K, const allocator_type& __a)
+[12.393s]       |              [01;36m[K~~~~~~~~~~~~~~^~~[m[K
+[12.393s] [01m[K/usr/include/c++/11/bits/stl_vector.h:572:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>::vector(std::vector<_Tp, _Alloc>&&) [with _Tp = int; _Alloc = std::allocator<int>][m[K’
+[12.394s]   572 |       [01;36m[Kvector[m[K(vector&&) noexcept = default;
+[12.395s]       |       [01;36m[K^~~~~~[m[K
+[12.395s] [01m[K/usr/include/c++/11/bits/stl_vector.h:572:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[12.396s] [01m[K/usr/include/c++/11/bits/stl_vector.h:553:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>::vector(const std::vector<_Tp, _Alloc>&) [with _Tp = int; _Alloc = std::allocator<int>][m[K’
+[12.396s]   553 |       [01;36m[Kvector[m[K(const vector& __x)
+[12.396s]       |       [01;36m[K^~~~~~[m[K
+[12.397s] [01m[K/usr/include/c++/11/bits/stl_vector.h:553:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[12.397s] [01m[K/usr/include/c++/11/bits/stl_vector.h:522:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>::vector(std::vector<_Tp, _Alloc>::size_type, const value_type&, const allocator_type&) [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::size_type = long unsigned int; std::vector<_Tp, _Alloc>::value_type = int; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<int>][m[K’
+[12.398s]   522 |       [01;36m[Kvector[m[K(size_type __n, const value_type& __value,
+[12.399s]       |       [01;36m[K^~~~~~[m[K
+[12.399s] [01m[K/usr/include/c++/11/bits/stl_vector.h:522:47:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kconst value_type&[m[K’ {aka ‘[01m[Kconst int&[m[K’}
+[12.400s]   522 |       vector(size_type __n, [01;36m[Kconst value_type& __value[m[K,
+[12.400s]       |                             [01;36m[K~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[12.401s] [01m[K/usr/include/c++/11/bits/stl_vector.h:510:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>::vector(std::vector<_Tp, _Alloc>::size_type, const allocator_type&) [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::size_type = long unsigned int; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<int>][m[K’
+[12.401s]   510 |       [01;36m[Kvector[m[K(size_type __n, const allocator_type& __a = allocator_type())
+[12.402s]       |       [01;36m[K^~~~~~[m[K
+[12.402s] [01m[K/usr/include/c++/11/bits/stl_vector.h:510:51:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kconst allocator_type&[m[K’ {aka ‘[01m[Kconst std::allocator<int>&[m[K’}
+[12.403s]   510 |       vector(size_type __n, [01;36m[Kconst allocator_type& __a = allocator_type()[m[K)
+[12.404s]       |                             [01;36m[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.404s] [01m[K/usr/include/c++/11/bits/stl_vector.h:497:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>::vector(const allocator_type&) [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<int>][m[K’
+[12.405s]   497 |       [01;36m[Kvector[m[K(const allocator_type& __a) _GLIBCXX_NOEXCEPT
+[12.405s]       |       [01;36m[K^~~~~~[m[K
+[12.405s] [01m[K/usr/include/c++/11/bits/stl_vector.h:497:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[12.406s] [01m[K/usr/include/c++/11/bits/stl_vector.h:487:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>::vector() [with _Tp = int; _Alloc = std::allocator<int>][m[K’
+[12.406s]   487 |       [01;36m[Kvector[m[K() = default;
+[12.407s]       |       [01;36m[K^~~~~~[m[K
+[12.407s] [01m[K/usr/include/c++/11/bits/stl_vector.h:487:7:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 2 provided
+[12.408s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:15:25:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+[12.408s]    15 |         in_pins = this->[01;31m[Kdeclare_parameter<std::vector<int>("in_pins", {24, 25})[m[K; // BCM番号で指定
+[12.409s]       |                         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.409s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:15:25:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kstd::vector<int>[m[K’ and ‘[01m[K<unresolved overloaded function type>[m[K’)
+[12.410s] In file included from [01m[K/usr/include/c++/11/vector:72[m[K,
+[12.410s]                  from [01m[K/usr/include/c++/11/functional:62[m[K,
+[12.411s]                  from [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13[m[K,
+[12.411s]                  from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+[12.412s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+[12.412s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[12.413s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[12.414s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[12.415s]                  from [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:1[m[K:
+[12.415s] [01m[K/usr/include/c++/11/bits/vector.tcc:198:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(const std::vector<_Tp, _Alloc>&) [with _Tp = int; _Alloc = std::allocator<int>][m[K’
+[12.416s]   198 |     [01;36m[Kvector<_Tp, _Alloc>[m[K::
+[12.416s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[12.417s] [01m[K/usr/include/c++/11/bits/vector.tcc:199:42:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[Kconst std::vector<int>&[m[K’
+[12.417s]   199 |     operator=([01;36m[Kconst vector<_Tp, _Alloc>& __x[m[K)
+[12.418s]       |               [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[12.418s] In file included from [01m[K/usr/include/c++/11/vector:67[m[K,
+[12.418s]                  from [01m[K/usr/include/c++/11/functional:62[m[K,
+[12.419s]                  from [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13[m[K,
+[12.419s]                  from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+[12.420s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+[12.420s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[12.421s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[12.421s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[12.422s]                  from [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:1[m[K:
+[12.422s] [01m[K/usr/include/c++/11/bits/stl_vector.h:709:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::vector<_Tp, _Alloc>&&) [with _Tp = int; _Alloc = std::allocator<int>][m[K’
+[12.423s]   709 |       [01;36m[Koperator[m[K=(vector&& __x) noexcept(_Alloc_traits::_S_nothrow_move())
+[12.423s]       |       [01;36m[K^~~~~~~~[m[K
+[12.424s] [01m[K/usr/include/c++/11/bits/stl_vector.h:709:26:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[Kstd::vector<int>&&[m[K’
+[12.424s]   709 |       operator=([01;36m[Kvector&& __x[m[K) noexcept(_Alloc_traits::_S_nothrow_move())
+[12.425s]       |                 [01;36m[K~~~~~~~~~^~~[m[K
+[12.425s] [01m[K/usr/include/c++/11/bits/stl_vector.h:730:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::initializer_list<_Tp>) [with _Tp = int; _Alloc = std::allocator<int>][m[K’
+[12.426s]   730 |       [01;36m[Koperator[m[K=(initializer_list<value_type> __l)
+[12.426s]       |       [01;36m[K^~~~~~~~[m[K
+[12.426s] [01m[K/usr/include/c++/11/bits/stl_vector.h:730:46:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[Kstd::initializer_list<int>[m[K’
+[12.427s]   730 |       operator=([01;36m[Kinitializer_list<value_type> __l[m[K)
+[12.427s]       |                 [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[12.428s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:27:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kpins[m[K’ was not declared in this scope
+[12.428s]    27 |         line_outs.reserve([01;31m[Kpins[m[K.size());
+[12.429s]       |                           [01;31m[K^~~~[m[K
+[12.429s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:46:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kworker_[m[K’ was not declared in this scope
+[12.430s]    46 |         [01;31m[Kworker_[m[K = std::thread(&GpioNode::reader_loop, this);
+[12.430s]       |         [01;31m[K^~~~~~~[m[K
+[12.460s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[12.461s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[12.461s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[12.462s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[12.462s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[12.463s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[12.463s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[12.464s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[12.464s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[12.465s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[12.465s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[12.466s]                  from [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:1[m[K:
+[12.467s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:[m[K In member function ‘[01m[Kvoid GpioNode::on_cmd(motor_control::msg::GpioCmd_<std::allocator<void> >::SharedPtr)[m[K’:
+[12.467s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:60:62:[m[K [01;31m[Kerror: [m[K‘[01m[Kpins[m[K’ was not declared in this scope
+[12.468s]    60 |         RCLCPP_INFO(this->get_logger(), "Set GPIO %d to %d", [01;31m[Kpins[m[K[msg->pin_index], value);
+[12.468s]       |                                                              [01;31m[K^~~~[m[K
+[12.499s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:[m[K In member function ‘[01m[Kvoid GpioNode::reader_loop()[m[K’:
+[12.500s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:65:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kgpiod_line_event_wait_multiple[m[K’ was not declared in this scope; did you mean ‘[01m[Kgpiod_line_event_read_multiple[m[K’?
+[12.500s]    65 |             int ret = [01;31m[Kgpiod_line_event_wait_multiple[m[K(line_ins.data(), line_ins.size(), &timeout);
+[12.501s]       |                       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.501s]       |                       [32m[Kgpiod_line_event_read_multiple[m[K
+[21.539s] gmake[2]: *** [CMakeFiles/gpio_node.dir/build.make:76: CMakeFiles/gpio_node.dir/src/gpio_node.cpp.o] Error 1
+[21.541s] gmake[1]: *** [CMakeFiles/Makefile2:680: CMakeFiles/gpio_node.dir/all] Error 2
+[21.542s] gmake: *** [Makefile:146: all] Error 2
+[21.548s] Invoked command in '/home/mowmow/workspace/CatchRobo-r08/build/motor_control' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mowmow/workspace/CatchRobo-r08/build/motor_control -- -j4 -l4

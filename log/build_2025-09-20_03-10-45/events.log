@@ -1,0 +1,697 @@
+[0.000000] (-) TimerEvent: {}
+[0.001847] (motor_control) JobQueued: {'identifier': 'motor_control', 'dependencies': OrderedDict()}
+[0.003004] (motor_control) JobStarted: {'identifier': 'motor_control'}
+[0.041370] (motor_control) JobProgress: {'identifier': 'motor_control', 'progress': 'cmake'}
+[0.044530] (motor_control) JobProgress: {'identifier': 'motor_control', 'progress': 'build'}
+[0.047536] (motor_control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mowmow/workspace/CatchRobo-r08/build/motor_control', '--', '-j4', '-l4'], 'cwd': '/home/mowmow/workspace/CatchRobo-r08/build/motor_control', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mowmow'), ('SSH_CLIENT', 'fe80::8e72:b820:569b:a338%wlan0 52794 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/mowmow/.vscode-server/cli/servers/Stable-0f0d87fa9e96c856c5212fc86db137ac0d783365/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/mowmow/workspace/CatchRobo-r08/install/motor_control/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/mowmow/.vscode-server/cli/servers/Stable-0f0d87fa9e96c856c5212fc86db137ac0d783365/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/mowmow'), ('TERM_PROGRAM_VERSION', '1.104.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-8cf74a6a-c0a3-451c-8285-f77753b87e92.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/mowmow/.vscode-server/cli/servers/Stable-0f0d87fa9e96c856c5212fc86db137ac0d783365/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/mowmow/.vscode-server/cli/servers/Stable-0f0d87fa9e96c856c5212fc86db137ac0d783365/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/mowmow/workspace/CatchRobo-r08/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mowmow'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/mowmow/.vscode-server/cli/servers/Stable-0f0d87fa9e96c856c5212fc86db137ac0d783365/server/bin/remote-cli:/home/mowmow/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/mowmow/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-84bb2b580e.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/mowmow/workspace/CatchRobo-r08/install/motor_control:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/mowmow/workspace/CatchRobo-r08/build/motor_control'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', 'fe80::8e72:b820:569b:a338%wlan0 52794 fe80::da3a:ddff:fe27:2394%wlan0 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/mowmow/workspace/CatchRobo-r08/install/motor_control:/opt/ros/humble')]), 'shell': False}
+[0.099160] (-) TimerEvent: {}
+[0.199968] (-) TimerEvent: {}
+[0.300912] (-) TimerEvent: {}
+[0.312576] (motor_control) StdoutLine: {'line': b'[  1%] Built target motor_control__cpp\n'}
+[0.322408] (motor_control) StdoutLine: {'line': b'[ 11%] Built target motor_control__rosidl_generator_c\n'}
+[0.356562] (motor_control) StdoutLine: {'line': b'[ 11%] Built target ament_cmake_python_copy_motor_control\n'}
+[0.401139] (-) TimerEvent: {}
+[0.475243] (motor_control) StdoutLine: {'line': b'[ 20%] Built target motor_control__rosidl_typesupport_cpp\n'}
+[0.489871] (motor_control) StdoutLine: {'line': b'[ 30%] Built target motor_control__rosidl_typesupport_fastrtps_c\n'}
+[0.501612] (-) TimerEvent: {}
+[0.558596] (motor_control) StdoutLine: {'line': b'[ 39%] Built target motor_control__rosidl_typesupport_introspection_c\n'}
+[0.580103] (motor_control) StdoutLine: {'line': b'[ 49%] Built target motor_control__rosidl_typesupport_c\n'}
+[0.602417] (-) TimerEvent: {}
+[0.651541] (motor_control) StdoutLine: {'line': b'[ 58%] Built target motor_control__rosidl_typesupport_fastrtps_cpp\n'}
+[0.671343] (motor_control) StdoutLine: {'line': b'[ 68%] Built target motor_control__rosidl_typesupport_introspection_cpp\n'}
+[0.702648] (-) TimerEvent: {}
+[0.804341] (-) TimerEvent: {}
+[0.823827] (motor_control) StdoutLine: {'line': b'[ 71%] Built target communication_node\n'}
+[0.901631] (motor_control) StdoutLine: {'line': b'[ 74%] Built target control_node\n'}
+[0.904597] (-) TimerEvent: {}
+[0.916781] (motor_control) StdoutLine: {'line': b'[ 77%] Built target observe_node\n'}
+[1.008905] (-) TimerEvent: {}
+[1.039504] (motor_control) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target gpio_node\x1b[0m\n'}
+[1.109119] (-) TimerEvent: {}
+[1.134864] (motor_control) StdoutLine: {'line': b'[ 77%] Built target motor_control\n'}
+[1.161181] (motor_control) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding CXX object CMakeFiles/gpio_node.dir/src/gpio_node.cpp.o\x1b[0m\n'}
+[1.209330] (-) TimerEvent: {}
+[1.251888] (motor_control) StdoutLine: {'line': b'[ 80%] Built target motor_control__py\n'}
+[1.309717] (-) TimerEvent: {}
+[1.412491] (-) TimerEvent: {}
+[1.464208] (motor_control) StdoutLine: {'line': b'[ 88%] Built target motor_control__rosidl_generator_py\n'}
+[1.512780] (-) TimerEvent: {}
+[1.584405] (motor_control) StdoutLine: {'line': b'[ 92%] Built target motor_control__rosidl_typesupport_fastrtps_c__pyext\n'}
+[1.613232] (-) TimerEvent: {}
+[1.714618] (-) TimerEvent: {}
+[1.717037] (motor_control) StdoutLine: {'line': b'[ 95%] Built target motor_control__rosidl_typesupport_introspection_c__pyext\n'}
+[1.806758] (motor_control) StdoutLine: {'line': b'[ 98%] Built target motor_control__rosidl_typesupport_c__pyext\n'}
+[1.814830] (-) TimerEvent: {}
+[1.916541] (-) TimerEvent: {}
+[2.018332] (-) TimerEvent: {}
+[2.120142] (-) TimerEvent: {}
+[2.229490] (-) TimerEvent: {}
+[2.330371] (-) TimerEvent: {}
+[2.408421] (motor_control) StdoutLine: {'line': b'running egg_info\n'}
+[2.412422] (motor_control) StdoutLine: {'line': b'writing motor_control.egg-info/PKG-INFO\n'}
+[2.414586] (motor_control) StdoutLine: {'line': b'writing dependency_links to motor_control.egg-info/dependency_links.txt\n'}
+[2.415773] (motor_control) StdoutLine: {'line': b'writing top-level names to motor_control.egg-info/top_level.txt\n'}
+[2.428823] (motor_control) StdoutLine: {'line': b"reading manifest file 'motor_control.egg-info/SOURCES.txt'\n"}
+[2.430561] (-) TimerEvent: {}
+[2.432766] (motor_control) StdoutLine: {'line': b"writing manifest file 'motor_control.egg-info/SOURCES.txt'\n"}
+[2.531008] (-) TimerEvent: {}
+[2.615199] (motor_control) StdoutLine: {'line': b'[ 98%] Built target ament_cmake_python_build_motor_control_egg\n'}
+[2.631240] (-) TimerEvent: {}
+[2.732216] (-) TimerEvent: {}
+[2.833524] (-) TimerEvent: {}
+[2.934783] (-) TimerEvent: {}
+[3.035965] (-) TimerEvent: {}
+[3.136927] (-) TimerEvent: {}
+[3.238009] (-) TimerEvent: {}
+[3.339111] (-) TimerEvent: {}
+[3.441200] (-) TimerEvent: {}
+[3.542456] (-) TimerEvent: {}
+[3.643515] (-) TimerEvent: {}
+[3.744418] (-) TimerEvent: {}
+[3.845799] (-) TimerEvent: {}
+[3.946839] (-) TimerEvent: {}
+[4.047781] (-) TimerEvent: {}
+[4.148943] (-) TimerEvent: {}
+[4.249952] (-) TimerEvent: {}
+[4.350830] (-) TimerEvent: {}
+[4.451869] (-) TimerEvent: {}
+[4.553636] (-) TimerEvent: {}
+[4.654525] (-) TimerEvent: {}
+[4.755405] (-) TimerEvent: {}
+[4.856408] (-) TimerEvent: {}
+[4.957859] (-) TimerEvent: {}
+[5.059614] (-) TimerEvent: {}
+[5.160455] (-) TimerEvent: {}
+[5.261987] (-) TimerEvent: {}
+[5.363669] (-) TimerEvent: {}
+[5.465477] (-) TimerEvent: {}
+[5.567453] (-) TimerEvent: {}
+[5.669237] (-) TimerEvent: {}
+[5.770719] (-) TimerEvent: {}
+[5.871680] (-) TimerEvent: {}
+[5.973344] (-) TimerEvent: {}
+[6.074269] (-) TimerEvent: {}
+[6.175747] (-) TimerEvent: {}
+[6.277130] (-) TimerEvent: {}
+[6.378640] (-) TimerEvent: {}
+[6.480081] (-) TimerEvent: {}
+[6.581582] (-) TimerEvent: {}
+[6.682883] (-) TimerEvent: {}
+[6.784580] (-) TimerEvent: {}
+[6.886366] (-) TimerEvent: {}
+[6.987761] (-) TimerEvent: {}
+[7.089092] (-) TimerEvent: {}
+[7.189981] (-) TimerEvent: {}
+[7.291006] (-) TimerEvent: {}
+[7.391857] (-) TimerEvent: {}
+[7.492637] (-) TimerEvent: {}
+[7.593508] (-) TimerEvent: {}
+[7.694301] (-) TimerEvent: {}
+[7.795098] (-) TimerEvent: {}
+[7.895878] (-) TimerEvent: {}
+[7.996866] (-) TimerEvent: {}
+[8.097662] (-) TimerEvent: {}
+[8.198491] (-) TimerEvent: {}
+[8.299410] (-) TimerEvent: {}
+[8.400288] (-) TimerEvent: {}
+[8.501139] (-) TimerEvent: {}
+[8.602015] (-) TimerEvent: {}
+[8.702932] (-) TimerEvent: {}
+[8.803894] (-) TimerEvent: {}
+[8.905307] (-) TimerEvent: {}
+[9.006124] (-) TimerEvent: {}
+[9.107027] (-) TimerEvent: {}
+[9.207882] (-) TimerEvent: {}
+[9.308767] (-) TimerEvent: {}
+[9.409573] (-) TimerEvent: {}
+[9.510383] (-) TimerEvent: {}
+[9.611219] (-) TimerEvent: {}
+[9.712036] (-) TimerEvent: {}
+[9.812872] (-) TimerEvent: {}
+[9.913758] (-) TimerEvent: {}
+[10.014604] (-) TimerEvent: {}
+[10.115436] (-) TimerEvent: {}
+[10.216274] (-) TimerEvent: {}
+[10.317141] (-) TimerEvent: {}
+[10.418022] (-) TimerEvent: {}
+[10.518882] (-) TimerEvent: {}
+[10.619781] (-) TimerEvent: {}
+[10.720614] (-) TimerEvent: {}
+[10.821510] (-) TimerEvent: {}
+[10.922315] (-) TimerEvent: {}
+[11.023130] (-) TimerEvent: {}
+[11.123924] (-) TimerEvent: {}
+[11.224859] (-) TimerEvent: {}
+[11.325750] (-) TimerEvent: {}
+[11.426617] (-) TimerEvent: {}
+[11.527481] (-) TimerEvent: {}
+[11.628303] (-) TimerEvent: {}
+[11.729171] (-) TimerEvent: {}
+[11.830008] (-) TimerEvent: {}
+[11.930832] (-) TimerEvent: {}
+[12.031695] (-) TimerEvent: {}
+[12.132499] (-) TimerEvent: {}
+[12.233338] (-) TimerEvent: {}
+[12.334701] (-) TimerEvent: {}
+[12.435534] (-) TimerEvent: {}
+[12.536338] (-) TimerEvent: {}
+[12.637174] (-) TimerEvent: {}
+[12.737985] (-) TimerEvent: {}
+[12.838787] (-) TimerEvent: {}
+[12.939609] (-) TimerEvent: {}
+[13.040417] (-) TimerEvent: {}
+[13.141282] (-) TimerEvent: {}
+[13.242096] (-) TimerEvent: {}
+[13.342898] (-) TimerEvent: {}
+[13.443686] (-) TimerEvent: {}
+[13.544497] (-) TimerEvent: {}
+[13.645330] (-) TimerEvent: {}
+[13.746149] (-) TimerEvent: {}
+[13.847012] (-) TimerEvent: {}
+[13.948296] (-) TimerEvent: {}
+[14.049140] (-) TimerEvent: {}
+[14.149997] (-) TimerEvent: {}
+[14.250822] (-) TimerEvent: {}
+[14.351683] (-) TimerEvent: {}
+[14.452495] (-) TimerEvent: {}
+[14.553390] (-) TimerEvent: {}
+[14.654206] (-) TimerEvent: {}
+[14.755030] (-) TimerEvent: {}
+[14.856321] (-) TimerEvent: {}
+[14.957258] (-) TimerEvent: {}
+[15.058062] (-) TimerEvent: {}
+[15.158939] (-) TimerEvent: {}
+[15.259913] (-) TimerEvent: {}
+[15.360767] (-) TimerEvent: {}
+[15.461582] (-) TimerEvent: {}
+[15.562407] (-) TimerEvent: {}
+[15.663301] (-) TimerEvent: {}
+[15.764153] (-) TimerEvent: {}
+[15.865022] (-) TimerEvent: {}
+[15.965799] (-) TimerEvent: {}
+[16.066630] (-) TimerEvent: {}
+[16.167477] (-) TimerEvent: {}
+[16.268412] (-) TimerEvent: {}
+[16.369327] (-) TimerEvent: {}
+[16.470132] (-) TimerEvent: {}
+[16.570972] (-) TimerEvent: {}
+[16.671792] (-) TimerEvent: {}
+[16.772720] (-) TimerEvent: {}
+[16.873506] (-) TimerEvent: {}
+[16.974450] (-) TimerEvent: {}
+[17.075463] (-) TimerEvent: {}
+[17.176342] (-) TimerEvent: {}
+[17.277204] (-) TimerEvent: {}
+[17.378041] (-) TimerEvent: {}
+[17.478858] (-) TimerEvent: {}
+[17.579699] (-) TimerEvent: {}
+[17.680575] (-) TimerEvent: {}
+[17.781730] (-) TimerEvent: {}
+[17.882580] (-) TimerEvent: {}
+[17.983540] (-) TimerEvent: {}
+[18.084389] (-) TimerEvent: {}
+[18.185237] (-) TimerEvent: {}
+[18.286099] (-) TimerEvent: {}
+[18.386955] (-) TimerEvent: {}
+[18.487847] (-) TimerEvent: {}
+[18.588757] (-) TimerEvent: {}
+[18.689583] (-) TimerEvent: {}
+[18.790429] (-) TimerEvent: {}
+[18.891269] (-) TimerEvent: {}
+[18.992069] (-) TimerEvent: {}
+[19.092890] (-) TimerEvent: {}
+[19.193688] (-) TimerEvent: {}
+[19.294519] (-) TimerEvent: {}
+[19.395320] (-) TimerEvent: {}
+[19.496198] (-) TimerEvent: {}
+[19.597055] (-) TimerEvent: {}
+[19.697854] (-) TimerEvent: {}
+[19.798718] (-) TimerEvent: {}
+[19.899564] (-) TimerEvent: {}
+[20.000442] (-) TimerEvent: {}
+[20.101298] (-) TimerEvent: {}
+[20.202159] (-) TimerEvent: {}
+[20.303030] (-) TimerEvent: {}
+[20.403903] (-) TimerEvent: {}
+[20.504819] (-) TimerEvent: {}
+[20.605683] (-) TimerEvent: {}
+[20.706553] (-) TimerEvent: {}
+[20.807427] (-) TimerEvent: {}
+[20.908276] (-) TimerEvent: {}
+[21.009128] (-) TimerEvent: {}
+[21.109963] (-) TimerEvent: {}
+[21.210774] (-) TimerEvent: {}
+[21.311591] (-) TimerEvent: {}
+[21.412450] (-) TimerEvent: {}
+[21.513298] (-) TimerEvent: {}
+[21.614130] (-) TimerEvent: {}
+[21.714925] (-) TimerEvent: {}
+[21.815774] (-) TimerEvent: {}
+[21.916574] (-) TimerEvent: {}
+[22.017446] (-) TimerEvent: {}
+[22.118239] (-) TimerEvent: {}
+[22.219047] (-) TimerEvent: {}
+[22.319799] (-) TimerEvent: {}
+[22.420556] (-) TimerEvent: {}
+[22.521338] (-) TimerEvent: {}
+[22.622060] (-) TimerEvent: {}
+[22.722873] (-) TimerEvent: {}
+[22.823652] (-) TimerEvent: {}
+[22.924568] (-) TimerEvent: {}
+[23.025711] (-) TimerEvent: {}
+[23.126505] (-) TimerEvent: {}
+[23.227348] (-) TimerEvent: {}
+[23.328193] (-) TimerEvent: {}
+[23.429038] (-) TimerEvent: {}
+[23.529854] (-) TimerEvent: {}
+[23.630683] (-) TimerEvent: {}
+[23.731518] (-) TimerEvent: {}
+[23.832633] (-) TimerEvent: {}
+[23.934297] (-) TimerEvent: {}
+[24.035282] (-) TimerEvent: {}
+[24.136163] (-) TimerEvent: {}
+[24.237043] (-) TimerEvent: {}
+[24.337874] (-) TimerEvent: {}
+[24.438706] (-) TimerEvent: {}
+[24.539545] (-) TimerEvent: {}
+[24.640444] (-) TimerEvent: {}
+[24.741528] (-) TimerEvent: {}
+[24.842438] (-) TimerEvent: {}
+[24.943593] (-) TimerEvent: {}
+[25.046922] (-) TimerEvent: {}
+[25.147781] (-) TimerEvent: {}
+[25.248537] (-) TimerEvent: {}
+[25.349362] (-) TimerEvent: {}
+[25.450255] (-) TimerEvent: {}
+[25.551202] (-) TimerEvent: {}
+[25.652049] (-) TimerEvent: {}
+[25.752918] (-) TimerEvent: {}
+[25.853714] (-) TimerEvent: {}
+[25.954519] (-) TimerEvent: {}
+[26.055329] (-) TimerEvent: {}
+[26.156146] (-) TimerEvent: {}
+[26.256965] (-) TimerEvent: {}
+[26.357811] (-) TimerEvent: {}
+[26.458623] (-) TimerEvent: {}
+[26.559536] (-) TimerEvent: {}
+[26.660450] (-) TimerEvent: {}
+[26.761363] (-) TimerEvent: {}
+[26.862227] (-) TimerEvent: {}
+[26.963035] (-) TimerEvent: {}
+[27.063894] (-) TimerEvent: {}
+[27.164774] (-) TimerEvent: {}
+[27.265566] (-) TimerEvent: {}
+[27.366341] (-) TimerEvent: {}
+[27.467229] (-) TimerEvent: {}
+[27.568022] (-) TimerEvent: {}
+[27.668873] (-) TimerEvent: {}
+[27.769668] (-) TimerEvent: {}
+[27.870473] (-) TimerEvent: {}
+[27.971313] (-) TimerEvent: {}
+[28.072127] (-) TimerEvent: {}
+[28.172930] (-) TimerEvent: {}
+[28.273737] (-) TimerEvent: {}
+[28.374596] (-) TimerEvent: {}
+[28.475458] (-) TimerEvent: {}
+[28.576311] (-) TimerEvent: {}
+[28.677206] (-) TimerEvent: {}
+[28.777988] (-) TimerEvent: {}
+[28.879332] (-) TimerEvent: {}
+[28.980647] (-) TimerEvent: {}
+[29.081557] (-) TimerEvent: {}
+[29.182469] (-) TimerEvent: {}
+[29.283311] (-) TimerEvent: {}
+[29.384108] (-) TimerEvent: {}
+[29.484994] (-) TimerEvent: {}
+[29.585809] (-) TimerEvent: {}
+[29.686636] (-) TimerEvent: {}
+[29.787835] (-) TimerEvent: {}
+[29.888640] (-) TimerEvent: {}
+[29.989551] (-) TimerEvent: {}
+[30.090434] (-) TimerEvent: {}
+[30.191229] (-) TimerEvent: {}
+[30.292083] (-) TimerEvent: {}
+[30.392866] (-) TimerEvent: {}
+[30.493711] (-) TimerEvent: {}
+[30.594537] (-) TimerEvent: {}
+[30.695393] (-) TimerEvent: {}
+[30.796190] (-) TimerEvent: {}
+[30.897032] (-) TimerEvent: {}
+[30.997835] (-) TimerEvent: {}
+[31.098609] (-) TimerEvent: {}
+[31.199410] (-) TimerEvent: {}
+[31.300233] (-) TimerEvent: {}
+[31.401115] (-) TimerEvent: {}
+[31.501902] (-) TimerEvent: {}
+[31.602697] (-) TimerEvent: {}
+[31.703564] (-) TimerEvent: {}
+[31.804475] (-) TimerEvent: {}
+[31.905349] (-) TimerEvent: {}
+[32.006124] (-) TimerEvent: {}
+[32.106950] (-) TimerEvent: {}
+[32.207751] (-) TimerEvent: {}
+[32.308558] (-) TimerEvent: {}
+[32.409388] (-) TimerEvent: {}
+[32.510204] (-) TimerEvent: {}
+[32.611014] (-) TimerEvent: {}
+[32.711812] (-) TimerEvent: {}
+[32.812616] (-) TimerEvent: {}
+[32.913465] (-) TimerEvent: {}
+[33.014249] (-) TimerEvent: {}
+[33.115021] (-) TimerEvent: {}
+[33.215816] (-) TimerEvent: {}
+[33.316618] (-) TimerEvent: {}
+[33.417410] (-) TimerEvent: {}
+[33.518193] (-) TimerEvent: {}
+[33.619050] (-) TimerEvent: {}
+[33.719844] (-) TimerEvent: {}
+[33.820659] (-) TimerEvent: {}
+[33.922064] (-) TimerEvent: {}
+[34.022869] (-) TimerEvent: {}
+[34.123736] (-) TimerEvent: {}
+[34.224569] (-) TimerEvent: {}
+[34.325391] (-) TimerEvent: {}
+[34.426204] (-) TimerEvent: {}
+[34.527044] (-) TimerEvent: {}
+[34.627866] (-) TimerEvent: {}
+[34.728662] (-) TimerEvent: {}
+[34.829484] (-) TimerEvent: {}
+[34.930304] (-) TimerEvent: {}
+[35.031180] (-) TimerEvent: {}
+[35.131971] (-) TimerEvent: {}
+[35.232830] (-) TimerEvent: {}
+[35.333807] (-) TimerEvent: {}
+[35.434946] (-) TimerEvent: {}
+[35.535763] (-) TimerEvent: {}
+[35.636613] (-) TimerEvent: {}
+[35.737457] (-) TimerEvent: {}
+[35.838324] (-) TimerEvent: {}
+[35.939140] (-) TimerEvent: {}
+[36.039941] (-) TimerEvent: {}
+[36.140804] (-) TimerEvent: {}
+[36.241653] (-) TimerEvent: {}
+[36.342448] (-) TimerEvent: {}
+[36.443301] (-) TimerEvent: {}
+[36.544140] (-) TimerEvent: {}
+[36.644939] (-) TimerEvent: {}
+[36.745732] (-) TimerEvent: {}
+[36.846522] (-) TimerEvent: {}
+[36.947335] (-) TimerEvent: {}
+[37.048128] (-) TimerEvent: {}
+[37.148898] (-) TimerEvent: {}
+[37.249686] (-) TimerEvent: {}
+[37.350467] (-) TimerEvent: {}
+[37.451257] (-) TimerEvent: {}
+[37.552066] (-) TimerEvent: {}
+[37.652878] (-) TimerEvent: {}
+[37.753698] (-) TimerEvent: {}
+[37.854497] (-) TimerEvent: {}
+[37.955302] (-) TimerEvent: {}
+[38.056085] (-) TimerEvent: {}
+[38.156875] (-) TimerEvent: {}
+[38.257700] (-) TimerEvent: {}
+[38.358566] (-) TimerEvent: {}
+[38.459397] (-) TimerEvent: {}
+[38.560207] (-) TimerEvent: {}
+[38.661019] (-) TimerEvent: {}
+[38.761926] (-) TimerEvent: {}
+[38.862911] (-) TimerEvent: {}
+[38.963783] (-) TimerEvent: {}
+[39.064628] (-) TimerEvent: {}
+[39.165502] (-) TimerEvent: {}
+[39.266368] (-) TimerEvent: {}
+[39.367265] (-) TimerEvent: {}
+[39.468118] (-) TimerEvent: {}
+[39.569014] (-) TimerEvent: {}
+[39.670074] (-) TimerEvent: {}
+[39.770926] (-) TimerEvent: {}
+[39.871884] (-) TimerEvent: {}
+[39.973143] (-) TimerEvent: {}
+[40.074016] (-) TimerEvent: {}
+[40.174932] (-) TimerEvent: {}
+[40.275772] (-) TimerEvent: {}
+[40.376655] (-) TimerEvent: {}
+[40.477523] (-) TimerEvent: {}
+[40.578346] (-) TimerEvent: {}
+[40.679157] (-) TimerEvent: {}
+[40.780015] (-) TimerEvent: {}
+[40.880838] (-) TimerEvent: {}
+[40.981663] (-) TimerEvent: {}
+[41.082476] (-) TimerEvent: {}
+[41.183268] (-) TimerEvent: {}
+[41.284171] (-) TimerEvent: {}
+[41.385032] (-) TimerEvent: {}
+[41.485838] (-) TimerEvent: {}
+[41.586653] (-) TimerEvent: {}
+[41.687431] (-) TimerEvent: {}
+[41.788253] (-) TimerEvent: {}
+[41.889104] (-) TimerEvent: {}
+[41.989941] (-) TimerEvent: {}
+[42.090842] (-) TimerEvent: {}
+[42.191649] (-) TimerEvent: {}
+[42.292471] (-) TimerEvent: {}
+[42.393315] (-) TimerEvent: {}
+[42.494498] (-) TimerEvent: {}
+[42.595799] (-) TimerEvent: {}
+[42.696912] (-) TimerEvent: {}
+[42.797703] (-) TimerEvent: {}
+[42.898592] (-) TimerEvent: {}
+[42.999581] (-) TimerEvent: {}
+[43.100535] (-) TimerEvent: {}
+[43.202081] (-) TimerEvent: {}
+[43.303254] (-) TimerEvent: {}
+[43.404141] (-) TimerEvent: {}
+[43.505146] (-) TimerEvent: {}
+[43.517646] (motor_control) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable gpio_node\x1b[0m\n'}
+[43.605419] (-) TimerEvent: {}
+[43.707065] (-) TimerEvent: {}
+[43.808033] (-) TimerEvent: {}
+[43.909658] (-) TimerEvent: {}
+[44.011713] (-) TimerEvent: {}
+[44.113479] (-) TimerEvent: {}
+[44.214584] (-) TimerEvent: {}
+[44.315894] (-) TimerEvent: {}
+[44.417055] (-) TimerEvent: {}
+[44.518077] (-) TimerEvent: {}
+[44.619029] (-) TimerEvent: {}
+[44.719997] (-) TimerEvent: {}
+[44.820784] (-) TimerEvent: {}
+[44.921514] (-) TimerEvent: {}
+[45.022227] (-) TimerEvent: {}
+[45.122975] (-) TimerEvent: {}
+[45.223677] (-) TimerEvent: {}
+[45.324421] (-) TimerEvent: {}
+[45.425183] (-) TimerEvent: {}
+[45.526088] (-) TimerEvent: {}
+[45.626939] (-) TimerEvent: {}
+[45.727600] (-) TimerEvent: {}
+[45.828263] (-) TimerEvent: {}
+[45.905405] (motor_control) StdoutLine: {'line': b'[100%] Built target gpio_node\n'}
+[45.928475] (-) TimerEvent: {}
+[45.950236] (motor_control) CommandEnded: {'returncode': 0}
+[45.952508] (motor_control) JobProgress: {'identifier': 'motor_control', 'progress': 'install'}
+[45.990174] (motor_control) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/mowmow/workspace/CatchRobo-r08/build/motor_control'], 'cwd': '/home/mowmow/workspace/CatchRobo-r08/build/motor_control', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mowmow'), ('SSH_CLIENT', 'fe80::8e72:b820:569b:a338%wlan0 52794 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/mowmow/.vscode-server/cli/servers/Stable-0f0d87fa9e96c856c5212fc86db137ac0d783365/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/mowmow/workspace/CatchRobo-r08/install/motor_control/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/mowmow/.vscode-server/cli/servers/Stable-0f0d87fa9e96c856c5212fc86db137ac0d783365/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/mowmow'), ('TERM_PROGRAM_VERSION', '1.104.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-8cf74a6a-c0a3-451c-8285-f77753b87e92.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/mowmow/.vscode-server/cli/servers/Stable-0f0d87fa9e96c856c5212fc86db137ac0d783365/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/mowmow/.vscode-server/cli/servers/Stable-0f0d87fa9e96c856c5212fc86db137ac0d783365/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/mowmow/workspace/CatchRobo-r08/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mowmow'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/mowmow/.vscode-server/cli/servers/Stable-0f0d87fa9e96c856c5212fc86db137ac0d783365/server/bin/remote-cli:/home/mowmow/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/mowmow/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-84bb2b580e.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/mowmow/workspace/CatchRobo-r08/install/motor_control:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/mowmow/workspace/CatchRobo-r08/build/motor_control'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', 'fe80::8e72:b820:569b:a338%wlan0 52794 fe80::da3a:ddff:fe27:2394%wlan0 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/mowmow/workspace/CatchRobo-r08/install/motor_control:/opt/ros/humble')]), 'shell': False}
+[46.024477] (motor_control) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[46.027326] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/ament_index/resource_index/rosidl_interfaces/motor_control\n'}
+[46.028111] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control\n'}
+[46.028826] (-) TimerEvent: {}
+[46.030109] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg\n'}
+[46.031198] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/gpio_cmd.h\n'}
+[46.031954] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/return_at.h\n'}
+[46.032969] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/send_array.h\n'}
+[46.036781] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/send_at.h\n'}
+[46.037921] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/rosidl_generator_c__visibility_control.h\n'}
+[46.038880] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail\n'}
+[46.039338] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/return_at__functions.c\n'}
+[46.039708] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/gpio_cmd__functions.c\n'}
+[46.040316] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/return_at__struct.h\n'}
+[46.040795] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/send_at__type_support.h\n'}
+[46.041207] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/send_at__functions.c\n'}
+[46.042040] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/send_array__functions.h\n'}
+[46.042668] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/gpio_cmd__struct.h\n'}
+[46.043039] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/gpio_cmd__functions.h\n'}
+[46.043744] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/send_array__type_support.h\n'}
+[46.044325] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/send_array__functions.c\n'}
+[46.045144] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/send_at__struct.h\n'}
+[46.045749] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/send_array__struct.h\n'}
+[46.046345] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/gpio_cmd__type_support.h\n'}
+[46.046704] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/return_at__type_support.h\n'}
+[46.047224] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/return_at__functions.h\n'}
+[46.048186] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/send_at__functions.h\n'}
+[46.048856] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/environment/library_path.sh\n'}
+[46.049670] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/environment/library_path.dsv\n'}
+[46.050483] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/lib/libmotor_control__rosidl_generator_c.so\n'}
+[46.051211] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control\n'}
+[46.051765] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg\n'}
+[46.052162] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[46.052898] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail\n'}
+[46.053322] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/send_array__rosidl_typesupport_fastrtps_c.h\n'}
+[46.053685] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/gpio_cmd__rosidl_typesupport_fastrtps_c.h\n'}
+[46.054032] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/send_at__rosidl_typesupport_fastrtps_c.h\n'}
+[46.054366] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/return_at__rosidl_typesupport_fastrtps_c.h\n'}
+[46.055008] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/lib/libmotor_control__rosidl_typesupport_fastrtps_c.so\n'}
+[46.055357] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control\n'}
+[46.055887] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg\n'}
+[46.056794] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail\n'}
+[46.057706] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/gpio_cmd__type_support.c\n'}
+[46.058145] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/send_at__type_support.c\n'}
+[46.059035] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/send_at__rosidl_typesupport_introspection_c.h\n'}
+[46.059769] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/send_array__type_support.c\n'}
+[46.060462] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/return_at__rosidl_typesupport_introspection_c.h\n'}
+[46.061400] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/gpio_cmd__rosidl_typesupport_introspection_c.h\n'}
+[46.062270] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/return_at__type_support.c\n'}
+[46.063134] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/send_array__rosidl_typesupport_introspection_c.h\n'}
+[46.063938] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[46.064575] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/lib/libmotor_control__rosidl_typesupport_introspection_c.so\n'}
+[46.065296] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/lib/libmotor_control__rosidl_typesupport_c.so\n'}
+[46.065896] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control\n'}
+[46.066589] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg\n'}
+[46.067212] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/return_at.hpp\n'}
+[46.067597] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/send_at.hpp\n'}
+[46.067943] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/send_array.hpp\n'}
+[46.068533] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail\n'}
+[46.068992] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/gpio_cmd__builder.hpp\n'}
+[46.069342] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/gpio_cmd__traits.hpp\n'}
+[46.069885] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/return_at__type_support.hpp\n'}
+[46.070589] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/send_array__type_support.hpp\n'}
+[46.071045] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/return_at__struct.hpp\n'}
+[46.071820] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/send_at__traits.hpp\n'}
+[46.072799] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/return_at__builder.hpp\n'}
+[46.073705] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/send_array__traits.hpp\n'}
+[46.074115] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/send_at__builder.hpp\n'}
+[46.074495] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/return_at__traits.hpp\n'}
+[46.074963] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/send_at__struct.hpp\n'}
+[46.075524] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/send_at__type_support.hpp\n'}
+[46.078180] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/send_array__builder.hpp\n'}
+[46.078828] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/gpio_cmd__struct.hpp\n'}
+[46.079260] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/send_array__struct.hpp\n'}
+[46.079608] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/gpio_cmd__type_support.hpp\n'}
+[46.080227] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[46.081078] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/gpio_cmd.hpp\n'}
+[46.081718] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control\n'}
+[46.082114] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg\n'}
+[46.082501] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[46.083107] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail\n'}
+[46.083483] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/gpio_cmd__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[46.083831] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/dds_fastrtps\n'}
+[46.084417] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/return_at__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[46.084859] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/send_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[46.085239] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/send_at__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[46.085849] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/lib/libmotor_control__rosidl_typesupport_fastrtps_cpp.so\n'}
+[46.086236] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control\n'}
+[46.086582] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg\n'}
+[46.087055] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail\n'}
+[46.087685] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/gpio_cmd__type_support.cpp\n'}
+[46.088596] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/return_at__rosidl_typesupport_introspection_cpp.hpp\n'}
+[46.089463] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/send_at__rosidl_typesupport_introspection_cpp.hpp\n'}
+[46.089932] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/send_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[46.090741] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/return_at__type_support.cpp\n'}
+[46.091577] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/send_at__type_support.cpp\n'}
+[46.092369] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/gpio_cmd__rosidl_typesupport_introspection_cpp.hpp\n'}
+[46.093104] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/motor_control/msg/detail/send_array__type_support.cpp\n'}
+[46.093752] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/lib/libmotor_control__rosidl_typesupport_introspection_cpp.so\n'}
+[46.094214] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/lib/libmotor_control__rosidl_typesupport_cpp.so\n'}
+[46.094649] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/environment/pythonpath.sh\n'}
+[46.095048] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/environment/pythonpath.dsv\n'}
+[46.095380] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control-0.0.1-py3.10.egg-info\n'}
+[46.095728] (motor_control) StdoutLine: {'line': b'-- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control-0.0.1-py3.10.egg-info/PKG-INFO\n'}
+[46.096056] (motor_control) StdoutLine: {'line': b'-- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control-0.0.1-py3.10.egg-info/top_level.txt\n'}
+[46.096445] (motor_control) StdoutLine: {'line': b'-- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control-0.0.1-py3.10.egg-info/SOURCES.txt\n'}
+[46.096962] (motor_control) StdoutLine: {'line': b'-- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control-0.0.1-py3.10.egg-info/dependency_links.txt\n'}
+[46.097453] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control\n'}
+[46.097768] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control/_motor_control_s.ep.rosidl_typesupport_c.c\n'}
+[46.098089] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control/_motor_control_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[46.098477] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control/libmotor_control__rosidl_generator_py.so\n'}
+[46.098808] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control/__init__.py\n'}
+[46.099155] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control/motor_control_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[46.099517] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control/motor_control_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[46.100083] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control/msg\n'}
+[46.100889] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control/msg/_return_at_s.c\n'}
+[46.101407] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control/msg/_send_array_s.c\n'}
+[46.101809] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control/msg/__init__.py\n'}
+[46.102229] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control/msg/_send_array.py\n'}
+[46.102621] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control/msg/_send_at_s.c\n'}
+[46.103050] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control/msg/_gpio_cmd.py\n'}
+[46.103466] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control/msg/_gpio_cmd_s.c\n'}
+[46.103876] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control/msg/_return_at.py\n'}
+[46.104260] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control/msg/_send_at.py\n'}
+[46.104800] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control/motor_control_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[46.105304] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control/_motor_control_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[46.129048] (-) TimerEvent: {}
+[46.230445] (-) TimerEvent: {}
+[46.260376] (motor_control) StdoutLine: {'line': b"Listing '/home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control'...\n"}
+[46.262488] (motor_control) StdoutLine: {'line': b"Listing '/home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control/msg'...\n"}
+[46.289994] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control/motor_control_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[46.294964] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control/motor_control_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[46.298841] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages/motor_control/motor_control_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[46.302316] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/lib/libmotor_control__rosidl_generator_py.so\n'}
+[46.304285] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/msg/ReturnAt.idl\n'}
+[46.305674] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/msg/SendAt.idl\n'}
+[46.306649] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/msg/SendArray.idl\n'}
+[46.307745] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/msg/GpioCmd.idl\n'}
+[46.308436] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/msg/ReturnAt.msg\n'}
+[46.309006] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/msg/SendAt.msg\n'}
+[46.309650] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/msg/SendArray.msg\n'}
+[46.310136] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/msg/GpioCmd.msg\n'}
+[46.315890] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/lib/motor_control/communication_node\n'}
+[46.318453] (motor_control) StdoutLine: {'line': b'-- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/lib/motor_control/control_node\n'}
+[46.330707] (-) TimerEvent: {}
+[46.354767] (motor_control) StdoutLine: {'line': b'-- Set runtime path of "/home/mowmow/workspace/CatchRobo-r08/install/motor_control/lib/motor_control/control_node" to ""\n'}
+[46.356144] (motor_control) StdoutLine: {'line': b'-- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/lib/motor_control/observe_node\n'}
+[46.407009] (motor_control) StdoutLine: {'line': b'-- Set runtime path of "/home/mowmow/workspace/CatchRobo-r08/install/motor_control/lib/motor_control/observe_node" to ""\n'}
+[46.409313] (motor_control) StdoutLine: {'line': b'-- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/lib/motor_control/gpio_node\n'}
+[46.430926] (-) TimerEvent: {}
+[46.461146] (motor_control) StdoutLine: {'line': b'-- Set runtime path of "/home/mowmow/workspace/CatchRobo-r08/install/motor_control/lib/motor_control/gpio_node" to ""\n'}
+[46.463169] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include\n'}
+[46.465353] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control\n'}
+[46.466785] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/transform.hpp\n'}
+[46.469295] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/include/motor_control/serial_utils.hpp\n'}
+[46.472257] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/launch\n'}
+[46.477219] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/launch/bringup.launch.py\n'}
+[46.481116] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/config\n'}
+[46.483985] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/config/gpio.yaml\n'}
+[46.489488] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/config/program.csv\n'}
+[46.490143] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/ament_index/resource_index/package_run_dependencies/motor_control\n'}
+[46.493470] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/ament_index/resource_index/parent_prefix_path/motor_control\n'}
+[46.496960] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/environment/ament_prefix_path.sh\n'}
+[46.499151] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/environment/ament_prefix_path.dsv\n'}
+[46.499738] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/environment/path.sh\n'}
+[46.500529] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/environment/path.dsv\n'}
+[46.517146] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/local_setup.bash\n'}
+[46.522489] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/local_setup.sh\n'}
+[46.524032] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/local_setup.zsh\n'}
+[46.525303] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/local_setup.dsv\n'}
+[46.526229] (motor_control) StdoutLine: {'line': b'-- Installing: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/package.dsv\n'}
+[46.527053] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/ament_index/resource_index/packages/motor_control\n'}
+[46.528007] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/cmake/export_motor_control__rosidl_generator_cExport.cmake\n'}
+[46.533641] (-) TimerEvent: {}
+[46.535721] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/cmake/export_motor_control__rosidl_generator_cExport-noconfig.cmake\n'}
+[46.538789] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/cmake/export_motor_control__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[46.544085] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/cmake/export_motor_control__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[46.549471] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/cmake/motor_control__rosidl_typesupport_introspection_cExport.cmake\n'}
+[46.559002] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/cmake/motor_control__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[46.561506] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/cmake/motor_control__rosidl_typesupport_cExport.cmake\n'}
+[46.563675] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/cmake/motor_control__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[46.566254] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/cmake/export_motor_control__rosidl_generator_cppExport.cmake\n'}
+[46.568169] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/cmake/export_motor_control__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[46.570433] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/cmake/export_motor_control__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[46.572191] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/cmake/motor_control__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[46.575637] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/cmake/motor_control__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[46.576985] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/cmake/motor_control__rosidl_typesupport_cppExport.cmake\n'}
+[46.577462] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/cmake/motor_control__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[46.578023] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/cmake/export_motor_control__rosidl_generator_pyExport.cmake\n'}
+[46.578583] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/cmake/export_motor_control__rosidl_generator_pyExport-noconfig.cmake\n'}
+[46.579134] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/cmake/rosidl_cmake-extras.cmake\n'}
+[46.579671] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[46.580132] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[46.580727] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[46.581296] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[46.581752] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[46.582189] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[46.582719] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/cmake/motor_controlConfig.cmake\n'}
+[46.583313] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/cmake/motor_controlConfig-version.cmake\n'}
+[46.583887] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/mowmow/workspace/CatchRobo-r08/install/motor_control/share/motor_control/package.xml\n'}
+[46.584456] (motor_control) CommandEnded: {'returncode': 0}
+[46.633858] (-) TimerEvent: {}
+[46.680557] (motor_control) JobEnded: {'identifier': 'motor_control', 'rc': 0}
+[46.683234] (-) EventReactorShutdown: {}

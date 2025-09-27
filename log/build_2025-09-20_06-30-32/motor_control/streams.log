@@ -1,0 +1,93 @@
+[0.046s] Invoking command in '/home/mowmow/workspace/CatchRobo-r08/build/motor_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mowmow/workspace/CatchRobo-r08/build/motor_control -- -j4 -l4
+[0.286s] [ 11%] Built target motor_control__cpp
+[0.289s] [ 11%] Built target motor_control__rosidl_generator_c
+[0.354s] [ 11%] Built target ament_cmake_python_copy_motor_control
+[0.443s] [ 20%] Built target motor_control__rosidl_typesupport_introspection_c
+[0.454s] [ 30%] Built target motor_control__rosidl_typesupport_c
+[0.463s] [ 39%] Built target motor_control__rosidl_typesupport_fastrtps_c
+[0.507s] [ 49%] Built target motor_control__rosidl_typesupport_fastrtps_cpp
+[0.570s] [ 58%] Built target motor_control__rosidl_typesupport_introspection_cpp
+[0.603s] [ 68%] Built target motor_control__rosidl_typesupport_cpp
+[0.728s] [35m[1mConsolidate compiler generated dependencies of target communication_node[0m
+[0.836s] [ 71%] Built target control_node
+[0.845s] [ 71%] Built target motor_control
+[0.916s] [35m[1mConsolidate compiler generated dependencies of target observe_node[0m
+[0.977s] [ 74%] Built target communication_node
+[1.058s] [ 76%] [32mBuilding CXX object CMakeFiles/gpio_node.dir/src/gpio_node.cpp.o[0m
+[1.156s] [ 80%] Built target motor_control__py
+[1.157s] [ 80%] Built target observe_node
+[1.314s] [ 88%] Built target motor_control__rosidl_generator_py
+[1.478s] [ 92%] Built target motor_control__rosidl_typesupport_introspection_c__pyext
+[1.573s] [ 95%] Built target motor_control__rosidl_typesupport_fastrtps_c__pyext
+[1.684s] [ 98%] Built target motor_control__rosidl_typesupport_c__pyext
+[2.293s] running egg_info
+[2.298s] writing motor_control.egg-info/PKG-INFO
+[2.301s] writing dependency_links to motor_control.egg-info/dependency_links.txt
+[2.304s] writing top-level names to motor_control.egg-info/top_level.txt
+[2.322s] reading manifest file 'motor_control.egg-info/SOURCES.txt'
+[2.326s] writing manifest file 'motor_control.egg-info/SOURCES.txt'
+[2.507s] [ 98%] Built target ament_cmake_python_build_motor_control_egg
+[12.293s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[12.294s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[12.295s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[12.295s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[12.295s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[12.296s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[12.296s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[12.297s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[12.298s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[12.298s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[12.299s]                  from [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:2[m[K:
+[12.299s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:[m[K In member function ‘[01m[Kvoid GpioNode::full_toggle(std_msgs::msg::Bool_<std::allocator<void> >::SharedPtr)[m[K’:
+[12.300s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:105:7:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Krclcpp::Logger rclcpp::Node::get_logger() const[m[K’
+[12.300s]   105 |       [01;31m[KRCLCPP_INFO[m[K(get_logger, gpiod_line_set_value(line_outs[i], v));
+[12.301s]       |       [01;31m[K^~~~~~~~~~~[m[K
+[12.301s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[12.302s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[12.302s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[12.302s]                  from [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:2[m[K:
+[12.303s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:142:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[12.303s]   142 |   [01;36m[Kget_logger[m[K() const;
+[12.304s]       |   [01;36m[K^~~~~~~~~~[m[K
+[12.304s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[12.304s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[12.305s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[12.305s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[12.306s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[12.306s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[12.306s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[12.307s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[12.307s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[12.308s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[12.308s]                  from [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:2[m[K:
+[12.309s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:105:7:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[12.309s]   105 |       [01;31m[KRCLCPP_INFO[m[K(get_logger, gpiod_line_set_value(line_outs[i], v));
+[12.309s]       |       [01;31m[K^~~~~~~~~~~[m[K
+[12.310s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:105:7:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[12.310s]   105 |       [01;31m[KRCLCPP_INFO[m[K(get_logger, gpiod_line_set_value(line_outs[i], v));
+[12.311s]       |       [01;31m[K^~~~~~~~~~~[m[K
+[12.311s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:105:7:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[12.311s]   105 |       [01;31m[KRCLCPP_INFO[m[K(get_logger, gpiod_line_set_value(line_outs[i], v));
+[12.312s]       |       [01;31m[K^~~~~~~~~~~[m[K
+[12.312s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[12.314s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[12.314s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[12.315s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[12.315s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[12.316s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[12.316s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[12.316s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[12.317s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[12.317s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[12.318s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[12.318s]                  from [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:2[m[K:
+[12.319s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:105:19:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[Krclcpp::Logger rclcpp::Node::get_logger() const[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+[12.319s]   105 |       RCLCPP_INFO([01;31m[Kg[m[Ket_logger, gpiod_line_set_value(line_outs[i], v));
+[12.320s]       |                   [01;31m[K^[m[K
+[12.320s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:105:19:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[Krclcpp::Logger rclcpp::Node::get_logger() const[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+[12.321s]   105 |       RCLCPP_INFO([01;31m[Kg[m[Ket_logger, gpiod_line_set_value(line_outs[i], v));
+[12.321s]       |                   [01;31m[K^[m[K
+[23.668s] gmake[2]: *** [CMakeFiles/gpio_node.dir/build.make:76: CMakeFiles/gpio_node.dir/src/gpio_node.cpp.o] Error 1
+[23.669s] gmake[1]: *** [CMakeFiles/Makefile2:680: CMakeFiles/gpio_node.dir/all] Error 2
+[23.670s] gmake: *** [Makefile:146: all] Error 2
+[23.678s] Invoked command in '/home/mowmow/workspace/CatchRobo-r08/build/motor_control' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mowmow/workspace/CatchRobo-r08/build/motor_control -- -j4 -l4

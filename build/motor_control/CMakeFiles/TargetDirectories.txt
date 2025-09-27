@@ -18,6 +18,7 @@
 /home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles/communication_node.dir
 /home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles/control_node.dir
 /home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles/observe_node.dir
+/home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles/gpio_node.dir
 /home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles/test.dir
 /home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles/edit_cache.dir
 /home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles/rebuild_cache.dir

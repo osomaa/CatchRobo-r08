@@ -1,0 +1,166 @@
+[0.053s] Invoking command in '/home/mowmow/workspace/CatchRobo-r08/build/motor_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mowmow/workspace/CatchRobo-r08/build/motor_control -- -j4 -l4
+[0.231s] [35m[1mConsolidate compiler generated dependencies of target motor_control__rosidl_generator_c[0m
+[0.274s] [  1%] Built target motor_control__cpp
+[0.331s] [ 11%] Built target motor_control__rosidl_generator_c
+[0.362s] [35m[1mConsolidate compiler generated dependencies of target motor_control__rosidl_typesupport_cpp[0m
+[0.373s] [35m[1mConsolidate compiler generated dependencies of target motor_control__rosidl_typesupport_fastrtps_cpp[0m
+[0.383s] [ 11%] Built target ament_cmake_python_copy_motor_control
+[0.386s] [35m[1mConsolidate compiler generated dependencies of target motor_control__rosidl_typesupport_introspection_cpp[0m
+[0.448s] [35m[1mConsolidate compiler generated dependencies of target motor_control__rosidl_typesupport_fastrtps_c[0m
+[0.457s] [ 20%] Built target motor_control__rosidl_typesupport_cpp
+[0.488s] [ 30%] Built target motor_control__rosidl_typesupport_introspection_cpp
+[0.503s] [ 39%] Built target motor_control__rosidl_typesupport_fastrtps_cpp
+[0.559s] [35m[1mConsolidate compiler generated dependencies of target motor_control__rosidl_typesupport_introspection_c[0m
+[0.604s] [ 49%] Built target motor_control__rosidl_typesupport_fastrtps_c
+[0.652s] [35m[1mConsolidate compiler generated dependencies of target motor_control__rosidl_typesupport_c[0m
+[0.656s] [ 58%] Built target motor_control__rosidl_typesupport_introspection_c
+[0.687s] [35m[1mConsolidate compiler generated dependencies of target communication_node[0m
+[0.762s] [35m[1mConsolidate compiler generated dependencies of target control_node[0m
+[0.832s] [ 68%] Built target motor_control__rosidl_typesupport_c
+[0.873s] [ 71%] Built target communication_node
+[0.941s] [35m[1mConsolidate compiler generated dependencies of target observe_node[0m
+[0.953s] [35m[1mConsolidate compiler generated dependencies of target gpio_node[0m
+[0.957s] [ 74%] Built target control_node
+[1.082s] [ 76%] [32mBuilding CXX object CMakeFiles/gpio_node.dir/src/gpio_node.cpp.o[0m
+[1.137s] [ 79%] Built target observe_node
+[1.163s] [ 79%] Built target motor_control
+[1.260s] [ 80%] [34m[1mGenerating Python code for ROS interfaces[0m
+[2.277s] running egg_info
+[2.280s] writing motor_control.egg-info/PKG-INFO
+[2.282s] writing dependency_links to motor_control.egg-info/dependency_links.txt
+[2.284s] writing top-level names to motor_control.egg-info/top_level.txt
+[2.293s] reading manifest file 'motor_control.egg-info/SOURCES.txt'
+[2.297s] writing manifest file 'motor_control.egg-info/SOURCES.txt'
+[2.474s] [ 80%] Built target ament_cmake_python_build_motor_control_egg
+[4.211s] [ 80%] Built target motor_control__py
+[4.304s] [ 82%] [32mBuilding C object CMakeFiles/motor_control__rosidl_generator_py.dir/rosidl_generator_py/motor_control/msg/_return_at_s.c.o[0m
+[4.311s] [ 84%] [32mBuilding C object CMakeFiles/motor_control__rosidl_generator_py.dir/rosidl_generator_py/motor_control/msg/_send_array_s.c.o[0m
+[4.320s] [ 85%] [32mBuilding C object CMakeFiles/motor_control__rosidl_generator_py.dir/rosidl_generator_py/motor_control/msg/_send_at_s.c.o[0m
+[4.896s] [ 87%] [32mBuilding C object CMakeFiles/motor_control__rosidl_generator_py.dir/rosidl_generator_py/motor_control/msg/_gpio_cmd_s.c.o[0m
+[5.432s] [ 88%] [32m[1mLinking C shared library rosidl_generator_py/motor_control/libmotor_control__rosidl_generator_py.so[0m
+[5.661s] [ 88%] Built target motor_control__rosidl_generator_py
+[5.784s] [ 90%] [32mBuilding C object CMakeFiles/motor_control__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/motor_control/_motor_control_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[5.798s] [ 92%] [32mBuilding C object CMakeFiles/motor_control__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/motor_control/_motor_control_s.ep.rosidl_typesupport_c.c.o[0m
+[5.831s] [ 93%] [32mBuilding C object CMakeFiles/motor_control__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/motor_control/_motor_control_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[6.482s] [ 95%] [32m[1mLinking C shared library rosidl_generator_py/motor_control/motor_control_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so[0m
+[6.486s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/motor_control/motor_control_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so[0m
+[6.766s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/motor_control/motor_control_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so[0m
+[6.799s] [ 98%] Built target motor_control__rosidl_typesupport_c__pyext
+[6.824s] [ 98%] Built target motor_control__rosidl_typesupport_fastrtps_c__pyext
+[6.990s] [ 98%] Built target motor_control__rosidl_typesupport_introspection_c__pyext
+[12.649s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:[m[K In constructor ‘[01m[KGpioNode::GpioNode()[m[K’:
+[12.651s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:14:43:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KGpioNode::declare_parameter(const char [9], <brace-enclosed initializer list>)[m[K’
+[12.651s]    14 |         out_pins = [01;31m[Kthis->declare_parameter("out_pins", {12, 13, 16, 19, 20, 21})[m[K; // BCM番号で指定
+[12.652s]       |                    [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.652s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1321[m[K,
+[12.653s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[12.654s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[12.654s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[12.655s]                  from [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:1[m[K:
+[12.655s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:195:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)[m[K’
+[12.656s]   195 | [01;36m[KNode[m[K::declare_parameter(
+[12.656s]       | [01;36m[K^~~~[m[K
+[12.657s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:195:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[12.657s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:14:43:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KParameterT[m[K’
+[12.658s]    14 |         out_pins = [01;36m[Kthis->declare_parameter("out_pins", {12, 13, 16, 19, 20, 21})[m[K; // BCM番号で指定
+[12.658s]       |                    [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.659s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[12.659s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[12.660s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[12.660s]                  from [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:1[m[K:
+[12.661s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)[m[K’
+[12.661s]   434 |   [01;36m[Kdeclare_parameter[m[K(
+[12.662s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[12.663s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[12.663s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:14:43:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KParameterT[m[K’
+[12.664s]    14 |         out_pins = [01;36m[Kthis->declare_parameter("out_pins", {12, 13, 16, 19, 20, 21})[m[K; // BCM番号で指定
+[12.664s]       |                    [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.665s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[12.665s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[12.667s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[12.667s]                  from [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:1[m[K:
+[12.668s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)[m[K’
+[12.671s]   366 |   [01;36m[Kdeclare_parameter[m[K(
+[12.672s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[12.673s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:368:36:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kconst rclcpp::ParameterValue&[m[K’
+[12.673s]   368 |     [01;36m[Kconst rclcpp::ParameterValue & default_value[m[K,
+[12.674s]       |     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[12.675s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)[m[K’
+[12.675s]   391 |   [01;36m[Kdeclare_parameter[m[K(
+[12.676s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[12.676s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:393:27:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Krclcpp::ParameterType[m[K’
+[12.677s]   393 |     [01;36m[Krclcpp::ParameterType type[m[K,
+[12.677s]       |     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[12.678s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:15:42:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KGpioNode::declare_parameter(const char [8], <brace-enclosed initializer list>)[m[K’
+[12.678s]    15 |         in_pins = [01;31m[Kthis->declare_parameter("in_pins", {24, 25})[m[K; // BCM番号で指定
+[12.678s]       |                   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[12.679s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1321[m[K,
+[12.679s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[12.680s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[12.680s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[12.680s]                  from [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:1[m[K:
+[12.681s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:195:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)[m[K’
+[12.681s]   195 | [01;36m[KNode[m[K::declare_parameter(
+[12.682s]       | [01;36m[K^~~~[m[K
+[12.682s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:195:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[12.682s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:15:42:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KParameterT[m[K’
+[12.683s]    15 |         in_pins = [01;36m[Kthis->declare_parameter("in_pins", {24, 25})[m[K; // BCM番号で指定
+[12.683s]       |                   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[12.684s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[12.684s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[12.684s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[12.685s]                  from [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:1[m[K:
+[12.685s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)[m[K’
+[12.686s]   434 |   [01;36m[Kdeclare_parameter[m[K(
+[12.686s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[12.686s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[12.687s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:15:42:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KParameterT[m[K’
+[12.687s]    15 |         in_pins = [01;36m[Kthis->declare_parameter("in_pins", {24, 25})[m[K; // BCM番号で指定
+[12.688s]       |                   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[12.688s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[12.689s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[12.689s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[12.689s]                  from [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:1[m[K:
+[12.690s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)[m[K’
+[12.690s]   366 |   [01;36m[Kdeclare_parameter[m[K(
+[12.690s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[12.691s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:368:36:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kconst rclcpp::ParameterValue&[m[K’
+[12.691s]   368 |     [01;36m[Kconst rclcpp::ParameterValue & default_value[m[K,
+[12.691s]       |     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[12.692s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)[m[K’
+[12.692s]   391 |   [01;36m[Kdeclare_parameter[m[K(
+[12.693s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[12.693s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:393:27:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Krclcpp::ParameterType[m[K’
+[12.694s]   393 |     [01;36m[Krclcpp::ParameterType type[m[K,
+[12.694s]       |     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[12.694s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:27:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kpins[m[K’ was not declared in this scope
+[12.695s]    27 |         line_outs.reserve([01;31m[Kpins[m[K.size());
+[12.695s]       |                           [01;31m[K^~~~[m[K
+[12.732s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:46:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kworker_[m[K’ was not declared in this scope
+[12.733s]    46 |         [01;31m[Kworker_[m[K = std::thread(&GpioNode::reader_loop, this);
+[12.733s]       |         [01;31m[K^~~~~~~[m[K
+[12.765s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[12.766s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[12.767s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[12.767s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[12.768s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[12.768s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[12.768s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[12.769s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[12.769s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[12.770s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[12.770s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[12.771s]                  from [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:1[m[K:
+[12.771s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:[m[K In member function ‘[01m[Kvoid GpioNode::on_cmd(motor_control::msg::GpioCmd_<std::allocator<void> >::SharedPtr)[m[K’:
+[12.772s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:60:62:[m[K [01;31m[Kerror: [m[K‘[01m[Kpins[m[K’ was not declared in this scope
+[12.772s]    60 |         RCLCPP_INFO(this->get_logger(), "Set GPIO %d to %d", [01;31m[Kpins[m[K[msg->pin_index], value);
+[12.773s]       |                                                              [01;31m[K^~~~[m[K
+[12.802s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:[m[K In member function ‘[01m[Kvoid GpioNode::reader_loop()[m[K’:
+[12.803s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:65:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kgpiod_line_event_wait_multiple[m[K’ was not declared in this scope; did you mean ‘[01m[Kgpiod_line_event_read_multiple[m[K’?
+[12.806s]    65 |             int ret = [01;31m[Kgpiod_line_event_wait_multiple[m[K(line_ins.data(), line_ins.size(), &timeout);
+[12.806s]       |                       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.807s]       |                       [32m[Kgpiod_line_event_read_multiple[m[K
+[21.945s] gmake[2]: *** [CMakeFiles/gpio_node.dir/build.make:76: CMakeFiles/gpio_node.dir/src/gpio_node.cpp.o] Error 1
+[21.946s] gmake[1]: *** [CMakeFiles/Makefile2:680: CMakeFiles/gpio_node.dir/all] Error 2
+[21.947s] gmake: *** [Makefile:146: all] Error 2
+[21.954s] Invoked command in '/home/mowmow/workspace/CatchRobo-r08/build/motor_control' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mowmow/workspace/CatchRobo-r08/build/motor_control -- -j4 -l4

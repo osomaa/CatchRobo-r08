@@ -1,0 +1,28 @@
+[ 11%] Built target motor_control__cpp
+[ 11%] Built target motor_control__rosidl_generator_c
+[ 11%] Built target ament_cmake_python_copy_motor_control
+[ 20%] Built target motor_control__rosidl_typesupport_introspection_c
+[ 30%] Built target motor_control__rosidl_typesupport_c
+[ 39%] Built target motor_control__rosidl_typesupport_fastrtps_c
+[ 49%] Built target motor_control__rosidl_typesupport_fastrtps_cpp
+[ 58%] Built target motor_control__rosidl_typesupport_introspection_cpp
+[ 68%] Built target motor_control__rosidl_typesupport_cpp
+[35m[1mConsolidate compiler generated dependencies of target communication_node[0m
+[ 71%] Built target control_node
+[ 71%] Built target motor_control
+[35m[1mConsolidate compiler generated dependencies of target observe_node[0m
+[ 74%] Built target communication_node
+[ 76%] [32mBuilding CXX object CMakeFiles/gpio_node.dir/src/gpio_node.cpp.o[0m
+[ 80%] Built target motor_control__py
+[ 80%] Built target observe_node
+[ 88%] Built target motor_control__rosidl_generator_py
+[ 92%] Built target motor_control__rosidl_typesupport_introspection_c__pyext
+[ 95%] Built target motor_control__rosidl_typesupport_fastrtps_c__pyext
+[ 98%] Built target motor_control__rosidl_typesupport_c__pyext
+running egg_info
+writing motor_control.egg-info/PKG-INFO
+writing dependency_links to motor_control.egg-info/dependency_links.txt
+writing top-level names to motor_control.egg-info/top_level.txt
+reading manifest file 'motor_control.egg-info/SOURCES.txt'
+writing manifest file 'motor_control.egg-info/SOURCES.txt'
+[ 98%] Built target ament_cmake_python_build_motor_control_egg

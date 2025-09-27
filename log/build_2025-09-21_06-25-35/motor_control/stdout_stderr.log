@@ -1,0 +1,8 @@
+[  1%] Built target motor_control__cpp
+[ 11%] Built target motor_control__rosidl_generator_c
+[ 11%] Built target ament_cmake_python_copy_motor_control
+gmake[1]: *** [CMakeFiles/Makefile2:352: CMakeFiles/motor_control__rosidl_typesupport_fastrtps_cpp.dir/all] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:378: CMakeFiles/motor_control__rosidl_typesupport_introspection_cpp.dir/all] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:246: CMakeFiles/motor_control__rosidl_typesupport_fastrtps_c.dir/all] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:404: CMakeFiles/motor_control__rosidl_typesupport_cpp.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

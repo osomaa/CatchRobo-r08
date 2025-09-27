@@ -85,6 +85,7 @@ rosidl_generator_c/motor_control/msg/return_at.h: /opt/ros/humble/share/rosidl_g
 rosidl_generator_c/motor_control/msg/return_at.h: rosidl_adapter/motor_control/msg/ReturnAt.idl
 rosidl_generator_c/motor_control/msg/return_at.h: rosidl_adapter/motor_control/msg/SendAt.idl
 rosidl_generator_c/motor_control/msg/return_at.h: rosidl_adapter/motor_control/msg/SendArray.idl
+rosidl_generator_c/motor_control/msg/return_at.h: rosidl_adapter/motor_control/msg/GpioCmd.idl
 rosidl_generator_c/motor_control/msg/return_at.h: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_c/motor_control/msg/return_at.h: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
 rosidl_generator_c/motor_control/msg/return_at.h: /opt/ros/humble/share/std_msgs/msg/Bool.idl
@@ -153,6 +154,18 @@ rosidl_generator_c/motor_control/msg/detail/send_array__struct.h: rosidl_generat
 rosidl_generator_c/motor_control/msg/detail/send_array__type_support.h: rosidl_generator_c/motor_control/msg/return_at.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/motor_control/msg/detail/send_array__type_support.h
 
+rosidl_generator_c/motor_control/msg/gpio_cmd.h: rosidl_generator_c/motor_control/msg/return_at.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/motor_control/msg/gpio_cmd.h
+
+rosidl_generator_c/motor_control/msg/detail/gpio_cmd__functions.h: rosidl_generator_c/motor_control/msg/return_at.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/motor_control/msg/detail/gpio_cmd__functions.h
+
+rosidl_generator_c/motor_control/msg/detail/gpio_cmd__struct.h: rosidl_generator_c/motor_control/msg/return_at.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/motor_control/msg/detail/gpio_cmd__struct.h
+
+rosidl_generator_c/motor_control/msg/detail/gpio_cmd__type_support.h: rosidl_generator_c/motor_control/msg/return_at.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/motor_control/msg/detail/gpio_cmd__type_support.h
+
 rosidl_generator_c/motor_control/msg/detail/return_at__functions.c: rosidl_generator_c/motor_control/msg/return_at.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/motor_control/msg/detail/return_at__functions.c
 
@@ -161,6 +174,9 @@ rosidl_generator_c/motor_control/msg/detail/send_at__functions.c: rosidl_generat
 
 rosidl_generator_c/motor_control/msg/detail/send_array__functions.c: rosidl_generator_c/motor_control/msg/return_at.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/motor_control/msg/detail/send_array__functions.c
+
+rosidl_generator_c/motor_control/msg/detail/gpio_cmd__functions.c: rosidl_generator_c/motor_control/msg/return_at.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/motor_control/msg/detail/gpio_cmd__functions.c
 
 CMakeFiles/motor_control__rosidl_generator_c.dir/rosidl_generator_c/motor_control/msg/detail/return_at__functions.c.o: CMakeFiles/motor_control__rosidl_generator_c.dir/flags.make
 CMakeFiles/motor_control__rosidl_generator_c.dir/rosidl_generator_c/motor_control/msg/detail/return_at__functions.c.o: rosidl_generator_c/motor_control/msg/detail/return_at__functions.c
@@ -204,11 +220,26 @@ CMakeFiles/motor_control__rosidl_generator_c.dir/rosidl_generator_c/motor_contro
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/motor_control__rosidl_generator_c.dir/rosidl_generator_c/motor_control/msg/detail/send_array__functions.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mowmow/workspace/CatchRobo-r08/build/motor_control/rosidl_generator_c/motor_control/msg/detail/send_array__functions.c -o CMakeFiles/motor_control__rosidl_generator_c.dir/rosidl_generator_c/motor_control/msg/detail/send_array__functions.c.s
 
+CMakeFiles/motor_control__rosidl_generator_c.dir/rosidl_generator_c/motor_control/msg/detail/gpio_cmd__functions.c.o: CMakeFiles/motor_control__rosidl_generator_c.dir/flags.make
+CMakeFiles/motor_control__rosidl_generator_c.dir/rosidl_generator_c/motor_control/msg/detail/gpio_cmd__functions.c.o: rosidl_generator_c/motor_control/msg/detail/gpio_cmd__functions.c
+CMakeFiles/motor_control__rosidl_generator_c.dir/rosidl_generator_c/motor_control/msg/detail/gpio_cmd__functions.c.o: CMakeFiles/motor_control__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/motor_control__rosidl_generator_c.dir/rosidl_generator_c/motor_control/msg/detail/gpio_cmd__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/motor_control__rosidl_generator_c.dir/rosidl_generator_c/motor_control/msg/detail/gpio_cmd__functions.c.o -MF CMakeFiles/motor_control__rosidl_generator_c.dir/rosidl_generator_c/motor_control/msg/detail/gpio_cmd__functions.c.o.d -o CMakeFiles/motor_control__rosidl_generator_c.dir/rosidl_generator_c/motor_control/msg/detail/gpio_cmd__functions.c.o -c /home/mowmow/workspace/CatchRobo-r08/build/motor_control/rosidl_generator_c/motor_control/msg/detail/gpio_cmd__functions.c
+
+CMakeFiles/motor_control__rosidl_generator_c.dir/rosidl_generator_c/motor_control/msg/detail/gpio_cmd__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/motor_control__rosidl_generator_c.dir/rosidl_generator_c/motor_control/msg/detail/gpio_cmd__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mowmow/workspace/CatchRobo-r08/build/motor_control/rosidl_generator_c/motor_control/msg/detail/gpio_cmd__functions.c > CMakeFiles/motor_control__rosidl_generator_c.dir/rosidl_generator_c/motor_control/msg/detail/gpio_cmd__functions.c.i
+
+CMakeFiles/motor_control__rosidl_generator_c.dir/rosidl_generator_c/motor_control/msg/detail/gpio_cmd__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/motor_control__rosidl_generator_c.dir/rosidl_generator_c/motor_control/msg/detail/gpio_cmd__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mowmow/workspace/CatchRobo-r08/build/motor_control/rosidl_generator_c/motor_control/msg/detail/gpio_cmd__functions.c -o CMakeFiles/motor_control__rosidl_generator_c.dir/rosidl_generator_c/motor_control/msg/detail/gpio_cmd__functions.c.s
+
 # Object files for target motor_control__rosidl_generator_c
 motor_control__rosidl_generator_c_OBJECTS = \
 "CMakeFiles/motor_control__rosidl_generator_c.dir/rosidl_generator_c/motor_control/msg/detail/return_at__functions.c.o" \
 "CMakeFiles/motor_control__rosidl_generator_c.dir/rosidl_generator_c/motor_control/msg/detail/send_at__functions.c.o" \
-"CMakeFiles/motor_control__rosidl_generator_c.dir/rosidl_generator_c/motor_control/msg/detail/send_array__functions.c.o"
+"CMakeFiles/motor_control__rosidl_generator_c.dir/rosidl_generator_c/motor_control/msg/detail/send_array__functions.c.o" \
+"CMakeFiles/motor_control__rosidl_generator_c.dir/rosidl_generator_c/motor_control/msg/detail/gpio_cmd__functions.c.o"
 
 # External object files for target motor_control__rosidl_generator_c
 motor_control__rosidl_generator_c_EXTERNAL_OBJECTS =
@@ -216,13 +247,14 @@ motor_control__rosidl_generator_c_EXTERNAL_OBJECTS =
 libmotor_control__rosidl_generator_c.so: CMakeFiles/motor_control__rosidl_generator_c.dir/rosidl_generator_c/motor_control/msg/detail/return_at__functions.c.o
 libmotor_control__rosidl_generator_c.so: CMakeFiles/motor_control__rosidl_generator_c.dir/rosidl_generator_c/motor_control/msg/detail/send_at__functions.c.o
 libmotor_control__rosidl_generator_c.so: CMakeFiles/motor_control__rosidl_generator_c.dir/rosidl_generator_c/motor_control/msg/detail/send_array__functions.c.o
+libmotor_control__rosidl_generator_c.so: CMakeFiles/motor_control__rosidl_generator_c.dir/rosidl_generator_c/motor_control/msg/detail/gpio_cmd__functions.c.o
 libmotor_control__rosidl_generator_c.so: CMakeFiles/motor_control__rosidl_generator_c.dir/build.make
 libmotor_control__rosidl_generator_c.so: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
 libmotor_control__rosidl_generator_c.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
 libmotor_control__rosidl_generator_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libmotor_control__rosidl_generator_c.so: /opt/ros/humble/lib/librcutils.so
 libmotor_control__rosidl_generator_c.so: CMakeFiles/motor_control__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C shared library libmotor_control__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C shared library libmotor_control__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/motor_control__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -233,6 +265,10 @@ CMakeFiles/motor_control__rosidl_generator_c.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/motor_control__rosidl_generator_c.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/motor_control__rosidl_generator_c.dir/clean
 
+CMakeFiles/motor_control__rosidl_generator_c.dir/depend: rosidl_generator_c/motor_control/msg/detail/gpio_cmd__functions.c
+CMakeFiles/motor_control__rosidl_generator_c.dir/depend: rosidl_generator_c/motor_control/msg/detail/gpio_cmd__functions.h
+CMakeFiles/motor_control__rosidl_generator_c.dir/depend: rosidl_generator_c/motor_control/msg/detail/gpio_cmd__struct.h
+CMakeFiles/motor_control__rosidl_generator_c.dir/depend: rosidl_generator_c/motor_control/msg/detail/gpio_cmd__type_support.h
 CMakeFiles/motor_control__rosidl_generator_c.dir/depend: rosidl_generator_c/motor_control/msg/detail/return_at__functions.c
 CMakeFiles/motor_control__rosidl_generator_c.dir/depend: rosidl_generator_c/motor_control/msg/detail/return_at__functions.h
 CMakeFiles/motor_control__rosidl_generator_c.dir/depend: rosidl_generator_c/motor_control/msg/detail/return_at__struct.h
@@ -245,6 +281,7 @@ CMakeFiles/motor_control__rosidl_generator_c.dir/depend: rosidl_generator_c/moto
 CMakeFiles/motor_control__rosidl_generator_c.dir/depend: rosidl_generator_c/motor_control/msg/detail/send_at__functions.h
 CMakeFiles/motor_control__rosidl_generator_c.dir/depend: rosidl_generator_c/motor_control/msg/detail/send_at__struct.h
 CMakeFiles/motor_control__rosidl_generator_c.dir/depend: rosidl_generator_c/motor_control/msg/detail/send_at__type_support.h
+CMakeFiles/motor_control__rosidl_generator_c.dir/depend: rosidl_generator_c/motor_control/msg/gpio_cmd.h
 CMakeFiles/motor_control__rosidl_generator_c.dir/depend: rosidl_generator_c/motor_control/msg/return_at.h
 CMakeFiles/motor_control__rosidl_generator_c.dir/depend: rosidl_generator_c/motor_control/msg/send_array.h
 CMakeFiles/motor_control__rosidl_generator_c.dir/depend: rosidl_generator_c/motor_control/msg/send_at.h

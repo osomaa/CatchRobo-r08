@@ -651,6 +651,11 @@ CMakeFiles/observe_node.dir/src/observe_node.cpp.o: \
  /home/mowmow/workspace/CatchRobo-r08/build/motor_control/rosidl_generator_cpp/motor_control/msg/detail/send_array__builder.hpp \
  /home/mowmow/workspace/CatchRobo-r08/build/motor_control/rosidl_generator_cpp/motor_control/msg/detail/send_array__traits.hpp \
  /home/mowmow/workspace/CatchRobo-r08/build/motor_control/rosidl_generator_cpp/motor_control/msg/detail/send_array__type_support.hpp \
+ /home/mowmow/workspace/CatchRobo-r08/build/motor_control/rosidl_generator_cpp/motor_control/msg/gpio_cmd.hpp \
+ /home/mowmow/workspace/CatchRobo-r08/build/motor_control/rosidl_generator_cpp/motor_control/msg/detail/gpio_cmd__struct.hpp \
+ /home/mowmow/workspace/CatchRobo-r08/build/motor_control/rosidl_generator_cpp/motor_control/msg/detail/gpio_cmd__builder.hpp \
+ /home/mowmow/workspace/CatchRobo-r08/build/motor_control/rosidl_generator_cpp/motor_control/msg/detail/gpio_cmd__traits.hpp \
+ /home/mowmow/workspace/CatchRobo-r08/build/motor_control/rosidl_generator_cpp/motor_control/msg/detail/gpio_cmd__type_support.hpp \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/bool.hpp \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__struct.hpp \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__builder.hpp \

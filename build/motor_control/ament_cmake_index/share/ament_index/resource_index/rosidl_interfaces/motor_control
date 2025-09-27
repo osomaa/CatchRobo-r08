@@ -1,3 +1,5 @@
+msg/GpioCmd.idl
+msg/GpioCmd.msg
 msg/ReturnAt.idl
 msg/ReturnAt.msg
 msg/SendArray.idl

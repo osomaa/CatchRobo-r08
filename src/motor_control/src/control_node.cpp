@@ -32,7 +32,7 @@ public:
     sub_done_ = this->create_subscription<std_msgs::msg::Bool>(
       "motor/observe/done", q_event,
       std::bind(&ControlNode::on_done, this, std::placeholders::_1));
-
+    pub_gpio = this->create_publisher<std_msgs::msg::Bool>("gpio_full_toggle", 10);
     RCLCPP_INFO(get_logger(), "control_node ready. CSV=%s", input_csv_path_.c_str());
   }
 
@@ -68,6 +68,9 @@ bool make_batch(motor_control::msg::SendArray& batch) {
 
     // 先頭セル（あなたのCSVは ',' 区切りでOK）
     std::getline(ss, cell, ','); // 例: フラグを読み捨て
+    std_msgs::msg::Bool pomp;
+    pomp.data = (trim_copy(cell) == "1");
+    pub_gpio->publish(pomp);
     size_t added = 0;
 
     while (true) {
@@ -114,6 +117,7 @@ void on_done(const std_msgs::msg::Bool::SharedPtr msg) {
   motor_control::msg::SendArray cmd_batch_;
   rclcpp::Publisher<motor_control::msg::SendArray>::SharedPtr pub_cmd_batch_;
   rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr sub_done_;
+  rclcpp::Publisher<std_msgs::msg::Bool>::SharedPtr pub_gpio;
 };
 
 int main(int argc, char** argv) {

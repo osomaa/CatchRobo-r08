@@ -432,6 +432,19 @@ observe_node/fast:
 .PHONY : observe_node/fast
 
 #=============================================================================
+# Target rules for targets named gpio_node
+
+# Build rule for target.
+gpio_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gpio_node
+.PHONY : gpio_node
+
+# fast build rule for target.
+gpio_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpio_node.dir/build.make CMakeFiles/gpio_node.dir/build
+.PHONY : gpio_node/fast
+
+#=============================================================================
 # Target rules for targets named motor_control__py
 
 # Build rule for target.
@@ -443,6 +456,30 @@ motor_control__py: cmake_check_build_system
 motor_control__py/fast:
 	$(MAKE) $(MAKESILENT) -f motor_control__py/CMakeFiles/motor_control__py.dir/build.make motor_control__py/CMakeFiles/motor_control__py.dir/build
 .PHONY : motor_control__py/fast
+
+rosidl_generator_c/motor_control/msg/detail/gpio_cmd__functions.o: rosidl_generator_c/motor_control/msg/detail/gpio_cmd__functions.c.o
+.PHONY : rosidl_generator_c/motor_control/msg/detail/gpio_cmd__functions.o
+
+# target to build an object file
+rosidl_generator_c/motor_control/msg/detail/gpio_cmd__functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control__rosidl_generator_c.dir/build.make CMakeFiles/motor_control__rosidl_generator_c.dir/rosidl_generator_c/motor_control/msg/detail/gpio_cmd__functions.c.o
+.PHONY : rosidl_generator_c/motor_control/msg/detail/gpio_cmd__functions.c.o
+
+rosidl_generator_c/motor_control/msg/detail/gpio_cmd__functions.i: rosidl_generator_c/motor_control/msg/detail/gpio_cmd__functions.c.i
+.PHONY : rosidl_generator_c/motor_control/msg/detail/gpio_cmd__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/motor_control/msg/detail/gpio_cmd__functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control__rosidl_generator_c.dir/build.make CMakeFiles/motor_control__rosidl_generator_c.dir/rosidl_generator_c/motor_control/msg/detail/gpio_cmd__functions.c.i
+.PHONY : rosidl_generator_c/motor_control/msg/detail/gpio_cmd__functions.c.i
+
+rosidl_generator_c/motor_control/msg/detail/gpio_cmd__functions.s: rosidl_generator_c/motor_control/msg/detail/gpio_cmd__functions.c.s
+.PHONY : rosidl_generator_c/motor_control/msg/detail/gpio_cmd__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/motor_control/msg/detail/gpio_cmd__functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control__rosidl_generator_c.dir/build.make CMakeFiles/motor_control__rosidl_generator_c.dir/rosidl_generator_c/motor_control/msg/detail/gpio_cmd__functions.c.s
+.PHONY : rosidl_generator_c/motor_control/msg/detail/gpio_cmd__functions.c.s
 
 rosidl_generator_c/motor_control/msg/detail/return_at__functions.o: rosidl_generator_c/motor_control/msg/detail/return_at__functions.c.o
 .PHONY : rosidl_generator_c/motor_control/msg/detail/return_at__functions.o
@@ -588,6 +625,30 @@ rosidl_generator_py/motor_control/_motor_control_s.ep.rosidl_typesupport_introsp
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control__rosidl_typesupport_introspection_c__pyext.dir/build.make CMakeFiles/motor_control__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/motor_control/_motor_control_s.ep.rosidl_typesupport_introspection_c.c.s
 .PHONY : rosidl_generator_py/motor_control/_motor_control_s.ep.rosidl_typesupport_introspection_c.c.s
 
+rosidl_generator_py/motor_control/msg/_gpio_cmd_s.o: rosidl_generator_py/motor_control/msg/_gpio_cmd_s.c.o
+.PHONY : rosidl_generator_py/motor_control/msg/_gpio_cmd_s.o
+
+# target to build an object file
+rosidl_generator_py/motor_control/msg/_gpio_cmd_s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control__rosidl_generator_py.dir/build.make CMakeFiles/motor_control__rosidl_generator_py.dir/rosidl_generator_py/motor_control/msg/_gpio_cmd_s.c.o
+.PHONY : rosidl_generator_py/motor_control/msg/_gpio_cmd_s.c.o
+
+rosidl_generator_py/motor_control/msg/_gpio_cmd_s.i: rosidl_generator_py/motor_control/msg/_gpio_cmd_s.c.i
+.PHONY : rosidl_generator_py/motor_control/msg/_gpio_cmd_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/motor_control/msg/_gpio_cmd_s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control__rosidl_generator_py.dir/build.make CMakeFiles/motor_control__rosidl_generator_py.dir/rosidl_generator_py/motor_control/msg/_gpio_cmd_s.c.i
+.PHONY : rosidl_generator_py/motor_control/msg/_gpio_cmd_s.c.i
+
+rosidl_generator_py/motor_control/msg/_gpio_cmd_s.s: rosidl_generator_py/motor_control/msg/_gpio_cmd_s.c.s
+.PHONY : rosidl_generator_py/motor_control/msg/_gpio_cmd_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/motor_control/msg/_gpio_cmd_s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control__rosidl_generator_py.dir/build.make CMakeFiles/motor_control__rosidl_generator_py.dir/rosidl_generator_py/motor_control/msg/_gpio_cmd_s.c.s
+.PHONY : rosidl_generator_py/motor_control/msg/_gpio_cmd_s.c.s
+
 rosidl_generator_py/motor_control/msg/_return_at_s.o: rosidl_generator_py/motor_control/msg/_return_at_s.c.o
 .PHONY : rosidl_generator_py/motor_control/msg/_return_at_s.o
 
@@ -659,6 +720,30 @@ rosidl_generator_py/motor_control/msg/_send_at_s.s: rosidl_generator_py/motor_co
 rosidl_generator_py/motor_control/msg/_send_at_s.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control__rosidl_generator_py.dir/build.make CMakeFiles/motor_control__rosidl_generator_py.dir/rosidl_generator_py/motor_control/msg/_send_at_s.c.s
 .PHONY : rosidl_generator_py/motor_control/msg/_send_at_s.c.s
+
+rosidl_typesupport_c/motor_control/msg/gpio_cmd__type_support.o: rosidl_typesupport_c/motor_control/msg/gpio_cmd__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/motor_control/msg/gpio_cmd__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/motor_control/msg/gpio_cmd__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control__rosidl_typesupport_c.dir/build.make CMakeFiles/motor_control__rosidl_typesupport_c.dir/rosidl_typesupport_c/motor_control/msg/gpio_cmd__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/motor_control/msg/gpio_cmd__type_support.cpp.o
+
+rosidl_typesupport_c/motor_control/msg/gpio_cmd__type_support.i: rosidl_typesupport_c/motor_control/msg/gpio_cmd__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/motor_control/msg/gpio_cmd__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/motor_control/msg/gpio_cmd__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control__rosidl_typesupport_c.dir/build.make CMakeFiles/motor_control__rosidl_typesupport_c.dir/rosidl_typesupport_c/motor_control/msg/gpio_cmd__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/motor_control/msg/gpio_cmd__type_support.cpp.i
+
+rosidl_typesupport_c/motor_control/msg/gpio_cmd__type_support.s: rosidl_typesupport_c/motor_control/msg/gpio_cmd__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/motor_control/msg/gpio_cmd__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/motor_control/msg/gpio_cmd__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control__rosidl_typesupport_c.dir/build.make CMakeFiles/motor_control__rosidl_typesupport_c.dir/rosidl_typesupport_c/motor_control/msg/gpio_cmd__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/motor_control/msg/gpio_cmd__type_support.cpp.s
 
 rosidl_typesupport_c/motor_control/msg/return_at__type_support.o: rosidl_typesupport_c/motor_control/msg/return_at__type_support.cpp.o
 .PHONY : rosidl_typesupport_c/motor_control/msg/return_at__type_support.o
@@ -732,6 +817,30 @@ rosidl_typesupport_c/motor_control/msg/send_at__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control__rosidl_typesupport_c.dir/build.make CMakeFiles/motor_control__rosidl_typesupport_c.dir/rosidl_typesupport_c/motor_control/msg/send_at__type_support.cpp.s
 .PHONY : rosidl_typesupport_c/motor_control/msg/send_at__type_support.cpp.s
 
+rosidl_typesupport_cpp/motor_control/msg/gpio_cmd__type_support.o: rosidl_typesupport_cpp/motor_control/msg/gpio_cmd__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/motor_control/msg/gpio_cmd__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/motor_control/msg/gpio_cmd__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control__rosidl_typesupport_cpp.dir/build.make CMakeFiles/motor_control__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/motor_control/msg/gpio_cmd__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/motor_control/msg/gpio_cmd__type_support.cpp.o
+
+rosidl_typesupport_cpp/motor_control/msg/gpio_cmd__type_support.i: rosidl_typesupport_cpp/motor_control/msg/gpio_cmd__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/motor_control/msg/gpio_cmd__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/motor_control/msg/gpio_cmd__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control__rosidl_typesupport_cpp.dir/build.make CMakeFiles/motor_control__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/motor_control/msg/gpio_cmd__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/motor_control/msg/gpio_cmd__type_support.cpp.i
+
+rosidl_typesupport_cpp/motor_control/msg/gpio_cmd__type_support.s: rosidl_typesupport_cpp/motor_control/msg/gpio_cmd__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/motor_control/msg/gpio_cmd__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/motor_control/msg/gpio_cmd__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control__rosidl_typesupport_cpp.dir/build.make CMakeFiles/motor_control__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/motor_control/msg/gpio_cmd__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/motor_control/msg/gpio_cmd__type_support.cpp.s
+
 rosidl_typesupport_cpp/motor_control/msg/return_at__type_support.o: rosidl_typesupport_cpp/motor_control/msg/return_at__type_support.cpp.o
 .PHONY : rosidl_typesupport_cpp/motor_control/msg/return_at__type_support.o
 
@@ -803,6 +912,30 @@ rosidl_typesupport_cpp/motor_control/msg/send_at__type_support.s: rosidl_typesup
 rosidl_typesupport_cpp/motor_control/msg/send_at__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control__rosidl_typesupport_cpp.dir/build.make CMakeFiles/motor_control__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/motor_control/msg/send_at__type_support.cpp.s
 .PHONY : rosidl_typesupport_cpp/motor_control/msg/send_at__type_support.cpp.s
+
+rosidl_typesupport_fastrtps_c/motor_control/msg/detail/gpio_cmd__type_support_c.o: rosidl_typesupport_fastrtps_c/motor_control/msg/detail/gpio_cmd__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/motor_control/msg/detail/gpio_cmd__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/motor_control/msg/detail/gpio_cmd__type_support_c.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/motor_control__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/motor_control/msg/detail/gpio_cmd__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/motor_control/msg/detail/gpio_cmd__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/motor_control/msg/detail/gpio_cmd__type_support_c.i: rosidl_typesupport_fastrtps_c/motor_control/msg/detail/gpio_cmd__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/motor_control/msg/detail/gpio_cmd__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/motor_control/msg/detail/gpio_cmd__type_support_c.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/motor_control__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/motor_control/msg/detail/gpio_cmd__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/motor_control/msg/detail/gpio_cmd__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/motor_control/msg/detail/gpio_cmd__type_support_c.s: rosidl_typesupport_fastrtps_c/motor_control/msg/detail/gpio_cmd__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/motor_control/msg/detail/gpio_cmd__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/motor_control/msg/detail/gpio_cmd__type_support_c.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/motor_control__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/motor_control/msg/detail/gpio_cmd__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/motor_control/msg/detail/gpio_cmd__type_support_c.cpp.s
 
 rosidl_typesupport_fastrtps_c/motor_control/msg/detail/return_at__type_support_c.o: rosidl_typesupport_fastrtps_c/motor_control/msg/detail/return_at__type_support_c.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_c/motor_control/msg/detail/return_at__type_support_c.o
@@ -876,6 +1009,30 @@ rosidl_typesupport_fastrtps_c/motor_control/msg/detail/send_at__type_support_c.c
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/motor_control__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/motor_control/msg/detail/send_at__type_support_c.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_c/motor_control/msg/detail/send_at__type_support_c.cpp.s
 
+rosidl_typesupport_fastrtps_cpp/motor_control/msg/detail/dds_fastrtps/gpio_cmd__type_support.o: rosidl_typesupport_fastrtps_cpp/motor_control/msg/detail/dds_fastrtps/gpio_cmd__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/motor_control/msg/detail/dds_fastrtps/gpio_cmd__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/motor_control/msg/detail/dds_fastrtps/gpio_cmd__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/motor_control__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/motor_control/msg/detail/dds_fastrtps/gpio_cmd__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/motor_control/msg/detail/dds_fastrtps/gpio_cmd__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/motor_control/msg/detail/dds_fastrtps/gpio_cmd__type_support.i: rosidl_typesupport_fastrtps_cpp/motor_control/msg/detail/dds_fastrtps/gpio_cmd__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/motor_control/msg/detail/dds_fastrtps/gpio_cmd__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/motor_control/msg/detail/dds_fastrtps/gpio_cmd__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/motor_control__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/motor_control/msg/detail/dds_fastrtps/gpio_cmd__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/motor_control/msg/detail/dds_fastrtps/gpio_cmd__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/motor_control/msg/detail/dds_fastrtps/gpio_cmd__type_support.s: rosidl_typesupport_fastrtps_cpp/motor_control/msg/detail/dds_fastrtps/gpio_cmd__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/motor_control/msg/detail/dds_fastrtps/gpio_cmd__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/motor_control/msg/detail/dds_fastrtps/gpio_cmd__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/motor_control__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/motor_control/msg/detail/dds_fastrtps/gpio_cmd__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/motor_control/msg/detail/dds_fastrtps/gpio_cmd__type_support.cpp.s
+
 rosidl_typesupport_fastrtps_cpp/motor_control/msg/detail/dds_fastrtps/return_at__type_support.o: rosidl_typesupport_fastrtps_cpp/motor_control/msg/detail/dds_fastrtps/return_at__type_support.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_cpp/motor_control/msg/detail/dds_fastrtps/return_at__type_support.o
 
@@ -948,6 +1105,30 @@ rosidl_typesupport_fastrtps_cpp/motor_control/msg/detail/dds_fastrtps/send_at__t
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/motor_control__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/motor_control/msg/detail/dds_fastrtps/send_at__type_support.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_cpp/motor_control/msg/detail/dds_fastrtps/send_at__type_support.cpp.s
 
+rosidl_typesupport_introspection_c/motor_control/msg/detail/gpio_cmd__type_support.o: rosidl_typesupport_introspection_c/motor_control/msg/detail/gpio_cmd__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/motor_control/msg/detail/gpio_cmd__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/motor_control/msg/detail/gpio_cmd__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/motor_control__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/motor_control/msg/detail/gpio_cmd__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/motor_control/msg/detail/gpio_cmd__type_support.c.o
+
+rosidl_typesupport_introspection_c/motor_control/msg/detail/gpio_cmd__type_support.i: rosidl_typesupport_introspection_c/motor_control/msg/detail/gpio_cmd__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/motor_control/msg/detail/gpio_cmd__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/motor_control/msg/detail/gpio_cmd__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/motor_control__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/motor_control/msg/detail/gpio_cmd__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/motor_control/msg/detail/gpio_cmd__type_support.c.i
+
+rosidl_typesupport_introspection_c/motor_control/msg/detail/gpio_cmd__type_support.s: rosidl_typesupport_introspection_c/motor_control/msg/detail/gpio_cmd__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/motor_control/msg/detail/gpio_cmd__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/motor_control/msg/detail/gpio_cmd__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/motor_control__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/motor_control/msg/detail/gpio_cmd__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/motor_control/msg/detail/gpio_cmd__type_support.c.s
+
 rosidl_typesupport_introspection_c/motor_control/msg/detail/return_at__type_support.o: rosidl_typesupport_introspection_c/motor_control/msg/detail/return_at__type_support.c.o
 .PHONY : rosidl_typesupport_introspection_c/motor_control/msg/detail/return_at__type_support.o
 
@@ -1019,6 +1200,30 @@ rosidl_typesupport_introspection_c/motor_control/msg/detail/send_at__type_suppor
 rosidl_typesupport_introspection_c/motor_control/msg/detail/send_at__type_support.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/motor_control__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/motor_control/msg/detail/send_at__type_support.c.s
 .PHONY : rosidl_typesupport_introspection_c/motor_control/msg/detail/send_at__type_support.c.s
+
+rosidl_typesupport_introspection_cpp/motor_control/msg/detail/gpio_cmd__type_support.o: rosidl_typesupport_introspection_cpp/motor_control/msg/detail/gpio_cmd__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/motor_control/msg/detail/gpio_cmd__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/motor_control/msg/detail/gpio_cmd__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/motor_control__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/motor_control/msg/detail/gpio_cmd__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/motor_control/msg/detail/gpio_cmd__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/motor_control/msg/detail/gpio_cmd__type_support.i: rosidl_typesupport_introspection_cpp/motor_control/msg/detail/gpio_cmd__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/motor_control/msg/detail/gpio_cmd__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/motor_control/msg/detail/gpio_cmd__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/motor_control__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/motor_control/msg/detail/gpio_cmd__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/motor_control/msg/detail/gpio_cmd__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/motor_control/msg/detail/gpio_cmd__type_support.s: rosidl_typesupport_introspection_cpp/motor_control/msg/detail/gpio_cmd__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/motor_control/msg/detail/gpio_cmd__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/motor_control/msg/detail/gpio_cmd__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/motor_control__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/motor_control/msg/detail/gpio_cmd__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/motor_control/msg/detail/gpio_cmd__type_support.cpp.s
 
 rosidl_typesupport_introspection_cpp/motor_control/msg/detail/return_at__type_support.o: rosidl_typesupport_introspection_cpp/motor_control/msg/detail/return_at__type_support.cpp.o
 .PHONY : rosidl_typesupport_introspection_cpp/motor_control/msg/detail/return_at__type_support.o
@@ -1140,6 +1345,30 @@ src/control_node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/control_node.dir/build.make CMakeFiles/control_node.dir/src/control_node.cpp.s
 .PHONY : src/control_node.cpp.s
 
+src/gpio_node.o: src/gpio_node.cpp.o
+.PHONY : src/gpio_node.o
+
+# target to build an object file
+src/gpio_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpio_node.dir/build.make CMakeFiles/gpio_node.dir/src/gpio_node.cpp.o
+.PHONY : src/gpio_node.cpp.o
+
+src/gpio_node.i: src/gpio_node.cpp.i
+.PHONY : src/gpio_node.i
+
+# target to preprocess a source file
+src/gpio_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpio_node.dir/build.make CMakeFiles/gpio_node.dir/src/gpio_node.cpp.i
+.PHONY : src/gpio_node.cpp.i
+
+src/gpio_node.s: src/gpio_node.cpp.s
+.PHONY : src/gpio_node.s
+
+# target to generate assembly for a file
+src/gpio_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpio_node.dir/build.make CMakeFiles/gpio_node.dir/src/gpio_node.cpp.s
+.PHONY : src/gpio_node.cpp.s
+
 src/observe_node.o: src/observe_node.cpp.o
 .PHONY : src/observe_node.o
 
@@ -1186,6 +1415,7 @@ help:
 	@echo "... uninstall"
 	@echo "... communication_node"
 	@echo "... control_node"
+	@echo "... gpio_node"
 	@echo "... motor_control__rosidl_generator_c"
 	@echo "... motor_control__rosidl_generator_py"
 	@echo "... motor_control__rosidl_typesupport_c"
@@ -1198,6 +1428,9 @@ help:
 	@echo "... motor_control__rosidl_typesupport_introspection_c__pyext"
 	@echo "... motor_control__rosidl_typesupport_introspection_cpp"
 	@echo "... observe_node"
+	@echo "... rosidl_generator_c/motor_control/msg/detail/gpio_cmd__functions.o"
+	@echo "... rosidl_generator_c/motor_control/msg/detail/gpio_cmd__functions.i"
+	@echo "... rosidl_generator_c/motor_control/msg/detail/gpio_cmd__functions.s"
 	@echo "... rosidl_generator_c/motor_control/msg/detail/return_at__functions.o"
 	@echo "... rosidl_generator_c/motor_control/msg/detail/return_at__functions.i"
 	@echo "... rosidl_generator_c/motor_control/msg/detail/return_at__functions.s"
@@ -1216,6 +1449,9 @@ help:
 	@echo "... rosidl_generator_py/motor_control/_motor_control_s.ep.rosidl_typesupport_introspection_c.o"
 	@echo "... rosidl_generator_py/motor_control/_motor_control_s.ep.rosidl_typesupport_introspection_c.i"
 	@echo "... rosidl_generator_py/motor_control/_motor_control_s.ep.rosidl_typesupport_introspection_c.s"
+	@echo "... rosidl_generator_py/motor_control/msg/_gpio_cmd_s.o"
+	@echo "... rosidl_generator_py/motor_control/msg/_gpio_cmd_s.i"
+	@echo "... rosidl_generator_py/motor_control/msg/_gpio_cmd_s.s"
 	@echo "... rosidl_generator_py/motor_control/msg/_return_at_s.o"
 	@echo "... rosidl_generator_py/motor_control/msg/_return_at_s.i"
 	@echo "... rosidl_generator_py/motor_control/msg/_return_at_s.s"
@@ -1225,6 +1461,9 @@ help:
 	@echo "... rosidl_generator_py/motor_control/msg/_send_at_s.o"
 	@echo "... rosidl_generator_py/motor_control/msg/_send_at_s.i"
 	@echo "... rosidl_generator_py/motor_control/msg/_send_at_s.s"
+	@echo "... rosidl_typesupport_c/motor_control/msg/gpio_cmd__type_support.o"
+	@echo "... rosidl_typesupport_c/motor_control/msg/gpio_cmd__type_support.i"
+	@echo "... rosidl_typesupport_c/motor_control/msg/gpio_cmd__type_support.s"
 	@echo "... rosidl_typesupport_c/motor_control/msg/return_at__type_support.o"
 	@echo "... rosidl_typesupport_c/motor_control/msg/return_at__type_support.i"
 	@echo "... rosidl_typesupport_c/motor_control/msg/return_at__type_support.s"
@@ -1234,6 +1473,9 @@ help:
 	@echo "... rosidl_typesupport_c/motor_control/msg/send_at__type_support.o"
 	@echo "... rosidl_typesupport_c/motor_control/msg/send_at__type_support.i"
 	@echo "... rosidl_typesupport_c/motor_control/msg/send_at__type_support.s"
+	@echo "... rosidl_typesupport_cpp/motor_control/msg/gpio_cmd__type_support.o"
+	@echo "... rosidl_typesupport_cpp/motor_control/msg/gpio_cmd__type_support.i"
+	@echo "... rosidl_typesupport_cpp/motor_control/msg/gpio_cmd__type_support.s"
 	@echo "... rosidl_typesupport_cpp/motor_control/msg/return_at__type_support.o"
 	@echo "... rosidl_typesupport_cpp/motor_control/msg/return_at__type_support.i"
 	@echo "... rosidl_typesupport_cpp/motor_control/msg/return_at__type_support.s"
@@ -1243,6 +1485,9 @@ help:
 	@echo "... rosidl_typesupport_cpp/motor_control/msg/send_at__type_support.o"
 	@echo "... rosidl_typesupport_cpp/motor_control/msg/send_at__type_support.i"
 	@echo "... rosidl_typesupport_cpp/motor_control/msg/send_at__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_c/motor_control/msg/detail/gpio_cmd__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/motor_control/msg/detail/gpio_cmd__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/motor_control/msg/detail/gpio_cmd__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_c/motor_control/msg/detail/return_at__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/motor_control/msg/detail/return_at__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/motor_control/msg/detail/return_at__type_support_c.s"
@@ -1252,6 +1497,9 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_c/motor_control/msg/detail/send_at__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/motor_control/msg/detail/send_at__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/motor_control/msg/detail/send_at__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/motor_control/msg/detail/dds_fastrtps/gpio_cmd__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/motor_control/msg/detail/dds_fastrtps/gpio_cmd__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/motor_control/msg/detail/dds_fastrtps/gpio_cmd__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/motor_control/msg/detail/dds_fastrtps/return_at__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/motor_control/msg/detail/dds_fastrtps/return_at__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/motor_control/msg/detail/dds_fastrtps/return_at__type_support.s"
@@ -1261,6 +1509,9 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_cpp/motor_control/msg/detail/dds_fastrtps/send_at__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/motor_control/msg/detail/dds_fastrtps/send_at__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/motor_control/msg/detail/dds_fastrtps/send_at__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/motor_control/msg/detail/gpio_cmd__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/motor_control/msg/detail/gpio_cmd__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/motor_control/msg/detail/gpio_cmd__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/motor_control/msg/detail/return_at__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/motor_control/msg/detail/return_at__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/motor_control/msg/detail/return_at__type_support.s"
@@ -1270,6 +1521,9 @@ help:
 	@echo "... rosidl_typesupport_introspection_c/motor_control/msg/detail/send_at__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/motor_control/msg/detail/send_at__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/motor_control/msg/detail/send_at__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/motor_control/msg/detail/gpio_cmd__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/motor_control/msg/detail/gpio_cmd__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/motor_control/msg/detail/gpio_cmd__type_support.s"
 	@echo "... rosidl_typesupport_introspection_cpp/motor_control/msg/detail/return_at__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/motor_control/msg/detail/return_at__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/motor_control/msg/detail/return_at__type_support.s"
@@ -1285,6 +1539,9 @@ help:
 	@echo "... src/control_node.o"
 	@echo "... src/control_node.i"
 	@echo "... src/control_node.s"
+	@echo "... src/gpio_node.o"
+	@echo "... src/gpio_node.i"
+	@echo "... src/gpio_node.s"
 	@echo "... src/observe_node.o"
 	@echo "... src/observe_node.i"
 	@echo "... src/observe_node.s"

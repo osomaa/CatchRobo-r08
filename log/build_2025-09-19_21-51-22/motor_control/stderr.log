@@ -1,0 +1,8 @@
+[01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:[m[K In member function ‘[01m[Kvoid GpioNode::reader_loop()[m[K’:
+[01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:73:30:[m[K [01;31m[Kerror: [m[Kunable to deduce ‘[01m[Kauto*[m[K’ from ‘[01m[K__for_begin .__gnu_cxx::__normal_iterator<int*, std::vector<int> >::operator*()[m[K’
+   73 |             for(auto* line : [01;31m[Kin_pins[m[K){
+      |                              [01;31m[K^~~~~~~[m[K
+[01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:73:30:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kauto*[m[K’ and ‘[01m[Kint[m[K’
+gmake[2]: *** [CMakeFiles/gpio_node.dir/build.make:76: CMakeFiles/gpio_node.dir/src/gpio_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:680: CMakeFiles/gpio_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

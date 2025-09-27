@@ -1,0 +1,69 @@
+[0.000000] (-) TimerEvent: {}
+[0.001825] (motor_control) JobQueued: {'identifier': 'motor_control', 'dependencies': OrderedDict()}
+[0.002437] (motor_control) JobStarted: {'identifier': 'motor_control'}
+[0.036787] (motor_control) JobProgress: {'identifier': 'motor_control', 'progress': 'cmake'}
+[0.040382] (motor_control) JobProgress: {'identifier': 'motor_control', 'progress': 'build'}
+[0.043936] (motor_control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mowmow/workspace/CatchRobo-r08/build/motor_control', '--', '-j4', '-l4'], 'cwd': '/home/mowmow/workspace/CatchRobo-r08/build/motor_control', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mowmow'), ('SSH_CLIENT', 'fe80::13fb:1575:2f46:3fc5%eth0 52039 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/mowmow/.vscode-server/cli/servers/Stable-0f0d87fa9e96c856c5212fc86db137ac0d783365/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/mowmow/workspace/CatchRobo-r08/install/motor_control/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/mowmow/.vscode-server/cli/servers/Stable-0f0d87fa9e96c856c5212fc86db137ac0d783365/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/mowmow'), ('TERM_PROGRAM_VERSION', '1.104.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-1f8f0f25-288e-4b6c-b6a7-53b7614f0e1d.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/mowmow/.vscode-server/cli/servers/Stable-0f0d87fa9e96c856c5212fc86db137ac0d783365/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/mowmow/.vscode-server/cli/servers/Stable-0f0d87fa9e96c856c5212fc86db137ac0d783365/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/mowmow/workspace/CatchRobo-r08/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mowmow'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/mowmow/.vscode-server/cli/servers/Stable-0f0d87fa9e96c856c5212fc86db137ac0d783365/server/bin/remote-cli:/home/mowmow/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/mowmow/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-84bb2b580e.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/mowmow/workspace/CatchRobo-r08/install/motor_control:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/mowmow/workspace/CatchRobo-r08/build/motor_control'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', 'fe80::13fb:1575:2f46:3fc5%eth0 52039 fe80::da3a:ddff:fe27:2393%eth0 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/mowmow/workspace/CatchRobo-r08/install/motor_control/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/mowmow/workspace/CatchRobo-r08/install/motor_control:/opt/ros/humble')]), 'shell': False}
+[0.099237] (-) TimerEvent: {}
+[0.200101] (-) TimerEvent: {}
+[0.277552] (motor_control) StdoutLine: {'line': b'[  1%] Built target motor_control__cpp\n'}
+[0.290931] (motor_control) StdoutLine: {'line': b'[ 11%] Built target motor_control__rosidl_generator_c\n'}
+[0.300325] (-) TimerEvent: {}
+[0.367516] (motor_control) StdoutLine: {'line': b'[ 11%] Built target ament_cmake_python_copy_motor_control\n'}
+[0.400651] (-) TimerEvent: {}
+[0.411072] (motor_control) StdoutLine: {'line': b'[ 20%] Built target motor_control__rosidl_typesupport_fastrtps_cpp\n'}
+[0.419728] (motor_control) StdoutLine: {'line': b'[ 30%] Built target motor_control__rosidl_typesupport_introspection_cpp\n'}
+[0.429276] (motor_control) StdoutLine: {'line': b'[ 39%] Built target motor_control__rosidl_typesupport_cpp\n'}
+[0.486498] (motor_control) StdoutLine: {'line': b'[ 49%] Built target motor_control__rosidl_typesupport_fastrtps_c\n'}
+[0.500829] (-) TimerEvent: {}
+[0.554830] (motor_control) StdoutLine: {'line': b'[ 68%] Built target motor_control__rosidl_typesupport_introspection_c\n'}
+[0.560740] (motor_control) StdoutLine: {'line': b'[ 68%] Built target motor_control__rosidl_typesupport_c\n'}
+[0.601100] (-) TimerEvent: {}
+[0.689623] (motor_control) StdoutLine: {'line': b'[ 71%] Built target communication_node\n'}
+[0.701261] (-) TimerEvent: {}
+[0.776006] (motor_control) StdoutLine: {'line': b'[ 74%] Built target control_node\n'}
+[0.787395] (motor_control) StdoutLine: {'line': b'[ 77%] Built target observe_node\n'}
+[0.801621] (-) TimerEvent: {}
+[0.905343] (-) TimerEvent: {}
+[0.928495] (motor_control) StdoutLine: {'line': b'[ 79%] Built target motor_control\n'}
+[0.930832] (motor_control) StdoutLine: {'line': b'[ 80%] Built target gpio_node\n'}
+[1.005551] (-) TimerEvent: {}
+[1.040784] (motor_control) StdoutLine: {'line': b'[ 82%] Built target motor_control__py\n'}
+[1.105800] (-) TimerEvent: {}
+[1.168293] (motor_control) StdoutLine: {'line': b'[ 90%] Built target motor_control__rosidl_generator_py\n'}
+[1.206034] (-) TimerEvent: {}
+[1.307231] (-) TimerEvent: {}
+[1.336257] (motor_control) StdoutLine: {'line': b'[ 93%] Built target motor_control__rosidl_typesupport_fastrtps_c__pyext\n'}
+[1.338111] (motor_control) StdoutLine: {'line': b'[ 96%] Built target motor_control__rosidl_typesupport_introspection_c__pyext\n'}
+[1.367540] (motor_control) StdoutLine: {'line': b'[100%] Built target motor_control__rosidl_typesupport_c__pyext\n'}
+[1.407454] (-) TimerEvent: {}
+[1.508223] (-) TimerEvent: {}
+[1.609959] (-) TimerEvent: {}
+[1.648261] (motor_control) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[1.649160] (motor_control) StderrLine: {'line': b'  File "/home/mowmow/workspace/CatchRobo-r08/build/motor_control/ament_cmake_python/motor_control/setup.py", line 1, in <module>\n'}
+[1.650265] (motor_control) StderrLine: {'line': b'    from setuptools import find_packages\n'}
+[1.650952] (motor_control) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 16, in <module>\n'}
+[1.653335] (motor_control) StderrLine: {'line': b'    import setuptools.version\n'}
+[1.654263] (motor_control) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/setuptools/version.py", line 1, in <module>\n'}
+[1.654992] (motor_control) StderrLine: {'line': b'    import pkg_resources\n'}
+[1.655565] (motor_control) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3267, in <module>\n'}
+[1.658949] (motor_control) StderrLine: {'line': b'    def _initialize_master_working_set():\n'}
+[1.659638] (motor_control) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3241, in _call_aside\n'}
+[1.660131] (motor_control) StderrLine: {'line': b'    f(*args, **kwargs)\n'}
+[1.661019] (motor_control) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3302, in _initialize_master_working_set\n'}
+[1.661839] (motor_control) StderrLine: {'line': b'    list(map(working_set.add_entry, sys.path))\n'}
+[1.662658] (motor_control) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 613, in add_entry\n'}
+[1.663211] (motor_control) StderrLine: {'line': b'    for dist in find_distributions(entry, True):\n'}
+[1.664749] (motor_control) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2077, in find_on_path\n'}
+[1.666085] (motor_control) StderrLine: {'line': b'    for dist in factory(fullpath):\n'}
+[1.667686] (motor_control) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2135, in distributions_from_metadata\n'}
+[1.669196] (motor_control) StderrLine: {'line': b'    if len(os.listdir(path)) == 0:\n'}
+[1.670545] (motor_control) StderrLine: {'line': b'KeyboardInterrupt\n'}
+[1.710321] (-) TimerEvent: {}
+[1.762705] (motor_control) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/ament_cmake_python_build_motor_control_egg.dir/build.make:70: CMakeFiles/ament_cmake_python_build_motor_control_egg] Interrupt\n'}
+[1.764695] (motor_control) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:455: CMakeFiles/ament_cmake_python_build_motor_control_egg.dir/all] Interrupt\n'}
+[1.765642] (motor_control) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Interrupt\n'}
+[1.773908] (motor_control) CommandEnded: {'returncode': -2}
+[1.811826] (-) TimerEvent: {}
+[1.855363] (motor_control) JobEnded: {'identifier': 'motor_control', 'rc': 'SIGINT'}
+[1.867215] (-) EventReactorShutdown: {}

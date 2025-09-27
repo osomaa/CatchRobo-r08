@@ -72,10 +72,12 @@ motor_control__py/CMakeFiles/motor_control__py: rosidl_generator_py/motor_contro
 motor_control__py/CMakeFiles/motor_control__py: rosidl_generator_py/motor_control/msg/_return_at.py
 motor_control__py/CMakeFiles/motor_control__py: rosidl_generator_py/motor_control/msg/_send_at.py
 motor_control__py/CMakeFiles/motor_control__py: rosidl_generator_py/motor_control/msg/_send_array.py
+motor_control__py/CMakeFiles/motor_control__py: rosidl_generator_py/motor_control/msg/_gpio_cmd.py
 motor_control__py/CMakeFiles/motor_control__py: rosidl_generator_py/motor_control/msg/__init__.py
 motor_control__py/CMakeFiles/motor_control__py: rosidl_generator_py/motor_control/msg/_return_at_s.c
 motor_control__py/CMakeFiles/motor_control__py: rosidl_generator_py/motor_control/msg/_send_at_s.c
 motor_control__py/CMakeFiles/motor_control__py: rosidl_generator_py/motor_control/msg/_send_array_s.c
+motor_control__py/CMakeFiles/motor_control__py: rosidl_generator_py/motor_control/msg/_gpio_cmd_s.c
 
 rosidl_generator_py/motor_control/_motor_control_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/lib/rosidl_generator_py/rosidl_generator_py
 rosidl_generator_py/motor_control/_motor_control_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_py/__init__.py
@@ -93,6 +95,7 @@ rosidl_generator_py/motor_control/_motor_control_s.ep.rosidl_typesupport_fastrtp
 rosidl_generator_py/motor_control/_motor_control_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/motor_control/msg/ReturnAt.idl
 rosidl_generator_py/motor_control/_motor_control_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/motor_control/msg/SendAt.idl
 rosidl_generator_py/motor_control/_motor_control_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/motor_control/msg/SendArray.idl
+rosidl_generator_py/motor_control/_motor_control_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/motor_control/msg/GpioCmd.idl
 rosidl_generator_py/motor_control/_motor_control_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_py/motor_control/_motor_control_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
 rosidl_generator_py/motor_control/_motor_control_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/std_msgs/msg/Bool.idl
@@ -143,6 +146,9 @@ rosidl_generator_py/motor_control/msg/_send_at.py: rosidl_generator_py/motor_con
 rosidl_generator_py/motor_control/msg/_send_array.py: rosidl_generator_py/motor_control/_motor_control_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/motor_control/msg/_send_array.py
 
+rosidl_generator_py/motor_control/msg/_gpio_cmd.py: rosidl_generator_py/motor_control/_motor_control_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/motor_control/msg/_gpio_cmd.py
+
 rosidl_generator_py/motor_control/msg/__init__.py: rosidl_generator_py/motor_control/_motor_control_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/motor_control/msg/__init__.py
 
@@ -155,11 +161,16 @@ rosidl_generator_py/motor_control/msg/_send_at_s.c: rosidl_generator_py/motor_co
 rosidl_generator_py/motor_control/msg/_send_array_s.c: rosidl_generator_py/motor_control/_motor_control_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/motor_control/msg/_send_array_s.c
 
+rosidl_generator_py/motor_control/msg/_gpio_cmd_s.c: rosidl_generator_py/motor_control/_motor_control_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/motor_control/msg/_gpio_cmd_s.c
+
 motor_control__py: motor_control__py/CMakeFiles/motor_control__py
 motor_control__py: rosidl_generator_py/motor_control/_motor_control_s.ep.rosidl_typesupport_c.c
 motor_control__py: rosidl_generator_py/motor_control/_motor_control_s.ep.rosidl_typesupport_fastrtps_c.c
 motor_control__py: rosidl_generator_py/motor_control/_motor_control_s.ep.rosidl_typesupport_introspection_c.c
 motor_control__py: rosidl_generator_py/motor_control/msg/__init__.py
+motor_control__py: rosidl_generator_py/motor_control/msg/_gpio_cmd.py
+motor_control__py: rosidl_generator_py/motor_control/msg/_gpio_cmd_s.c
 motor_control__py: rosidl_generator_py/motor_control/msg/_return_at.py
 motor_control__py: rosidl_generator_py/motor_control/msg/_return_at_s.c
 motor_control__py: rosidl_generator_py/motor_control/msg/_send_array.py

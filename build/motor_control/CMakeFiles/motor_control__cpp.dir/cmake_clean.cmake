@@ -1,5 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/motor_control__cpp"
+  "rosidl_generator_cpp/motor_control/msg/detail/gpio_cmd__builder.hpp"
+  "rosidl_generator_cpp/motor_control/msg/detail/gpio_cmd__struct.hpp"
+  "rosidl_generator_cpp/motor_control/msg/detail/gpio_cmd__traits.hpp"
+  "rosidl_generator_cpp/motor_control/msg/detail/gpio_cmd__type_support.hpp"
   "rosidl_generator_cpp/motor_control/msg/detail/return_at__builder.hpp"
   "rosidl_generator_cpp/motor_control/msg/detail/return_at__struct.hpp"
   "rosidl_generator_cpp/motor_control/msg/detail/return_at__traits.hpp"
@@ -12,6 +16,7 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/motor_control/msg/detail/send_at__struct.hpp"
   "rosidl_generator_cpp/motor_control/msg/detail/send_at__traits.hpp"
   "rosidl_generator_cpp/motor_control/msg/detail/send_at__type_support.hpp"
+  "rosidl_generator_cpp/motor_control/msg/gpio_cmd.hpp"
   "rosidl_generator_cpp/motor_control/msg/return_at.hpp"
   "rosidl_generator_cpp/motor_control/msg/send_array.hpp"
   "rosidl_generator_cpp/motor_control/msg/send_at.hpp"

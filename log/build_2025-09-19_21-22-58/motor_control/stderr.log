@@ -1,0 +1,49 @@
+[01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:[m[K In constructor ‘[01m[KGpioNode::GpioNode()[m[K’:
+[01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:27:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kpins[m[K’ was not declared in this scope
+   27 |         line_outs.reserve([01;31m[Kpins[m[K.size());
+      |                           [01;31m[K^~~~[m[K
+[01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:46:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kworker_[m[K’ was not declared in this scope
+   46 |         [01;31m[Kworker_[m[K = std::thread(&CommunicationNode::reader_loop, this);
+      |         [01;31m[K^~~~~~~[m[K
+[01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:46:32:[m[K [01;31m[Kerror: [m[K‘[01m[KCommunicationNode[m[K’ was not declared in this scope
+   46 |         worker_ = std::thread(&[01;31m[KCommunicationNode[m[K::reader_loop, this);
+      |                                [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:1[m[K:
+[01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:[m[K In member function ‘[01m[Kvoid GpioNode::on_cmd(motor_control::msg::GpioCmd_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:60:62:[m[K [01;31m[Kerror: [m[K‘[01m[Kpins[m[K’ was not declared in this scope
+   60 |         RCLCPP_INFO(this->get_logger(), "Set GPIO %d to %d", [01;31m[Kpins[m[K[msg->pin_index], value);
+      |                                                              [01;31m[K^~~~[m[K
+[01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:[m[K In member function ‘[01m[Kvoid GpioNode::reader_loop()[m[K’:
+[01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:65:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kgpiod_line_event_wait_multiple[m[K’ was not declared in this scope; did you mean ‘[01m[Kgpiod_line_event_read_multiple[m[K’?
+   65 |             int ret = [01;31m[Kgpiod_line_event_wait_multiple[m[K(line_ins.data(), line_ins.size(), &timeout);
+      |                       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                       [32m[Kgpiod_line_event_read_multiple[m[K
+[01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:94:65:[m[K [01;35m[Kwarning: [m[Kconverting to ‘[01m[Kmotor_control::msg::ReturnAt_<std::allocator<void> >[m[K’ from initializer list would use explicit constructor ‘[01m[Kmotor_control::msg::ReturnAt_<ContainerAllocator>::ReturnAt_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+   94 |   std::array<motor_control::msg::ReturnAt, kjoints> last_state_{[01;35m[K}[m[K;
+      |                                                                 [01;35m[K^[m[K
+[01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:94:65:[m[K [01;36m[Knote: [m[Kin C++11 and above a default constructor can be explicit
+[01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:94:65:[m[K [01;35m[Kwarning: [m[Kconverting to ‘[01m[Kmotor_control::msg::ReturnAt_<std::allocator<void> >[m[K’ from initializer list would use explicit constructor ‘[01m[Kmotor_control::msg::ReturnAt_<ContainerAllocator>::ReturnAt_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+[01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:94:65:[m[K [01;36m[Knote: [m[Kin C++11 and above a default constructor can be explicit
+[01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:94:65:[m[K [01;35m[Kwarning: [m[Kconverting to ‘[01m[Kmotor_control::msg::ReturnAt_<std::allocator<void> >[m[K’ from initializer list would use explicit constructor ‘[01m[Kmotor_control::msg::ReturnAt_<ContainerAllocator>::ReturnAt_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+[01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:94:65:[m[K [01;36m[Knote: [m[Kin C++11 and above a default constructor can be explicit
+[01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:94:65:[m[K [01;35m[Kwarning: [m[Kconverting to ‘[01m[Kmotor_control::msg::ReturnAt_<std::allocator<void> >[m[K’ from initializer list would use explicit constructor ‘[01m[Kmotor_control::msg::ReturnAt_<ContainerAllocator>::ReturnAt_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+[01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:94:65:[m[K [01;36m[Knote: [m[Kin C++11 and above a default constructor can be explicit
+[01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:94:65:[m[K [01;35m[Kwarning: [m[Kconverting to ‘[01m[Kmotor_control::msg::ReturnAt_<std::allocator<void> >[m[K’ from initializer list would use explicit constructor ‘[01m[Kmotor_control::msg::ReturnAt_<ContainerAllocator>::ReturnAt_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+[01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:94:65:[m[K [01;36m[Knote: [m[Kin C++11 and above a default constructor can be explicit
+[01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:94:65:[m[K [01;35m[Kwarning: [m[Kconverting to ‘[01m[Kmotor_control::msg::ReturnAt_<std::allocator<void> >[m[K’ from initializer list would use explicit constructor ‘[01m[Kmotor_control::msg::ReturnAt_<ContainerAllocator>::ReturnAt_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+[01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:94:65:[m[K [01;36m[Knote: [m[Kin C++11 and above a default constructor can be explicit
+gmake[2]: *** [CMakeFiles/gpio_node.dir/build.make:76: CMakeFiles/gpio_node.dir/src/gpio_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:680: CMakeFiles/gpio_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

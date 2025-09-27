@@ -1,0 +1,59 @@
+[0.055s] Invoking command in '/home/mowmow/workspace/CatchRobo-r08/build/motor_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mowmow/workspace/CatchRobo-r08/build/motor_control -- -j4 -l4
+[0.289s] [  1%] Built target motor_control__cpp
+[0.294s] [ 11%] Built target motor_control__rosidl_generator_c
+[0.376s] [ 11%] Built target ament_cmake_python_copy_motor_control
+[0.441s] [ 20%] Built target motor_control__rosidl_typesupport_cpp
+[0.457s] [ 30%] Built target motor_control__rosidl_typesupport_introspection_cpp
+[0.463s] [ 39%] Built target motor_control__rosidl_typesupport_fastrtps_cpp
+[0.582s] [ 49%] Built target motor_control__rosidl_typesupport_fastrtps_c
+[0.614s] [ 58%] Built target motor_control__rosidl_typesupport_introspection_c
+[0.620s] [ 68%] Built target motor_control__rosidl_typesupport_c
+[0.779s] [ 71%] Built target control_node
+[0.831s] [ 74%] Built target communication_node
+[0.854s] [ 77%] Built target observe_node
+[0.881s] [35m[1mConsolidate compiler generated dependencies of target gpio_node[0m
+[0.963s] [ 77%] Built target motor_control
+[0.994s] [ 79%] [32mBuilding CXX object CMakeFiles/gpio_node.dir/src/gpio_node.cpp.o[0m
+[1.136s] [ 80%] Built target motor_control__py
+[1.257s] [ 88%] Built target motor_control__rosidl_generator_py
+[1.372s] [ 92%] Built target motor_control__rosidl_typesupport_fastrtps_c__pyext
+[1.491s] [ 95%] Built target motor_control__rosidl_typesupport_introspection_c__pyext
+[1.529s] [ 98%] Built target motor_control__rosidl_typesupport_c__pyext
+[2.296s] running egg_info
+[2.299s] writing motor_control.egg-info/PKG-INFO
+[2.301s] writing dependency_links to motor_control.egg-info/dependency_links.txt
+[2.303s] writing top-level names to motor_control.egg-info/top_level.txt
+[2.316s] reading manifest file 'motor_control.egg-info/SOURCES.txt'
+[2.318s] writing manifest file 'motor_control.egg-info/SOURCES.txt'
+[2.488s] [ 98%] Built target ament_cmake_python_build_motor_control_egg
+[12.011s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:[m[K In member function ‘[01m[Kvoid GpioNode::reader_loop()[m[K’:
+[12.011s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:73:30:[m[K [01;31m[Kerror: [m[Kunable to deduce ‘[01m[Kauto*[m[K’ from ‘[01m[K__for_begin .__gnu_cxx::__normal_iterator<int*, std::vector<int> >::operator*()[m[K’
+[12.012s]    73 |             for(auto* line : [01;31m[Kin_pins[m[K){
+[12.012s]       |                              [01;31m[K^~~~~~~[m[K
+[12.013s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:73:30:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kauto*[m[K’ and ‘[01m[Kint[m[K’
+[12.034s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:92:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kin_pins_[m[K’ was not declared in this scope; did you mean ‘[01m[Kin_pins[m[K’?
+[12.034s]    92 |                     int pin_bcm   = [01;31m[Kin_pins_[m[K.at(pin_index);
+[12.035s]       |                                     [01;31m[K^~~~~~~~[m[K
+[12.036s]       |                                     [32m[Kin_pins[m[K
+[12.037s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:92:25:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kpin_bcm[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[12.037s]    92 |                     int [01;35m[Kpin_bcm[m[K   = in_pins_.at(pin_index);
+[12.038s]       |                         [01;35m[K^~~~~~~[m[K
+[12.058s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[12.059s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[12.059s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[12.060s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[12.060s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[12.060s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[12.061s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[12.061s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[12.062s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[12.062s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[12.063s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[12.063s]                  from [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:1[m[K:
+[12.064s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:97:85:[m[K [01;31m[Kerror: [m[K‘[01m[Kpin_index[m[K’ was not declared in this scope
+[12.064s]    97 |                 RCLCPP_INFO(this->get_logger(), "GPIO %d %s edge detected", in_pins[[01;31m[Kpin_index[m[K], edge.c_str());
+[12.064s]       |                                                                                     [01;31m[K^~~~~~~~~[m[K
+[20.461s] gmake[2]: *** [CMakeFiles/gpio_node.dir/build.make:76: CMakeFiles/gpio_node.dir/src/gpio_node.cpp.o] Error 1
+[20.461s] gmake[1]: *** [CMakeFiles/Makefile2:680: CMakeFiles/gpio_node.dir/all] Error 2
+[20.462s] gmake: *** [Makefile:146: all] Error 2
+[20.470s] Invoked command in '/home/mowmow/workspace/CatchRobo-r08/build/motor_control' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mowmow/workspace/CatchRobo-r08/build/motor_control -- -j4 -l4

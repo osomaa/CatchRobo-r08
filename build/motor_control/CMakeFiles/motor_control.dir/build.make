@@ -69,6 +69,7 @@ include CMakeFiles/motor_control.dir/progress.make
 CMakeFiles/motor_control: /home/mowmow/workspace/CatchRobo-r08/src/motor_control/msg/ReturnAt.msg
 CMakeFiles/motor_control: /home/mowmow/workspace/CatchRobo-r08/src/motor_control/msg/SendAt.msg
 CMakeFiles/motor_control: /home/mowmow/workspace/CatchRobo-r08/src/motor_control/msg/SendArray.msg
+CMakeFiles/motor_control: /home/mowmow/workspace/CatchRobo-r08/src/motor_control/msg/GpioCmd.msg
 CMakeFiles/motor_control: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 CMakeFiles/motor_control: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
 CMakeFiles/motor_control: /opt/ros/humble/share/std_msgs/msg/Bool.idl

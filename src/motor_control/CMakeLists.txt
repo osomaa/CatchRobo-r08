@@ -13,12 +13,15 @@ find_package(builtin_interfaces REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(ament_index_cpp REQUIRED)
+find_package(PkgConfig REQUIRED)
 
+pkg_check_modules(LIBGPIOD REQUIRED libgpiod)
 # ---- interfaces ----
 set(IDL_FILES
   "msg/ReturnAt.msg"
   "msg/SendAt.msg"
   "msg/SendArray.msg"
+  "msg/GpioCmd.msg"
 )
 
 rosidl_generate_interfaces(${PROJECT_NAME}
@@ -56,11 +59,22 @@ target_include_directories(observe_node PUBLIC include)
 ament_target_dependencies(observe_node rclcpp std_msgs)
 target_link_libraries(observe_node ${cpp_typesupport_target})
 
+add_executable(gpio_node src/gpio_node.cpp)
+target_include_directories(gpio_node PUBLIC include)
+ament_target_dependencies(gpio_node rclcpp std_msgs)
+target_link_libraries(gpio_node
+  ${cpp_typesupport_target}
+  ${LIBGPIOD_LIBRARIES}
+)
+target_include_directories(gpio_node PRIVATE ${LIBGPIOD_INCLUDE_DIRS})
+target_compile_options(gpio_node PRIVATE ${LIBGPIOD_CFLAGS_OTHER})
+
 # ---- install ----
 install(TARGETS
   communication_node
   control_node
   observe_node
+  gpio_node
   DESTINATION lib/${PROJECT_NAME}
 )
 

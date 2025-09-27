@@ -1,0 +1,269 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-a4a3be04e32985fb575f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21
+					]
+				},
+				{
+					"build" : "motor_control__py",
+					"jsonFile" : "directory-motor_control__py-c718b03f0319079f2679.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/mowmow/workspace/CatchRobo-r08/build/motor_control/motor_control__py",
+					"targetIndexes" : 
+					[
+						7
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "motor_control",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_motor_control_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_motor_control_egg-32b36e18bc548b20fa06.json",
+					"name" : "ament_cmake_python_build_motor_control_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_motor_control::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_motor_control-ab472bf5d5ea9473d383.json",
+					"name" : "ament_cmake_python_copy_motor_control",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "communication_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-communication_node-e6b102f823e78d25703d.json",
+					"name" : "communication_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "control_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-control_node-ca7913545e5b1287122f.json",
+					"name" : "control_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gpio_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gpio_node-bf9eb38273f4e5405f92.json",
+					"name" : "gpio_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "motor_control::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-motor_control-4490f008612a6fa1a8f0.json",
+					"name" : "motor_control",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "motor_control__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-motor_control__cpp-38e9324c1db31d87c751.json",
+					"name" : "motor_control__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "motor_control__py::@04a9dfa56ad3690b861e",
+					"jsonFile" : "target-motor_control__py-80429e3cdeff5b82f738.json",
+					"name" : "motor_control__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "motor_control__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-motor_control__rosidl_generator_c-c2c1facb52c0fe2a1b1a.json",
+					"name" : "motor_control__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "motor_control__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-motor_control__rosidl_generator_py-0f1c756aa0e9916824fd.json",
+					"name" : "motor_control__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "motor_control__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-motor_control__rosidl_typesupport_c-9d9bc66f8efe048644b8.json",
+					"name" : "motor_control__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "motor_control__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-motor_control__rosidl_typesupport_c__pyext-3c380b1b9176955efe58.json",
+					"name" : "motor_control__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "motor_control__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-motor_control__rosidl_typesupport_cpp-676e30c49a18d4ed3091.json",
+					"name" : "motor_control__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "motor_control__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-motor_control__rosidl_typesupport_fastrtps_c-a54d9e7bdab3988b6820.json",
+					"name" : "motor_control__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "motor_control__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-motor_control__rosidl_typesupport_fastrtps_c__pyext-e69aafb36c37e3c6a856.json",
+					"name" : "motor_control__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "motor_control__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-motor_control__rosidl_typesupport_fastrtps_cpp-1bc3e2a2f6523fd7a614.json",
+					"name" : "motor_control__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "motor_control__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-motor_control__rosidl_typesupport_introspection_c-87d5da3cff60366f0bd4.json",
+					"name" : "motor_control__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "motor_control__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-motor_control__rosidl_typesupport_introspection_c__pyext-29880ea302a5d44e82a2.json",
+					"name" : "motor_control__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "motor_control__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-motor_control__rosidl_typesupport_introspection_cpp-3a815edfad58b9d84732.json",
+					"name" : "motor_control__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "motor_control_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-motor_control_uninstall-d93ce5d1166f380c5afd.json",
+					"name" : "motor_control_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "observe_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-observe_node-5c0703e44869176f6622.json",
+					"name" : "observe_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-472871e844753f3ec2f1.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/mowmow/workspace/CatchRobo-r08/build/motor_control",
+		"source" : "/home/mowmow/workspace/CatchRobo-r08/src/motor_control"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

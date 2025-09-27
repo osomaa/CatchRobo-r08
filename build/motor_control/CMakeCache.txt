@@ -391,6 +391,9 @@ motor_control_IS_TOP_LEVEL:STATIC=ON
 motor_control_SOURCE_DIR:STATIC=/home/mowmow/workspace/CatchRobo-r08/src/motor_control
 
 //Path to a library.
+pkgcfg_lib_LIBGPIOD_gpiod:FILEPATH=/usr/lib/aarch64-linux-gnu/libgpiod.so
+
+//Path to a library.
 pkgcfg_lib__OPENSSL_crypto:FILEPATH=/usr/lib/aarch64-linux-gnu/libcrypto.so
 
 //Path to a library.
@@ -666,6 +669,8 @@ CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 FIND_PACKAGE_MESSAGE_DETAILS_FastRTPS:INTERNAL=[/opt/ros/humble/include][/opt/ros/humble/lib/libfastrtps.so;/opt/ros/humble/lib/libfastcdr.so][v()]
 //Details about finding OpenSSL
 FIND_PACKAGE_MESSAGE_DETAILS_OpenSSL:INTERNAL=[/usr/lib/aarch64-linux-gnu/libcrypto.so][/usr/include][c ][v3.0.2()]
+//Details about finding PkgConfig
+FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v0.29.2()]
 //Details about finding Python3
 FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/usr/bin/python3][cfound components: Interpreter ][v3.10.12()]
 //Details about finding PythonExtra
@@ -676,6 +681,41 @@ FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/bin/python3][v3.10.12(3
 FIND_PACKAGE_MESSAGE_DETAILS_PythonLibs:INTERNAL=[/usr/lib/aarch64-linux-gnu/libpython3.10.so][/usr/include/python3.10][v3.10.12(3.5)]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
+LIBGPIOD_CFLAGS:INTERNAL=
+LIBGPIOD_CFLAGS_I:INTERNAL=
+LIBGPIOD_CFLAGS_OTHER:INTERNAL=
+LIBGPIOD_FOUND:INTERNAL=1
+LIBGPIOD_INCLUDEDIR:INTERNAL=/usr/include
+LIBGPIOD_INCLUDE_DIRS:INTERNAL=
+LIBGPIOD_LDFLAGS:INTERNAL=-L/usr/lib/aarch64-linux-gnu;-lgpiod
+LIBGPIOD_LDFLAGS_OTHER:INTERNAL=
+LIBGPIOD_LIBDIR:INTERNAL=/usr/lib/aarch64-linux-gnu
+LIBGPIOD_LIBRARIES:INTERNAL=gpiod
+LIBGPIOD_LIBRARY_DIRS:INTERNAL=/usr/lib/aarch64-linux-gnu
+LIBGPIOD_LIBS:INTERNAL=
+LIBGPIOD_LIBS_L:INTERNAL=
+LIBGPIOD_LIBS_OTHER:INTERNAL=
+LIBGPIOD_LIBS_PATHS:INTERNAL=
+LIBGPIOD_MODULE_NAME:INTERNAL=libgpiod
+LIBGPIOD_PREFIX:INTERNAL=/usr
+LIBGPIOD_STATIC_CFLAGS:INTERNAL=
+LIBGPIOD_STATIC_CFLAGS_I:INTERNAL=
+LIBGPIOD_STATIC_CFLAGS_OTHER:INTERNAL=
+LIBGPIOD_STATIC_INCLUDE_DIRS:INTERNAL=
+LIBGPIOD_STATIC_LDFLAGS:INTERNAL=-L/usr/lib/aarch64-linux-gnu;-lgpiod
+LIBGPIOD_STATIC_LDFLAGS_OTHER:INTERNAL=
+LIBGPIOD_STATIC_LIBDIR:INTERNAL=
+LIBGPIOD_STATIC_LIBRARIES:INTERNAL=gpiod
+LIBGPIOD_STATIC_LIBRARY_DIRS:INTERNAL=/usr/lib/aarch64-linux-gnu
+LIBGPIOD_STATIC_LIBS:INTERNAL=
+LIBGPIOD_STATIC_LIBS_L:INTERNAL=
+LIBGPIOD_STATIC_LIBS_OTHER:INTERNAL=
+LIBGPIOD_STATIC_LIBS_PATHS:INTERNAL=
+LIBGPIOD_VERSION:INTERNAL=1.6.3
+LIBGPIOD_libgpiod_INCLUDEDIR:INTERNAL=
+LIBGPIOD_libgpiod_LIBDIR:INTERNAL=
+LIBGPIOD_libgpiod_PREFIX:INTERNAL=
+LIBGPIOD_libgpiod_VERSION:INTERNAL=
 //ADVANCED property for variable: OPENSSL_CRYPTO_LIBRARY
 OPENSSL_CRYPTO_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OPENSSL_INCLUDE_DIR
@@ -741,8 +781,12 @@ _Python3_EXECUTABLE:INTERNAL=/usr/bin/python3
 //Python3 Properties
 _Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;10;12;64;;cpython-310-aarch64-linux-gnu;/usr/lib/python3.10;/usr/lib/python3.10;/usr/lib/python3/dist-packages;/usr/lib/python3/dist-packages
 _Python3_INTERPRETER_SIGNATURE:INTERNAL=0f3e53742e142b1d9e50e4ca5b901dd8
+__pkg_config_arguments_LIBGPIOD:INTERNAL=REQUIRED;libgpiod
 __pkg_config_arguments__OPENSSL:INTERNAL=QUIET;openssl
+__pkg_config_checked_LIBGPIOD:INTERNAL=1
 __pkg_config_checked__OPENSSL:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_LIBGPIOD_gpiod
+pkgcfg_lib_LIBGPIOD_gpiod-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib__OPENSSL_crypto
 pkgcfg_lib__OPENSSL_crypto-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib__OPENSSL_ssl

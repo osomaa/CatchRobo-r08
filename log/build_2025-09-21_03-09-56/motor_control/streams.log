@@ -1,0 +1,44 @@
+[0.045s] Invoking command in '/home/mowmow/workspace/CatchRobo-r08/build/motor_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mowmow/workspace/CatchRobo-r08/build/motor_control -- -j4 -l4
+[0.275s] [  1%] Built target motor_control__cpp
+[0.289s] [ 11%] Built target motor_control__rosidl_generator_c
+[0.365s] [ 11%] Built target ament_cmake_python_copy_motor_control
+[0.409s] [ 20%] Built target motor_control__rosidl_typesupport_fastrtps_cpp
+[0.417s] [ 30%] Built target motor_control__rosidl_typesupport_introspection_cpp
+[0.427s] [ 39%] Built target motor_control__rosidl_typesupport_cpp
+[0.484s] [ 49%] Built target motor_control__rosidl_typesupport_fastrtps_c
+[0.553s] [ 68%] Built target motor_control__rosidl_typesupport_introspection_c
+[0.559s] [ 68%] Built target motor_control__rosidl_typesupport_c
+[0.687s] [ 71%] Built target communication_node
+[0.774s] [ 74%] Built target control_node
+[0.785s] [ 77%] Built target observe_node
+[0.927s] [ 79%] Built target motor_control
+[0.929s] [ 80%] Built target gpio_node
+[1.039s] [ 82%] Built target motor_control__py
+[1.166s] [ 90%] Built target motor_control__rosidl_generator_py
+[1.334s] [ 93%] Built target motor_control__rosidl_typesupport_fastrtps_c__pyext
+[1.336s] [ 96%] Built target motor_control__rosidl_typesupport_introspection_c__pyext
+[1.365s] [100%] Built target motor_control__rosidl_typesupport_c__pyext
+[1.646s] Traceback (most recent call last):
+[1.647s]   File "/home/mowmow/workspace/CatchRobo-r08/build/motor_control/ament_cmake_python/motor_control/setup.py", line 1, in <module>
+[1.648s]     from setuptools import find_packages
+[1.648s]   File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 16, in <module>
+[1.651s]     import setuptools.version
+[1.652s]   File "/usr/lib/python3/dist-packages/setuptools/version.py", line 1, in <module>
+[1.653s]     import pkg_resources
+[1.653s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3267, in <module>
+[1.657s]     def _initialize_master_working_set():
+[1.657s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3241, in _call_aside
+[1.658s]     f(*args, **kwargs)
+[1.659s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3302, in _initialize_master_working_set
+[1.659s]     list(map(working_set.add_entry, sys.path))
+[1.660s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 613, in add_entry
+[1.661s]     for dist in find_distributions(entry, True):
+[1.663s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2077, in find_on_path
+[1.664s]     for dist in factory(fullpath):
+[1.666s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2135, in distributions_from_metadata
+[1.667s]     if len(os.listdir(path)) == 0:
+[1.669s] KeyboardInterrupt
+[1.760s] gmake[2]: *** [CMakeFiles/ament_cmake_python_build_motor_control_egg.dir/build.make:70: CMakeFiles/ament_cmake_python_build_motor_control_egg] Interrupt
+[1.763s] gmake[1]: *** [CMakeFiles/Makefile2:455: CMakeFiles/ament_cmake_python_build_motor_control_egg.dir/all] Interrupt
+[1.763s] gmake: *** [Makefile:146: all] Interrupt
+[1.772s] Invoked command in '/home/mowmow/workspace/CatchRobo-r08/build/motor_control' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mowmow/workspace/CatchRobo-r08/build/motor_control -- -j4 -l4

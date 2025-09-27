@@ -42,4 +42,10 @@ def generate_launch_description():
                 "input_csv": LaunchConfiguration("input_csv")
             }],
         ),
+        Node(
+            package="motor_control",
+            executable="gpio_node",
+            name="gpio_node",
+            output="screen",
+        ),
     ])

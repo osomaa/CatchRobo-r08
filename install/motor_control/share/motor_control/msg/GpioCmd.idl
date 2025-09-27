@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from motor_control/msg/GpioCmd.msg
+// generated code does not contain a copyright notice
+
+
+module motor_control {
+  module msg {
+    struct GpioCmd {
+      int32 pin_index;
+
+      boolean toggle;
+    };
+  };
+};

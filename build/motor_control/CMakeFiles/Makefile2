@@ -79,6 +79,7 @@ all: CMakeFiles/motor_control__rosidl_typesupport_c__pyext.dir/all
 all: CMakeFiles/communication_node.dir/all
 all: CMakeFiles/control_node.dir/all
 all: CMakeFiles/observe_node.dir/all
+all: CMakeFiles/gpio_node.dir/all
 all: motor_control__py/all
 .PHONY : all
 
@@ -107,6 +108,7 @@ clean: CMakeFiles/motor_control__rosidl_typesupport_c__pyext.dir/clean
 clean: CMakeFiles/communication_node.dir/clean
 clean: CMakeFiles/control_node.dir/clean
 clean: CMakeFiles/observe_node.dir/clean
+clean: CMakeFiles/gpio_node.dir/clean
 clean: motor_control__py/clean
 .PHONY : clean
 
@@ -196,7 +198,7 @@ CMakeFiles/motor_control.dir/all: CMakeFiles/motor_control__rosidl_typesupport_c
 
 # Build rule for subdir invocation for target.
 CMakeFiles/motor_control.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles 36
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles 43
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/motor_control.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles 0
 .PHONY : CMakeFiles/motor_control.dir/rule
@@ -217,12 +219,12 @@ CMakeFiles/motor_control.dir/clean:
 CMakeFiles/motor_control__rosidl_generator_c.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control__rosidl_generator_c.dir/build.make CMakeFiles/motor_control__rosidl_generator_c.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control__rosidl_generator_c.dir/build.make CMakeFiles/motor_control__rosidl_generator_c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles --progress-num=7,8,9,10,11 "Built target motor_control__rosidl_generator_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles --progress-num=9,10,11,12,13,14 "Built target motor_control__rosidl_generator_c"
 .PHONY : CMakeFiles/motor_control__rosidl_generator_c.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/motor_control__rosidl_generator_c.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/motor_control__rosidl_generator_c.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles 0
 .PHONY : CMakeFiles/motor_control__rosidl_generator_c.dir/rule
@@ -243,12 +245,12 @@ CMakeFiles/motor_control__rosidl_generator_c.dir/clean:
 CMakeFiles/motor_control__rosidl_typesupport_fastrtps_c.dir/all: CMakeFiles/motor_control__rosidl_generator_c.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/motor_control__rosidl_typesupport_fastrtps_c.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/motor_control__rosidl_typesupport_fastrtps_c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles --progress-num=28,29,30,31,32 "Built target motor_control__rosidl_typesupport_fastrtps_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles --progress-num=34,35,36,37,38,39 "Built target motor_control__rosidl_typesupport_fastrtps_c"
 .PHONY : CMakeFiles/motor_control__rosidl_typesupport_fastrtps_c.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/motor_control__rosidl_typesupport_fastrtps_c.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles 12
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/motor_control__rosidl_typesupport_fastrtps_c.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles 0
 .PHONY : CMakeFiles/motor_control__rosidl_typesupport_fastrtps_c.dir/rule
@@ -269,12 +271,12 @@ CMakeFiles/motor_control__rosidl_typesupport_fastrtps_c.dir/clean:
 CMakeFiles/motor_control__rosidl_typesupport_introspection_c.dir/all: CMakeFiles/motor_control__rosidl_generator_c.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/motor_control__rosidl_typesupport_introspection_c.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/motor_control__rosidl_typesupport_introspection_c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles --progress-num=40,41,42,43,44 "Built target motor_control__rosidl_typesupport_introspection_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles --progress-num=48,49,50,51,52,53 "Built target motor_control__rosidl_typesupport_introspection_c"
 .PHONY : CMakeFiles/motor_control__rosidl_typesupport_introspection_c.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/motor_control__rosidl_typesupport_introspection_c.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles 12
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/motor_control__rosidl_typesupport_introspection_c.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles 0
 .PHONY : CMakeFiles/motor_control__rosidl_typesupport_introspection_c.dir/rule
@@ -295,12 +297,12 @@ CMakeFiles/motor_control__rosidl_typesupport_introspection_c.dir/clean:
 CMakeFiles/motor_control__rosidl_typesupport_c.dir/all: CMakeFiles/motor_control__rosidl_generator_c.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control__rosidl_typesupport_c.dir/build.make CMakeFiles/motor_control__rosidl_typesupport_c.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control__rosidl_typesupport_c.dir/build.make CMakeFiles/motor_control__rosidl_typesupport_c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles --progress-num=16,17,18,19,20 "Built target motor_control__rosidl_typesupport_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles --progress-num=20,21,22,23,24,25 "Built target motor_control__rosidl_typesupport_c"
 .PHONY : CMakeFiles/motor_control__rosidl_typesupport_c.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/motor_control__rosidl_typesupport_c.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles 12
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/motor_control__rosidl_typesupport_c.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles 0
 .PHONY : CMakeFiles/motor_control__rosidl_typesupport_c.dir/rule
@@ -321,7 +323,7 @@ CMakeFiles/motor_control__rosidl_typesupport_c.dir/clean:
 CMakeFiles/motor_control__cpp.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control__cpp.dir/build.make CMakeFiles/motor_control__cpp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control__cpp.dir/build.make CMakeFiles/motor_control__cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles --progress-num=5 "Built target motor_control__cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles --progress-num=7 "Built target motor_control__cpp"
 .PHONY : CMakeFiles/motor_control__cpp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -347,12 +349,12 @@ CMakeFiles/motor_control__cpp.dir/clean:
 CMakeFiles/motor_control__rosidl_typesupport_fastrtps_cpp.dir/all: CMakeFiles/motor_control__cpp.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/motor_control__rosidl_typesupport_fastrtps_cpp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/motor_control__rosidl_typesupport_fastrtps_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles --progress-num=35,36,37,38,39 "Built target motor_control__rosidl_typesupport_fastrtps_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles --progress-num=42,43,44,45,46,47 "Built target motor_control__rosidl_typesupport_fastrtps_cpp"
 .PHONY : CMakeFiles/motor_control__rosidl_typesupport_fastrtps_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/motor_control__rosidl_typesupport_fastrtps_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/motor_control__rosidl_typesupport_fastrtps_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles 0
 .PHONY : CMakeFiles/motor_control__rosidl_typesupport_fastrtps_cpp.dir/rule
@@ -373,12 +375,12 @@ CMakeFiles/motor_control__rosidl_typesupport_fastrtps_cpp.dir/clean:
 CMakeFiles/motor_control__rosidl_typesupport_introspection_cpp.dir/all: CMakeFiles/motor_control__cpp.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/motor_control__rosidl_typesupport_introspection_cpp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/motor_control__rosidl_typesupport_introspection_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles --progress-num=47,48,49,50,51 "Built target motor_control__rosidl_typesupport_introspection_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles --progress-num=56,57,58,59,60,61 "Built target motor_control__rosidl_typesupport_introspection_cpp"
 .PHONY : CMakeFiles/motor_control__rosidl_typesupport_introspection_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/motor_control__rosidl_typesupport_introspection_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/motor_control__rosidl_typesupport_introspection_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles 0
 .PHONY : CMakeFiles/motor_control__rosidl_typesupport_introspection_cpp.dir/rule
@@ -399,12 +401,12 @@ CMakeFiles/motor_control__rosidl_typesupport_introspection_cpp.dir/clean:
 CMakeFiles/motor_control__rosidl_typesupport_cpp.dir/all: CMakeFiles/motor_control__cpp.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control__rosidl_typesupport_cpp.dir/build.make CMakeFiles/motor_control__rosidl_typesupport_cpp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control__rosidl_typesupport_cpp.dir/build.make CMakeFiles/motor_control__rosidl_typesupport_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles --progress-num=23,24,25,26,27 "Built target motor_control__rosidl_typesupport_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles --progress-num=28,29,30,31,32,33 "Built target motor_control__rosidl_typesupport_cpp"
 .PHONY : CMakeFiles/motor_control__rosidl_typesupport_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/motor_control__rosidl_typesupport_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/motor_control__rosidl_typesupport_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles 0
 .PHONY : CMakeFiles/motor_control__rosidl_typesupport_cpp.dir/rule
@@ -479,12 +481,12 @@ CMakeFiles/motor_control__rosidl_generator_py.dir/all: CMakeFiles/motor_control_
 CMakeFiles/motor_control__rosidl_generator_py.dir/all: motor_control__py/CMakeFiles/motor_control__py.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control__rosidl_generator_py.dir/build.make CMakeFiles/motor_control__rosidl_generator_py.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control__rosidl_generator_py.dir/build.make CMakeFiles/motor_control__rosidl_generator_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles --progress-num=12,13,14,15 "Built target motor_control__rosidl_generator_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles --progress-num=15,16,17,18,19 "Built target motor_control__rosidl_generator_py"
 .PHONY : CMakeFiles/motor_control__rosidl_generator_py.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/motor_control__rosidl_generator_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles 41
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles 49
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/motor_control__rosidl_generator_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles 0
 .PHONY : CMakeFiles/motor_control__rosidl_generator_py.dir/rule
@@ -509,12 +511,12 @@ CMakeFiles/motor_control__rosidl_typesupport_fastrtps_c__pyext.dir/all: CMakeFil
 CMakeFiles/motor_control__rosidl_typesupport_fastrtps_c__pyext.dir/all: motor_control__py/CMakeFiles/motor_control__py.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control__rosidl_typesupport_fastrtps_c__pyext.dir/build.make CMakeFiles/motor_control__rosidl_typesupport_fastrtps_c__pyext.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control__rosidl_typesupport_fastrtps_c__pyext.dir/build.make CMakeFiles/motor_control__rosidl_typesupport_fastrtps_c__pyext.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles --progress-num=33,34 "Built target motor_control__rosidl_typesupport_fastrtps_c__pyext"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles --progress-num=40,41 "Built target motor_control__rosidl_typesupport_fastrtps_c__pyext"
 .PHONY : CMakeFiles/motor_control__rosidl_typesupport_fastrtps_c__pyext.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/motor_control__rosidl_typesupport_fastrtps_c__pyext.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles 43
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles 51
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/motor_control__rosidl_typesupport_fastrtps_c__pyext.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles 0
 .PHONY : CMakeFiles/motor_control__rosidl_typesupport_fastrtps_c__pyext.dir/rule
@@ -539,12 +541,12 @@ CMakeFiles/motor_control__rosidl_typesupport_introspection_c__pyext.dir/all: CMa
 CMakeFiles/motor_control__rosidl_typesupport_introspection_c__pyext.dir/all: motor_control__py/CMakeFiles/motor_control__py.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control__rosidl_typesupport_introspection_c__pyext.dir/build.make CMakeFiles/motor_control__rosidl_typesupport_introspection_c__pyext.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control__rosidl_typesupport_introspection_c__pyext.dir/build.make CMakeFiles/motor_control__rosidl_typesupport_introspection_c__pyext.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles --progress-num=45,46 "Built target motor_control__rosidl_typesupport_introspection_c__pyext"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles --progress-num=54,55 "Built target motor_control__rosidl_typesupport_introspection_c__pyext"
 .PHONY : CMakeFiles/motor_control__rosidl_typesupport_introspection_c__pyext.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/motor_control__rosidl_typesupport_introspection_c__pyext.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles 43
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles 51
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/motor_control__rosidl_typesupport_introspection_c__pyext.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles 0
 .PHONY : CMakeFiles/motor_control__rosidl_typesupport_introspection_c__pyext.dir/rule
@@ -568,12 +570,12 @@ CMakeFiles/motor_control__rosidl_typesupport_c__pyext.dir/all: CMakeFiles/motor_
 CMakeFiles/motor_control__rosidl_typesupport_c__pyext.dir/all: motor_control__py/CMakeFiles/motor_control__py.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control__rosidl_typesupport_c__pyext.dir/build.make CMakeFiles/motor_control__rosidl_typesupport_c__pyext.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control__rosidl_typesupport_c__pyext.dir/build.make CMakeFiles/motor_control__rosidl_typesupport_c__pyext.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles --progress-num=21,22 "Built target motor_control__rosidl_typesupport_c__pyext"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles --progress-num=26,27 "Built target motor_control__rosidl_typesupport_c__pyext"
 .PHONY : CMakeFiles/motor_control__rosidl_typesupport_c__pyext.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/motor_control__rosidl_typesupport_c__pyext.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles 43
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles 51
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/motor_control__rosidl_typesupport_c__pyext.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles 0
 .PHONY : CMakeFiles/motor_control__rosidl_typesupport_c__pyext.dir/rule
@@ -600,7 +602,7 @@ CMakeFiles/communication_node.dir/all: CMakeFiles/motor_control__rosidl_typesupp
 
 # Build rule for subdir invocation for target.
 CMakeFiles/communication_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/communication_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles 0
 .PHONY : CMakeFiles/communication_node.dir/rule
@@ -627,7 +629,7 @@ CMakeFiles/control_node.dir/all: CMakeFiles/motor_control__rosidl_typesupport_cp
 
 # Build rule for subdir invocation for target.
 CMakeFiles/control_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/control_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles 0
 .PHONY : CMakeFiles/control_node.dir/rule
@@ -649,12 +651,12 @@ CMakeFiles/observe_node.dir/all: CMakeFiles/motor_control__cpp.dir/all
 CMakeFiles/observe_node.dir/all: CMakeFiles/motor_control__rosidl_typesupport_cpp.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/observe_node.dir/build.make CMakeFiles/observe_node.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/observe_node.dir/build.make CMakeFiles/observe_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles --progress-num=52,53 "Built target observe_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles --progress-num=62,63 "Built target observe_node"
 .PHONY : CMakeFiles/observe_node.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/observe_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/observe_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles 0
 .PHONY : CMakeFiles/observe_node.dir/rule
@@ -669,18 +671,45 @@ CMakeFiles/observe_node.dir/clean:
 .PHONY : CMakeFiles/observe_node.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/gpio_node.dir
+
+# All Build rule for target.
+CMakeFiles/gpio_node.dir/all: CMakeFiles/motor_control__cpp.dir/all
+CMakeFiles/gpio_node.dir/all: CMakeFiles/motor_control__rosidl_typesupport_cpp.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpio_node.dir/build.make CMakeFiles/gpio_node.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpio_node.dir/build.make CMakeFiles/gpio_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles --progress-num=5,6 "Built target gpio_node"
+.PHONY : CMakeFiles/gpio_node.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/gpio_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles 9
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/gpio_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles 0
+.PHONY : CMakeFiles/gpio_node.dir/rule
+
+# Convenience name for target.
+gpio_node: CMakeFiles/gpio_node.dir/rule
+.PHONY : gpio_node
+
+# clean rule for target.
+CMakeFiles/gpio_node.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpio_node.dir/build.make CMakeFiles/gpio_node.dir/clean
+.PHONY : CMakeFiles/gpio_node.dir/clean
+
+#=============================================================================
 # Target rules for target motor_control__py/CMakeFiles/motor_control__py.dir
 
 # All Build rule for target.
 motor_control__py/CMakeFiles/motor_control__py.dir/all: CMakeFiles/motor_control.dir/all
 	$(MAKE) $(MAKESILENT) -f motor_control__py/CMakeFiles/motor_control__py.dir/build.make motor_control__py/CMakeFiles/motor_control__py.dir/depend
 	$(MAKE) $(MAKESILENT) -f motor_control__py/CMakeFiles/motor_control__py.dir/build.make motor_control__py/CMakeFiles/motor_control__py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles --progress-num=6 "Built target motor_control__py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles --progress-num=8 "Built target motor_control__py"
 .PHONY : motor_control__py/CMakeFiles/motor_control__py.dir/all
 
 # Build rule for subdir invocation for target.
 motor_control__py/CMakeFiles/motor_control__py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles 37
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles 44
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 motor_control__py/CMakeFiles/motor_control__py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mowmow/workspace/CatchRobo-r08/build/motor_control/CMakeFiles 0
 .PHONY : motor_control__py/CMakeFiles/motor_control__py.dir/rule

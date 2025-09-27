@@ -719,6 +719,11 @@ CMakeFiles/observe_node.dir/src/observe_node.cpp.o: /home/mowmow/workspace/Catch
   rosidl_generator_cpp/motor_control/msg/detail/send_array__builder.hpp \
   rosidl_generator_cpp/motor_control/msg/detail/send_array__traits.hpp \
   rosidl_generator_cpp/motor_control/msg/detail/send_array__type_support.hpp \
+  rosidl_generator_cpp/motor_control/msg/gpio_cmd.hpp \
+  rosidl_generator_cpp/motor_control/msg/detail/gpio_cmd__struct.hpp \
+  rosidl_generator_cpp/motor_control/msg/detail/gpio_cmd__builder.hpp \
+  rosidl_generator_cpp/motor_control/msg/detail/gpio_cmd__traits.hpp \
+  rosidl_generator_cpp/motor_control/msg/detail/gpio_cmd__type_support.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/bool.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__struct.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__builder.hpp \
@@ -732,6 +737,14 @@ CMakeFiles/observe_node.dir/src/observe_node.cpp.o: /home/mowmow/workspace/Catch
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__type_support.hpp:
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__traits.hpp:
+
+rosidl_generator_cpp/motor_control/msg/detail/gpio_cmd__type_support.hpp:
+
+rosidl_generator_cpp/motor_control/msg/detail/gpio_cmd__traits.hpp:
+
+rosidl_generator_cpp/motor_control/msg/detail/gpio_cmd__builder.hpp:
+
+rosidl_generator_cpp/motor_control/msg/detail/gpio_cmd__struct.hpp:
 
 rosidl_generator_cpp/motor_control/msg/detail/send_array__type_support.hpp:
 
@@ -872,6 +885,8 @@ rosidl_generator_cpp/motor_control/msg/send_at.hpp:
 /opt/ros/humble/include/rcpputils/rcpputils/shared_library.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__type_support.hpp:
+
+rosidl_generator_cpp/motor_control/msg/gpio_cmd.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__traits.hpp:
 

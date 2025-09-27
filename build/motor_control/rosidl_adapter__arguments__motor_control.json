@@ -3,6 +3,7 @@
   "non_idl_tuples": [
     "/home/mowmow/workspace/CatchRobo-r08/src/motor_control:msg/ReturnAt.msg",
     "/home/mowmow/workspace/CatchRobo-r08/src/motor_control:msg/SendAt.msg",
-    "/home/mowmow/workspace/CatchRobo-r08/src/motor_control:msg/SendArray.msg"
+    "/home/mowmow/workspace/CatchRobo-r08/src/motor_control:msg/SendArray.msg",
+    "/home/mowmow/workspace/CatchRobo-r08/src/motor_control:msg/GpioCmd.msg"
   ]
 }

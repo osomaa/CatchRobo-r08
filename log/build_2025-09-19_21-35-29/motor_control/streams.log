@@ -1,0 +1,135 @@
+[0.053s] Invoking command in '/home/mowmow/workspace/CatchRobo-r08/build/motor_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mowmow/workspace/CatchRobo-r08/build/motor_control -- -j4 -l4
+[0.302s] [  1%] Built target motor_control__cpp
+[0.318s] [ 11%] Built target motor_control__rosidl_generator_c
+[0.357s] [ 11%] Built target ament_cmake_python_copy_motor_control
+[0.506s] [ 20%] Built target motor_control__rosidl_typesupport_cpp
+[0.573s] [ 30%] Built target motor_control__rosidl_typesupport_fastrtps_c
+[0.621s] [ 46%] Built target motor_control__rosidl_typesupport_fastrtps_cpp
+[0.630s] [ 49%] Built target motor_control__rosidl_typesupport_introspection_cpp
+[0.737s] [ 58%] Built target motor_control__rosidl_typesupport_introspection_c
+[0.751s] [ 68%] Built target motor_control__rosidl_typesupport_c
+[0.918s] [ 71%] Built target communication_node
+[0.966s] [ 74%] Built target control_node
+[0.998s] [ 77%] Built target observe_node
+[1.054s] [35m[1mConsolidate compiler generated dependencies of target gpio_node[0m
+[1.125s] [ 77%] Built target motor_control
+[1.235s] [ 79%] Built target motor_control__py
+[1.249s] [ 80%] [32mBuilding CXX object CMakeFiles/gpio_node.dir/src/gpio_node.cpp.o[0m
+[1.375s] [ 88%] Built target motor_control__rosidl_generator_py
+[1.561s] [ 92%] Built target motor_control__rosidl_typesupport_fastrtps_c__pyext
+[1.593s] [ 95%] Built target motor_control__rosidl_typesupport_introspection_c__pyext
+[1.699s] [ 98%] Built target motor_control__rosidl_typesupport_c__pyext
+[2.374s] running egg_info
+[2.377s] writing motor_control.egg-info/PKG-INFO
+[2.380s] writing dependency_links to motor_control.egg-info/dependency_links.txt
+[2.381s] writing top-level names to motor_control.egg-info/top_level.txt
+[2.394s] reading manifest file 'motor_control.egg-info/SOURCES.txt'
+[2.398s] writing manifest file 'motor_control.egg-info/SOURCES.txt'
+[2.564s] [ 98%] Built target ament_cmake_python_build_motor_control_egg
+[12.155s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:[m[K In constructor ‘[01m[KGpioNode::GpioNode()[m[K’:
+[12.156s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:14:98:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kstd::vector<int>[m[K’ and ‘[01m[Kstd::vector<long int, std::allocator<long int> >[m[K’)
+[12.156s]    14 |         out_pins = this->declare_parameter<std::vector<int>>("out_pins", {12, 13, 16, 19, 20, 21}[01;31m[K)[m[K; // BCM番号で指定
+[12.157s]       |                                                                                                  [01;31m[K^[m[K
+[12.157s] In file included from [01m[K/usr/include/c++/11/vector:72[m[K,
+[12.158s]                  from [01m[K/usr/include/c++/11/functional:62[m[K,
+[12.158s]                  from [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13[m[K,
+[12.159s]                  from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+[12.159s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+[12.160s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[12.160s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[12.161s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[12.161s]                  from [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:1[m[K:
+[12.162s] [01m[K/usr/include/c++/11/bits/vector.tcc:198:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(const std::vector<_Tp, _Alloc>&) [with _Tp = int; _Alloc = std::allocator<int>][m[K’
+[12.162s]   198 |     [01;36m[Kvector<_Tp, _Alloc>[m[K::
+[12.163s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[12.165s] [01m[K/usr/include/c++/11/bits/vector.tcc:199:42:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<long int, std::allocator<long int> >[m[K’ to ‘[01m[Kconst std::vector<int>&[m[K’
+[12.165s]   199 |     operator=([01;36m[Kconst vector<_Tp, _Alloc>& __x[m[K)
+[12.166s]       |               [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[12.167s] In file included from [01m[K/usr/include/c++/11/vector:67[m[K,
+[12.167s]                  from [01m[K/usr/include/c++/11/functional:62[m[K,
+[12.168s]                  from [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13[m[K,
+[12.168s]                  from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+[12.169s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+[12.170s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[12.170s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[12.172s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[12.173s]                  from [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:1[m[K:
+[12.174s] [01m[K/usr/include/c++/11/bits/stl_vector.h:709:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::vector<_Tp, _Alloc>&&) [with _Tp = int; _Alloc = std::allocator<int>][m[K’
+[12.174s]   709 |       [01;36m[Koperator[m[K=(vector&& __x) noexcept(_Alloc_traits::_S_nothrow_move())
+[12.175s]       |       [01;36m[K^~~~~~~~[m[K
+[12.175s] [01m[K/usr/include/c++/11/bits/stl_vector.h:709:26:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<long int, std::allocator<long int> >[m[K’ to ‘[01m[Kstd::vector<int>&&[m[K’
+[12.176s]   709 |       operator=([01;36m[Kvector&& __x[m[K) noexcept(_Alloc_traits::_S_nothrow_move())
+[12.176s]       |                 [01;36m[K~~~~~~~~~^~~[m[K
+[12.177s] [01m[K/usr/include/c++/11/bits/stl_vector.h:730:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::initializer_list<_Tp>) [with _Tp = int; _Alloc = std::allocator<int>][m[K’
+[12.178s]   730 |       [01;36m[Koperator[m[K=(initializer_list<value_type> __l)
+[12.178s]       |       [01;36m[K^~~~~~~~[m[K
+[12.179s] [01m[K/usr/include/c++/11/bits/stl_vector.h:730:46:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<long int, std::allocator<long int> >[m[K’ to ‘[01m[Kstd::initializer_list<int>[m[K’
+[12.180s]   730 |       operator=([01;36m[Kinitializer_list<value_type> __l[m[K)
+[12.180s]       |                 [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[12.180s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:15:80:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kstd::vector<int>[m[K’ and ‘[01m[Kstd::vector<long int, std::allocator<long int> >[m[K’)
+[12.181s]    15 |         in_pins = this->declare_parameter<std::vector<int>>("in_pins", {24, 25}[01;31m[K)[m[K; // BCM番号で指定
+[12.190s]       |                                                                                [01;31m[K^[m[K
+[12.191s] In file included from [01m[K/usr/include/c++/11/vector:72[m[K,
+[12.191s]                  from [01m[K/usr/include/c++/11/functional:62[m[K,
+[12.192s]                  from [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13[m[K,
+[12.192s]                  from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+[12.193s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+[12.193s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[12.193s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[12.194s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[12.194s]                  from [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:1[m[K:
+[12.195s] [01m[K/usr/include/c++/11/bits/vector.tcc:198:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(const std::vector<_Tp, _Alloc>&) [with _Tp = int; _Alloc = std::allocator<int>][m[K’
+[12.207s]   198 |     [01;36m[Kvector<_Tp, _Alloc>[m[K::
+[12.208s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[12.209s] [01m[K/usr/include/c++/11/bits/vector.tcc:199:42:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<long int, std::allocator<long int> >[m[K’ to ‘[01m[Kconst std::vector<int>&[m[K’
+[12.210s]   199 |     operator=([01;36m[Kconst vector<_Tp, _Alloc>& __x[m[K)
+[12.210s]       |               [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[12.211s] In file included from [01m[K/usr/include/c++/11/vector:67[m[K,
+[12.212s]                  from [01m[K/usr/include/c++/11/functional:62[m[K,
+[12.213s]                  from [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13[m[K,
+[12.213s]                  from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+[12.214s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+[12.214s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[12.215s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[12.215s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[12.216s]                  from [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:1[m[K:
+[12.217s] [01m[K/usr/include/c++/11/bits/stl_vector.h:709:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::vector<_Tp, _Alloc>&&) [with _Tp = int; _Alloc = std::allocator<int>][m[K’
+[12.217s]   709 |       [01;36m[Koperator[m[K=(vector&& __x) noexcept(_Alloc_traits::_S_nothrow_move())
+[12.218s]       |       [01;36m[K^~~~~~~~[m[K
+[12.218s] [01m[K/usr/include/c++/11/bits/stl_vector.h:709:26:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<long int, std::allocator<long int> >[m[K’ to ‘[01m[Kstd::vector<int>&&[m[K’
+[12.219s]   709 |       operator=([01;36m[Kvector&& __x[m[K) noexcept(_Alloc_traits::_S_nothrow_move())
+[12.220s]       |                 [01;36m[K~~~~~~~~~^~~[m[K
+[12.221s] [01m[K/usr/include/c++/11/bits/stl_vector.h:730:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::initializer_list<_Tp>) [with _Tp = int; _Alloc = std::allocator<int>][m[K’
+[12.221s]   730 |       [01;36m[Koperator[m[K=(initializer_list<value_type> __l)
+[12.222s]       |       [01;36m[K^~~~~~~~[m[K
+[12.223s] [01m[K/usr/include/c++/11/bits/stl_vector.h:730:46:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<long int, std::allocator<long int> >[m[K’ to ‘[01m[Kstd::initializer_list<int>[m[K’
+[12.225s]   730 |       operator=([01;36m[Kinitializer_list<value_type> __l[m[K)
+[12.225s]       |                 [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[12.226s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:27:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kpins[m[K’ was not declared in this scope
+[12.226s]    27 |         line_outs.reserve([01;31m[Kpins[m[K.size());
+[12.226s]       |                           [01;31m[K^~~~[m[K
+[12.259s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[12.260s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[12.260s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[12.261s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[12.261s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[12.262s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[12.262s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[12.263s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[12.264s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[12.264s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[12.265s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[12.266s]                  from [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:1[m[K:
+[12.267s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:[m[K In member function ‘[01m[Kvoid GpioNode::on_cmd(motor_control::msg::GpioCmd_<std::allocator<void> >::SharedPtr)[m[K’:
+[12.268s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:60:62:[m[K [01;31m[Kerror: [m[K‘[01m[Kpins[m[K’ was not declared in this scope
+[12.269s]    60 |         RCLCPP_INFO(this->get_logger(), "Set GPIO %d to %d", [01;31m[Kpins[m[K[msg->pin_index], value);
+[12.269s]       |                                                              [01;31m[K^~~~[m[K
+[12.296s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:[m[K In member function ‘[01m[Kvoid GpioNode::reader_loop()[m[K’:
+[12.297s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:65:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kgpiod_line_event_wait_multiple[m[K’ was not declared in this scope; did you mean ‘[01m[Kgpiod_line_event_read_multiple[m[K’?
+[12.297s]    65 |             int ret = [01;31m[Kgpiod_line_event_wait_multiple[m[K(line_ins.data(), line_ins.size(), &timeout);
+[12.298s]       |                       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.298s]       |                       [32m[Kgpiod_line_event_read_multiple[m[K
+[20.715s] gmake[2]: *** [CMakeFiles/gpio_node.dir/build.make:76: CMakeFiles/gpio_node.dir/src/gpio_node.cpp.o] Error 1
+[20.716s] gmake[1]: *** [CMakeFiles/Makefile2:680: CMakeFiles/gpio_node.dir/all] Error 2
+[20.717s] gmake: *** [Makefile:146: all] Error 2
+[20.724s] Invoked command in '/home/mowmow/workspace/CatchRobo-r08/build/motor_control' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mowmow/workspace/CatchRobo-r08/build/motor_control -- -j4 -l4

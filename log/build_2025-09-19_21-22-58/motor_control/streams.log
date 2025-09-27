@@ -1,0 +1,170 @@
+[0.039s] Invoking command in '/home/mowmow/workspace/CatchRobo-r08/build/motor_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mowmow/workspace/CatchRobo-r08/src/motor_control -DCMAKE_INSTALL_PREFIX=/home/mowmow/workspace/CatchRobo-r08/install/motor_control
+[0.309s] -- The C compiler identification is GNU 11.4.0
+[0.571s] -- The CXX compiler identification is GNU 11.4.0
+[0.602s] -- Detecting C compiler ABI info
+[0.934s] -- Detecting C compiler ABI info - done
+[0.960s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.960s] -- Detecting C compile features
+[0.962s] -- Detecting C compile features - done
+[0.973s] -- Detecting CXX compiler ABI info
+[1.325s] -- Detecting CXX compiler ABI info - done
+[1.352s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.353s] -- Detecting CXX compile features
+[1.355s] -- Detecting CXX compile features - done
+[1.376s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.090s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.619s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[2.641s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.695s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.946s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.141s] -- Found builtin_interfaces: 1.2.2 (/opt/ros/humble/share/builtin_interfaces/cmake)
+[3.217s] -- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+[3.436s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.455s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.913s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[4.048s] -- Found FastRTPS: /opt/ros/humble/include  
+[4.279s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.349s] -- Looking for pthread.h
+[4.730s] -- Looking for pthread.h - found
+[4.732s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[5.130s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[5.136s] -- Found Threads: TRUE  
+[5.427s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[5.430s] -- Checking for module 'libgpiod'
+[5.486s] --   Found libgpiod, version 1.6.3
+[7.030s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[8.086s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[9.587s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[9.715s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[9.732s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[9.866s] -- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[9.866s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[9.867s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[9.868s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[9.992s] -- Found PythonExtra: .so  
+[10.319s] -- Configuring done
+[10.614s] -- Generating done
+[10.685s] -- Build files have been written to: /home/mowmow/workspace/CatchRobo-r08/build/motor_control
+[10.746s] Invoked command in '/home/mowmow/workspace/CatchRobo-r08/build/motor_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mowmow/workspace/CatchRobo-r08/src/motor_control -DCMAKE_INSTALL_PREFIX=/home/mowmow/workspace/CatchRobo-r08/install/motor_control
+[10.757s] Invoking command in '/home/mowmow/workspace/CatchRobo-r08/build/motor_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mowmow/workspace/CatchRobo-r08/build/motor_control -- -j4 -l4
+[10.940s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[10.989s] [  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[11.031s] [  3%] Built target ament_cmake_python_copy_motor_control
+[12.812s] running egg_info
+[12.817s] creating motor_control.egg-info
+[12.820s] writing motor_control.egg-info/PKG-INFO
+[12.823s] writing dependency_links to motor_control.egg-info/dependency_links.txt
+[12.825s] writing top-level names to motor_control.egg-info/top_level.txt
+[12.833s] writing manifest file 'motor_control.egg-info/SOURCES.txt'
+[12.850s] reading manifest file 'motor_control.egg-info/SOURCES.txt'
+[12.864s] writing manifest file 'motor_control.egg-info/SOURCES.txt'
+[13.126s] [  3%] Built target ament_cmake_python_build_motor_control_egg
+[13.460s] [  3%] Built target motor_control__cpp
+[13.567s] [  4%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[13.622s] [  6%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[13.740s] [  7%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[13.965s] [  9%] [32mBuilding C object CMakeFiles/motor_control__rosidl_generator_c.dir/rosidl_generator_c/motor_control/msg/detail/return_at__functions.c.o[0m
+[14.342s] [ 11%] [32mBuilding C object CMakeFiles/motor_control__rosidl_generator_c.dir/rosidl_generator_c/motor_control/msg/detail/send_at__functions.c.o[0m
+[14.621s] [ 12%] [32mBuilding C object CMakeFiles/motor_control__rosidl_generator_c.dir/rosidl_generator_c/motor_control/msg/detail/send_array__functions.c.o[0m
+[14.887s] [ 14%] [32mBuilding C object CMakeFiles/motor_control__rosidl_generator_c.dir/rosidl_generator_c/motor_control/msg/detail/gpio_cmd__functions.c.o[0m
+[15.288s] [ 15%] [32m[1mLinking C shared library libmotor_control__rosidl_generator_c.so[0m
+[15.443s] [ 17%] [32mBuilding CXX object CMakeFiles/motor_control__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/motor_control/msg/return_at__type_support.cpp.o[0m
+[15.700s] [ 17%] Built target motor_control__rosidl_generator_c
+[15.809s] [ 19%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[16.367s] [ 20%] [32mBuilding CXX object CMakeFiles/motor_control__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/motor_control/msg/detail/dds_fastrtps/return_at__type_support.cpp.o[0m
+[16.433s] [ 22%] [32mBuilding CXX object CMakeFiles/motor_control__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/motor_control/msg/detail/return_at__type_support.cpp.o[0m
+[17.716s] [ 23%] [32mBuilding CXX object CMakeFiles/motor_control__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/motor_control/msg/send_at__type_support.cpp.o[0m
+[19.693s] [ 25%] [32mBuilding CXX object CMakeFiles/motor_control__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/motor_control/msg/detail/send_at__type_support.cpp.o[0m
+[19.734s] [ 26%] [32mBuilding CXX object CMakeFiles/motor_control__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/motor_control/msg/detail/return_at__type_support_c.cpp.o[0m
+[20.355s] [ 28%] [32mBuilding CXX object CMakeFiles/motor_control__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/motor_control/msg/detail/dds_fastrtps/send_at__type_support.cpp.o[0m
+[20.425s] [ 30%] [32mBuilding CXX object CMakeFiles/motor_control__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/motor_control/msg/send_array__type_support.cpp.o[0m
+[22.596s] [ 31%] [32mBuilding CXX object CMakeFiles/motor_control__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/motor_control/msg/detail/send_at__type_support_c.cpp.o[0m
+[22.747s] [ 33%] [32mBuilding CXX object CMakeFiles/motor_control__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/motor_control/msg/gpio_cmd__type_support.cpp.o[0m
+[23.040s] [ 34%] [32mBuilding CXX object CMakeFiles/motor_control__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/motor_control/msg/detail/send_array__type_support.cpp.o[0m
+[23.494s] [ 36%] [32mBuilding CXX object CMakeFiles/motor_control__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/motor_control/msg/detail/dds_fastrtps/send_array__type_support.cpp.o[0m
+[25.146s] [ 38%] [32mBuilding CXX object CMakeFiles/motor_control__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/motor_control/msg/detail/send_array__type_support_c.cpp.o[0m
+[25.496s] [ 39%] [32m[1mLinking CXX shared library libmotor_control__rosidl_typesupport_cpp.so[0m
+[25.923s] [ 39%] Built target motor_control__rosidl_typesupport_cpp
+[26.076s] [ 41%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[27.259s] [ 42%] [32mBuilding CXX object CMakeFiles/motor_control__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/motor_control/msg/detail/dds_fastrtps/gpio_cmd__type_support.cpp.o[0m
+[28.186s] [ 44%] [32mBuilding CXX object CMakeFiles/motor_control__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/motor_control/msg/detail/gpio_cmd__type_support.cpp.o[0m
+[28.209s] [ 46%] [32mBuilding CXX object CMakeFiles/motor_control__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/motor_control/msg/detail/gpio_cmd__type_support_c.cpp.o[0m
+[30.245s] [ 47%] [32mBuilding C object CMakeFiles/motor_control__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/motor_control/msg/detail/return_at__type_support.c.o[0m
+[30.974s] [ 49%] [32m[1mLinking CXX shared library libmotor_control__rosidl_typesupport_fastrtps_c.so[0m
+[31.087s] [ 50%] [32mBuilding C object CMakeFiles/motor_control__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/motor_control/msg/detail/send_at__type_support.c.o[0m
+[31.158s] [ 52%] [32m[1mLinking CXX shared library libmotor_control__rosidl_typesupport_fastrtps_cpp.so[0m
+[31.597s] [ 53%] [32mBuilding C object CMakeFiles/motor_control__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/motor_control/msg/detail/send_array__type_support.c.o[0m
+[31.694s] [ 53%] Built target motor_control__rosidl_typesupport_fastrtps_c
+[31.761s] [ 55%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[31.790s] [ 55%] Built target motor_control__rosidl_typesupport_fastrtps_cpp
+[31.951s] [ 57%] [32mBuilding CXX object CMakeFiles/communication_node.dir/src/communication_node.cpp.o[0m
+[31.978s] [ 58%] [32mBuilding C object CMakeFiles/motor_control__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/motor_control/msg/detail/gpio_cmd__type_support.c.o[0m
+[32.335s] [ 60%] [32m[1mLinking C shared library libmotor_control__rosidl_typesupport_introspection_c.so[0m
+[32.378s] [ 61%] [32m[1mLinking CXX shared library libmotor_control__rosidl_typesupport_introspection_cpp.so[0m
+[32.559s] [ 61%] Built target motor_control__rosidl_typesupport_introspection_c
+[32.891s] [ 63%] [32mBuilding CXX object CMakeFiles/control_node.dir/src/control_node.cpp.o[0m
+[32.922s] [ 63%] Built target motor_control__rosidl_typesupport_introspection_cpp
+[33.112s] [ 65%] [32mBuilding CXX object CMakeFiles/observe_node.dir/src/observe_node.cpp.o[0m
+[33.857s] [ 66%] [32mBuilding CXX object CMakeFiles/motor_control__rosidl_typesupport_c.dir/rosidl_typesupport_c/motor_control/msg/return_at__type_support.cpp.o[0m
+[34.090s] [ 68%] [32mBuilding CXX object CMakeFiles/motor_control__rosidl_typesupport_c.dir/rosidl_typesupport_c/motor_control/msg/send_at__type_support.cpp.o[0m
+[34.297s] [ 69%] [32mBuilding CXX object CMakeFiles/motor_control__rosidl_typesupport_c.dir/rosidl_typesupport_c/motor_control/msg/send_array__type_support.cpp.o[0m
+[34.475s] [ 71%] [32mBuilding CXX object CMakeFiles/motor_control__rosidl_typesupport_c.dir/rosidl_typesupport_c/motor_control/msg/gpio_cmd__type_support.cpp.o[0m
+[34.643s] [ 73%] [32m[1mLinking CXX shared library libmotor_control__rosidl_typesupport_c.so[0m
+[34.902s] [ 73%] Built target motor_control__rosidl_typesupport_c
+[35.001s] [ 74%] [32mBuilding CXX object CMakeFiles/gpio_node.dir/src/gpio_node.cpp.o[0m
+[51.785s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:[m[K In constructor ‘[01m[KGpioNode::GpioNode()[m[K’:
+[51.786s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:27:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kpins[m[K’ was not declared in this scope
+[51.787s]    27 |         line_outs.reserve([01;31m[Kpins[m[K.size());
+[51.788s]       |                           [01;31m[K^~~~[m[K
+[51.869s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:46:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kworker_[m[K’ was not declared in this scope
+[51.870s]    46 |         [01;31m[Kworker_[m[K = std::thread(&CommunicationNode::reader_loop, this);
+[51.871s]       |         [01;31m[K^~~~~~~[m[K
+[51.918s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:46:32:[m[K [01;31m[Kerror: [m[K‘[01m[KCommunicationNode[m[K’ was not declared in this scope
+[51.919s]    46 |         worker_ = std::thread(&[01;31m[KCommunicationNode[m[K::reader_loop, this);
+[51.920s]       |                                [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[51.976s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[51.977s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[51.978s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[51.979s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[51.979s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[51.980s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[51.981s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[51.982s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[51.983s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[51.984s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[51.985s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[51.998s]                  from [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:1[m[K:
+[51.999s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:[m[K In member function ‘[01m[Kvoid GpioNode::on_cmd(motor_control::msg::GpioCmd_<std::allocator<void> >::SharedPtr)[m[K’:
+[52.000s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:60:62:[m[K [01;31m[Kerror: [m[K‘[01m[Kpins[m[K’ was not declared in this scope
+[52.001s]    60 |         RCLCPP_INFO(this->get_logger(), "Set GPIO %d to %d", [01;31m[Kpins[m[K[msg->pin_index], value);
+[52.001s]       |                                                              [01;31m[K^~~~[m[K
+[52.027s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:[m[K In member function ‘[01m[Kvoid GpioNode::reader_loop()[m[K’:
+[52.028s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/gpio_node.cpp:65:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kgpiod_line_event_wait_multiple[m[K’ was not declared in this scope; did you mean ‘[01m[Kgpiod_line_event_read_multiple[m[K’?
+[52.029s]    65 |             int ret = [01;31m[Kgpiod_line_event_wait_multiple[m[K(line_ins.data(), line_ins.size(), &timeout);
+[52.030s]       |                       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[52.031s]       |                       [32m[Kgpiod_line_event_read_multiple[m[K
+[55.133s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:94:65:[m[K [01;35m[Kwarning: [m[Kconverting to ‘[01m[Kmotor_control::msg::ReturnAt_<std::allocator<void> >[m[K’ from initializer list would use explicit constructor ‘[01m[Kmotor_control::msg::ReturnAt_<ContainerAllocator>::ReturnAt_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+[55.134s]    94 |   std::array<motor_control::msg::ReturnAt, kjoints> last_state_{[01;35m[K}[m[K;
+[55.135s]       |                                                                 [01;35m[K^[m[K
+[55.137s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:94:65:[m[K [01;36m[Knote: [m[Kin C++11 and above a default constructor can be explicit
+[55.139s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:94:65:[m[K [01;35m[Kwarning: [m[Kconverting to ‘[01m[Kmotor_control::msg::ReturnAt_<std::allocator<void> >[m[K’ from initializer list would use explicit constructor ‘[01m[Kmotor_control::msg::ReturnAt_<ContainerAllocator>::ReturnAt_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+[55.140s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:94:65:[m[K [01;36m[Knote: [m[Kin C++11 and above a default constructor can be explicit
+[55.142s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:94:65:[m[K [01;35m[Kwarning: [m[Kconverting to ‘[01m[Kmotor_control::msg::ReturnAt_<std::allocator<void> >[m[K’ from initializer list would use explicit constructor ‘[01m[Kmotor_control::msg::ReturnAt_<ContainerAllocator>::ReturnAt_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+[55.143s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:94:65:[m[K [01;36m[Knote: [m[Kin C++11 and above a default constructor can be explicit
+[55.145s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:94:65:[m[K [01;35m[Kwarning: [m[Kconverting to ‘[01m[Kmotor_control::msg::ReturnAt_<std::allocator<void> >[m[K’ from initializer list would use explicit constructor ‘[01m[Kmotor_control::msg::ReturnAt_<ContainerAllocator>::ReturnAt_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+[55.146s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:94:65:[m[K [01;36m[Knote: [m[Kin C++11 and above a default constructor can be explicit
+[55.148s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:94:65:[m[K [01;35m[Kwarning: [m[Kconverting to ‘[01m[Kmotor_control::msg::ReturnAt_<std::allocator<void> >[m[K’ from initializer list would use explicit constructor ‘[01m[Kmotor_control::msg::ReturnAt_<ContainerAllocator>::ReturnAt_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+[55.149s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:94:65:[m[K [01;36m[Knote: [m[Kin C++11 and above a default constructor can be explicit
+[55.162s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:94:65:[m[K [01;35m[Kwarning: [m[Kconverting to ‘[01m[Kmotor_control::msg::ReturnAt_<std::allocator<void> >[m[K’ from initializer list would use explicit constructor ‘[01m[Kmotor_control::msg::ReturnAt_<ContainerAllocator>::ReturnAt_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+[55.163s] [01m[K/home/mowmow/workspace/CatchRobo-r08/src/motor_control/src/observe_node.cpp:94:65:[m[K [01;36m[Knote: [m[Kin C++11 and above a default constructor can be explicit
+[68.950s] gmake[2]: *** [CMakeFiles/gpio_node.dir/build.make:76: CMakeFiles/gpio_node.dir/src/gpio_node.cpp.o] Error 1
+[68.951s] gmake[1]: *** [CMakeFiles/Makefile2:680: CMakeFiles/gpio_node.dir/all] Error 2
+[68.952s] gmake[1]: *** Waiting for unfinished jobs....
+[91.712s] [ 76%] [32m[1mLinking CXX executable communication_node[0m
+[91.948s] [ 77%] [32m[1mLinking CXX executable control_node[0m
+[94.269s] [ 77%] Built target communication_node
+[94.816s] [ 77%] Built target control_node
+[108.587s] [ 79%] [32m[1mLinking CXX executable observe_node[0m
+[111.050s] [ 79%] Built target observe_node
+[111.053s] gmake: *** [Makefile:146: all] Error 2
+[111.060s] Invoked command in '/home/mowmow/workspace/CatchRobo-r08/build/motor_control' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mowmow/workspace/CatchRobo-r08/build/motor_control -- -j4 -l4
